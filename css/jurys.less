@@ -1,0 +1,62 @@
+// 命名空间  body=jurys
+.jurys{
+    margin-top: 12px;
+    .jurys-box{
+        width: 1221px;
+        margin: 0 auto;
+        h3{
+            height: 53px;
+            background-color: red;
+            color: #fff;
+            font: 23px/53px '微软雅黑';
+            text-indent: 17px;
+            position: relative;
+            &:after{
+                content: "";
+                position: absolute;
+                bottom: -40px;
+                left: 47px;
+                border: 1px solid rgba(0, 0, 0, 0);
+                border-width:20px 10px;
+                border-top-color: red;
+            }
+        }
+        .team-list{
+            width: 1108px;
+            margin: 97px auto 0;
+            li{
+                float: left;
+                width: 519px;
+                height: 139px;
+                border: 2px solid #d2d2d2;
+                margin: 0 62px 74px 0;
+                &:nth-child(2n){
+                    margin-right: 0;
+                }
+                .text{
+                    width: 326px;
+                    padding: 0 30px 0 22px;
+                    span{
+                        display: block;
+                        color: #666;
+                    }
+                    span:nth-of-type(1){
+                        font: 15px/23px '微软雅黑';
+                        padding-top: 13px;
+                    }
+                    span:nth-of-type(2){
+                        font: 12px/23px '微软雅黑';
+                    } 
+                    span:nth-of-type(3){
+                        margin-top: 4px;
+                        font: 13px/23px '微软雅黑';
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 3;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,158 @@
+.player .plays-list {
+  margin-top: 12px;
+}
+.player .plays-list .play-list-box {
+  width: 1223px;
+  margin: 0 auto;
+}
+.player .plays-list .play-list-box .check-list {
+  height: 57px;
+  background-color: #fbfcfc;
+  font: 18px/57px '微软雅黑';
+  color: #333333;
+  text-align: center;
+}
+.player .plays-list .play-list-box .check-list span {
+  float: left;
+}
+.player .plays-list .play-list-box .check-list .title {
+  width: 82px;
+  color: #b5b5b5;
+}
+.player .plays-list .play-list-box .check-list .places {
+  cursor: pointer;
+  width: 112px;
+}
+.player .plays-list .play-list-box .check-list .active {
+  color: #1b9fe2;
+}
+.player .plays-list .play-list-box .tickit-list {
+  height: 53px;
+  background-color: red;
+  margin-top: 37px;
+  line-height: 53px;
+  color: #fff;
+}
+.player .plays-list .play-list-box .tickit-list span {
+  width: 133px;
+  float: left;
+  text-align: center;
+  margin-right: 40px;
+  font-size: 23px;
+}
+.player .plays-list .play-list-box .tickit-list .normal {
+  cursor: pointer;
+  width: 90px;
+  position: relative;
+}
+.player .plays-list .play-list-box .tickit-list .normal::after {
+  content: "↑";
+  color: red;
+  position: absolute;
+  left: 73px;
+}
+.player .plays-list .play-list-box .tickit-list .top {
+  cursor: pointer;
+  width: 90px;
+  position: relative;
+}
+.player .plays-list .play-list-box .tickit-list .top::after {
+  content: "↑";
+  position: absolute;
+  left: 73px;
+}
+.player .plays-list .play-list-box .tickit-list .bottom {
+  cursor: pointer;
+  width: 90px;
+  position: relative;
+}
+.player .plays-list .play-list-box .tickit-list .bottom::after {
+  content: "↓";
+  position: absolute;
+  left: 73px;
+}
+.player .plays-list .play-list-box .play-list {
+  border-top: none;
+  padding: 76px 0 0 52px;
+  width: 1164px;
+  margin-right: -61px;
+}
+.player .plays-list .play-list-box .play-list li {
+  float: left;
+  width: 230px;
+  margin: 0 59px 65px 0;
+  border: 1px solid #d4d5cf;
+  border-radius: 8px 8px 2px 2px;
+  overflow: hidden;
+}
+.player .plays-list .play-list-box .play-list .play-info {
+  height: 218px;
+  background-color: #f5f8fa;
+}
+.player .plays-list .play-list-box .play-list .play-info img {
+  display: block;
+  padding-top: 16px;
+  margin: 0 auto 12px;
+}
+.player .plays-list .play-list-box .play-list .play-info span {
+  display: block;
+  text-align: center;
+}
+.player .plays-list .play-list-box .play-list .play-info span:nth-of-type(1) {
+  font: 14px/26px '微软雅黑';
+  color: #3f93ef;
+}
+.player .plays-list .play-list-box .play-list .play-info span:nth-of-type(2) {
+  font: 16px/28px '微软雅黑';
+  color: #7c7776;
+}
+.player .plays-list .play-list-box .play-list .play-info span:nth-of-type(3) {
+  font: 14px/26px '微软雅黑';
+  color: #7c7776;
+  padding-bottom: 9px;
+}
+.player .plays-list .play-list-box .play-list .tick-nums {
+  width: 230px;
+  height: 60px;
+  font: 14px/60px '微软雅黑';
+  text-indent: 53px;
+  color: #787878;
+}
+.player .plays-list .play-list-box .play-list .tick-nums span {
+  vertical-align: top;
+  line-height: 62px;
+}
+.player .plays-list .play-list-box .play-list .tick-nums a {
+  float: right;
+  margin: 17px 42px 0 0;
+  text-align: center;
+  width: 50px;
+  height: 24px;
+  background-color: #d81e06;
+  line-height: 24px;
+  color: #fff;
+  text-indent: 0;
+  border-radius: 4px;
+}
+.player .plays-list .play-list-box .page-list {
+  margin-top: 26px;
+  text-align: center;
+}
+.player .plays-list .play-list-box .page-list .page {
+  display: inline-block;
+  vertical-align: top;
+}
+.player .plays-list .play-list-box .page-list span {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 14px;
+  font: 16px/37px '微软雅黑';
+  border-radius: 6px;
+  color: #656565;
+  border: 1px solid #b3bbc2;
+}
+.player .plays-list .play-list-box .page-list span.active {
+  background-color: red;
+  color: #fff;
+}

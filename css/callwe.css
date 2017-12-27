@@ -1,0 +1,66 @@
+.callwe .call-we {
+  margin-top: 30px;
+  padding-left: 401px;
+}
+.callwe .call-we .mes-box li {
+  width: 218px;
+  height: 44px;
+  margin-bottom: 48px;
+}
+.callwe .call-we .mes-box li:nth-of-type(2) .sprites {
+  background-position: -43px 0;
+}
+.callwe .call-we .mes-box li:nth-of-type(3) .sprites {
+  background-position: -86px 0;
+}
+.callwe .call-we .mes-box li:nth-of-type(4) .sprites {
+  background-position: -129px 0;
+}
+.callwe .call-we .mes-box li .sprites {
+  width: 43px;
+  height: 0px;
+  padding-top: 44px;
+  overflow: hidden;
+  background: url('../img/call-we.png') no-repeat;
+}
+.callwe .call-we .mes-box li .txt-num {
+  margin-left: 19px;
+}
+.callwe .call-we .mes-box li .txt-num span {
+  display: block;
+}
+.callwe .call-we .mes-box li .txt-num span:nth-of-type(1) {
+  font: 14px/24px '微软雅黑';
+  color: #000;
+}
+.callwe .call-we .mes-box li .txt-num span:nth-of-type(2) {
+  font: 14px/20px '微软雅黑';
+  color: #b7b7b7;
+}
+.callwe .call-we .mes-box .weixin {
+  margin-top: 142px;
+  position: relative;
+}
+.callwe .call-we .mes-box .weixin .jump-box {
+  position: absolute;
+  width: 156px;
+  height: 70px;
+  padding: 263px 0 0 43px;
+  top: -295px;
+  right: -199px;
+  background: url('../img/2d.jpg') no-repeat;
+}
+.callwe .call-we .mes-box .weixin .jump-box span {
+  display: block;
+  line-height: 35px;
+}
+.callwe .call-we .mes-box .weixin .jump-box span:nth-of-type(1) {
+  font-size: 22px;
+  color: red;
+  font-weight: 600;
+}
+.callwe .call-we .mes-box .weixin .jump-box span:nth-of-type(2) {
+  font-size: 13px;
+  color: #000;
+  text-indent: 4px;
+}

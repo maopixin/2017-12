@@ -1,0 +1,236 @@
+.video .video-box {
+  width: 1211px;
+  margin: auto;
+  padding: 44px 34px 0 35px;
+  background-color: #f9fbfb;
+}
+.video .video-box .video-head {
+  height: 32px;
+}
+.video .video-box .video-head span {
+  display: inline-block;
+  vertical-align: top;
+  font: 20px/32px '微软雅黑';
+}
+.video .video-box .video-head .cancel {
+  width: 88px;
+  color: #939494;
+  cursor: pointer;
+}
+.video .video-box .video-head .cancel::before {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 32px;
+  height: 32px;
+  background: url('../img/video-page.png') no-repeat;
+}
+.video .video-box .video {
+  width: 1211px;
+  height: 646px;
+  background-color: #000;
+  margin-top: 25px;
+  border-top: 1px solid #a2a3a4;
+  position: relative;
+}
+.video .video-box .video .controls {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 51px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.video .video-box .video .controls .tools {
+  height: 2px;
+  background-color: #384347;
+  cursor: pointer;
+}
+.video .video-box .video .controls .tools .tool {
+  padding-top: 2px;
+  height: 0px;
+  background-color: red;
+  overflow: hidden;
+}
+.video .video-box .video .controls .btns {
+  margin-top: 16px;
+  padding-left: 17px;
+}
+.video .video-box .video .controls .btns .sprite {
+  background: url('../img/video-page.png') no-repeat;
+}
+.video .video-box .video .controls .btns .play {
+  cursor: pointer;
+  width: 16px;
+  height: 0px;
+  padding-top: 18px;
+  overflow: hidden;
+  background-position: -33px 0;
+  margin-right: 40px;
+}
+.video .video-box .video .controls .btns .time {
+  color: #fff;
+  font-size: 14px;
+  line-height: 22px;
+  width: 107px;
+  text-align: center;
+}
+.video .video-box .video .controls .btns .right .voice .sprite {
+  width: 18px;
+  height: 0px;
+  padding-top: 18px;
+  overflow: hidden;
+  background-position: -85px 0;
+  margin-right: 29px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+.video .video-box .video .controls .btns .right .voice .voice-change {
+  cursor: pointer;
+  width: 112px;
+  height: 5px;
+  background-color: red;
+  border-radius: 3px;
+  margin-top: 8px;
+  position: relative;
+  margin-right: 47px;
+}
+.video .video-box .video .controls .btns .right .voice .voice-change .voice-tool {
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  background-color: #fff;
+  border-radius: 6px;
+}
+.video .video-box .video .controls .btns .right .play-style {
+  cursor: pointer;
+  width: 16px;
+  height: 0px;
+  padding-top: 15px;
+  overflow: hidden;
+  background-position: -103px 0;
+  margin: 5px 49px 0 0;
+}
+.video .video-box .video .controls .btns .right .v {
+  cursor: pointer;
+  width: 42px;
+  height: 22px;
+  font: 12px/22px '微软雅黑';
+  background-color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  margin-right: 55px;
+}
+.video .video-box .video .controls .btns .right .set {
+  cursor: pointer;
+  width: 18px;
+  height: 0px;
+  padding-top: 18px;
+  overflow: hidden;
+  margin-top: 2px;
+  margin-right: 46px;
+  background-position: -67px 0;
+}
+.video .video-box .video .controls .btns .right .big {
+  cursor: pointer;
+  width: 18px;
+  height: 0px;
+  padding-top: 18px;
+  overflow: hidden;
+  margin-top: 2px;
+  margin-right: 15px;
+  background-position: -49px 0;
+}
+.video .video-box .info {
+  height: 112px;
+  padding: 15px 0 0 28px;
+  box-shadow: 0 1px 3px #d9d9da;
+}
+.video .video-box .info .infos {
+  width: 449px;
+  height: 77px;
+  padding-top: 6px;
+  border: 1px solid #d4d5cf;
+}
+.video .video-box .info .infos img {
+  display: inline-block;
+  width: 71px;
+  height: 71px;
+  border-radius: 36px;
+  margin: 0 0 0 58px;
+  margin-right: 14px;
+}
+.video .video-box .info .infos .man {
+  display: inline-block;
+  width: 140px;
+  padding-top: 10px;
+  margin-right: 58px;
+}
+.video .video-box .info .infos .man span {
+  display: block;
+}
+.video .video-box .info .infos .man .name {
+  font: 14px/30px '微软雅黑';
+  text-indent: 8px;
+}
+.video .video-box .info .infos .man .p {
+  font: 12px/26px '微软雅黑';
+  color: #bdbcbc;
+}
+.video .video-box .info .infos .tickit {
+  padding-top: 7px;
+  display: inline-block;
+}
+.video .video-box .info .infos .tickit span {
+  display: block;
+}
+.video .video-box .info .infos .tickit span:nth-of-type(1) {
+  cursor: pointer;
+  width: 50px;
+  height: 24px;
+  border-radius: 6px;
+  background-color: #f20924;
+  text-align: center;
+  color: #fff;
+}
+.video .video-box .info .infos .tickit span:nth-of-type(2) {
+  font: 14px/32px '微软雅黑';
+}
+.video .video-box .info ul {
+  margin: 24px 0 0 168px;
+}
+.video .video-box .info ul li {
+  float: left;
+  width: 91px;
+  height: 37px;
+  border-right: 2px solid #e6e6e6;
+  text-indent: 49px;
+  font: 13px/37px '微软雅黑';
+  color: #b6b5b5;
+  cursor: pointer;
+  background: url('../img/up.jpg') no-repeat;
+  margin-right: 32px;
+}
+.video .video-box .info ul li:nth-of-type(2) {
+  height: 38px;
+  background: url('../img/share.jpg') no-repeat;
+}
+.video .video-box .info ul li:nth-of-type(3) {
+  background: url('../img/up2.jpg') no-repeat;
+}
+.video .video-box .info ul li:nth-last-of-type(1) {
+  border: none;
+  background: url('../img/phone.jpg') no-repeat;
+}
+.video .video-box .intro {
+  padding: 12px;
+  height: 171px;
+  border: 3px solid #ecefef;
+  background-color: #f6f6f5;
+  text-indent: 30px;
+  font: 16px/32px '微软雅黑';
+  color: #000;
+  margin: 38px 0 35px 0;
+}
