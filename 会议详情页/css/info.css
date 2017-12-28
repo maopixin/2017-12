@@ -1,0 +1,172 @@
+.meeting-info {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 42px 0 0 0;
+  text-align: center;
+}
+.meeting-info h3 {
+  margin: 25px 0 54px 0;
+  font: 600 22px/54px '微软雅黑';
+}
+.meeting-info .artical .artical-title {
+  height: 44px;
+  background-color: #eff3f6;
+}
+.meeting-info .artical .artical-title span {
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+  background-color: #fe9949;
+  font-size: 18px;
+  line-height: 44px;
+  color: #fff;
+  font-weight: normal;
+}
+.meeting-info .artical .texts {
+  padding: 47px 38px 50px;
+  text-align: left;
+  text-indent: 38px;
+  font: 16px/35px '微软雅黑';
+  color: #6a6a6a;
+}
+.meeting-info .artical .text {
+  padding: 40px 0;
+  font: 19px/35px '微软雅黑';
+  color: #6a6a6a;
+}
+.meeting-info .artical .text span {
+  display: block;
+}
+.meeting-info .artical-l {
+  margin: 30px 0 0 0;
+}
+.meeting-info .artical-l .sprite {
+  margin: 0 auto;
+  width: 142px;
+  height: 0;
+  padding-top: 29px;
+  background-position: -249px 0;
+}
+.meeting-info .artical-l .less {
+  padding-top: 30px;
+  background-position-y: -29px;
+}
+.meeting-info .artical-l .less-p {
+  text-align: left;
+  text-indent: 38px;
+  padding: 0 20px;
+  margin-bottom: 21px;
+}
+.meeting-info .artical-l .text {
+  font: 18px/32px '微软雅黑';
+  padding: 26px 0 43px;
+  color: #6a6a6a;
+}
+.meeting-info .person {
+  padding: 60px 0 0 21px;
+}
+.meeting-info .person h5 {
+  width: 131px;
+  height: 49px;
+  background-color: #fe9a45;
+  color: #fff;
+  font: normal 20px/50px '微软雅黑';
+  overflow: hidden;
+  margin-bottom: 82px;
+}
+.meeting-info .person .margin61 {
+  margin-top: 61px;
+}
+.meeting-info .person .text-f {
+  width: 470px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+.meeting-info .person .text-f .t-top {
+  text-align: left;
+  color: #fe9949;
+  font-size: 20px;
+  line-height: 32px;
+}
+.meeting-info .person .text-f .t-top span {
+  display: inline-block;
+  vertical-align: top;
+  width: 24px;
+  height: 24px;
+  background-color: #fe9949;
+  color: #fff;
+  border-radius: 4px;
+  line-height: 24px;
+  text-align: center;
+  margin: 3px 12px 3px 3px;
+  font-size: 12px;
+}
+.meeting-info .person .text-f .t-center {
+  padding: 32px 0 26px;
+  font: 16px/25px '微软雅黑';
+  color: #747474;
+  text-align: left;
+}
+.meeting-info .person .text-f .t-b {
+  font: 16px/25px '微软雅黑';
+  color: #747474;
+  text-align: left;
+}
+.meeting-info .person .text-f .t-b a {
+  color: #fe9a45;
+  display: inline-block;
+  margin: 0 3px;
+}
+.meeting-info .person .img-r {
+  width: 632px;
+}
+.meeting-info .person .img-r div {
+  float: left;
+}
+.meeting-info .person .img-r div img {
+  margin: 0 7px 7px 0;
+}
+.meeting-info .person .img-r div:nth-of-type(1) img {
+  width: 416px;
+  height: 295px;
+  display: block;
+}
+.meeting-info .person .img-r div:nth-of-type(2) {
+  margin-right: -12px;
+}
+.meeting-info .person .img-r div:nth-of-type(2) img {
+  width: 203px;
+  height: 144px;
+  display: block;
+}
+.meeting-info .person .foots li {
+  border: 2px solid #e9e9e9;
+  margin-bottom: 26px;
+}
+.meeting-info .person .foots img {
+  width: 288px;
+  height: 184px;
+}
+.meeting-info .person .foots div {
+  width: 815px;
+}
+.meeting-info .person .foots div span {
+  display: block;
+  text-align: left;
+  padding-left: 26px;
+  font: 16px/32px '微软雅黑';
+  color: #9fa6af;
+}
+.meeting-info .person .foots div span:nth-of-type(1) {
+  font: 600 20px/44px '微软雅黑';
+  margin-bottom: 10px;
+  color: #000;
+}
+.meeting-info .person .foots div span:nth-of-type(2) {
+  height: 120px;
+  overflow: hidden;
+}
+.meeting-info .exempt {
+  font: 500 22px/62px '微软雅黑';
+  margin: 20px 0;
+}

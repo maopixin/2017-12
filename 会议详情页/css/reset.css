@@ -1,0 +1,24 @@
+/* css reset */
+body,h1,h3,dl,dd,p,h4,h5{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+input{
+    outline: none;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    border: none;
+}
+img{
+    vertical-align: top;
+    border: none;
+}

@@ -1,0 +1,53 @@
+.meeting-date .table {
+  width: 914px;
+  margin: 48px auto;
+}
+.meeting-date .table .small {
+  width: 70px;
+  height: 46px;
+}
+.meeting-date .table .big-font {
+  font-weight: 600;
+}
+.meeting-date .table .font-s-22 {
+  text-indent: 14px;
+  font-size: 20px;
+  line-height: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.meeting-date .table .date-m-w {
+  width: 20px;
+  padding: 0 26px;
+}
+.meeting-date .table .data-w {
+  width: 20px;
+  padding: 0 11px;
+}
+.meeting-date .table .block {
+  display: block;
+}
+.meeting-date .table .time {
+  font-size: 14px;
+}
+.meeting-date .table .name {
+  color: #0e0ddd;
+}
+.meeting-date .table .linh {
+  line-height: 30px;
+}
+.meeting-date .table .color-h {
+  color: #2d2d2d;
+}
+.meeting-date .table .padding {
+  padding: 10px;
+}
+.meeting-date .table .w90 {
+  width: 90px;
+  margin: 30px 10px 0;
+}
+.meeting-date .table .todos {
+  float: left;
+  margin-right: 30px;
+}

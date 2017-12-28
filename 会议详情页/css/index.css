@@ -1,0 +1,13 @@
+.sprite {
+  overflow: hidden;
+  background: url('../img/sprite-meeting.png') no-repeat;
+}
+h2 {
+  width: 247px;
+  height: 63px;
+  padding-top: 66px;
+  margin: 0 auto;
+  font: 22px/54px '微软雅黑';
+  color: #fff;
+  text-align: center;
+}

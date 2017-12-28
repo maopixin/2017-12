@@ -1,0 +1,36 @@
+.meeting-tip {
+  width: 850px;
+  margin: auto;
+  font: 16px/41px '微软雅黑';
+  color: #6b6b6b;
+}
+.meeting-tip .mes {
+  padding: 18px 0;
+}
+.meeting-tip .mes .mes-title {
+  font: bold 22px/60px '微软雅黑';
+  margin-bottom: 45px;
+}
+.meeting-tip .mes .mes-info-title {
+  text-indent: 38px;
+}
+.meeting-tip .mes ul .num {
+  width: 32px;
+}
+.meeting-tip .mes ul .txt {
+  width: 810px;
+}
+.meeting-tip .tips {
+  padding: 50px 0 20px 34px;
+  font-family: '黑体';
+}
+.meeting-tip .tips dt {
+  width: 93px;
+  height: 0px;
+  padding-top: 21px;
+  margin-bottom: 10px;
+  background-position: -250px -59px;
+}
+.meeting-tip .tips dd.bottom {
+  text-align: right;
+}
