@@ -1,0 +1,47 @@
+/* 命名空间  body=notfound */
+.wid{
+    width: 1280px;
+    margin:0 auto;
+}
+.notfound .sprite-notfound{
+    background: url('./../img/404.jpg') no-repeat;
+    overflow: hidden;
+}
+.notfound .bg{
+    width: 277px;
+    height: 0px;
+    margin: 0 auto;
+    padding-top: 311px;
+}
+.notfound .wid{
+    padding-top: 191px;
+}
+.notfound .btns{
+    margin-top: 147px;
+    text-align: center;
+}
+.notfound .btns a{
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    width: 90px;
+    line-height: 16px;
+    margin: 0 15px;
+}
+.notfound .btns span{
+    display: block;
+    width: 34px;
+    height: 34px;
+    margin: 0 auto 15px;
+}
+.notfound .btns{
+    margin-top: 147px;
+    text-align: center;
+}
+.notfound .btns .pre-btn .ico{
+   background-position: -286px 0;
+}
+.notfound .btns .home-btn .ico{
+    background-position: -286px -33px;
+ }
