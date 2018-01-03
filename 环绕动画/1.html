@@ -1,0 +1,41 @@
+<!doctype html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8" />  
+    <title> css3圆形轨迹动画 </title>  
+<style type="text/css">  
+@keyframes animX{  
+      0% {left: 0px;}  
+    100% {left: 700px;}  
+}  
+@keyframes animY{  
+      0% {top: 0px;}  
+    100% {top: 700px;}  
+}  
+  
+#ball {  
+    width: 20px;  
+    height: 20px;  
+    background-color: #f66;  
+    border-radius: 50%;  
+    position: absolute;  
+    animation: animX 4s cubic-bezier(0.36,0,0.64,1) -2s infinite alternate, animY 4s cubic-bezier(0.36,0,0.64,1)  0s infinite alternate;  
+}  
+  
+#lopp {  
+    width: 698px;  
+    height: 698px;  
+    border: 2px solid #999;  
+    border-radius: 50%;  
+    position: absolute;  
+    left: 9px;  
+    top: 9px;  
+}  
+  
+</style>  
+</head>  
+<body>  
+<div id="lopp"></div>  
+<div id="ball"></div>  
+</body>  
+</html>
