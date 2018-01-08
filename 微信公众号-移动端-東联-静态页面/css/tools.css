@@ -1,0 +1,21 @@
+/* tools */
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.show{
+    display: block !important;
+}
+.hidden{
+    display: none;
+}
+.no-margin{
+    margin: 0 !important;
+}
