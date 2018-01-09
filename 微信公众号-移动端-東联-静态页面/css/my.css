@@ -1,0 +1,127 @@
+.my .sprite {
+  display: inline-block;
+  vertical-align: top;
+  background: url('../img/my-sprite.png') no-repeat;
+  background-size: 0.70666667rem;
+}
+.my header {
+  background-color: #0f8ccf;
+  color: #fff;
+}
+.my header .head-h {
+  height: 1rem;
+  position: relative;
+}
+.my header .head-h .cancel {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0.14666667rem;
+  width: 1.04rem;
+  height: 0.66666667rem;
+  background: url('../img/cancel.png') no-repeat center center;
+  background-size: 0.24rem;
+}
+.my header .head-h .title {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  font-size: 0.44rem;
+  font-weight: 600;
+  line-height: 1rem;
+}
+.my header .person-info {
+  height: 3.6rem;
+  position: relative;
+}
+.my header .person-info .use {
+  position: absolute;
+  left: 50%;
+  top: 0.49333333rem;
+  transform: translateX(-50%);
+}
+.my header .person-info .use img {
+  display: block;
+  width: 1.97333333rem;
+  height: 1.97333333rem;
+  border-radius: 0.98666667rem;
+  margin: 0 auto;
+}
+.my header .person-info .use span {
+  display: block;
+  font-size: 0.34666667rem;
+  line-height: 0.96rem;
+  font-weight: 600;
+  text-align: center;
+}
+.my header .person-info .sign-in {
+  margin-top: 1.41333333rem;
+  width: 1.62666667rem;
+  height: 0.68rem;
+  border-radius: 0.33333333rem;
+  background-color: #fff;
+  font-size: 0.34666667rem;
+  line-height: 0.68rem;
+  color: #60696e;
+}
+.my header .person-info .sign-in .date {
+  width: 0.38666667rem;
+  height: 0.38666667rem;
+  margin: 0.14666667rem 0rem 0 0.14666667rem;
+}
+.my header .person-info .grade {
+  font-size: 0.42666667rem;
+  line-height: 0.8rem;
+  margin: 1.34666667rem 0.61333333rem 0 0;
+}
+.my .btns {
+  border-bottom: 1px solid #d0d0d0;
+}
+.my .btns li {
+  width: 2.5rem;
+  height: 1.50666667rem;
+  float: left;
+  padding-top: 0.6rem;
+  font-size: 0.34666667rem;
+  text-align: center;
+  line-height: 0.76rem;
+  color: #656565;
+}
+.my .btns li .ico {
+  display: block;
+  width: 100%;
+  height: 0.52rem;
+}
+.my .btns li .txt {
+  display: block;
+}
+.my .btns li:nth-of-type(1) .ico {
+  background-position: center -0.4rem;
+}
+.my .btns li:nth-of-type(2) .ico {
+  background-position: center -0.90666667rem;
+}
+.my .btns li:nth-of-type(3) .ico {
+  background-position: center -1.44rem;
+}
+.my .btns li:nth-of-type(4) .ico {
+  background-position: center -1.98666667rem;
+}
+.my .fn-list {
+  font-size: 0.33333333rem;
+  line-height: 1.16rem;
+  text-indent: 1.17333333rem;
+  border-top: 1px solid #d0d0d0;
+  margin-top: 0.29333333rem;
+}
+.my .fn-list li {
+  border-bottom: 1px solid #d0d0d0;
+}
+.my .fn-list li .more {
+  width: 0.17333333rem;
+  height: 0rem;
+  padding-top: 0.33333333rem;
+  overflow: hidden;
+  background-position: 0 -2.97333333rem;
+  margin: 0.42666667rem 0.37333333rem 0 0;
+}

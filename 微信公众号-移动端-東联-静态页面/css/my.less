@@ -1,0 +1,141 @@
+@rem:75rem;
+
+// 命名空间 body=my
+.my{
+    // 头部
+    .sprite{
+        display: inline-block;
+        vertical-align: top;
+        background: url('./../img/my-sprite.png') no-repeat;
+        background-size: 53/@rem;
+    }
+    header{
+        background-color: #0f8ccf;
+        color: #fff;
+        .head-h{
+            height: 75/@rem;
+            position: relative;
+            .cancel{
+                display: inline-block;
+                vertical-align: top;
+                margin-top: 11/@rem;
+                width: 78/@rem;
+                height: 50/@rem;
+                background: url('./../img/cancel.png') no-repeat center center;
+                background-size: 18/@rem;
+            }
+            .title{
+                position: absolute;
+                left: 50%;
+                top: 0;
+                transform: translateX(-50%);
+                font-size: 33/@rem;
+                font-weight: 600;
+                line-height: 75/@rem;
+            }
+        }
+        // 个人信息
+        .person-info{
+            height: 270/@rem;
+            position: relative;
+            // 用户头像和名字
+            .use{
+                position: absolute;
+                left: 50%;
+                top: 37/@rem;
+                transform: translateX(-50%);
+                img{
+                    display: block;
+                    width: 148/@rem;
+                    height: 148/@rem;
+                    border-radius: 74/@rem;
+                    margin: 0 auto;
+                }
+                span{
+                    display: block;
+                    font-size: 26/@rem;
+                    line-height: 72/@rem;
+                    font-weight: 600;
+                    text-align: center;
+                }
+            }
+            // 签到
+            .sign-in{
+                margin-top: 106/@rem;
+                width: 122/@rem;
+                height: 51/@rem;
+                border-radius: 25/@rem;
+                background-color: #fff;
+                font-size: 26/@rem;
+                line-height: 51/@rem;
+                color: #60696e;
+                .date{
+                    width: 29/@rem;
+                    height: 29/@rem;
+                    margin: 11/@rem 0/@rem 0 11/@rem;
+                }
+            }
+            // 分数
+            .grade{
+                font-size: 32/@rem;
+                line-height: 60/@rem;
+                margin: 101/@rem 46/@rem 0 0;
+
+            }
+        }
+    }
+    // 功能区域
+    .btns{
+        border-bottom: 1px solid #d0d0d0;
+        li{
+            width: 2.5rem;
+            height: 113/@rem;
+            float: left;
+            padding-top: 45/@rem;
+            font-size: 26/@rem;
+            text-align: center;
+            line-height: 57/@rem;
+            color: #656565;
+            .ico{
+                display: block;
+                width: 100%;
+                height: 39/@rem;
+            }
+            .txt{
+                display: block;
+            }
+            &:nth-of-type(1) .ico{
+                background-position: center -30/@rem;
+            }
+            &:nth-of-type(2) .ico{
+                background-position: center -68/@rem;
+            }
+            &:nth-of-type(3) .ico{
+                background-position: center -108/@rem;
+            }
+            &:nth-of-type(4) .ico{
+                background-position: center -149/@rem;
+            }
+            
+        }
+    }
+    // 功能区域2
+    .fn-list{
+        font-size: 25/@rem;
+        line-height: 87/@rem;
+        text-indent: 88/@rem;
+        border-top: 1px solid #d0d0d0;
+        margin-top: 22/@rem;
+        li{
+            border-bottom: 1px solid #d0d0d0;
+            .more{
+                width: 13/@rem;
+                height: 0/@rem;
+                padding-top: 25/@rem;
+                overflow: hidden;
+                background-position: 0 -223/@rem;
+                margin: 32/@rem 28/@rem 0 0;
+            }
+        }
+    }
+}
