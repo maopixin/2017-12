@@ -1,66 +1,66 @@
 .meeting-info {
-  width: 1140px;
+  /* width: 1140px;
   margin: 0 auto;
   padding: 42px 0 0 0;
-  text-align: center;
+  text-align: center; */
 }
 .meeting-info h3 {
-  margin: 25px 0 54px 0;
-  font: 600 22px/54px '微软雅黑';
+  /* margin: 25px 0 54px 0;
+  font: 600 22px/54px '微软雅黑'; */
 }
 .meeting-info .artical .artical-title {
-  height: 44px;
-  background-color: #eff3f6;
+  /* height: 44px;
+  background-color: #eff3f6; */
 }
 .meeting-info .artical .artical-title span {
-  display: block;
+  /* display: block;
   margin: 0 auto;
   width: 120px;
   background-color: #fe9949;
   font-size: 18px;
   line-height: 44px;
   color: #fff;
-  font-weight: normal;
+  font-weight: normal; */
 }
 .meeting-info .artical .texts {
-  padding: 47px 38px 50px;
+  /* padding: 47px 38px 50px;
   text-align: left;
   text-indent: 38px;
   font: 16px/35px '微软雅黑';
-  color: #6a6a6a;
+  color: #6a6a6a; */
 }
 .meeting-info .artical .text {
-  padding: 40px 0;
+  /* padding: 40px 0;
   font: 19px/35px '微软雅黑';
-  color: #6a6a6a;
+  color: #6a6a6a; */
 }
 .meeting-info .artical .text span {
-  display: block;
+  /* display: block; */
 }
 .meeting-info .artical-l {
-  margin: 30px 0 0 0;
+  /* margin: 30px 0 0 0; */
 }
 .meeting-info .artical-l .sprite {
-  margin: 0 auto;
+  /* margin: 0 auto;
   width: 142px;
   height: 0;
   padding-top: 29px;
-  background-position: -249px 0;
+  background-position: -249px 0; */
 }
 .meeting-info .artical-l .less {
-  padding-top: 30px;
-  background-position-y: -29px;
+  /* padding-top: 30px;
+  background-position-y: -29px; */
 }
 .meeting-info .artical-l .less-p {
-  text-align: left;
+  /* text-align: left;
   text-indent: 38px;
   padding: 0 20px;
-  margin-bottom: 21px;
+  margin-bottom: 21px; */
 }
 .meeting-info .artical-l .text {
-  font: 18px/32px '微软雅黑';
+  /* font: 18px/32px '微软雅黑';
   padding: 26px 0 43px;
-  color: #6a6a6a;
+  color: #6a6a6a; */
 }
 .meeting-info .person {
   padding: 60px 0 0 21px;

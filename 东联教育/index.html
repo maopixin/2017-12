@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- 当前页面样式引入 -->
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/list.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header class="head">
+        <div class="box-bg clearfix">
+            <ul class="fr">
+                <li>
+                    <a href="javascript:;">登录</a>
+                </li>
+                <li class="get-name">
+                    <a href="javascript:;">注册</a>
+                </li>
+                <li>
+                    <a href="javascript:;">教师培训</a>
+                </li>
+                <li>
+                    <a href="javascript:;">联盟校</a>
+                </li>
+                <li>
+                    <a href="javascript:;">德育动漫</a>
+                </li>
+                <li>
+                    <a href="javascript:;">关于我们</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- logo & 搜索 -->
+    <div class="logo-box wid clearfix">
+        <h1 class="logo fl" style="background-size:254px;">东联教育</h1>
+        <div class="search-box fr">
+            <!-- 搜索栏 -->
+            <div class="s-top clearfix">
+                <div class="select fl">
+                    <div class="checked">
+                        微课
+                    </div>
+                    <ul class="">
+                        <li class="option">微课</li>
+                    </ul>
+                </div>
+                <div class="input-box fl">
+                    <input type="text">
+                </div>
+                <div class="btn fr">搜索</div>
+            </div>
+            <!-- 关键词 -->
+            <div class="s-bot">
+                <span class="s-bot-title">关键词：</span>
+                <a href="javascript:;">德育</a>
+                <a href="javascript:;">小学</a>
+                <a href="javascript:;">教育</a>
+                <a href="javascript:;">课程</a>
+                <a href="javascript:;">会议</a>
+            </div>
+        </div>
+    </div>
+    <!-- 导航栏 -->
+    <nav class="nav">
+        <ul class="wid clearfix">
+            <li class="fl one">
+                课程分类
+            </li>
+            <li class="fl">
+                品牌会议
+            </li>
+            <li class="fl">
+                名校名师
+            </li>
+            <li class="fl">
+                评选大赛
+            </li>
+            <li class="fl">
+                联盟校
+            </li>
+        </ul>
+    </nav>
+    <div class="list-box-all  warp">
+        <div class="search-box">
+            <!-- 面包屑 -->
+            <div class="brade">
+                <span class="title">
+                    您所在的位置：
+                </span>
+                <span class="all-place">
+                    首页>课程分类>所有地区
+                </span>
+            </div>
+            <!-- 筛选列表 -->
+            <ul class="check-box">
+                <li class="check-item clearfix">
+                    <span class="title fl">
+                        地区:
+                    </span>
+                    <ul class="check-box-list fl">
+                        <li class="fl active">
+                            北京
+                        </li>
+                        <li class="fl">
+                            天津
+                        </li>
+                        <li class="fl">
+                            上海
+                        </li>
+                        <li class="fl">
+                            深圳
+                        </li>
+                        <li class="fl">
+                            河北
+                        </li>
+                        <li class="fl">
+                            河南
+                        </li>
+                    </ul>
+                    <span class="more fr">
+                        更多∨
+                    </span>
+                </li>
+                <li class="check-item clearfix">
+                    <span class="title fl">
+                        学科:
+                    </span>
+                    <ul class="check-box-list fl">
+                        <li class="fl active">
+                            全部
+                        </li>
+                        <li class="fl">
+                            八德教育
+                        </li>
+                        <li class="fl">
+                            家庭教育
+                        </li>
+                        <li class="fl">
+                            核心素养
+                        </li>
+                        <li class="fl">
+                            传统文化
+                        </li>
+                        <li class="fl">
+                            语文
+                        </li>
+                    </ul>
+                    <span class="more fr">
+                        更多∨
+                    </span>
+                </li>
+                <li class="check-item clearfix">
+                    <span class="title fl">
+                        其他:
+                    </span>
+                    <ul class="check-box-list option-box fl">
+                        <li class="fl active">
+                            <span>
+                                学段
+                            </span>
+                        </li>
+                        <li class="fl">
+                            <span>
+                                教材
+                            </span>
+                        </li>
+                        <li class="fl">
+                            <span>
+                                学员分类
+                            </span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- 列表 -->
+        <div class="list-box-list ">
+            <div class="btns clearfix">
+                <span class="fl btn active">
+                    综合排序
+                </span>
+                <span class="fl btn">
+                    最新课程
+                </span>
+                <span class="fr">
+                    <input style="margin-top:24px;" type="checkbox" value="" name="" id=""> 公开课
+                </span>
+            </div>
+            <ul id="course-list" class="course-list  clearfix">
+                <!-- <li class="course-list-item">
+                    <img src="./img/test2.jpg" alt="">
+                    <div class="info">
+                        <div class="f clearfix">
+                            <span class="fl">翻转课堂教学</span>
+                            <span class="fr green">免费</span>
+                        </div>
+                        <div class="clearfix">
+                            <span class="fl">播放次数：2000</span>
+                            <span class="fr">课时：20:00</span>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <img src="./img/test21.jpg" class="fl" alt="">
+                        <span class="per-info fl">
+                            <span>主讲：魏书生</span>
+                            <span>著名教育专家</span>
+                        </span>
+                        <span class="btn fl">
+                            点击听课
+                        </span>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+        <!-- 分页 -->
+        <div class="page-list">
+            <span>首页</span>
+            <span>上一页</span>
+            <span class="active">1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>下一页</span>
+            <span>尾页</span>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <footer class="foot">
+        <div class="texts wid clearfix">
+            <dl>
+                <dt>全新的教学体验</dt>
+                <dd>技术与教育的融合</dd>
+                <dd>技术与教育的融合</dd>
+                <dd>技术与教育的融合</dd>
+                <dd>技术与教育的融合</dd>
+            </dl>
+            <dl>
+                <dt>全新的教学体验</dt>
+                <dd>技术与教育的融合</dd>
+                <dd>技术与教育的融合</dd>
+                <dd>技术与教育的融合</dd>
+                <dd>技术与教育的融合</dd>
+            </dl>
+            <dl>
+                <dt>全新的教学体验</dt>
+                <dd>技术与教育的融合</dd>
+                <dd>技术与教育的融合</dd>
+                <dd>技术与教育的融合</dd>
+                <dd>技术与教育的融合</dd>
+            </dl>
+        </div>
+        <div class="friend-url clearfix">
+            <div class="item fl">
+                <span>教师授课加学习</span>
+                <span>知识与名利的多项提升</span>
+            </div>
+            <div class="item fl">
+                <span>教师授课加学习</span>
+                <span>知识与名利的多项提升</span>
+            </div>
+            <div class="item fr">
+                <span>教师授课加学习</span>
+                <span>知识与名利的多项提升</span>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let teacherData = [{
+                id: 0,
+                imgUrl: './img/1.jpg',
+                personUrl: './img/test1.jpg',
+                name: '魏书生',
+                title: '翻转课堂教学',
+                info: '著名教育改革家、语文特级教师、辽宁盘锦教育局原局长兼党委书记。'
+            },
+            {
+                id: 1,
+                imgUrl: './img/2.jpg',
+                personUrl: './img/test2.jpg',
+                name: '孙学策',
+                title: '现代教育技术',
+                info: '教育部原基础教育司德育处处长'
+            },
+            {
+                id: 2,
+                imgUrl: './img/3.jpg',
+                personUrl: './img/test3.jpg',
+                name: '李红旗',
+                title: '心理疾病预防与心理调节',
+                info: '德育师资培训导师、中华文化传播者、教育部“全国特色教育优秀工作者”。从教29年，任中小学校长十多年，致力于中华文化研究，专攻中华文化伦理道德教育导入中小学课程，同时参与学校与企业管理人员培训工作。'
+            },
+            {
+                id: 3,
+                imgUrl: './img/4.jpg',
+                personUrl: './img/test4.jpg',
+                name: '龚正行',
+                title: '隋唐人的日常生活',
+                info: '北京八中原校长、中国超长少年教育的开拓者。'
+            },
+            {
+                id: 4,
+                imgUrl: './img/5.jpg',
+                personUrl: './img/test5.jpg',
+                name: '段惠民',
+                title: '外师内悟 智教慧育',
+                info: '全国十佳班主任，现任教于河南濮阳油田第十五中学。曾获得全国优秀辅导教师，河南省师德先进个人，河南省最具影响力班主任，河南省骨干教师，河南省学术技术带头人等称号。'
+            },
+            {
+                id: 5,
+                imgUrl: './img/6.jpg',
+                personUrl: './img/test6.jpg',
+                name: '陈纪英',
+                title: '注重家庭子女心理教育',
+                info: '清华附中心理中心创建人、主任。'
+            },
+            {
+                id: 6,
+                imgUrl: './img/7.jpg',
+                personUrl: './img/test7.jpg',
+                name: '柳夕浪',
+                title: '学生综合实践活动探索',
+                info: '著名教科研专家、教育部基础教育二司课程发展处研究员、教育部基础教育课程专家工作委员会办公室副主任、第二届专家工作委员会委员，江苏海安县教育局副局长。'
+            },
+            {
+                id: 7,
+                imgUrl: './img/8.jpg',
+                personUrl: './img/test8.jpg',
+                name: '王建宗',
+                title: '理解深化课程与教学改革',
+                info: '现任北京西城区教师研修学院党委书记，国家教育行政学院兼职教授，中国教育学会中小学整体改革专业委员会学术委员会主任，北京教育学院名校长第一工作室研究院。原北京育才中学校长、原北京十四中校长。'
+            },
+            {
+                id: 8,
+                imgUrl: './img/9.jpg',
+                personUrl: './img/test9.jpg',
+                name: '林良富',
+                title: '优质课堂的实现路径',
+                info: '东联教育特聘学术顾问，万里教育集团副总裁，宁波万里国际学校原总校长，宁波国家高新区外国语学校原校长。曾获得首届“国家级教学成果二等奖”，北师大教育家书院首批兼职研究员，教育部“国培计划”专家，浙江省特级教师、宁波市优秀专业技术人才、长三角最具影响力校长。'
+            },
+            {
+                id: 9,
+                imgUrl: './img/10.jpg',
+                personUrl: './img/test10.jpg',
+                name: '张思中',
+                title: '十六字外语教学法',
+                info: '上海市外语特级教师，创造出以“适当集中、反复循环、阅读原著、因材施教”16字为核心的张思中教学法，被国务院前总理李岚清同志充分肯定，并指示教育部予以推广。'
+            },
+            {
+                id: 10,
+                imgUrl: './img/11.jpg',
+                personUrl: './img/test5.jpg',
+                name: '仲广群',
+                title: '校本教研中的辩证法',
+                info: '小学“助学课堂”创建人，特级教师，南京市瑞金北村小学校长。'
+            },
+            {
+                id: 11,
+                imgUrl: './img/12.jpg',
+                personUrl: './img/test7.jpg',
+                name: '李迪',
+                title: '问题学生转化技巧及案例',
+                info: '东联教育集团独家签约专家、全国十大优秀班主任、新生代班主任的领军人物、国家二级心理咨询师、知名德育专家、郑州市中学高级音乐教师。曾荣获“河南省骨干教师”、“河南省学术技术带头人”、“河南省首届最美女教师”，被网友成为“苏霍姆林斯基式女教师”。'
+            }
+        ];
+        // 渲染列表
+        let str = "";
+        for (let i = 0; i < teacherData.length; i++) {
+            str +=
+                `<li class="course-list-item">
+                    <img src="${teacherData[i].personUrl}" alt="">
+                    <div class="info">
+                        <div class="f clearfix">
+                            <span class="fl">${teacherData[i].title}</span>
+                            <span class="fr green">免费</span>
+                        </div>
+                        <div class="clearfix">
+                            <span class="fl">播放次数：${parseInt(Math.random()*100)+2000}</span>
+                            <span class="fr">课时：20:00</span>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <img src="${teacherData[i].imgUrl}" class="fl" alt="">
+                        <span class="per-info fl">
+                            <span>主讲：${teacherData[i].name}</span>
+                            <span>${teacherData[i].info}</span>
+                        </span>
+                        <span class="btn fl">
+                            点击听课
+                        </span>
+                    </div>
+                </li>`
+        }
+        document.getElementById('course-list').innerHTML = '';
+        document.getElementById('course-list').innerHTML = str;
+    </script>
+</body>
+
+</html>

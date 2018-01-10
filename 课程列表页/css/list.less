@@ -1,0 +1,208 @@
+.warp{
+    width: 1280px;
+    margin: 0 auto;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear:both;
+}
+.list-box-all{
+    background-color: #f5f8fa;
+}
+.search-box{
+   padding: 38px 23px 0 33px;
+//    面包屑
+   .brade{
+       font: 20px/44px '微软雅黑';
+       padding: 0 0 31px 0;
+       .title{
+           color: #989b9c;
+       }
+       .all-place{
+           cursor: pointer;
+           color: #1b9fe2;
+       }
+   }
+//    删选列表
+   .check-box{
+       border: 1px solid #f5f5f5;
+       background-color: #fff;
+       margin-bottom: 32px;
+       font: 18px/50px '微软雅黑';
+       .check-item{
+           width: 1180px;
+           margin: 0 auto;
+           border-bottom: 1px solid #efefef;
+           .title{
+                color: #b6b6b6;
+           }
+           .check-box-list{
+               li{
+                   cursor: pointer;
+                   float: left;
+                   width: 120px;
+                   text-align: center;
+               }
+               li.active{
+                   color: #1b9fe2;
+               }
+           }
+           .option-box{
+               li{
+                   span{
+                        position: relative;
+                   }
+                   span::before{
+                       content: '∨';
+                       position: absolute;
+                       top: -14px;
+                       right: -16px;
+                   }
+               }
+           }
+           .more{
+               cursor: pointer;
+           }
+       }
+   }
+}
+// 列表
+.list-box-list{
+    padding-left: 8px;
+    padding-right: 22px;
+    // 按钮
+    .btns{
+        font: 20px/54px '微软雅黑';
+        background-color: #f0f3f5;
+        text-align: center;
+        padding-right: 20px;
+        margin-bottom: 25px;
+        .btn{
+            width: 127px;
+            cursor: pointer;
+        }
+        .active{
+            background-color: #1b9fe2;
+            color: #fff;
+        }
+    }
+    // 列表内容
+    .course-list{
+        width: 1231px;
+        margin: 0 auto;
+        .course-list-item{
+            background-color: #fff;
+            float: left;
+            width: 284px;
+            padding:17px 0 22px;
+            border: 1px solid #e6e6e6;
+            margin:0 29px 40px 0; 
+            &:nth-of-type(4n){
+                margin-right: 0;
+            }
+            img{
+                display: block;
+                margin: 0 auto;
+                width: 241px;
+                height: 135px;
+            }
+            .info{
+                background-color: #f8f9fb;
+                width: 221px;
+                height: 47px;
+                padding: 8px 10px 0;
+                margin: 0 auto;
+                font: 10px/22px '微软雅黑';
+                color: #a3a4a6;
+                .f{
+                    color: #3c3e3f;
+                    font: 14px/24px '微软雅黑';
+                    .green{
+                        color: green;
+                    }
+                    .yellow{
+                        color:#fa8100;
+                    }
+                }
+            }
+            .person{
+                cursor: pointer;
+                margin: 15px auto 0;
+                width: 241px;
+                height: 84px;
+                background-color: #f0f1f6;
+                img{
+                    width: 61px;
+                    height: 61px;
+                    margin: 14px 6px 0 10px;
+                    border-radius: 32px;
+                }
+                .per-info{
+                    padding: 26px 8px 0 0;
+                    width: 84px;
+                    span{
+                        &:nth-of-type(1){
+                            display: block;
+                            font: 14px/24px '微软雅黑';
+                            width: 100%;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+
+                        }
+                        &:nth-of-type(2){
+                            display: block;
+                            font: 12px/24px '微软雅黑';
+                            color: #989b9c;
+                            width: 100%;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                }
+                .btn{
+                    margin-top: 53px;
+                    width: 62px;
+                    height: 20px;
+                    background-color: red;
+                    border-radius: 6px;
+                    text-align: center;
+                    color: #fff;
+                    font: 12px/20px '微软雅黑';
+                }
+            }
+        }
+    }
+}
+// 分页
+.page-list{
+    text-align: center;
+    padding-bottom: 100px;
+    span{
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 16px;
+        border: 1px solid #989b9c;
+        font: 18px/40px '微软雅黑';
+        border-radius: 6px;
+        background-color: #fff;
+        cursor: pointer;
+    }
+    .active{
+        color: #fff;
+        background-color: #1b9fe2;
+    }
+}

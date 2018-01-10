@@ -1,0 +1,19 @@
+.col-xs-7 {
+    width: 58.33333333%;
+    float: left;
+}
+
+.col-xs-5 {
+    width: 41.66666667%;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.col-xs-5 img {
+    vertical-align: middle;
+}
+
+.controls a.url {
+    color: #1b9fe2;
+}
