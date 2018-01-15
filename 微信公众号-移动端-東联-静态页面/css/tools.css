@@ -5,6 +5,10 @@
 .fr{
     float: right;
 }
+.ib{
+    display: inline-block;
+    vertical-align: top;
+}
 .clearfix:after{
     content: "";
     display: block;

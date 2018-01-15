@@ -1,0 +1,228 @@
+.home {
+  font-size: 0.29333333rem;
+  font-family: 'HiraginoSansGB W3', '微软雅黑';
+}
+.home .sprite-home {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  background: url('../img/home-sprite.png') no-repeat;
+  background-size: 8.78666667rem;
+}
+.home .title-box {
+  padding: 0 0.4rem;
+  height: 0.92rem;
+  border-bottom: 1px solid #d0d1d2;
+}
+.home .title-box .title {
+  font-size: 0.4rem;
+  line-height: 0.92rem;
+  color: #142434;
+  position: relative;
+  left: 0.22666667rem;
+}
+.home .title-box .title::before {
+  content: "";
+  position: absolute;
+  top: 0.33333333rem;
+  left: -0.22666667rem;
+  width: 0.06666667rem;
+  height: 0.30666667rem;
+  background-color: #1b9fe2;
+}
+.home .title-box .more {
+  padding-top: 0.09333333rem;
+  line-height: 0.84rem;
+}
+.home .btn {
+  width: 1.37333333rem;
+  height: 0.44rem;
+  background-color: red;
+  color: #fff;
+  text-align: center;
+  border-radius: 0.08rem;
+  font-size: 0.26666667rem;
+  line-height: 0.42666667rem;
+}
+.home .search {
+  height: 1.02666667rem;
+  background-color: #1b9fe2;
+  border-top: 1px solid #1b9fe2;
+}
+.home .search .search-box {
+  width: 9.2rem;
+  height: 0.69333333rem;
+  background-color: #fff;
+  border-radius: 3px;
+  margin: 0.17333333rem auto 0;
+  font-size: 0.26666667rem;
+  color: #9b9b9b;
+  line-height: 0.69333333rem;
+  text-align: center;
+}
+.home .search .search-box span {
+  display: inline-block;
+  vertical-align: top;
+}
+.home .search .search-box .sprite-home {
+  width: 0.36rem;
+  height: 0;
+  padding-top: 0.36rem;
+  margin: 0.17333333rem 0.34666667rem 0 0;
+}
+.home .banner {
+  height: 3.66666667rem;
+  background: url('../img/test/banner.jpg') no-repeat;
+  background-size: cover;
+}
+.home .news {
+  height: 0.73333333rem;
+  background-color: #f7f8fa;
+}
+.home .news .sprite-home {
+  width: 0.41333333rem;
+  height: 0;
+  padding-top: 0.41333333rem;
+  background-position: -8.37333333rem 0;
+  margin: 0.16rem 0.21333333rem 0 0.4rem;
+}
+.home .news .news-box {
+  height: 0.73333333rem;
+  overflow: hidden;
+}
+.home .news .news-box a {
+  display: block;
+  width: 8rem;
+  height: 0.73333333rem;
+  line-height: 0.73333333rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #1b9fe2;
+}
+.home .btns {
+  padding: 0.37333333rem 0 0 0.62666667rem;
+}
+.home .btns .btns-item {
+  float: left;
+  width: 1.25333333rem;
+  height: 1.6rem;
+  margin: 0 1.28rem 0.17333333rem 0;
+  text-align: center;
+}
+.home .btns .btns-item a {
+  display: block;
+  height: 100%;
+}
+.home .btns .btns-item .sprite-home {
+  width: 0.98666667rem;
+  height: 0;
+  padding-top: 0.98666667rem;
+  color: #4e5f6f;
+  text-align: left;
+  text-indent: -0.09333333rem;
+  overflow: visible;
+  white-space: nowrap;
+  line-height: 0.61333333rem;
+}
+.home .btns .btns-item:nth-of-type(1) .sprite-home {
+  background-position: -0.37333333rem 0;
+}
+.home .btns .btns-item:nth-of-type(2) .sprite-home {
+  background-position: -1.37333333rem 0;
+}
+.home .btns .btns-item:nth-of-type(3) .sprite-home {
+  background-position: -2.37333333rem 0;
+}
+.home .btns .btns-item:nth-of-type(4) .sprite-home {
+  background-position: -3.37333333rem 0;
+}
+.home .btns .btns-item:nth-of-type(5) .sprite-home {
+  background-position: -4.37333333rem 0;
+}
+.home .btns .btns-item:nth-of-type(6) .sprite-home {
+  background-position: -5.37333333rem 0;
+}
+.home .btns .btns-item:nth-of-type(7) .sprite-home {
+  background-position: -6.37333333rem 0;
+}
+.home .btns .btns-item:nth-of-type(8) .sprite-home {
+  background-position: -7.37333333rem 0;
+}
+.home .btns .btns-item:nth-of-type(4n) {
+  margin-right: 0;
+}
+.home .meeting {
+  margin-top: 0.32rem;
+}
+.home .meeting .meeting-box {
+  margin-top: 0.4rem;
+  padding-left: 0.81333333rem;
+  width: 8.68rem;
+  color: #666;
+}
+.home .meeting .meeting-box li {
+  border-bottom: 1px solid #d0d1d2;
+  margin-bottom: 0.17333333rem;
+}
+.home .meeting .meeting-box li a {
+  display: block;
+  height: 1.53333333rem;
+}
+.home .meeting .meeting-box li:nth-last-of-type(1) {
+  border: none;
+}
+.home .meeting .meeting-box li.active .date {
+  background-color: red;
+  color: #fff;
+}
+.home .meeting .meeting-box li.active .meeting-title {
+  color: red;
+}
+.home .meeting .meeting-box img {
+  width: 1.84rem;
+  height: 1.26666667rem;
+  margin: 0 0.42666667rem 0.26666667rem 0;
+}
+.home .meeting .meeting-box .date {
+  width: 1.14666667rem;
+  height: 1.16rem;
+  padding-top: 0.10666667rem;
+  box-sizing: border-box;
+  background-color: #eaebed;
+  border-radius: 3px;
+  margin: 0.05333333rem 0.21333333rem 0 0;
+  text-align: center;
+}
+.home .meeting .meeting-box .date span {
+  display: block;
+}
+.home .meeting .meeting-box .date .days {
+  font-size: 0.34666667rem;
+  line-height: 0.53333333rem;
+}
+.home .meeting .meeting-box .date .time {
+  font-size: 0.24rem;
+  line-height: 0.4rem;
+}
+.home .meeting .meeting-box .meeting-info {
+  margin-top: 0.08rem;
+  width: 5.04rem;
+}
+.home .meeting .meeting-box .meeting-info .meeting-title {
+  display: block;
+  width: 5.04rem;
+  height: 0.57333333rem;
+  font-size: 0.32rem;
+  font-weight: 600;
+  line-height: 0.57333333rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.home .meeting .meeting-box .meeting-info .btn {
+  margin-top: 0.08rem;
+}
+.home .meeting .meeting-box .meeting-info span:nth-of-type(2) {
+  line-height: 0.53333333rem;
+}
