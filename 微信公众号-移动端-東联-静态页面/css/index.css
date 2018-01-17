@@ -1,0 +1,83 @@
+.sprite-index {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  background: url('../img/index-sprite.png') no-repeat;
+  background-size: 3.2rem;
+}
+body {
+  font-size: 0.29333333rem;
+  font-family: 'HiraginoSansGB W3', '微软雅黑';
+}
+.banner {
+  height: 3.66666667rem;
+  background: url('../img/test/banner.jpg') no-repeat;
+  background-size: cover;
+}
+.bottom-btn {
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1.30666667rem;
+  background-color: #fff;
+  border-top: 2px solid #d4d7dd;
+}
+.bottom-btn .b-btns {
+  width: 1.93333333rem;
+  height: 1.30666667rem;
+}
+.bottom-btn .b-btns a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 0.2rem;
+  box-sizing: border-box;
+}
+.bottom-btn .b-btns a span.sprite-index {
+  display: block;
+  width: 0.56rem;
+  height: 0;
+  padding-top: 0.57333333rem;
+  margin: 0 auto 0;
+}
+.bottom-btn .b-btns a .b-btns-title {
+  display: block;
+  text-align: center;
+  font-size: 0.26666667rem;
+  line-height: 0.48rem;
+}
+.bottom-btn li:nth-of-type(2) span.sprite-index {
+  background-position-x: -0.57333333rem;
+}
+.bottom-btn .big-btn {
+  width: 1.86666667rem;
+  height: 1.86666667rem;
+  border: 0.02666667rem solid #d4d7dd;
+  border-radius: 1.13333333rem;
+  margin: -0.33333333rem 0.14666667rem 0;
+  background-color: #fff;
+}
+.bottom-btn .big-btn a {
+  padding-top: 0.53333333rem;
+  display: block;
+}
+.bottom-btn .big-btn .b-btns-title {
+  display: block;
+  text-align: center;
+}
+.bottom-btn .big-btn .sprite-index {
+  width: 0.89333333rem;
+  height: 0;
+  padding-top: 0.57333333rem;
+  display: block;
+  margin: 0 auto;
+  background-position: -2.29333333rem 0;
+}
+.bottom-btn li:nth-of-type(4) span.sprite-index {
+  background-position-x: -1.14666667rem;
+}
+.bottom-btn li:nth-of-type(5) span.sprite-index {
+  background-position-x: -1.72rem;
+}

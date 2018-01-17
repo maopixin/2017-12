@@ -1,6 +1,5 @@
 .home {
-  font-size: 0.29333333rem;
-  font-family: 'HiraginoSansGB W3', '微软雅黑';
+  padding: 1.04rem 0 1.66666667rem 0;
 }
 .home .sprite-home {
   display: inline-block;
@@ -24,7 +23,7 @@
 .home .title-box .title::before {
   content: "";
   position: absolute;
-  top: 0.33333333rem;
+  top: 0.29333333rem;
   left: -0.22666667rem;
   width: 0.06666667rem;
   height: 0.30666667rem;
@@ -44,7 +43,79 @@
   font-size: 0.26666667rem;
   line-height: 0.42666667rem;
 }
+.home .list {
+  padding: 0.45333333rem 0 0 0.42666667rem;
+}
+.home .list .list-item {
+  width: 4.36rem;
+  margin-right: 0.42666667rem;
+  margin-bottom: 0.28rem;
+}
+.home .list .list-item:nth-of-type(2n) {
+  margin-right: 0;
+}
+.home .list .list-item .pic {
+  position: relative;
+}
+.home .list .list-item .pic .pic-title {
+  position: absolute;
+  width: 3.68rem;
+  height: 1.12rem;
+  background-color: rgba(8, 71, 116, 0.5);
+  color: #fff;
+  font-size: 0.32rem;
+  line-height: 0.56rem;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-1.84rem) translateY(-0.56rem);
+}
+.home .list .list-item .pic .num {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 2.04rem;
+  height: 0.52rem;
+  line-height: 0.52rem;
+  text-align: center;
+  font-size: 0.24rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: red;
+}
+.home .list .list-item img {
+  display: block;
+  width: 4.36rem;
+  margin-bottom: 0.10666667rem;
+}
+.home .list .list-item .item-txt {
+  background-color: #f0f1f6;
+  position: relative;
+}
+.home .list .list-item .item-txt .btn {
+  position: absolute;
+  bottom: 0.38666667rem;
+  right: 0.28rem;
+}
+.home .list .list-item .txt {
+  padding: 0.12rem 0 0.29333333rem 0.2rem;
+}
+.home .list .list-item .txt span {
+  display: block;
+  font-size: 0.25333333rem;
+  line-height: 0.4rem;
+}
+.home .list .list-item .txt .txt-title {
+  font-size: 0.33333333rem;
+  font-weight: 600;
+  color: red;
+  line-height: 0.62666667rem;
+}
 .home .search {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 1.02666667rem;
   background-color: #1b9fe2;
   border-top: 1px solid #1b9fe2;
@@ -52,13 +123,13 @@
 .home .search .search-box {
   width: 9.2rem;
   height: 0.69333333rem;
-  background-color: #fff;
   border-radius: 3px;
   margin: 0.17333333rem auto 0;
   font-size: 0.26666667rem;
   color: #9b9b9b;
   line-height: 0.69333333rem;
   text-align: center;
+  background-color: #fff;
 }
 .home .search .search-box span {
   display: inline-block;
@@ -69,11 +140,6 @@
   height: 0;
   padding-top: 0.36rem;
   margin: 0.17333333rem 0.34666667rem 0 0;
-}
-.home .banner {
-  height: 3.66666667rem;
-  background: url('../img/test/banner.jpg') no-repeat;
-  background-size: cover;
 }
 .home .news {
   height: 0.73333333rem;
@@ -225,4 +291,159 @@
 }
 .home .meeting .meeting-box .meeting-info span:nth-of-type(2) {
   line-height: 0.53333333rem;
+}
+.home .taf .taf-box {
+  padding: 0.48rem 0 0.26666667rem 0.4rem;
+}
+.home .taf .taf-box li {
+  width: 4.4rem;
+  margin-right: 0.4rem;
+}
+.home .taf .taf-box li:nth-of-type(2n) {
+  margin-right: 0;
+}
+.home .taf .taf-box li .person {
+  padding: 0.33333333rem 0 0 0.26666667rem;
+  color: #142434;
+  background-color: #f9fcfd;
+  margin-bottom: 0.12rem;
+}
+.home .taf .taf-box li .person-info {
+  width: 2.13333333rem;
+}
+.home .taf .taf-box li .person-info span {
+  display: block;
+}
+.home .taf .taf-box li .person-info .name {
+  font-size: 0.34666667rem;
+  line-height: 0.61333333rem;
+  margin-top: 0.6rem;
+  font-weight: 600;
+}
+.home .taf .taf-box li .person-info .job {
+  font-size: 0.24rem;
+  line-height: 0.53333333rem;
+  height: 0.53333333rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.home .taf .taf-box li .pic {
+  width: 1.76rem;
+  height: 1.76rem;
+  margin-bottom: 0.30666667rem;
+}
+.home .taf .taf-box li .pic .pic {
+  width: 100%;
+  height: 100%;
+}
+.home .taf .taf-box li .person-text {
+  background-color: #f2f3f4;
+}
+.home .taf .taf-box li .person-text p {
+  padding: 0.14666667rem 0.22666667rem 0.04rem 0.2rem;
+  font-size: 0.24rem;
+  line-height: 0.37333333rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.home .taf .taf-box li .person-text .btn {
+  margin-right: 0.25333333rem;
+  margin-bottom: 0.22666667rem;
+}
+.home .bird .pic .pic-title {
+  line-height: 1.12rem !important;
+}
+.home .school .school-box {
+  padding: 0.38666667rem 0 0 0.38666667rem;
+  margin-bottom: 0.4rem;
+}
+.home .school .school-box li {
+  width: 4.41333333rem;
+  margin-right: 0.42666667rem;
+  background-color: #f8f8f9;
+}
+.home .school .school-box li:nth-of-type(2n) {
+  margin: 0;
+}
+.home .school .school-box li img {
+  display: block;
+  width: 2.50666667rem;
+  height: 2.50666667rem;
+  margin: 0.42666667rem auto 0;
+}
+.home .school .school-box li span {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.home .school .school-box li span:nth-of-type(1) {
+  font-size: 0.34666667rem;
+  color: #142434;
+  font-weight: 600;
+  line-height: 0.86666667rem;
+}
+.home .school .school-box li span:nth-of-type(2) {
+  font-size: 0.26666667rem;
+  color: #3c3e3f;
+  line-height: 0.45333333rem;
+}
+.home .school .school-box li span:nth-of-type(3) {
+  width: 1.6rem;
+  height: 0.52rem;
+  margin-top: 0.30666667rem;
+  margin-bottom: 0.42666667rem;
+  font-size: 0.29333333rem;
+  color: #fff;
+  line-height: 0.52rem;
+  background-color: red;
+  border-radius: 0.13333333rem;
+}
+.home .teacher .teacher-box {
+  padding: 0.49333333rem 0 0 0.38666667rem;
+}
+.home .teacher .teacher-box li {
+  margin-bottom: 0.45333333rem;
+}
+.home .teacher .teacher-box img {
+  width: 2.88rem;
+  height: 2.02666667rem;
+}
+.home .teacher .teacher-box .l-txt {
+  width: 5.84rem;
+  margin-left: 0.49333333rem;
+}
+.home .teacher .teacher-box .l-txt .naj {
+  margin-bottom: 0.08rem;
+}
+.home .teacher .teacher-box .l-txt .naj span {
+  display: block;
+  font-size: 0.30666667rem;
+  line-height: 0.53333333rem;
+  color: #3c3e3f;
+}
+.home .teacher .teacher-box .l-txt .look-btn {
+  width: 0.88rem;
+  height: 0.88rem;
+  border: 1px solid #d0d1d2;
+  background-color: #ebebeb;
+  border-radius: 0.08rem;
+  color: #666;
+  text-align: center;
+  margin-top: 0.04rem;
+  font-size: 0.24rem;
+  line-height: 0.29333333rem;
+  padding: 0.14666667rem;
+  box-sizing: border-box;
+}
+.home .teacher .teacher-box .l-txt .info {
+  font-size: 0.26666667rem;
+  line-height: 0.46666667rem;
+  color: #666;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }

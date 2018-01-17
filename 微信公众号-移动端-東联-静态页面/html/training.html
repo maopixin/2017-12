@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>培训计划</title>
+    <!-- 一比一像素还原 -->
+    <script src="./../js/dpr.js"></script>
+    <!-- 初始化样式 -->
+    <link rel="stylesheet" href="./../css/reset.css">
+    <!-- 工具类 -->
+    <link rel="stylesheet" href="./../css/tools.css">
+    <!-- 全局样式 -->
+    <link rel="stylesheet" href="./../css/index.css">
+    <!-- 当前页面的css -->
+    <link rel="stylesheet" href="./../css/training.css">
+</head>
+
+<body class="training">
+    <!-- banner -->
+    <div class="banner"></div>
+    <!-- 培训对象 -->
+    <div class="training-box">
+        <dl class="training-person clearfix">
+            <dt class="person-title fl">
+                培训对象：
+            </dt>
+            <dd class="active">
+                教师
+            </dd>
+            <dd>
+                班主任
+            </dd>
+            <dd>
+                校长
+            </dd>
+        </dl>
+        <ul class="training-list">
+            <li class="training-item">
+                <div class="date fl">
+                    <span class="fl month">
+                        <span>
+                            Date
+                        </span>
+                        <span>
+                            01
+                        </span>
+                    </span>
+                    <span class="fl day">
+                        5
+                    </span>
+                </div>
+                <div class="training-info fl">
+                    <span class="training-name">
+                        第九届中国德育与班主任大会第九届中国德育与班主任大会
+                    </span>
+                    <span class="training-info">
+                        <i class="fl">已报名：100人</i>
+                        <span class="fl">地点：北京</span>
+                        <a href="javascript:;" class="fr">立即报名</a>
+                    </span>
+                </div>
+            </li>
+            <li class="training-item">
+                <div class="date fl">
+                    <span class="fl month">
+                        <span>
+                            Date
+                        </span>
+                        <span>
+                            01
+                        </span>
+                    </span>
+                    <span class="fl day">
+                        5
+                    </span>
+                </div>
+                <div class="training-info fl">
+                    <span class="training-name">
+                        第九届中国德育与班主任大会第九届中国德育与班主任大会
+                    </span>
+                    <span class="training-info">
+                        <i class="fl">已报名：100人</i>
+                        <span class="fl">地点：北京</span>
+                        <a href="javascript:;" class="fr">立即报名</a>
+                    </span>
+                </div>
+            </li>
+            <li class="training-item">
+                <div class="date fl">
+                    <span class="fl month">
+                        <span>
+                            Date
+                        </span>
+                        <span>
+                            01
+                        </span>
+                    </span>
+                    <span class="fl day">
+                        5
+                    </span>
+                </div>
+                <div class="training-info fl">
+                    <span class="training-name">
+                        第九届中国德育与班主任大会第九届中国德育与班主任大会
+                    </span>
+                    <span class="training-info">
+                        <i class="fl">已报名：100人</i>
+                        <span class="fl">地点：北京</span>
+                        <a href="javascript:;" class="fr">立即报名</a>
+                    </span>
+                </div>
+            </li>
+            <li class="training-item">
+                <div class="date fl">
+                    <span class="fl month">
+                        <span>
+                            Date
+                        </span>
+                        <span>
+                            01
+                        </span>
+                    </span>
+                    <span class="fl day">
+                        5
+                    </span>
+                </div>
+                <div class="training-info fl">
+                    <span class="training-name">
+                        第九届中国德育与班主任大会第九届中国德育与班主任大会
+                    </span>
+                    <span class="training-info">
+                        <i class="fl">已报名：100人</i>
+                        <span class="fl">地点：北京</span>
+                        <a href="javascript:;" class="fr">立即报名</a>
+                    </span>
+                </div>
+            </li>
+            <li class="training-item">
+                <div class="date fl">
+                    <span class="fl month">
+                        <span>
+                            Date
+                        </span>
+                        <span>
+                            01
+                        </span>
+                    </span>
+                    <span class="fl day">
+                        5
+                    </span>
+                </div>
+                <div class="training-info fl">
+                    <span class="training-name">
+                        第九届中国德育与班主任大会第九届中国德育与班主任大会
+                    </span>
+                    <span class="training-info">
+                        <i class="fl">已报名：100人</i>
+                        <span class="fl">地点：北京</span>
+                        <a href="javascript:;" class="fr">立即报名</a>
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script>
+        // 切换
+        for (let i = 0; i < document.querySelectorAll('.training-person dd').length; i++) {
+            document.querySelectorAll('.training-person dd')[i].ontouchend = () => {
+                for (let s = 0; s < document.querySelectorAll('.training-person dd').length; s++) {
+                    document.querySelectorAll('.training-person dd')[s].className = "";
+                };
+                
+                document.querySelectorAll('.training-person dd')[i].className = "active";
+            }
+        }
+    </script>
+</body>
+
+</html>

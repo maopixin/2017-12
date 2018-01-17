@@ -6,11 +6,15 @@
     tools.css       工具类css
     home.css        主页css
     my.css          我的css
+    training.css    培训计划css
+    cgda.css		评选大赛css
 
 
  -html  页面文件夹
     home.html       主页
     my.html         我的
+    training.html   培训计划
+    CGDA-b.html  	评选大赛-b
 
 
  -img   图片文件夹

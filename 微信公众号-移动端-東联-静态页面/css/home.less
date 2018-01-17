@@ -1,8 +1,7 @@
 //命名空间 body=home
 @rem:75rem;
 .home{
-    font-size: 22/@rem;
-    font-family: 'HiraginoSansGB W3','微软雅黑';
+    padding: 78/@rem 0 125/@rem 0;
     // 雪碧图
     .sprite-home{
         display: inline-block;
@@ -25,7 +24,7 @@
             &::before{
                 content: "";
                 position: absolute;
-                top: 25/@rem;
+                top: 22/@rem;
                 left: -17/@rem;
                 width: 5/@rem;
                 height: 23/@rem;
@@ -48,8 +47,81 @@
         font-size: 20/@rem;
         line-height: 32/@rem;
     }
+    // 列表
+    .list{
+        padding: 34/@rem 0 0 32/@rem;
+        .list-item{
+            width: 327/@rem;
+            margin-right: 32/@rem;
+            margin-bottom: 21/@rem;
+            &:nth-of-type(2n){
+                margin-right: 0;
+            }
+            .pic{
+                position: relative;
+                .pic-title{
+                    position: absolute;
+                    width: 276/@rem;
+                    height: 84/@rem;
+                    background-color: rgba(8, 71, 116, 0.5);
+                    color: #fff;
+                    font-size: 24/@rem;
+                    line-height: 42/@rem;
+                    text-align: center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translateX(-138/@rem) translateY(-42/@rem);
+                }
+                .num{
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    width: 153/@rem;
+                    height: 39/@rem;
+                    line-height: 39/@rem;
+                    text-align: center;
+                    font-size: 18/@rem;
+                    background-color: rgba(255, 255, 255, 0.8);
+                    color: red;
+                }
+            }
+            img{
+                display: block;
+                width: 327/@rem;
+                margin-bottom: 8/@rem;
+            }
+            .item-txt{
+                background-color: #f0f1f6;
+                position: relative;
+                .btn{
+                    position: absolute;
+                    bottom: 29/@rem;
+                    right: 21/@rem;
+                }
+            }
+            .txt{
+                padding:9/@rem 0 22/@rem 15/@rem;
+                span{
+                    display: block;
+                    font-size: 19/@rem;
+                    line-height: 30/@rem;
+                }
+                .txt-title{
+                    font-size: 25/@rem;
+                    font-weight: 600;
+                    color: red;
+                    line-height: 47/@rem;
+                }
+            }
+        }
+    }
     // 搜索
     .search{
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        right: 0;
         height: 77/@rem;
         background-color: #1b9fe2;
         border-top: 1px solid #1b9fe2;
@@ -63,6 +135,7 @@
             color: #9b9b9b;
             line-height: 52/@rem;
             text-align: center;
+            background-color: #fff;
             span{
                 display: inline-block;
                 vertical-align: top;
@@ -75,12 +148,7 @@
             }
         }
     }
-    // 轮播图
-    .banner{
-        height: 275/@rem;
-        background: url('./../img/test/banner.jpg') no-repeat;
-        background-size: cover;
-    }
+    
     // 新闻列表
     .news{
         height: 55/@rem;
@@ -238,11 +306,179 @@
         }
     }
     // 名师名家
+    .taf{
+       .taf-box{
+           padding: 36/@rem 0 20/@rem 30/@rem;
+           li{
+               width: 330/@rem;
+               margin-right: 30/@rem;
+               &:nth-of-type(2n){
+                   margin-right: 0;
+               }
+               .person{
+                   padding: 25/@rem 0 0 20/@rem;
+                   color: #142434;
+                   background-color: #f9fcfd;
+                   margin-bottom: 9/@rem;
+               }
+               .person-info{
+                   width: 160/@rem;
+                   span{
+                       display: block;
+                   }
+                   .name{
+                       font-size: 26/@rem;
+                       line-height: 46/@rem;
+                       margin-top: 45/@rem;
+                       font-weight: 600;
+                   }
+                   .job{
+                       font-size: 18/@rem;
+                       line-height: 40/@rem;
+                       height:40/@rem;
+                       overflow: hidden;
+                       text-overflow: ellipsis;
+                       white-space: nowrap;
+                   }
+               }
+               .pic{
+                   width: 132/@rem;
+                   height: 132/@rem;
+                   margin-bottom: 23/@rem;
+                   .pic{
+                       width: 100%;
+                       height: 100%;
+                   }
+               }
+               .person-text{
+                   background-color: #f2f3f4;
+                   p{
+                       padding: 11/@rem 17/@rem 3/@rem 15/@rem;
+                       font-size: 18/@rem;
+                       line-height: 28/@rem;
+                       display: -webkit-box;
+                       -webkit-box-orient: vertical;
+                       -webkit-line-clamp: 3;
+                       overflow: hidden;
+                   }
+                   .btn{
+                       margin-right: 19/@rem;
+                       margin-bottom: 17/@rem;
+                   }
+               }
+           }
+       } 
+    }
     // 24小时课堂
+    
     // 品牌会议
+
     // 一鸣惊人
+    .bird{
+        .pic{
+            .pic-title{
+                line-height: 84/@rem !important;
+            }
+        }
+    }
     // 联盟校
+    .school{
+        .school-box{
+            padding: 29/@rem 0 0 29/@rem;
+            margin-bottom: 30/@rem;
+            li{
+                width: 331/@rem;
+                margin-right: 32/@rem;
+                background-color: #f8f8f9;
+                &:nth-of-type(2n){
+                    margin: 0;
+                }
+                img{
+                    display: block;
+                    width: 188/@rem;
+                    height: 188/@rem;
+                    margin: 32/@rem auto 0;
+                }
+                span{
+                    display: block;
+                    margin: 0 auto;
+                    text-align: center;
+                    &:nth-of-type(1){
+                        font-size: 26/@rem;
+                        color: #142434;
+                        font-weight: 600;
+                        line-height: 65/@rem;
+                    }
+                    &:nth-of-type(2){
+                        font-size: 20/@rem;
+                        color: #3c3e3f;
+                        line-height: 34/@rem;
+                    }
+                    &:nth-of-type(3){
+                        width: 120/@rem;
+                        height: 39/@rem;
+                        margin-top: 23/@rem;
+                        margin-bottom: 32/@rem;
+                        font-size: 22/@rem;
+                        color: #fff;
+                        line-height: 39/@rem;
+                        background-color: red;
+                        border-radius: 10/@rem;
+                    }
+                }
+
+            }
+        }
+    }
     // 名师工作室
-    // 底部工具栏
+    .teacher{
+        .teacher-box{
+            padding: 37/@rem 0 0 29/@rem;
+            li{
+                margin-bottom: 34/@rem;
+            }
+            img{
+                width: 216/@rem;
+                height: 152/@rem;
+            }
+            .l-txt{
+                width: 438/@rem;
+                margin-left: 37/@rem;
+                .naj{
+                    margin-bottom: 6/@rem;
+                    span{
+                        display: block;
+                        font-size: 23/@rem;
+                        line-height: 40/@rem;
+                        color: #3c3e3f;
+                    }
+                }
+                .look-btn{
+                    width: 66/@rem;
+                    height: 66/@rem;
+                    border: 1px solid #d0d1d2;
+                    background-color: #ebebeb;
+                    border-radius: 6/@rem;
+                    color: #666;
+                    text-align: center;
+                    margin-top: 3/@rem;
+                    font-size: 18/@rem;
+                    line-height: 22/@rem;
+                    padding: 11/@rem;
+                    box-sizing: border-box;
+                }
+                .info{
+                    font-size: 20/@rem;
+                    line-height: 35/@rem;
+                    color: #666;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+    
 }
 

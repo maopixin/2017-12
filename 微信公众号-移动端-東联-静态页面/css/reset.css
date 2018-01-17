@@ -2,6 +2,9 @@
 body,h1,h2,h3,h4,h5,h6,dl,dd,p{
     margin: 0;
 }
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
+	-webkit-text-size-adjust:100%;
+}
 em{
     font-style: normal;
 }

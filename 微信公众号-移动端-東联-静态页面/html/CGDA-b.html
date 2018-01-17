@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- 一比一像素还原 -->
+    <script src="./../js/dpr.js"></script>
+    <!-- 初始化样式 -->
+    <link rel="stylesheet" href="./../css/reset.css">
+    <!-- 工具类 -->
+    <link rel="stylesheet" href="./../css/tools.css">
+    <!-- 全局样式 -->
+    <link rel="stylesheet" href="./../css/index.css">
+    <!-- 当前页面的css -->
+    <link rel="stylesheet" href="./../css/cgda.css">
+</head>
+
+<body class="cgda">
+    <header class="cgda-head">
+        <!-- 广告 -->
+        <img src="./../img/AD.jpg" class="adr">
+        <!-- 链接选择 -->
+        <ul class="url-check clearfix">
+            <li class="active">
+                <a href="">
+                    首页
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    参赛选手
+                </a>
+            </li>
+            <li>
+                <a href="">评委团队</a>
+            </li>
+            <li>
+                <a href="">联系我们</a>
+            </li>
+            <a class="apply" href="javascript:;">
+                立即报名
+            </a>
+        </ul>
+        <!-- 地区选择 -->
+        <dl class="place-check clearfix">
+            <dt class="fl">地区:</dt>
+            <dd>全部</dd>
+            <dd class="active">北京</dd>
+            <dd>天津</dd>
+            <dd>深圳</dd>
+            <dd>上海</dd>
+            <dd>更多∨</dd>
+        </dl>
+        <!-- 搜索 -->
+        <div class="cgda-search clearfix">
+            <input class="fl" type="text" placeholder="教师名字">
+            <div class="fl">搜索</div>
+        </div>
+    </header>
+        <div class="content">
+            <div class="cgda-title clearfix">
+                <span class="bgc-red">
+                    综合排序
+                </span>
+                <span class="tickit">
+                    <span>
+                        票数
+                    </span>
+                    <span class="top sprite-tickit">票数最高</span>
+                    <span class="bottom sprite-tickit">票数最低</span>
+                </span>
+                <div class="share-box fr">
+                    <span class="sprite-share share">
+                        <span class="jump">
+                            <span class="sprite-share">
+
+                            </span>
+                        </span>
+                        <span class="un"></span>
+
+                    </span>
+                </div>
+            </div>
+            <ul class="player-list clearfix">
+                <li class="player-item fl">
+                    <img src="./../img/test/test8.jpg">
+                    <span>赵老师</span>
+                    <span>主题：放飞梦想</span>
+                    <span>石家庄小学 </span>
+                    <div class="tickit-num clearfix">
+                    	<em>票数 89</em>
+                    	<em class="tickit-btn">投票</em>
+                    </div>
+                </li>
+                <li class="player-item fl">
+                    <img src="./../img/test/test8.jpg">
+                    <span>赵老师</span>
+                    <span>主题：放飞梦想</span>
+                    <span>石家庄小学 </span>
+                    <div class="tickit-num clearfix">
+                    	<em>票数 89</em>
+                    	<em class="tickit-btn">投票</em>
+                    </div>
+                </li>
+                <li class="player-item fl">
+                    <img src="./../img/test/test8.jpg">
+                    <span>赵老师</span>
+                    <span>主题：放飞梦想</span>
+                    <span>石家庄小学 </span>
+                    <div class="tickit-num clearfix">
+                    	<em>票数 89</em>
+                    	<em class="tickit-btn">投票</em>
+                    </div>
+                </li>
+                <li class="player-item fl">
+                    <img src="./../img/test/test8.jpg">
+                    <span>赵老师</span>
+                    <span>主题：放飞梦想</span>
+                    <span>石家庄小学 </span>
+                    <div class="tickit-num clearfix">
+                    	<em>票数 89</em>
+                    	<em class="tickit-btn">投票</em>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    <script>
+        // 切换
+        for (let i = 0; i < document.querySelectorAll('.palce-check li').length; i++) {
+            document.querySelectorAll('.palce-check li')[i].ontouchend = () => {
+                for (let s = 0; s < document.querySelectorAll('.palce-check li').length; s++) {
+                    document.querySelectorAll('.palce-check li')[s].className = "";
+                };
+
+                document.querySelectorAll('.palce-check li')[i].className = "active";
+            }
+        }
+    </script>
+</body>
+
+</html>

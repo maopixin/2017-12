@@ -1,0 +1,88 @@
+.training .training-box .training-person {
+  border: 1px solid #f1f1f1;
+  border-left: none;
+  border-right: none;
+  line-height: 0.92rem;
+  background-color: #fbfafa;
+}
+.training .training-box .training-person .person-title {
+  padding-left: 0.54666667rem;
+  color: #848282;
+  font-size: 0.37333333rem;
+}
+.training .training-box .training-person dd {
+  float: left;
+  width: 1.6rem;
+  text-align: center;
+}
+.training .training-box .training-person dd.active {
+  color: #1b9fe2;
+}
+.training .training-box .training-list {
+  padding: 0.41333333rem 0 0 0.56rem;
+}
+.training .training-box .training-list li {
+  padding-top: 0.34666667rem;
+  height: 1.45333333rem;
+  border-bottom: 1px solid #898989;
+  width: 8.76rem;
+}
+.training .training-box .training-list .date {
+  width: 2.05333333rem;
+  margin-right: 0.32rem;
+  font-family: 'MFLangQian_Noncommercial Regular', '微软雅黑';
+}
+.training .training-box .training-list .date .month {
+  width: 0.88rem;
+  text-align: right;
+  margin-right: 0.12rem;
+  font-size: 0.32rem;
+  color: #4c4b4b;
+  line-height: 0.58666667rem;
+}
+.training .training-box .training-list .date .month span {
+  display: block;
+  font-weight: 600;
+}
+.training .training-box .training-list .date .day {
+  font-weight: 700;
+  width: 1.05333333rem;
+  height: 0.98666667rem;
+  background-color: #b9babb;
+  border-radius: 0.08rem;
+  text-align: center;
+  font-size: 0.74666667rem;
+  color: #fff;
+  margin-top: 0.09333333rem;
+  line-height: 0.98666667rem;
+}
+.training .training-box .training-list .training-info {
+  width: 6.33333333rem;
+}
+.training .training-box .training-list .training-info .training-name {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.29333333rem;
+  line-height: 0.53333333rem;
+  font-weight: bold;
+  color: #636364;
+}
+.training .training-box .training-list .training-info .training-info {
+  line-height: 0.61333333rem;
+}
+.training .training-box .training-list .training-info .training-info i {
+  margin-right: 0.48rem;
+  color: red;
+}
+.training .training-box .training-list .training-info .training-info a {
+  width: 1.21333333rem;
+  height: 0.49333333rem;
+  border: 1px solid #1b9fe2;
+  font-size: 0.24rem;
+  line-height: 0.52rem;
+  color: #1b9fe2;
+  text-align: center;
+  margin-top: 0.2rem;
+}
