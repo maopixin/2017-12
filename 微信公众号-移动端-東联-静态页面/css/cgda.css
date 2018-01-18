@@ -580,3 +580,119 @@
 .cgda .content .two-d img {
   width: 2.93333333rem;
 }
+.cgda .video-play-head {
+  padding-left: 0.38666667rem;
+  height: 0.93333333rem;
+  background-color: #fdfcfc;
+  line-height: 0.93333333rem;
+  color: #939495;
+  border-bottom: 1px solid #f2f2f2;
+}
+.cgda .video-play-head .sprite-share {
+  width: 0.42666667rem;
+  height: 0rem;
+  padding-top: 0.42666667rem;
+  background-position: -1.97333333rem -0.93333333rem;
+  margin-top: 0.25333333rem;
+}
+.cgda .video-play-head .video-title {
+  margin-left: 0.34666667rem;
+  font-weight: 600;
+  font-size: 0.32rem;
+  color: #717374;
+}
+.cgda .video-box {
+  padding: 0.36rem 0 0.44rem 0.38666667rem;
+}
+.cgda .video-box video {
+  width: 9.2rem;
+  height: 4.90666667rem;
+}
+.cgda .player-info-box {
+  padding: 0 0.4rem;
+}
+.cgda .player-info-box .pic {
+  margin-right: 0.26666667rem;
+}
+.cgda .player-info-box .pic img {
+  display: block;
+  width: 1.96rem;
+  height: 1.96rem;
+  border-radius: 1rem;
+}
+.cgda .player-info-box .txt {
+  width: 6.97333333rem;
+}
+.cgda .player-info-box .txt .info .fl span {
+  display: block;
+}
+.cgda .player-info-box .txt .info .fl span:nth-of-type(1) {
+  font-size: 0.34666667rem;
+  line-height: 0.53333333rem;
+}
+.cgda .player-info-box .txt .info .fl span:nth-of-type(2) {
+  font-size: 0.29333333rem;
+  line-height: 0.53333333rem;
+  color: #726b6a;
+}
+.cgda .player-info-box .txt .info .fr {
+  width: 2.13333333rem;
+  font-size: 0.37333333rem;
+  line-height: 0.86666667rem;
+  text-align: center;
+}
+.cgda .player-info-box .fn-btn {
+  padding-top: 0.08rem;
+}
+.cgda .player-info-box .fn-btn .sprite-share {
+  width: 0.4rem;
+  height: 0;
+  padding-top: 0.4rem;
+  margin-top: 0.22666667rem;
+  background-position: -2.41333333rem -0.93333333rem;
+}
+.cgda .player-info-box .fn-btn span:nth-of-type(2) .sprite-share {
+  background-position-x: -2.82666667rem;
+}
+.cgda .player-info-box .fn-btn span:nth-of-type(3) .sprite-share {
+  background-position-x: -3.24rem;
+}
+.cgda .player-info-box .fn-btn span:nth-of-type(4) .sprite-share {
+  background-position: -3.22666667rem -1.36rem;
+}
+.cgda .player-info-box .fn-btn .tell {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0.24rem;
+  line-height: 0.4rem;
+  color: #626161;
+  margin-top: 0.22666667rem;
+  text-indent: 0.08rem;
+  padding-right: 0.21333333rem;
+}
+.cgda .player-info-box .fn-btn .add-tickit {
+  width: 1.88rem;
+  height: 0.69333333rem;
+  background-color: red;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 0.69333333rem;
+  border-radius: 0.34666667rem;
+  font-size: 0.34666667rem;
+}
+.cgda .player-info-txts {
+  width: 9.12rem;
+  height: 3.89333333rem;
+  margin: 0.53333333rem auto 0;
+  border: 3px solid #edefef;
+  background-color: #f7f7f6;
+  box-sizing: border-box;
+  padding: 0.21333333rem;
+  font-size: 0.26666667rem;
+  line-height: 0.45333333rem;
+  color: #000;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 8;
+  overflow: hidden;
+}

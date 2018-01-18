@@ -593,4 +593,127 @@
             }
         }
     }
+    //作品页
+    .video-play-head{
+        padding-left: 29/@rem;
+        height: 70/@rem;
+        background-color: #fdfcfc;
+        line-height: 70/@rem;
+        color: #939495;
+        border-bottom: 1px solid #f2f2f2;
+        .sprite-share{
+            width:32/@rem;
+            height:0/@rem;
+            padding-top: 32/@rem;
+            background-position: -148/@rem -70/@rem;
+            margin-top: 19/@rem;
+        }
+        .video-title{
+            margin-left: 26/@rem;
+            font-weight: 600;
+            font-size: 24/@rem;
+            color: #717374;
+        }
+    }
+    //视频
+    .video-box{
+        padding: 27/@rem 0 33/@rem 29/@rem;
+        video{
+            width: 690/@rem;
+            height: 368/@rem;
+        }
+    }
+    //参赛选手介绍
+    .player-info-box{
+        padding: 0 30/@rem;
+        .pic{
+            margin-right: 20/@rem;
+            img{
+                display: block;
+                width: 147/@rem;
+                height: 147/@rem;
+                border-radius: 75/@rem;
+            }
+        }
+        .txt{
+            width: 523/@rem;
+            .info{
+                .fl{
+                    span{
+                        display: block;
+                        &:nth-of-type(1){
+                            font-size: 26/@rem;
+                            line-height: 40/@rem;
+                        }
+                        &:nth-of-type(2){
+                            font-size: 22/@rem;
+                            line-height: 40/@rem;
+                            color: #726b6a;
+                        }
+                    }
+                }
+                .fr{
+                    width: 160/@rem;
+                    font-size: 28/@rem;
+                    line-height: 65/@rem;
+                    text-align: center;
+                }
+            }
+        }
+        .fn-btn{
+            padding-top: 6/@rem;
+            .sprite-share{
+                width: 30/@rem;
+                height: 0;
+                padding-top: 30/@rem;
+                margin-top: 17/@rem;
+                background-position: -181/@rem -70/@rem;
+            }
+            span:nth-of-type(2) .sprite-share{
+                background-position-x: -212/@rem;
+            }
+            span:nth-of-type(3) .sprite-share{
+                background-position-x: -243/@rem;
+            }
+            span:nth-of-type(4) .sprite-share{
+                background-position: -242/@rem -102/@rem;
+            }
+            .tell{
+                display: inline-block;
+                vertical-align: top;
+                font-size: 18/@rem;
+                line-height: 30/@rem;
+                color: #626161;
+                margin-top: 17/@rem;
+                text-indent: 6/@rem;
+                padding-right: 16/@rem;
+            }
+            .add-tickit{
+                width: 141/@rem;
+                height: 52/@rem;
+                background-color: red;
+                color: #FFFFFF;
+                text-align: center;
+                line-height: 52/@rem;
+                border-radius: 26/@rem;
+                font-size: 26/@rem;
+            }
+        }
+    }
+    .player-info-txts{
+        width:684/@rem;
+        height: 292/@rem;
+        margin: 40/@rem auto 0;
+        border: 3px solid #edefef;
+        background-color: #f7f7f6;
+        box-sizing: border-box;
+        padding: 16/@rem;
+        font-size: 20/@rem;
+        line-height: 34/@rem;
+        color: #000;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 8;
+        overflow: hidden;
+    }
 }

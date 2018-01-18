@@ -1,0 +1,7 @@
+.sprite-form {
+  display: inline-block;
+  height: 0;
+  overflow: hidden;
+  background: url(../img/form-sprite.png) no-repeat;
+  background-size: 4.44rem;
+}
