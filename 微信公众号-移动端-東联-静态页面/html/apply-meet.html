@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>确认报名表</title>
+    <!-- 一比一像素还原 -->
+    <script src="./../js/dpr.js"></script>
+    <!-- 初始化样式 -->
+    <link rel="stylesheet" href="./../css/reset.css">
+    <!-- 工具类 -->
+    <link rel="stylesheet" href="./../css/tools.css">
+    <!-- 全局样式 -->
+    <link rel="stylesheet" href="./../css/index.css">
+    <!-- 当前页面的css -->
+    <link rel="stylesheet" href="./../css/form.css">
+</head>
+<body class="form">
+    <h2 class="form-title">- 参会信息 -</h2>
+    <div class="form-content">
+    	<div class="vip-num">
+    		<span>有效期内会员卡数量</span>
+    		<span id="now-num">20</span>
+    	</div>
+    	<div class="sex-num">
+    		<laber class="input-title inline-block">
+    			代表性质
+    		</laber>
+    		<label class="label inline-block">会员</label>
+    		<input class="inline-block center" type="number" placeholder="人数"/>
+    		<label class="label inline-block">非会员</label>
+    		<input class="inline-block center" type="number" placeholder="人数"/>
+    	</div>
+    	<div>
+    		<label class="input-title block">参会人员</label>
+    		<dl class="meet-person">
+    			<dt class="clearfix">
+    				<span class="name">姓名</span>
+    				<span class="tel">手机号码</span>
+    				<span class="email">邮箱</span>
+    				<span class="type">性质</span>
+    				<span class="change">操作</span>
+    			</dt>
+    			<dl>
+    				<span class="name">某某某某</span>
+    				<span class="tel">18364076997</span>
+    				<span class="email">183640769977777@163.com</span>
+    				<span class="type">会员</span>
+    				<span class="change">
+    					<span class="change-btn">
+    						编辑
+    					</span>
+    				</span>
+    			</dl>
+    			<dl>
+    				<span class="name">某某某某某</span>
+    				<span class="tel">18364076997</span>
+    				<span class="email">18364076997@163.com</span>
+    				<span class="type">非会员</span>
+    				<span class="change">
+    					<span class="change-btn">
+    						编辑
+    					</span>
+    				</span>
+    			</dl>
+    			<dl class="add-person">
+    				添加人员
+    			</dl>
+    		</dl>
+    	</div>
+    	<div class="invoice">
+    		<label for="" class="input-title block">
+    			发票情况
+    		</label>
+    		<div class="clearfix">
+    			<label class="l-o">抬头</label>
+    			<input class="i-o" type="text" placeholder="必填"/>
+    		</div>
+    		<div class="clearfix">
+    			<label class="l-o">纳税人识别号</label>
+    			<input class="i-o" type="number" placeholder="纳税人识别号或统一社会信用码（15位或18位）"/>
+    		</div>
+    		<div class="clearfix">
+    			<label  class="l-o" for="">培训费</label>
+    			<input class="i-t" type="number" />
+    			<label class="l-t" for="">备注</label>
+    			<input  class="i-th" type="text" />
+    		</div>
+    		<div class="clearfix">
+    			<label  class="l-o" for="">住宿费</label>
+    			<input class="i-t" type="number" />
+    			<label class="l-t" for="">备注</label>
+    			<input  class="i-th" type="text" />
+    		</div>
+    		<div class="clearfix">
+    			<label  class="l-o" for="">餐费</label>
+    			<input class="i-t" type="number" />
+    			<label class="l-t" for="">备注</label>
+    			<input  class="i-th" type="text" />
+    		</div>
+    		<div class="clearfix">
+    			<label  class="l-o" for="">乘车费</label>
+    			<input class="i-t" type="number" />
+    			<label class="l-t" for="">备注</label>
+    			<input  class="i-th" type="text" />
+    		</div>
+    		<div class="clearfix">
+    			<label class="l-o">总额</label>
+    			<input class="i-o" type="number" placeholder="必填"/>
+    		</div>
+    	</div>
+    	<div class="submit block center">
+    		提交
+    	</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+.talks .sprite-talks {
+  display: inline-block;
+  vertical-align: top;
+  background: url(../img/takls-sprite.png) no-repeat;
+  background-size: 3.33333333rem;
+  width: 1.04rem;
+  height: 0;
+  padding-top: 0.97333333rem;
+  overflow: hidden;
+  margin: 0.16rem 0.2rem 0 0;
+}
+.talks .talks-list {
+  margin-top: 0.26666667rem;
+  border-top: 1px solid #eeeeee;
+}
+.talks .talks-list li {
+  border-bottom: 1px solid #eeeeee;
+}
+.talks .talks-list li a {
+  display: block;
+  padding: 0.22666667rem 0 0.04rem 0.4rem;
+  height: 2.13333333rem;
+}
+.talks .talks-list li .discuss {
+  background-position: 0 0;
+}
+.talks .talks-list li .question {
+  background-position: -1.09333333rem 0;
+}
+.talks .talks-list li .topic {
+  background-position: -2.17333333rem 0;
+}
+.talks .talks-list li .right-txt {
+  display: inline-block;
+  width: 7.86666667rem;
+}
+.talks .talks-list li .right-txt span {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #636364;
+}
+.talks .talks-list li .right-txt .talks-title {
+  font-size: 0.29333333rem;
+  line-height: 0.64rem;
+  color: #636364;
+}
+.talks .talks-list li .right-txt .talks-return {
+  font-size: 0.26666667rem;
+  line-height: 0.61333333rem;
+}
+.talks .talks-list li .right-txt .talks-type {
+  font-size: 0.24rem;
+  line-height: 0.88rem;
+  color: #1b9fe2;
+}

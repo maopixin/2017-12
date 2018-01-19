@@ -9,8 +9,398 @@
 }
 
 .form{
+    //标题
+    font-size: 0;
+    -webkit-text-size-adjust:none;
     .form-title{
+        font-size: 26/@rem;
+        color: #474545;
+        margin-top: 32/@rem;
+        text-align: center;
+        line-height: 70/@rem;
+        background-color: #f0f3f5;
+    }
+    .form-content{
+        padding:0 30/@rem;
+    }
+    //input标题
+    .input-title{
+        font-size: 24/@rem;
+        line-height: 62/@rem;
+        margin-top: 15/@rem;
+    }
+    //input 预设
+    input{
+        background-color: #faf6f6;
+        height: 51/@rem;
+        border: 1px solid #a39c9e;
+        border-bottom: none;
+        border-right: none;
+        font-size: 20/@rem;
+        line-height: 51/@rem;
+        box-shadow: 1px 1px 3px rgba(163,156,158,0.8) inset;
+    }
+    .block{
+        display: block;
+    }
+    .inline-block{
+        display: inline-block;
+    }
+    .center{
+        text-indent: 0 !important;
+        text-align: center;
+    }
+    .indent{
+        text-indent: 2em;
+    }
+    .width{
+        width: 689/@rem;
+    }
+    .margin{
+        margin-right: 30/@rem;
+    }
+    .tip{
+        font-size: 20/@rem;
+        line-height: 62/@rem;
+        color: #858282;
+    }
+    .label{
+        width: 92/@rem;
+        text-indent: 18/@rem;
+        font-size: 20/@rem;
+        line-height: 51/@rem;
+    }
+    .check-one{
+        vertical-align: top;
+        margin-top: 17/@rem;
+        width: 23/@rem;
+        height: 18/@rem;
+        background-position: -140/@rem -49/@rem;
+        border: 1px solid #a39c9e;
+        border-bottom: none;
+        border-right: none;
+        background-color: #faf6f6;
+        margin-right: 10/@rem;
+        box-shadow: 1px 1px 3px rgba(163,156,158,0.8) inset;
+    }
+    .check-info{
+        font-size: 20/@rem;
+        margin-right: 10/@rem;
+    }
+    .get-mes{
+        width: 170/@rem;
+        height: 48/@rem;
+        border: 2px solid #e7e6e6;
+        background-color: #f9f7f7;
+        vertical-align: top;
+        font-size: 20/@rem;
+        line-height: 48/@rem;
+        text-align: center;
+        margin-left: 65/@rem;
+        margin-right: 15/@rem;
+    }
+    .mes{
+        width: 133/@rem;
+        height: 44/@rem;
+        margin-top: 4/@rem;
+    }
+    .enter{
+        width: 43/@rem;
+        padding-top: 36/@rem;
+        background-position: -136/@rem -75/@rem;
+        margin: 8/@rem 30/@rem 0 0;
+    }
+    .synopsis{
+        width: 668/@rem;
+        height: 170/@rem;
+        margin: 0 auto;
+        border: 1px solid #a39c9e;
+        border-bottom: none;
+        border-right: none;
+        background-color: #faf6f6;
+        margin-right: 10/@rem;
+        outline: none;
+        resize: none;
+        box-shadow: 1px 1px 3px rgba(163,156,158,0.8) inset;
+        font-size: 20/@rem;
+        line-height: 40/@rem;
+        text-indent: 2em;
+        &:before{
+            content: '简介：';
+            
+        }
+    }
+    .submit{
+        width: 362/@rem;
+        height: 54/@rem;
+        background-color: #1b9fe2;
+        color: #FFFFFF;
+        font-size: 22/@rem;
+        line-height: 54/@rem;
+        margin: 84/@rem auto 0;
+        border-radius: 26/@rem;
+        margin-bottom: 40/@rem;
+    }
+    .cancel{
+        margin: 0 auto 50/@rem;
+    }
+    .add-works{
+        font-size: 20/@rem;
+        margin-top: 46/@rem;
+        line-height: 22/@rem;
         
+    }
+    .add-works-btn{
+        width: 14/@rem;
+        height: 14/@rem;
+        font-size: 16/@rem;
+        line-height: 14/@rem;
+        text-align: center;
+        margin-top: 47/@rem;
+        margin-left: 10/@rem;
+        border: 2/@rem solid #727171;
+    }
+    .get-me{
+        margin-top: 64/@rem;
+        .get-mes{
+            margin: 0;
+            margin-right: 18/@rem;
+        }
+        .mes{
+            margin-right: 56/@rem;
+        }
+    }
+    .uploading{
+        width: 220/@rem;
+        .sprite-form{
+            vertical-align: middle;
+            width: 30/@rem;
+            padding-top: 31/@rem;
+            background-position: -181/@rem -39/@rem;
+        }
+        .tip{
+            vertical-align: middle;
+            margin-left: 20/@rem;
+        }
+    }
+    .vip-num{
+        font-size: 22/@rem;
+        line-height: 70/@rem;
+        margin-top: 20/@rem;
+    }
+    .sex-num{
+        .label{
+            vertical-align: top;
+            line-height: 62/@rem;
+            margin-top: 15/@rem;
+            margin-right: 40/@rem;
+            width: auto;
+        }
+        input{
+            height: 40/@rem;
+            width: 97/@rem;
+            vertical-align: top;
+            margin-top: 25/@rem;
+            margin-right: 20/@rem;
+        }
+    }
+    .meet-person{
+        font-size: 20/@rem;
+        line-height: 40/@rem;
+        text-align: center;
+        span{
+            float: left;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .name{
+            width: 90/@rem;
+        }
+        .tel{
+            width: 160/@rem;
+        }
+        .email{
+            width: 244/@rem;
+        }
+        .type{
+            width: 82/@rem;
+        }
+        .change{
+            width: 105/@rem;
+            .change-btn{
+                float: none;
+                display: inline-block;
+                width: 60/@rem;
+                height: 32/@rem;
+                line-height: 32/@rem;
+                border: 2px solid #e7e6e6;
+                background: linear-gradient(180deg,#fff,#f9f7f7);
+            }
+        }
+        dt{
+            background-color: #faf6f6;
+        }
+        dl{
+            height: 40/@rem;
+            margin-top: 10/@rem;
+        }
+        .add-person{
+            width: 104/@rem;
+            height: 36/@rem;
+            margin: 20/@rem auto 0;
+            line-height: 40/@rem;
+            border: 2px solid #e7e6e6;
+            background: linear-gradient(180deg,#fff,#f9f7f7);
+        }
+    }
+    .invoice{
+        div{
+            margin-bottom: 48/@rem;
+            font-size: 20/@rem;
+            line-height: 50/@rem;
+            label{
+                float: left;
+            }
+            input{
+                float: left;
+                text-indent: 2em;
+            }
+        }
+        .l-o{
+            width: 130/@rem;
+            text-align: right;
+            margin-right: 34/@rem;
+        }
+        .i-o{
+            width: 520/@rem;
+        }
+        .l-t{
+            width: 80/@rem;
+            text-align: right;
+            margin-right: 34/@rem;
+        }
+        .i-t{
+            width: 160/@rem;
+        }
+        .i-th{
+            width: 246/@rem;
+        }
+    }
+    //选择框
+    .select_box{
+        height: 51/@rem;
+        font-size: 20/@rem;
+        line-height: 51/@rem;
+        border: 1px solid #a39c9e;
+        border-bottom: none;
+        border-right: none;
+        font-size: 20/@rem;
+        line-height: 51/@rem;
+        background-color: #faf6f6;
+        box-shadow: 1px 1px 3px rgba(163,156,158,0.8) inset;
+        position: relative;
+        text-align: center;
+        .option{
+            width: 100%;
+            position: absolute;
+            z-index:99;
+            top: 52/@rem;
+            left: 0;
+            display: none;
+            border: 1px solid #F9F7F7;
+            box-sizing: border-box;
+            box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+            a{
+                width: 100%;
+                display: block;
+                background-color: #FFFFFF;
+                border-bottom: 1px solid #F9F7F7;
+            }
+        }
+    }
+    .l-r{
+        padding-left: 64/@rem;
+        vertical-align:top;
+        margin-top: 20/@rem;
+        div.m-t{
+            margin-bottom: 30/@rem;
+            .select_box{
+                display:inline-block;
+                width:436/@rem;
+                margin-right: 0;
+            }
+        }
+        input{
+            width: 436/@rem;
+            text-indent: 2em;
+        }
+    }
+    .only{
+        width: 96/@rem;
+    }
+    .head-pic{
+        width: auto;
+        display: inline-block;
+        img{
+            display: inline-block;
+            width: 132/@rem;
+            height: 132/@rem;
+            margin-right: 29/@rem;
+            vertical-align: bottom;
+        }
+        .pic{
+            vertical-align: bottom;
+            width: 132/@rem;
+            padding-top: 132/@rem;
+            margin-right: 29/@rem;
+            background-position: -1/@rem -1/@rem;
+        }
+        .pic-v{
+            border: none;
+            box-shadow:none ;
+            vertical-align: bottom;
+            width: 102/@rem;
+            background-color: rgba(0,0,0,0);
+            padding-top: 80/@rem;
+            margin-right: 29/@rem;
+            background-position: -220/@rem -1/@rem;
+            overflow: hidden;
+            height: 0 !important;
+        }
+        .add{
+            border: none;
+            box-shadow:none ;
+            vertical-align: bottom;
+            width: 34/@rem;
+            background-color: rgba(0,0,0,0);
+            padding-top: 34/@rem;
+            text-align: center;
+            margin-right: 14/@rem;
+            color: #1b9fe2;
+            font-size: 20/@rem;
+            line-height: 34/@rem;
+            overflow: hidden;
+            height: 0 !important;
+            background-position: -135/@rem -4/@rem;
+        }
+        .tip{
+            display: inline-block;
+            vertical-align: bottom;
+            line-height: 34/@rem;
+        }
+    }
+    #school{
+        width: 593/@rem;
+    }
+    #name{
+        width: 155/@rem;
+    }
+    #tel{
+        width: 312/@rem;
+    }
+    .margin-top{
+        margin-top: 46/@rem;
     }
 }
 

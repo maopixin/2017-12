@@ -1,0 +1,64 @@
+@rem:75rem;
+
+//命名空间 body=talks
+.talks{
+    .sprite-talks{
+        display: inline-block;
+        vertical-align: top;
+        background: url(../img/takls-sprite.png) no-repeat;
+        background-size: 250/@rem;
+        width: 78/@rem;
+        height: 0;
+        padding-top: 73/@rem;
+        overflow: hidden;
+        margin: 12/@rem 15/@rem 0 0;
+    }
+    .talks-list{
+        margin-top: 20/@rem;
+        border-top:1px solid #eeeeee;
+        li{
+            border-bottom: 1px solid #eeeeee;
+            a{
+                display: block;
+                padding: 17/@rem 0 3/@rem 30/@rem;
+                height: 160/@rem;
+            }
+            //sprite
+            .discuss{
+                background-position: 0 0;
+            }
+            .question{
+                background-position: -82/@rem 0;
+            }
+            .topic{
+                background-position: -163/@rem 0;
+            }
+            //right-txt
+            .right-txt{
+                display: inline-block;
+                width: 590/@rem;
+                span{
+                    display: block;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    color: #636364;
+                }
+                .talks-title{
+                    font-size: 22/@rem;
+                    line-height: 48/@rem;
+                    color: #636364;
+                }
+                .talks-return{
+                    font-size: 20/@rem;
+                    line-height: 46/@rem;
+                }
+                .talks-type{
+                    font-size: 18/@rem;
+                    line-height: 66/@rem;
+                    color: #1b9fe2;
+                }
+            }
+        }
+    }
+}

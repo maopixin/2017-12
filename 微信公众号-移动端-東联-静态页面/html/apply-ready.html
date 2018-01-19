@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>预报名</title>
+    <!-- 一比一像素还原 -->
+    <script src="./../js/dpr.js"></script>
+    <!-- 初始化样式 -->
+    <link rel="stylesheet" href="./../css/reset.css">
+    <!-- 工具类 -->
+    <link rel="stylesheet" href="./../css/tools.css">
+    <!-- 全局样式 -->
+    <link rel="stylesheet" href="./../css/index.css">
+    <!-- 当前页面的css -->
+    <link rel="stylesheet" href="./../css/form.css">
+</head>
+<body class="form">
+    <h2 class="form-title">- 基本信息 -</h2>
+    <div class="form-content">
+    	<!--选择会议-->
+    	<div>
+    		<label for="" class="input-title block">会议名称</label>
+    		<div class="select_box">
+                <span class="select_txt">- 请选择会议 -</span><a class="selet_open"><b></b></a>
+                <div class="option">
+                    <a>大会1</a>
+                    <a>大会2</a>
+                    <a>大会3</a>
+                    <a>大会4</a>
+                </div>
+            </div>
+    	</div>
+    	<!--参会单位-->
+    	<div style="margin-top:0.4rem;">
+    		<label class="inline-block input-title">参会单位</label>
+    		<div class="inline-block l-r">
+    			<div class="m-t">
+    				<label for="" class="label inline-block">名称</label>
+    				<input class="" type="text" placeholder="必填"/>
+    			</div>
+    			<div class="m-t">
+    				<label for="" class="label inline-block">类型</label>
+    				<div class="select_box">
+		                <span class="select_txt">- 请选择学校类型 -</span><a class="selet_open"><b></b></a>
+		                <div class="option">
+		                    <a>清华大学</a>
+		                    <a>北京大学</a>
+		                    <a>山东大学</a>
+		                    <a>青岛理工大学</a>
+		                </div>
+	            	</div>
+    			</div>
+    			<div class="m-t">
+    				<label for="" class="label inline-block">人数</label>
+    				<input class="" type="text" placeholder="必填"/>
+    			</div>
+    		</div>
+    	</div>
+    	<!--学员性质-->
+    	<div style="margin-top:0.4rem;">
+    		<label class="inline-block input-title">学员性质</label>
+    		<div class="inline-block l-r">
+    			<div class="m-t">
+    				<label for="" class="label inline-block">会员</label>
+    				<input class="center" type="number" placeholder="必填" style="width:2.1rem;"/>
+    				<label for="" class="label inline-block">非会员</label>
+    				<input class="center" type="number" placeholder="必填" style="width:2.1rem;"/>
+    			</div>
+    		</div>
+    	</div>
+    	<!--报名人-->
+    	<div style="margin-top:0.4rem;">
+    		<label class="inline-block input-title only">报名人</label>
+    		<div class="inline-block l-r">
+    			<div class="m-t">
+    				<label for="" class="label inline-block">姓名</label>
+    				<input class="center" type="text" placeholder="必填" style="width:2.1rem;"/>
+    				<label for="" class="label inline-block">职务</label>
+    				<input class="center" type="text" placeholder="必填" style="width:2.1rem;"/>
+    			</div>
+    			<div class="m-t">
+    				<label for="" class="label inline-block">手机</label>
+    				<input class="center" type="number" placeholder="必填" style="width:2.1rem;"/>
+    				<label for="" class="label inline-block">邮箱</label>
+    				<input class="center" type="text" placeholder="必填" style="width:2.1rem;"/>
+    			</div>
+    		</div>
+    	</div>
+    	<!--备注-->
+    	<div>
+    		<label for="" class="input-title block">备注</label>
+    		<input class="width indent" type="text" placeholder="选填"/>
+    	</div>
+    	<!--短信验证码-->
+    	<div class="get-me">
+    		<span class="get-mes inline-block">获取短信验证码</span>
+	    	<input type="number" class="inline-block mes center" />
+	    	<span class="sprite-form enter">
+    	</div>
+	    <div class="submit center">
+	    	提交
+	    </div>
+	    <div class="submit center cancel">
+	    	取消提交
+	    </div>
+    </div>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script src="../js/select.js"></script>
+</body>
+</html>
