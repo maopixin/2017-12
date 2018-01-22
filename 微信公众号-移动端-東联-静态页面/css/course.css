@@ -1,0 +1,121 @@
+.course .course-head {
+  padding: 0.4rem 0 0 0.4rem;
+}
+.course .course-content {
+  padding: 0.4rem 0 0 0.4rem;
+  width: 9.2rem;
+}
+.course .course-content .course-type {
+  background-color: #f0f3f5;
+}
+.course .course-content .course-type .check-box-item {
+  width: 1.69333333rem;
+  line-height: 0.70666667rem;
+  text-align: center;
+  color: #333;
+}
+.course .course-content .course-type .active {
+  background-color: #1b9fe2;
+  color: #fff;
+}
+.course .course-content .course-list {
+  margin-top: 0.57333333rem;
+}
+.course .course-content .course-list .course-list-item {
+  width: 4.4rem;
+  height: 400px;
+  margin: 0 0.4rem 0.38666667rem 0;
+}
+.course .course-content .course-list .course-list-item:nth-of-type(2n) {
+  margin-right: 0;
+}
+.course .course-content .course-list .course-list-item .course-pic {
+  height: 2.53333333rem;
+  position: relative;
+}
+.course .course-content .course-list .course-list-item .course-pic img {
+  width: 4.4rem;
+  height: 2.53333333rem;
+}
+.course .course-content .course-list .course-list-item .course-pic em {
+  position: absolute;
+  top: 0;
+  right: 0.24rem;
+  width: 0.66666667rem;
+  height: 0.30666667rem;
+  background-color: #ff5e8a;
+  font-size: 0.21333333rem;
+  line-height: 0.30666667rem;
+  color: #fff;
+  text-align: center;
+}
+.course .course-content .course-list .course-list-item .course-info {
+  background-color: #f8f9fb;
+  padding: 0 0.21333333rem;
+  height: 1.28rem;
+}
+.course .course-content .course-list .course-list-item .course-info div:nth-of-type(1) {
+  font-size: 0.29333333rem;
+  line-height: 0.50666667rem;
+  padding-top: 0.17333333rem;
+}
+.course .course-content .course-list .course-list-item .course-info div:nth-of-type(1) span:nth-of-type(1) {
+  color: #3c3e3f;
+}
+.course .course-content .course-list .course-list-item .course-info div:nth-of-type(1) span:nth-of-type(2) {
+  font-size: 0.34666667rem;
+  color: #fa8a24;
+}
+.course .course-content .course-list .course-list-item .course-info div:nth-of-type(1) span.free {
+  color: green;
+}
+.course .course-content .course-list .course-list-item .course-info div:nth-of-type(2) {
+  font-size: 0.24rem;
+  line-height: 0.46666667rem;
+  color: #929395;
+}
+.course .course-content .course-list .course-list-item .teacher-info {
+  background-color: #f0f1f6;
+  height: 1.53333333rem;
+}
+.course .course-content .course-list .course-list-item .teacher-info div:nth-of-type(1) {
+  padding: 0.06666667rem 0.74666667rem 0 0.22666667rem;
+}
+.course .course-content .course-list .course-list-item .teacher-info div:nth-of-type(1) img {
+  width: 1.41333333rem;
+  height: 1.41333333rem;
+  display: block;
+  border-radius: 0.70666667rem;
+}
+.course .course-content .course-list .course-list-item .teacher-info div:nth-of-type(2) {
+  width: 1.84rem;
+}
+.course .course-content .course-list .course-list-item .teacher-info div:nth-of-type(2) h3 {
+  font-size: 0.29333333rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 0.45333333rem;
+  padding-top: 0.06666667rem;
+}
+.course .course-content .course-list .course-list-item .teacher-info div:nth-of-type(2) span:nth-of-type(1) {
+  display: block;
+  font-size: 0.22666667rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 0.38666667rem;
+  color: #808183;
+}
+.course .course-content .course-list .course-list-item .teacher-info div:nth-of-type(2) .btn {
+  display: block;
+  width: 1.54666667rem;
+  height: 0.49333333rem;
+  background-color: red;
+  text-align: center;
+  color: #fff;
+  font-size: 0.24rem;
+  line-height: 0.49333333rem;
+  border-radius: 0.25333333rem;
+  margin: 0.05333333rem 0 0 0.26666667rem;
+}

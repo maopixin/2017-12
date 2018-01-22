@@ -2,7 +2,8 @@ $(document).ready(function() {
 	$(".select_box").click(function(event) {
 		event.stopPropagation();
 		$(this).find(".option").toggle();
-		$(this).parent().siblings().find(".option").hide();
+		$(this).nextAll().find('.option').hide();
+		$(this).prevAll().find('.option').hide();
 	});
 	$(document).click(function(event) {
 		var eo = $(event.target);
@@ -13,6 +14,13 @@ $(document).ready(function() {
 	$(".option a").click(function() {
 		var value = $(this).text();
 		$(this).parent().siblings(".select_txt").text(value);
-		$("#select_value").val(value)
+		$("#select_value").val(value);
+	})
+	$(".select .option a").click(function() {
+		$(this).parent().parent().parent().children().removeClass('active');
+		$(this).parent().parent().addClass('active');
+	})
+	$(".small-select .option a").click(function() {
+		$(this).parent().parent().find(".select_txt").text($(this).parent().parent().find(".select_txt").text()+'∨')
 	})
 })

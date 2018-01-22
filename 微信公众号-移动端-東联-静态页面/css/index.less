@@ -13,8 +13,7 @@ body{
 // 轮播图
 .banner{
     height: 275/@rem;
-    background: url('./../img/test/banner.jpg') no-repeat;
-    background-size: cover;
+    
 }
 
 // 底部工具栏
@@ -88,4 +87,48 @@ body{
     li:nth-of-type(5) span.sprite-index{
         background-position-x: -129/@rem;
     }
+}
+//选择标签
+.check-box{
+    border-bottom: 1px solid #efefef;
+    margin-left: 20/@rem;
+    font-size:18/@rem ;
+    line-height: 49/@rem;
+    width: 670/@rem;
+    dt,dd{
+        float: left;
+    }
+    dt{
+        width: 67/@rem;
+    }
+    dd{
+        width: 120/@rem;
+        text-align: center;
+    }
+    .active{
+        color: #1b9fe2 !important;
+    }
+}
+
+//小型下拉框
+
+.small-select{
+    color: #9c9d9e;
+    position: relative;
+    .option{
+        position: absolute;
+        z-index: 99;
+        background-color: #fff;
+        left: 0;
+        top: 50/@rem;
+        display: none;
+        width: 100%;
+        a{
+            color: #333333;
+            display: block;
+        }
+    }
+}
+.selects{
+    color: #333;
 }

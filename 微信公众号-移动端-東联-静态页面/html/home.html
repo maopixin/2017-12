@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./../css/index.css">
     <!-- 当前页面的css -->
     <link rel="stylesheet" href="./../css/home.css">
+    <link rel="stylesheet" href="./../css/swipeslider.css">
 </head>
 
 <body class="home">
@@ -29,7 +30,25 @@
         </div>
     </header>
     <!-- 轮播图 -->
-    <div class="banner"></div>
+    <div id="full_feature" class="swipslider">
+        <ul class="sw-slides">
+            <li class="sw-slide">
+                <img src="./../img/test/banner.jpg">
+            </li>
+            <li class="sw-slide">
+                <img src="./../img/test/banner.jpg">
+            </li>
+            <li class="sw-slide">
+                <img src="./../img/test/banner.jpg">
+            </li>
+            <li class="sw-slide">
+                <img src="./../img/test/banner.jpg">
+            </li>
+            <li class="sw-slide">
+                <img src="./../img/test/banner.jpg">
+            </li>
+        </ul>
+    </div>
     <!-- 新闻列表 -->
     <div class="news">
         <span class="sprite-home">新闻</span>
@@ -464,7 +483,7 @@
                     交流圈
                 </span>
                 <span class="b-btns-title">
-                	在线报名
+                    在线报名
                 </span>
             </a>
         </li>
@@ -489,6 +508,11 @@
             </a>
         </li>
     </ul>
+    <script src="./../js/jquery-3.2.1.js"></script>
+    <script src="./../js/swipeslider.min.js"></script>
+    <script>
+       $('#full_feature').swipeslider();
+    </script>
 </body>
 
 </html>

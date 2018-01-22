@@ -11,8 +11,6 @@ body {
 }
 .banner {
   height: 3.66666667rem;
-  background: url('../img/test/banner.jpg') no-repeat;
-  background-size: cover;
 }
 .bottom-btn {
   position: fixed;
@@ -80,4 +78,45 @@ body {
 }
 .bottom-btn li:nth-of-type(5) span.sprite-index {
   background-position-x: -1.72rem;
+}
+.check-box {
+  border-bottom: 1px solid #efefef;
+  margin-left: 0.26666667rem;
+  font-size: 0.24rem;
+  line-height: 0.65333333rem;
+  width: 8.93333333rem;
+}
+.check-box dt,
+.check-box dd {
+  float: left;
+}
+.check-box dt {
+  width: 0.89333333rem;
+}
+.check-box dd {
+  width: 1.6rem;
+  text-align: center;
+}
+.check-box .active {
+  color: #1b9fe2 !important;
+}
+.small-select {
+  color: #9c9d9e;
+  position: relative;
+}
+.small-select .option {
+  position: absolute;
+  z-index: 99;
+  background-color: #fff;
+  left: 0;
+  top: 0.66666667rem;
+  display: none;
+  width: 100%;
+}
+.small-select .option a {
+  color: #333333;
+  display: block;
+}
+.selects {
+  color: #333;
 }

@@ -1,0 +1,132 @@
+@rem:75rem;
+
+//命名空间body=course
+.course{
+    .course-head{
+        padding: 30/@rem 0 0 30/@rem;
+    }
+    .course-content{
+        padding: 30/@rem 0 0 30/@rem;
+        width: 690/@rem;
+        //课程排列方式
+        .course-type{
+            background-color: #f0f3f5;  
+            .check-box-item{
+                width: 127/@rem;
+                line-height: 53/@rem;
+                text-align: center;
+                color: #333;
+            }
+            .active{
+                background-color: #1b9fe2;
+                color: #fff;
+            }
+        }
+        //课程列表
+        .course-list{
+            margin-top: 43/@rem;
+            .course-list-item{
+                width: 330/@rem;
+                height: 400px;
+                margin: 0 30/@rem 29/@rem 0;
+                &:nth-of-type(2n){
+                    margin-right: 0;
+                }
+                //图片区域
+                .course-pic{
+                    height: 190/@rem;
+                    position: relative;
+                    img{
+                        width: 330/@rem;
+                        height: 190/@rem;
+                    }
+                    em{
+                        position: absolute;
+                        top: 0;
+                        right: 18/@rem;
+                        width: 50/@rem;
+                        height: 23/@rem;
+                        background-color: #ff5e8a;
+                        font-size: 16/@rem;
+                        line-height: 23/@rem;
+                        color: #fff;
+                        text-align: center;
+                    }
+                }
+                //课程信息
+                .course-info{
+                    background-color: #f8f9fb;
+                    padding: 0 16/@rem;
+                    height: 96/@rem;
+                    div:nth-of-type(1){
+                        font-size: 22/@rem;
+                        line-height: 38/@rem;
+                        padding-top: 13/@rem;
+                        span:nth-of-type(1){
+                          color: #3c3e3f;  
+                        }
+                        span:nth-of-type(2){
+                            font-size: 26/@rem;
+                            color: #fa8a24;
+                        }
+                        span.free{
+                            color: green;
+                        }
+                    }
+                    div:nth-of-type(2){
+                        font-size: 18/@rem;
+                        line-height: 35/@rem;
+                        color: #929395;
+                    }
+                } 
+                //教师信息
+                .teacher-info{
+                    background-color: #f0f1f6;
+                    height: 115/@rem;
+                    div:nth-of-type(1){
+                        padding: 5/@rem 56/@rem 0 17/@rem;
+                        img{
+                            width: 106/@rem;
+                            height: 106/@rem;
+                            display: block;
+                            border-radius: 53/@rem;
+                        }
+                    }
+                    div:nth-of-type(2){
+                        width: 138/@rem;
+                        
+                        h3{
+                            font-size: 22/@rem;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            line-height: 34/@rem;
+                            padding-top: 5/@rem;
+                        }
+                        span:nth-of-type(1){
+                            display: block;
+                            font-size: 17/@rem;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            line-height: 29/@rem;
+                            color: #808183;
+                        }
+                        .btn{
+                            display: block;
+                            width: 116/@rem;
+                            height: 37/@rem;
+                            background-color: red;
+                            text-align: center;
+                            color: #fff;
+                            font-size: 18/@rem;
+                            line-height: 37/@rem;
+                            border-radius: 19/@rem;
+                            margin: 4/@rem 0 0 20/@rem;
+                        }
+                    }
+                }                   
+            }
+        }
+    }
+}

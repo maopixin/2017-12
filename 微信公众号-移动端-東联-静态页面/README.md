@@ -10,6 +10,7 @@
     cgda.css			评选大赛css
 	form.css        	表单css
 	talks.css			交流圈css
+	course.css			精品课程css
 
  -html  页面文件夹
     home.html       	主页
@@ -26,6 +27,7 @@
 	apply-meet.html		参赛报名-参会信息
 	apply-ready.html	参赛报名-预报名表单
 	talks.html 			交流圈
+	course.html 		精品课程
 
  -img   图片文件夹
     -test   			测试图片（上线后删除）
