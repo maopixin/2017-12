@@ -1,153 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <!-- 一比一像素还原 -->
-    <script src="./../js/dpr.js"></script>
-    <!-- 初始化样式 -->
-    <link rel="stylesheet" href="./../css/reset.css">
-    <!-- 工具类 -->
-    <link rel="stylesheet" href="./../css/tools.css">
-    <!-- 全局样式 -->
-    <link rel="stylesheet" href="./../css/index.css">
-    <!-- 当前页面的css -->
-    <link rel="stylesheet" href="./../css/my.css">
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<!-- 一比一像素还原 -->
+		<script src="./../js/dpr.js"></script>
+		<!-- 初始化样式 -->
+		<link rel="stylesheet" href="./../css/reset.css">
+		<!-- 工具类 -->
+		<link rel="stylesheet" href="./../css/tools.css">
+		<!-- 全局样式 -->
+		<link rel="stylesheet" href="./../css/index.css">
+		<!-- 当前页面的css -->
+		<link rel="stylesheet" href="./../css/my.css">
+	</head>
 
-<body class="my">
-    <!-- 头部 -->
-    <header>
-        <!-- 头的头 -->
-        <div class="head-h">
-            <span class="cancel"></span>
-            <h3 class="title">我的</h3>
-        </div>
-        <div class="person-info">
-            <!-- 个人信息 -->
-            <div class="use">
-                <img src="./../img/test/test-use.jpg">
-                <span class="use-name">蓝蚊子</span>
-            </div>
-            <!-- 签到 -->
-            <div class="sign-in fr">
-                <span class="sprite date">
+	<body class="my">
+		<!-- 头部 -->
+		<header>
+			<!-- 头的头 -->
+			<div class="head-h">
+				<span class="cancel"></span>
+				<h3 class="title">我的</h3>
+			</div>
+			<div class="person-info">
+				<!-- 个人信息 -->
+				<div class="use">
+					<img src="./../img/test/test-use.jpg">
+					<span class="use-name">蓝蚊子</span>
+				</div>
+				<!-- 签到 -->
+				<div class="sign-in fr">
+					<span class="sprite date">
 
-                </span>
-                签到
-            </div>
-            <!-- 分数 -->
-            <div class="grade fr">
-                100分
-            </div>
-        </div>
-    </header>
-    <!-- 功能区域 -->
-    <ul class="btns clearfix">
-        <li>
-            <span class="ico sprite"></span>
-            <span class="txt">
-                缓存
-            </span>
-        </li>
-        <li>
-            <span class="ico sprite"></span>
-            <span class="txt">
-                收藏
-            </span>
-        </li>
-        <li>
-            <span class="ico sprite"></span>
-            <span class="txt">
-                私信
-            </span>
-        </li>
-        <li>
-            <span class="ico sprite"></span>
-            <span class="txt">
-                修改密码
-            </span>
-        </li>
-    </ul>
-    <!-- 功能列表 -->
-    <ul class="fn-list">
-        <li>
-            <span class="sprite fl">
-
-            </span>
-            基本信息
-            <span class="sprite more fr">
-                进入
-            </span>
-        </li>
-        <li>
-            <span class="sprite fl">
-
-            </span>
-            我的账户
-            <span class="sprite more fr">
-                进入
-            </span>
-        </li>
-        <li>
-            <span class="sprite fl">
-
-            </span>
-            我的订单
-            <span class="sprite more fr">
-                进入
-            </span>
-        </li>
-        <li>
-            <span class="sprite fl">
-
-            </span>
-            我的卡包
-            <span class="sprite more fr">
-                进入
-            </span>
-        </li>
-    </ul>
-    <!-- 功能列表2 -->
-    <ul class="fn-list">
-        <li>
-            <span class="sprite fl">
-
-            </span>
-            发票管理
-            <span class="sprite more fr">
-                进入
-            </span>
-        </li>
-        <li>
-            <span class="sprite fl">
-
-            </span>
-            参与会议
-            <span class="sprite more fr">
-                进入
-            </span>
-        </li>
-        <li>
-            <span class="sprite fl">
-
-            </span>
-            参与人员
-            <span class="sprite more fr">
-                进入
-            </span>
-        </li>
-        <li>
-            <span class="sprite fl">
-
-            </span>
-            联系我们
-            <span class="sprite more fr">
-                进入
-            </span>
-        </li>
-    </ul>
-</body>
+                </span> 签到
+				</div>
+				<!-- 分数 -->
+				<div class="grade fr">
+					100分
+				</div>
+			</div>
+		</header>
+		<!-- 功能区域 -->
+		<ul class="btns clearfix">
+			<li>
+				<span class="ico sprite"></span>
+				<span class="txt">缓存</span>
+			</li>
+			<li>
+				<span class="ico sprite"></span>
+				<span class="txt">收藏</span>
+			</li>
+			<li>
+				<span class="ico sprite"></span>
+				<span class="txt">私信</span>
+			</li>
+			<li>
+				<span class="ico sprite"></span>
+				<span class="txt">修改密码</span>
+			</li>
+		</ul>
+		<!-- 功能列表 -->
+		<ul class="fn-list">
+			<li>
+				<a href="">
+					<span class="sprite fl"></span> 基本信息
+					<span class="sprite more fr">进入</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<span class="sprite fl"></span> 我的账户
+					<span class="sprite more fr">进入</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<span class="sprite fl"></span> 我的订单
+					<span class="sprite more fr">进入</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<span class="sprite fl"></span> 我的卡包
+					<span class="sprite more fr">进入</span>
+				</a>
+			</li>
+		</ul>
+		<!-- 功能列表2 -->
+		<ul class="fn-list">
+			<li>
+				<a href="">
+					<span class="sprite fl"></span> 发票管理
+					<span class="sprite more fr">进入</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<span class="sprite fl"></span> 参与会议
+					<span class="sprite more fr">进入</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<span class="sprite fl"></span> 参与人员
+					<span class="sprite more fr">进入</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<span class="sprite fl"></span> 联系我们
+					<span class="sprite more fr">进入</span>
+				</a>
+			</li>
+		</ul>
+	</body>
 
 </html>

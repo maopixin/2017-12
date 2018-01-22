@@ -36,17 +36,7 @@
             line-height: 63/@rem;
         }
     }
-    // 按钮
-    .btn{
-        width: 103/@rem;
-        height: 33/@rem;
-        background-color: red;
-        color: #fff;
-        text-align: center;
-        border-radius: 6/@rem;
-        font-size: 20/@rem;
-        line-height: 32/@rem;
-    }
+    
     // 列表
     .list{
         padding: 34/@rem 0 0 32/@rem;
@@ -284,20 +274,36 @@
             }
             .meeting-info{
                 margin-top: 6/@rem;
-                width: 378/@rem;
+                width: 480/@rem;
                 .meeting-title{
                     display: block;
-                    width: 378/@rem;
-                    height: 43/@rem;
+                    width: 480/@rem;
+                    height: 31/@rem;
                     font-size: 24/@rem;
                     font-weight: 600;
-                    line-height: 43/@rem;
+                    line-height: 31/@rem;
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space: nowrap;
                 }
+                .person-num{
+                    .block{
+                        display: block;
+                        font-size: 17/@rem;
+                        line-height: 31/@rem;
+                        height: 31/@rem;
+                        color: #3c3e3f;
+                        i{
+                            display: inline-block;
+                            width: 154/@rem;
+                        }
+                        span{
+                            display: inline-block;
+                        }
+                    }
+                }
                 .btn{
-                    margin-top: 6/@rem;
+                    margin-top: 23/@rem;
                 }
                 span:nth-of-type(2){
                     line-height: 40/@rem;
@@ -305,70 +311,7 @@
             }
         }
     }
-    // 名师名家
-    .taf{
-       .taf-box{
-           padding: 36/@rem 0 20/@rem 30/@rem;
-           li{
-               width: 330/@rem;
-               margin-right: 30/@rem;
-               &:nth-of-type(2n){
-                   margin-right: 0;
-               }
-               .person{
-                   padding: 25/@rem 0 0 20/@rem;
-                   color: #142434;
-                   background-color: #f9fcfd;
-                   margin-bottom: 9/@rem;
-               }
-               .person-info{
-                   width: 160/@rem;
-                   span{
-                       display: block;
-                   }
-                   .name{
-                       font-size: 26/@rem;
-                       line-height: 46/@rem;
-                       margin-top: 45/@rem;
-                       font-weight: 600;
-                   }
-                   .job{
-                       font-size: 18/@rem;
-                       line-height: 40/@rem;
-                       height:40/@rem;
-                       overflow: hidden;
-                       text-overflow: ellipsis;
-                       white-space: nowrap;
-                   }
-               }
-               .pic{
-                   width: 132/@rem;
-                   height: 132/@rem;
-                   margin-bottom: 23/@rem;
-                   .pic{
-                       width: 100%;
-                       height: 100%;
-                   }
-               }
-               .person-text{
-                   background-color: #f2f3f4;
-                   p{
-                       padding: 11/@rem 17/@rem 3/@rem 15/@rem;
-                       font-size: 18/@rem;
-                       line-height: 28/@rem;
-                       display: -webkit-box;
-                       -webkit-box-orient: vertical;
-                       -webkit-line-clamp: 3;
-                       overflow: hidden;
-                   }
-                   .btn{
-                       margin-right: 19/@rem;
-                       margin-bottom: 17/@rem;
-                   }
-               }
-           }
-       } 
-    }
+    
     // 24小时课堂
     
     // 品牌会议

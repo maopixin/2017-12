@@ -1,23 +1,24 @@
-@rem:75rem;
-.sprite-index{
+@rem: 75rem;
+.sprite-index {
     display: inline-block;
     vertical-align: top;
     overflow: hidden;
     background: url('./../img/index-sprite.png') no-repeat;
     background-size: 240/@rem;
 }
-body{
+
+body {
     font-size: 22/@rem;
-    font-family: 'HiraginoSansGB W3','微软雅黑';
+    font-family: 'HiraginoSansGB W3', '微软雅黑';
 }
+
 // 轮播图
-.banner{
+.banner {
     height: 275/@rem;
-    
 }
 
 // 底部工具栏
-.bottom-btn{
+.bottom-btn {
     position: fixed;
     z-index: 999;
     left: 0;
@@ -26,23 +27,23 @@ body{
     height: 98/@rem;
     background-color: #fff;
     border-top: 2px solid #d4d7dd;
-    .b-btns{
+    .b-btns {
         width: 145/@rem;
         height: 98/@rem;
-        a{
+        a {
             display: block;
             width: 100%;
             height: 100%;
             padding-top: 15/@rem;
             box-sizing: border-box;
-            span.sprite-index{
+            span.sprite-index {
                 display: block;
                 width: 42/@rem;
                 height: 0;
                 padding-top: 43/@rem;
                 margin: 0 auto 0;
             }
-            .b-btns-title{
+            .b-btns-title {
                 display: block;
                 text-align: center;
                 font-size: 20/@rem;
@@ -50,29 +51,29 @@ body{
             }
         }
     }
-    li{
-        &:nth-of-type(2){
-            span.sprite-index{
-                background-position-x: -43/@rem; 
+    li {
+        &:nth-of-type(2) {
+            span.sprite-index {
+                background-position-x: -43/@rem;
             }
         }
     }
-    .big-btn{
+    .big-btn {
         width: 140/@rem;
         height: 140/@rem;
         border: 2/@rem solid #d4d7dd;
         border-radius: 85/@rem;
         margin: -25/@rem 11/@rem 0;
         background-color: #fff;
-        a{
+        a {
             padding-top: 40/@rem;
             display: block;
         }
-        .b-btns-title{
+        .b-btns-title {
             display: block;
             text-align: center;
         }
-        .sprite-index{
+        .sprite-index {
             width: 67/@rem;
             height: 0;
             padding-top: 43/@rem;
@@ -81,41 +82,43 @@ body{
             background-position: -172/@rem 0;
         }
     }
-    li:nth-of-type(4) span.sprite-index{
-        background-position-x: -86/@rem; 
+    li:nth-of-type(4) span.sprite-index {
+        background-position-x: -86/@rem;
     }
-    li:nth-of-type(5) span.sprite-index{
+    li:nth-of-type(5) span.sprite-index {
         background-position-x: -129/@rem;
     }
 }
+
 //选择标签
-.check-box{
+.check-box {
     border-bottom: 1px solid #efefef;
     margin-left: 20/@rem;
-    font-size:18/@rem ;
+    font-size: 18/@rem ;
     line-height: 49/@rem;
     width: 670/@rem;
-    dt,dd{
+    dt,
+    dd {
         float: left;
     }
-    dt{
+    dt {
         width: 67/@rem;
+        color: #a8a8a8;
     }
-    dd{
-        width: 120/@rem;
+    dd {
+        width: 100/@rem;
         text-align: center;
     }
-    .active{
+    .active {
         color: #1b9fe2 !important;
     }
 }
 
 //小型下拉框
-
-.small-select{
+.small-select {
     color: #9c9d9e;
     position: relative;
-    .option{
+    .option {
         position: absolute;
         z-index: 99;
         background-color: #fff;
@@ -123,12 +126,215 @@ body{
         top: 50/@rem;
         display: none;
         width: 100%;
-        a{
+        a {
             color: #333333;
             display: block;
         }
     }
 }
-.selects{
+
+.selects {
     color: #333;
+}
+
+//课程排列方式
+.course-type {
+    background-color: #f0f3f5;
+    .check-box-item {
+        width: 127/@rem;
+        line-height: 53/@rem;
+        text-align: center;
+        color: #333;
+    }
+    .active {
+        background-color: #1b9fe2;
+        color: #fff;
+    }
+}
+
+//搜索
+.search-small {
+    line-height: 47/@rem;
+    margin-top: 30/@rem;
+    input {
+        width: 200/@rem;
+        height: 47/@rem;
+        border: 1px solid #d1cfd0;
+        font-size: 20/@rem;
+        text-indent: 1.5em;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7) inset;
+    }
+    .search-btn {
+        display: inline-block;
+        vertical-align: top;
+        width: 97/@rem;
+        height: 49/@rem;
+        background-color: #c6d1d7;
+        color: #fff;
+        text-align: center;
+    }
+}
+
+// 按钮
+    .btn{
+        width: 103/@rem;
+        height: 33/@rem;
+        background-color: red;
+        color: #fff;
+        text-align: center;
+        border-radius: 6/@rem;
+        font-size: 20/@rem;
+        line-height: 32/@rem;
+    }
+
+// 名师名家
+.taf-box {
+    padding: 36/@rem 0 20/@rem 30/@rem;
+    li {
+        width: 330/@rem;
+        margin-right: 30/@rem;
+        &:nth-of-type(2n) {
+            margin-right: 0;
+        }
+        .person {
+            padding: 25/@rem 0 0 20/@rem;
+            color: #142434;
+            background-color: #f9fcfd;
+            margin-bottom: 9/@rem;
+        }
+        .person-info {
+            width: 160/@rem;
+            span {
+                display: block;
+            }
+            .name {
+                font-size: 26/@rem;
+                line-height: 46/@rem;
+                margin-top: 45/@rem;
+                font-weight: 600;
+            }
+            .job {
+                font-size: 18/@rem;
+                line-height: 40/@rem;
+                height: 40/@rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+        .pic {
+            width: 132/@rem;
+            height: 132/@rem;
+            margin-bottom: 23/@rem;
+            .pic {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .btn{
+            margin-top: 4/@rem;
+        }
+        .person-text {
+            background-color: #f2f3f4;
+            height: 152/@rem;
+            p {
+                height: 82/@rem;
+                padding: 11/@rem 17/@rem 5/@rem 15/@rem;
+                font-size: 18/@rem;
+                line-height: 28/@rem;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+                overflow: hidden;
+            }
+            .btn {
+                margin-right: 19/@rem;
+                margin-bottom: 17/@rem;
+            }
+        }
+    }
+    .want-join{
+        width: 330/@rem;
+        height: 179/@rem;
+        border-top: 1px solid #f0f1f6;
+        margin-bottom: 9/@rem;
+        background:#f0f1f6 url(../img/join.png) no-repeat center center;
+        background-size: 160/@rem;
+        span{
+            display: block;
+            width: 278/@rem;
+            height: 88/@rem;
+            background-color: rgba(85,115,139,0.6);
+            text-align: center;
+            font-size: 28/@rem;
+            line-height: 88/@rem;
+            color: #fff;
+            margin: 60/@rem auto;
+        }
+    }
+}
+
+//所有名师
+.all-teacher-list{
+    padding-top: 20/@rem;
+    li{
+        width: 326/@rem;
+        margin: 0 26/@rem 22/@rem 0;
+        border: 2px solid #ecf2f7;
+        border-radius: 10/@rem;
+        &:nth-of-type(2n){
+            margin-right: 0;
+        }
+        a{
+            display: block;
+            height: 100%;
+        }
+        div{
+            background-color: #f5f8fa;
+            border-top:1px solid rgba(0,0,0,0);
+            padding-bottom: 18/@rem;
+        }
+        img,span{
+            display: block;
+        }
+        img{
+            width: 142/@rem;
+            height: 142/@rem;
+            margin: 27/@rem auto 20/@rem;
+            border-radius: 71/@rem;
+        }
+        span{
+            text-align: center;
+            em{
+                display: inline-block;
+                vertical-align: top;
+                font-size: 18/@rem;
+                line-height: 44/@rem;
+            }
+        }
+        .name{
+            font-size: 22/@rem;
+            line-height: 40/@rem;
+            color: #333;
+        }
+        p{
+            margin: 17/@rem 14/@rem;
+            font-size: 18/@rem;
+            line-height: 34/@rem;
+            color: #666666;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+        }
+    }
+}
+
+//广告2
+.AD-2{
+    padding-top: 40/@rem;
+    overflow: hidden;
+    img{
+        width: 750/@rem;
+    }
 }

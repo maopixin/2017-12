@@ -5,19 +5,6 @@
   padding: 0.4rem 0 0 0.4rem;
   width: 9.2rem;
 }
-.course .course-content .course-type {
-  background-color: #f0f3f5;
-}
-.course .course-content .course-type .check-box-item {
-  width: 1.69333333rem;
-  line-height: 0.70666667rem;
-  text-align: center;
-  color: #333;
-}
-.course .course-content .course-type .active {
-  background-color: #1b9fe2;
-  color: #fff;
-}
 .course .course-content .course-list {
   margin-top: 0.57333333rem;
 }

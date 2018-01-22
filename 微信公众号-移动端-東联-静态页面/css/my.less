@@ -122,12 +122,22 @@
     // 功能区域2
     .fn-list{
         font-size: 25/@rem;
-        line-height: 87/@rem;
-        text-indent: 88/@rem;
+        line-height: 94/@rem;
+        text-indent: 23/@rem;
         border-top: 1px solid #d0d0d0;
         margin-top: 22/@rem;
         li{
             border-bottom: 1px solid #d0d0d0;
+            height: 87/@rem;
+            overflow: hidden;
+            a{
+                display: block;
+            }
+            .sprite:nth-of-type(1){
+                width: 33/@rem;
+                height: 33/@rem;
+                margin: 28/@rem 0 0 32/@rem;
+            }
             .more{
                 width: 13/@rem;
                 height: 0/@rem;
@@ -136,6 +146,30 @@
                 background-position: 0 -223/@rem;
                 margin: 32/@rem 28/@rem 0 0;
             }
+        }
+        &:nth-of-type(2) li:nth-of-type(1) .sprite:nth-of-type(1){
+            background-position-y: -251/@rem;
+        }
+        &:nth-of-type(2) li:nth-of-type(2) .sprite:nth-of-type(1){
+            background-position-y: -285/@rem;
+        }
+        &:nth-of-type(2) li:nth-of-type(3) .sprite:nth-of-type(1){
+            background-position-y: -319/@rem;
+        }
+        &:nth-of-type(2) li:nth-of-type(4) .sprite:nth-of-type(1){
+            background-position-y: -353/@rem;
+        }
+        &:nth-of-type(3) li:nth-of-type(1) .sprite:nth-of-type(1){
+            background-position-y: -387/@rem;
+        }
+        &:nth-of-type(3) li:nth-of-type(2) .sprite:nth-of-type(1){
+            background-position-y: -421/@rem;
+        }
+        &:nth-of-type(3) li:nth-of-type(3) .sprite:nth-of-type(1){
+            background-position-y: -455/@rem;
+        }
+        &:nth-of-type(3) li:nth-of-type(4) .sprite:nth-of-type(1){
+            background-position-y: -489/@rem;
         }
     }
 }

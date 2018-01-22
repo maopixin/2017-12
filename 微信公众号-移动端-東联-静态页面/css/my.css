@@ -109,13 +109,23 @@
 }
 .my .fn-list {
   font-size: 0.33333333rem;
-  line-height: 1.16rem;
-  text-indent: 1.17333333rem;
+  line-height: 1.25333333rem;
+  text-indent: 0.30666667rem;
   border-top: 1px solid #d0d0d0;
   margin-top: 0.29333333rem;
 }
 .my .fn-list li {
   border-bottom: 1px solid #d0d0d0;
+  height: 1.16rem;
+  overflow: hidden;
+}
+.my .fn-list li a {
+  display: block;
+}
+.my .fn-list li .sprite:nth-of-type(1) {
+  width: 0.44rem;
+  height: 0.44rem;
+  margin: 0.37333333rem 0 0 0.42666667rem;
 }
 .my .fn-list li .more {
   width: 0.17333333rem;
@@ -124,4 +134,28 @@
   overflow: hidden;
   background-position: 0 -2.97333333rem;
   margin: 0.42666667rem 0.37333333rem 0 0;
+}
+.my .fn-list:nth-of-type(2) li:nth-of-type(1) .sprite:nth-of-type(1) {
+  background-position-y: -3.34666667rem;
+}
+.my .fn-list:nth-of-type(2) li:nth-of-type(2) .sprite:nth-of-type(1) {
+  background-position-y: -3.8rem;
+}
+.my .fn-list:nth-of-type(2) li:nth-of-type(3) .sprite:nth-of-type(1) {
+  background-position-y: -4.25333333rem;
+}
+.my .fn-list:nth-of-type(2) li:nth-of-type(4) .sprite:nth-of-type(1) {
+  background-position-y: -4.70666667rem;
+}
+.my .fn-list:nth-of-type(3) li:nth-of-type(1) .sprite:nth-of-type(1) {
+  background-position-y: -5.16rem;
+}
+.my .fn-list:nth-of-type(3) li:nth-of-type(2) .sprite:nth-of-type(1) {
+  background-position-y: -5.61333333rem;
+}
+.my .fn-list:nth-of-type(3) li:nth-of-type(3) .sprite:nth-of-type(1) {
+  background-position-y: -6.06666667rem;
+}
+.my .fn-list:nth-of-type(3) li:nth-of-type(4) .sprite:nth-of-type(1) {
+  background-position-y: -6.52rem;
 }
