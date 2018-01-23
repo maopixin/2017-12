@@ -1,0 +1,320 @@
+@rem:75rem;
+//命名空间body=meeting
+.meeting{
+    .sprite-meeting{
+        display: inline-block;
+        vertical-align: top;
+        background: url(../img/meeting-sprite.png) no-repeat;
+        background-size: 300/@rem;
+    }
+    .meeting-head{
+        padding: 30/@rem 30/@rem 32/@rem;
+        .meeting-pic{
+            width: 303/@rem;
+            height: 213/@rem;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .meeting-info{
+            width: 350/@rem;
+            margin-left: 24/@rem;
+            h2{
+                font-size: 24/@rem;
+                line-height: 34/@rem;
+            }
+            h3{
+                font-size: 17/@rem;
+                line-height: 41/@rem;
+                color: #8c8a8a;
+            }
+            .sprite-meeting{
+                width: 30/@rem;
+                padding-top: 31/@rem;
+                height: 0;
+                margin-right: 14/@rem;
+                overflow: hidden;
+                vertical-align: middle;
+                background-position: 0 0;
+            }
+            div{
+                font-size: 18/@rem;
+                line-height: 49/@rem;
+                color: #9ea1a5;
+                .blue{
+                    color: #1b9fe2;
+                }
+            }
+            .place .sprite-meeting{
+                background-position-x: -30/@rem;
+            }
+            .person-number .sprite-meeting{
+                background-position-x: -60/@rem;
+            }
+            .eye .sprite-meeting{
+                background-position-x: -90/@rem;
+            }
+        }
+        .join-btn{
+            width: 193/@rem;
+            height: 50/@rem;
+            margin: 32/@rem auto 0;
+            background-color: #1b9fe2;
+            color: #fff;
+            text-align: center;
+            font-size: 22/@rem;
+            line-height: 50/@rem;
+        }
+    }
+    .meeting-content{
+        //tab
+        .check-box{
+            border-bottom: 2px solid #cecdcd;
+            margin: 0 !important;
+            width: auto;
+            padding-left: 30/@rem;
+            .check-box-item{
+                width: 130/@rem;
+                height: 27/@rem;
+                line-height: 27/@rem;
+                margin: 9/@rem 0;
+                margin-right: -2px;
+                text-align: center;
+                color: #67696b;
+                position: relative; 
+                border-right: 2px solid #cecdcd;
+            }
+            .active{
+                height: 45/@rem;
+                line-height: 45/@rem;
+                margin: 0;
+                margin-right: -2px;
+                position: relative;
+                z-index: 8;
+                background-color: #1b9fe2;
+                border-right-color: #1B9FE2;
+                color: #fff !important;
+            }
+        }
+        //标题
+        .meeting-title{
+            display: block;
+            width: 269/@rem;
+            padding-top: 70/@rem;
+            height: 72/@rem;
+            line-height: 54/@rem;
+            text-align: center;
+            color: #fff;
+            font-size: 24/@rem;
+            font-weight: normal;
+            margin: 32/@rem auto 12/@rem;
+            background-position: -19/@rem -83/@rem;
+        }
+        h1{
+            font-size: 24/@rem;
+            text-align: center;
+            line-height: 88/@rem;
+        }
+        .little-title{
+            height: 48/@rem;
+            background-color: #f0f3f5;
+            h4{
+                background-color: #fe9845;
+                font-size: 22/@rem;
+                line-height: 48/@rem;
+                width: 130/@rem;
+                margin: 0 auto;
+                text-align: center;
+                color: #fff;
+                font-weight: normal;
+            }
+        }
+        p{
+            padding: 40/@rem 30/@rem;
+            text-indent: 2em;
+            font-size: 22/@rem;
+            line-height: 35/@rem;
+            color: #6f6e6e;
+        }
+        .center-content{
+            padding: 16/@rem 0;
+            font-size: 22/@rem;
+            text-align: center; 
+            line-height: 38/@rem;
+            color: #6f6e6e;
+        }
+        .little-title-sprite{
+            display: block;
+            margin: 44/@rem auto 0;
+            width: 153/@rem;
+            overflow: hidden;
+            height: 0;
+            padding-top: 32/@rem;
+            background-position-y: -39/@rem;
+        }
+        .center-txt{
+            text-indent: 0;
+            text-align: center;
+            padding: 17/@rem 35/@rem;
+        }
+        .course-read{
+            background-position: -132/@rem -2/@rem;
+        }
+        .have-margin{
+            margin: 46/@rem 30/@rem 0;
+        }
+        .have-padding{
+            padding-bottom: 40/@rem !important;
+        }
+        .cultural-list{
+            padding: 30/@rem 0 0 30/@rem;
+            li{
+                height: 208/@rem;
+                overflow: hidden;
+                margin-bottom: 30/@rem;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+            .cultural-list-pic{
+                width: 291/@rem;
+                height: 208/@rem;
+                margin-right: 26/@rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .cultural-list-info{
+                width: 376/@rem;
+                .height26{
+                    height: 26/@rem;
+                    padding-top: 4/@rem;
+                }
+                .cultural-list-num{
+                    display: inline-block;
+                    vertical-align: top;
+                    margin: 1/@rem  10/@rem 0 0;
+                    width: 24/@rem;
+                    height: 24/@rem;
+                    text-align: center;
+                    background-color: #ff9d00;
+                    color: #fff;
+                    font-size: 20/@rem;
+                    line-height: 24/@rem;
+                }
+                .cultural-list-title{
+                    display: inline-block;
+                    vertical-align: top;
+                    font-size: 22/@rem;
+                    line-height: 26/@rem;
+                    color: #FF9D00;
+                }
+                .cultural-list-text{
+                    padding: 18/@rem 0 26/@rem;
+                    font-size: 18/@rem;
+                    line-height: 27/@rem;
+                    color: #6b6a6a;
+                }
+                .cultural-list-js{
+                    font-size: 18/@rem;
+                    line-height: 27/@rem;
+                    color: #6b6a6a;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    overflow: hidden;
+                    span,a{
+                        display: inline-block;
+                        margin: 0 6/@rem;
+                        color: #ff9d00;
+                    }
+                }
+            }
+        }
+        
+        //日期安排
+    /*
+     * .time-wid  = 157/@rem 左侧时间的宽度
+     * .title-wid =591/@rem  右侧内容的宽度
+     * .m-wid     =51/@rem   右侧上午或者下午的宽度 
+     * .fn-wid    =538/@rem  右侧事件的宽度
+     * */
+        .date-box{
+            .time-wid{
+                width: 157/@rem;
+            }
+            .title-wid{
+                width: 590/@rem;
+            }
+            .m-wid{
+                width: 50/@rem;
+            }
+            .fn-wid{
+                width: 537/@rem;
+                h3{
+                    font-size: 22/@rem;
+                    line-height: 55/@rem;
+                }
+                p{
+                    text-indent: 0;
+                    padding: 0;
+                    font-size: 18/@rem;
+                    line-height: 25/@rem;
+                    span{
+                        color: #1b9fe2;
+                    }
+                }
+            }
+            .all{
+                line-height: 60/@rem;
+            }
+            .fn-wid-c{
+                box-sizing: border-box;
+                padding: 7/@rem 30/@rem 19/@rem 16/@rem;
+            }
+            .br-2{
+                border-right: 2px solid #d2d2d2;
+            }
+            .br-1{
+                border-right: 1px solid #d2d2d2;
+            }
+            .bb-1{
+                border-bottom: 1px solid #d2d2d2;
+            }
+            .sb1{
+                height: 62/@rem;
+                line-height: 62/@rem;
+                span{
+                    display: inline-block;
+                    vertical-align: middle;
+                    line-height: 24/@rem;
+                }
+            }
+            .sb2{
+                span{
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-size: 22/@rem;
+                    line-height: 24/@rem;
+                }
+            }
+            .center{
+                text-align: center;
+            }
+            dt{
+                height: 52/@rem;
+                border-top: 2px solid #d2d2d2;
+                border-bottom: 2px solid #d2d2d2;
+                line-height: 52/@rem;
+                text-align: center;
+                font-size: 22/@rem;
+                font-family: '黑体';
+            }
+            dd{
+                border-bottom: 1px solid #d2d2d2;
+            }
+        }
+    }
+}

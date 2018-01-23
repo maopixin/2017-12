@@ -1,0 +1,309 @@
+.meeting .sprite-meeting {
+  display: inline-block;
+  vertical-align: top;
+  background: url(../img/meeting-sprite.png) no-repeat;
+  background-size: 4rem;
+}
+.meeting .meeting-head {
+  padding: 0.4rem 0.4rem 0.42666667rem;
+}
+.meeting .meeting-head .meeting-pic {
+  width: 4.04rem;
+  height: 2.84rem;
+}
+.meeting .meeting-head .meeting-pic img {
+  width: 100%;
+  height: 100%;
+}
+.meeting .meeting-head .meeting-info {
+  width: 4.66666667rem;
+  margin-left: 0.32rem;
+}
+.meeting .meeting-head .meeting-info h2 {
+  font-size: 0.32rem;
+  line-height: 0.45333333rem;
+}
+.meeting .meeting-head .meeting-info h3 {
+  font-size: 0.22666667rem;
+  line-height: 0.54666667rem;
+  color: #8c8a8a;
+}
+.meeting .meeting-head .meeting-info .sprite-meeting {
+  width: 0.4rem;
+  padding-top: 0.41333333rem;
+  height: 0;
+  margin-right: 0.18666667rem;
+  overflow: hidden;
+  vertical-align: middle;
+  background-position: 0 0;
+}
+.meeting .meeting-head .meeting-info div {
+  font-size: 0.24rem;
+  line-height: 0.65333333rem;
+  color: #9ea1a5;
+}
+.meeting .meeting-head .meeting-info div .blue {
+  color: #1b9fe2;
+}
+.meeting .meeting-head .meeting-info .place .sprite-meeting {
+  background-position-x: -0.4rem;
+}
+.meeting .meeting-head .meeting-info .person-number .sprite-meeting {
+  background-position-x: -0.8rem;
+}
+.meeting .meeting-head .meeting-info .eye .sprite-meeting {
+  background-position-x: -1.2rem;
+}
+.meeting .meeting-head .join-btn {
+  width: 2.57333333rem;
+  height: 0.66666667rem;
+  margin: 0.42666667rem auto 0;
+  background-color: #1b9fe2;
+  color: #fff;
+  text-align: center;
+  font-size: 0.29333333rem;
+  line-height: 0.66666667rem;
+}
+.meeting .meeting-content {
+  /*
+     * .time-wid  = 157/@rem 左侧时间的宽度
+     * .title-wid =591/@rem  右侧内容的宽度
+     * .m-wid     =51/@rem   右侧上午或者下午的宽度 
+     * .fn-wid    =538/@rem  右侧事件的宽度
+     * */
+}
+.meeting .meeting-content .check-box {
+  border-bottom: 2px solid #cecdcd;
+  margin: 0 !important;
+  width: auto;
+  padding-left: 0.4rem;
+}
+.meeting .meeting-content .check-box .check-box-item {
+  width: 1.73333333rem;
+  height: 0.36rem;
+  line-height: 0.36rem;
+  margin: 0.12rem 0;
+  margin-right: -2px;
+  text-align: center;
+  color: #67696b;
+  position: relative;
+  border-right: 2px solid #cecdcd;
+}
+.meeting .meeting-content .check-box .active {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  margin: 0;
+  margin-right: -2px;
+  position: relative;
+  z-index: 8;
+  background-color: #1b9fe2;
+  border-right-color: #1B9FE2;
+  color: #fff !important;
+}
+.meeting .meeting-content .meeting-title {
+  display: block;
+  width: 3.58666667rem;
+  padding-top: 0.93333333rem;
+  height: 0.96rem;
+  line-height: 0.72rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.32rem;
+  font-weight: normal;
+  margin: 0.42666667rem auto 0.16rem;
+  background-position: -0.25333333rem -1.10666667rem;
+}
+.meeting .meeting-content h1 {
+  font-size: 0.32rem;
+  text-align: center;
+  line-height: 1.17333333rem;
+}
+.meeting .meeting-content .little-title {
+  height: 0.64rem;
+  background-color: #f0f3f5;
+}
+.meeting .meeting-content .little-title h4 {
+  background-color: #fe9845;
+  font-size: 0.29333333rem;
+  line-height: 0.64rem;
+  width: 1.73333333rem;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  font-weight: normal;
+}
+.meeting .meeting-content p {
+  padding: 0.53333333rem 0.4rem;
+  text-indent: 2em;
+  font-size: 0.29333333rem;
+  line-height: 0.46666667rem;
+  color: #6f6e6e;
+}
+.meeting .meeting-content .center-content {
+  padding: 0.21333333rem 0;
+  font-size: 0.29333333rem;
+  text-align: center;
+  line-height: 0.50666667rem;
+  color: #6f6e6e;
+}
+.meeting .meeting-content .little-title-sprite {
+  display: block;
+  margin: 0.58666667rem auto 0;
+  width: 2.04rem;
+  overflow: hidden;
+  height: 0;
+  padding-top: 0.42666667rem;
+  background-position-y: -0.52rem;
+}
+.meeting .meeting-content .center-txt {
+  text-indent: 0;
+  text-align: center;
+  padding: 0.22666667rem 0.46666667rem;
+}
+.meeting .meeting-content .course-read {
+  background-position: -1.76rem -0.02666667rem;
+}
+.meeting .meeting-content .have-margin {
+  margin: 0.61333333rem 0.4rem 0;
+}
+.meeting .meeting-content .have-padding {
+  padding-bottom: 0.53333333rem !important;
+}
+.meeting .meeting-content .cultural-list {
+  padding: 0.4rem 0 0 0.4rem;
+}
+.meeting .meeting-content .cultural-list li {
+  height: 2.77333333rem;
+  overflow: hidden;
+  margin-bottom: 0.4rem;
+}
+.meeting .meeting-content .cultural-list li:last-child {
+  margin-bottom: 0;
+}
+.meeting .meeting-content .cultural-list .cultural-list-pic {
+  width: 3.88rem;
+  height: 2.77333333rem;
+  margin-right: 0.34666667rem;
+}
+.meeting .meeting-content .cultural-list .cultural-list-pic img {
+  width: 100%;
+  height: 100%;
+}
+.meeting .meeting-content .cultural-list .cultural-list-info {
+  width: 5.01333333rem;
+}
+.meeting .meeting-content .cultural-list .cultural-list-info .height26 {
+  height: 0.34666667rem;
+  padding-top: 0.05333333rem;
+}
+.meeting .meeting-content .cultural-list .cultural-list-info .cultural-list-num {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0.01333333rem 0.13333333rem 0 0;
+  width: 0.32rem;
+  height: 0.32rem;
+  text-align: center;
+  background-color: #ff9d00;
+  color: #fff;
+  font-size: 0.26666667rem;
+  line-height: 0.32rem;
+}
+.meeting .meeting-content .cultural-list .cultural-list-info .cultural-list-title {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0.29333333rem;
+  line-height: 0.34666667rem;
+  color: #FF9D00;
+}
+.meeting .meeting-content .cultural-list .cultural-list-info .cultural-list-text {
+  padding: 0.24rem 0 0.34666667rem;
+  font-size: 0.24rem;
+  line-height: 0.36rem;
+  color: #6b6a6a;
+}
+.meeting .meeting-content .cultural-list .cultural-list-info .cultural-list-js {
+  font-size: 0.24rem;
+  line-height: 0.36rem;
+  color: #6b6a6a;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.meeting .meeting-content .cultural-list .cultural-list-info .cultural-list-js span,
+.meeting .meeting-content .cultural-list .cultural-list-info .cultural-list-js a {
+  display: inline-block;
+  margin: 0 0.08rem;
+  color: #ff9d00;
+}
+.meeting .meeting-content .date-box .time-wid {
+  width: 2.09333333rem;
+}
+.meeting .meeting-content .date-box .title-wid {
+  width: 7.86666667rem;
+}
+.meeting .meeting-content .date-box .m-wid {
+  width: 0.66666667rem;
+}
+.meeting .meeting-content .date-box .fn-wid {
+  width: 7.16rem;
+}
+.meeting .meeting-content .date-box .fn-wid h3 {
+  font-size: 0.29333333rem;
+  line-height: 0.73333333rem;
+}
+.meeting .meeting-content .date-box .fn-wid p {
+  text-indent: 0;
+  padding: 0;
+  font-size: 0.24rem;
+  line-height: 0.33333333rem;
+}
+.meeting .meeting-content .date-box .fn-wid p span {
+  color: #1b9fe2;
+}
+.meeting .meeting-content .date-box .all {
+  line-height: 0.8rem;
+}
+.meeting .meeting-content .date-box .fn-wid-c {
+  box-sizing: border-box;
+  padding: 0.09333333rem 0.4rem 0.25333333rem 0.21333333rem;
+}
+.meeting .meeting-content .date-box .br-2 {
+  border-right: 2px solid #d2d2d2;
+}
+.meeting .meeting-content .date-box .br-1 {
+  border-right: 1px solid #d2d2d2;
+}
+.meeting .meeting-content .date-box .bb-1 {
+  border-bottom: 1px solid #d2d2d2;
+}
+.meeting .meeting-content .date-box .sb1 {
+  height: 0.82666667rem;
+  line-height: 0.82666667rem;
+}
+.meeting .meeting-content .date-box .sb1 span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 0.32rem;
+}
+.meeting .meeting-content .date-box .sb2 span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.29333333rem;
+  line-height: 0.32rem;
+}
+.meeting .meeting-content .date-box .center {
+  text-align: center;
+}
+.meeting .meeting-content .date-box dt {
+  height: 0.69333333rem;
+  border-top: 2px solid #d2d2d2;
+  border-bottom: 2px solid #d2d2d2;
+  line-height: 0.69333333rem;
+  text-align: center;
+  font-size: 0.29333333rem;
+  font-family: '黑体';
+}
+.meeting .meeting-content .date-box dd {
+  border-bottom: 1px solid #d2d2d2;
+}

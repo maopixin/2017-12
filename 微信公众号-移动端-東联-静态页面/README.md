@@ -11,6 +11,7 @@
 	form.css        	表单css
 	talks.css			交流圈css
 	course.css			精品课程css
+	meeting.css			会议详情css
 
  -html  页面文件夹
     home.html       	主页
@@ -28,6 +29,9 @@
 	apply-ready.html	参赛报名-预报名表单
 	talks.html 			交流圈
 	course.html 		精品课程
+	meeting-a.html		会议详情页a
+	meeting-b.html		会议详情页b
+	meeting-c.html		会议详情页c
 
  -img   图片文件夹
     -test   			测试图片（上线后删除）
@@ -39,9 +43,12 @@
     tickit-sprite.png	票数精灵图 
     form-sprite.png		表单精灵图
     talks-sprite.png	交流圈精灵图
+    meeting-sprite.png	会议详情精灵图
 
 
  -js    JavaScript文件夹
     dpr.js          	移动端适配js
     jquery-3.2.1.js		jq
     select.js			下拉框js
+    check.js
+    swipeslider.min.js
