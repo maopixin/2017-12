@@ -307,3 +307,38 @@
 .meeting .meeting-content .date-box dd {
   border-bottom: 1px solid #d2d2d2;
 }
+.meeting .meeting-content .letter {
+  padding: 0 0.4rem;
+}
+.meeting .meeting-content .letter .letter-title {
+  font-size: 0.32rem;
+  line-height: 0.93333333rem;
+}
+.meeting .meeting-content .letter .letter-mes {
+  font-size: 0.26666667rem;
+  line-height: 0.46666667rem;
+  color: #6f6e6e;
+}
+.meeting .meeting-content .letter .letter-mes dt {
+  text-indent: 2em;
+}
+.meeting .meeting-content .letter .letter-tip {
+  margin-top: 0.72rem;
+  font-size: 0.26666667rem;
+  line-height: 0.58666667rem;
+  color: #6f6e6e;
+}
+.meeting .meeting-content .letter .letter-tip .sprite-meeting {
+  width: 1.49333333rem;
+  height: 0;
+  padding-top: 0.32rem;
+  overflow: hidden;
+  background-position: -2.34666667rem -0.58666667rem;
+}
+.meeting .foot {
+  padding: 0.4rem;
+  text-align: right;
+  font-size: 0.26666667rem;
+  line-height: 0.58666667rem;
+  color: #6f6e6e;
+}

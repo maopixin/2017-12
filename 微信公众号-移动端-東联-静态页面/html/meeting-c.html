@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>会议详情</title>
+		<!-- 一比一像素还原 -->
+		<script src="./../js/dpr.js"></script>
+		<!-- 初始化样式 -->
+		<link rel="stylesheet" href="./../css/reset.css">
+		<!-- 工具类 -->
+		<link rel="stylesheet" href="./../css/tools.css">
+		<!-- 全局样式 -->
+		<link rel="stylesheet" href="./../css/index.css">
+		<!--引入同名样式-->
+		<link rel="stylesheet" href="../css/meeting.css" />
+	</head>
+
+	<body class="meeting">
+		<!--会议详情头部-->
+		<header class="meeting-head">
+			<!--会议信息-->
+			<div class="clearfix">
+				<div class="meeting-pic fl">
+					<!--w303 h213-->
+					<img src="../img/test/test13.jpg" />
+				</div>
+				<div class="meeting-info fl">
+					<h2>第十二届班主任名家论坛</h2>
+					<h3>主题：心理学视野下的班主任工作策略</h3>
+					<div class="time">
+						<span class="sprite-meeting">时间</span>
+						<span>2017.11.24-2017.11.27</span>
+					</div>
+					<div class="place">
+						<span class="sprite-meeting">地点</span>
+						<span>福建厦门国际会展中心</span>
+					</div>
+					<div class="clearfix">
+						<div class="person-number fl">
+							<span class="sprite-meeting">人数</span>
+							<span>
+								<span class="blue">2202</span>
+								<span>人参加</span>
+							</span>
+						</div>
+						<div class="eye fr">
+							<span class="sprite-meeting">阅读数</span>
+							<span>
+								<span class="blue">31429</span>
+								<span>人浏览过</span>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--报名按钮-->
+			<div class="join-btn">
+				立即报名
+			</div>
+		</header>
+		<!--会议详情内容-->
+		<section class="meeting-content">
+			<ul class="check-box clearfix">
+				<li class="check-box-item active fl">会议介绍</li>
+				<li class="check-box-item fl">会议日程</li>
+				<li class="check-box-item fl">温馨提示</li>
+			</ul>
+			<!--带图标的标题-->
+			<h2 class="meeting-title sprite-meeting">
+				温馨提示
+			</h2>
+			<div class="letter">
+				<h4 class="letter-title">尊敬的与会老师：</h4>
+				<dl class="letter-mes">
+					<dt>您好！欢迎您参加由東联教育—中国教师教育视频网与北京春之雨教育机构联合在北京举办的“第二十届名师论坛”。为了您与会期间一切顺利，特将有关事宜通知如下：</dt>
+					<dd>1．请随时保管好自己的物品，注意人身与财物安全，任何以会务组或参会教师名义组织的娱乐活动请不要参加、以防上当受骗。</dd>
+					<dd>2．签到后，请到酒店前台交房卡押金（退房时请注意退还）领取房卡。请您仔细查对相关物品，以免给您带来不便。“时时替别人着想，是世间第一等学问”。住宿房间由会务组统一安排，勿自行调换，勿大声喧哗或影响同舍他人休息、勿损坏房间物品。</dd>
+					<dd>3．会议用餐（缴纳餐费后）从9月23日午餐开始安排，至9月26日午餐结束。请凭餐券在指定餐厅用餐。餐费缴纳后不退，餐券当日当餐有效、过期作废；《朱子治家格言》中讲到：“一粥一饭，当思来之不易；半丝半缕，恒念物力维艰”。请大家按需取用，勿浪费一菜一米，感恩您的认同与合作！</dd>
+					<dd>4．进入会场必须佩戴代表证，进入会场后请把手机设置静音或振动状态，请不要在会场内接听、拨打电话。</dd>
+					<dd>5．签到时请出示汇款凭证（补交费用的，先开临时收据），您可于9月24日下午向会务组领取正式发票、学习证书。</dd>
+					<dd>6．会议期间，课件不供拷贝，请在会议结束后登录“<a href="http://www.jspxedu.cn">中国教师教育视频网（www.jspxedu.cn</a>)—视频课堂—课件下载”进行下载，感恩您的参与和支持！</dd>
+				</dl>
+				<dl class="letter-tip">
+					<dt class="sprite-meeting">温馨提示</dt>
+					<dd>【住  宿】 金田商务酒店</dd>
+					<dd>【用  餐】 甘露素食餐厅（会场楼下）</dd>
+					<dd>【会  场】東联教育一楼会场（海淀区中关村南大街30号）</dd>
+					<dd>【联系人】会务组：姚仕洲 老师    电 话：17310350551</dd>
+				</dl>
+			</div>
+		</section>
+		<footer class="foot">
+			東联教育—中国教师教育视频网 敬呈
+		</footer>
+	</body>
+	<script src="../js/jquery-3.2.1.js"></script>
+	<script src="../js/check.js"></script>
+	<script>
+		//日期行高自适应
+		$('.auto').css('line-height',function(){
+			return $(this).parent().css('height');
+		});
+	</script>
+</html>
