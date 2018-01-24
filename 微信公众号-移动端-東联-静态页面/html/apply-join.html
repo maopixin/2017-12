@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>专家入驻</title>
+    <!-- 一比一像素还原 -->
+    <script src="./../js/dpr.js"></script>
+    <!-- 初始化样式 -->
+    <link rel="stylesheet" href="./../css/reset.css">
+    <!-- 工具类 -->
+    <link rel="stylesheet" href="./../css/tools.css">
+    <!-- 全局样式 -->
+    <link rel="stylesheet" href="./../css/index.css">
+    <!-- 当前页面的css -->
+    <link rel="stylesheet" href="./../css/form.css">
+</head>
+<body class="form">
+	<!--基本信息-->
+    <h2 class="form-title">- 基本信息 -</h2>
+    <div class="form-content input-box">
+    	<div class="input-box">
+    		<label class="label two-label inline-block" for="">姓名</label>
+    		<input class="two two-margin indent" type="text" />
+    		<label class="label two-label inline-block" for="">年龄</label>
+    		<input class="two indent" type="text"></input>
+    	</div>
+    	<div>
+	    	<label class="input-title inline-block">头像上传</label>
+	    	<span class="inline-block tip">必填</span>
+	    </div>
+    	<div class="head-pic">
+	    	<!--<img src="" alt="" />-->
+	    	<span class="sprite-form pic">头像</span>
+	    	<span class="sprite-form add">+</span>
+	    	<span class="tip">添加头像</span>
+	    </div>
+	    <div>
+	    	<label for="" class="input-title block">
+	    		单位名称
+	    	</label>
+	    	<input class="width3 indent" type="text" placeholder="选填" name="" id="" value="" />
+	    </div>
+	    <div>
+	    	<label for="" class="input-title block">
+	    		联系电话
+	    	</label>
+	    	<input class="width3 indent" type="text" placeholder="必填" name="" id="" value="" />
+	    </div>
+	    <div>
+	    	<label for="" class="input-title block">
+	    		讲课主题
+	    	</label>
+	    	<input class="width3 indent" type="text" placeholder="必填" name="" id="" value="" />
+	    </div>
+	    <div>
+	    	<label for="" class="input-title block">
+	    		研究领域
+	    	</label>
+	    	<input class="width3 indent" type="text" placeholder="必填" name="" id="" value="" />
+	    </div>
+	    <div>
+	    	<label class="input-title block">个人简介</label>
+	    	<textarea class="width3 synopsis block">简介：</textarea>
+	    </div>
+    </div>
+    <h2 class="form-title">- 所获荣誉 -</h2>
+    <div class="form-content input-box">
+    	<div>
+	    	<label class="input-title inline-block">上传图片</label>
+	    	<span class="inline-block tip">必填</span>
+	    </div>
+	    <div class="winbox">
+	    	<div class="winbox-item">
+	    		<span class="sprite-form"></span>
+	    		<img class="win-pic" src="" alt="" />
+	    		<span class="win-pic-info center">图片1</span>
+	    		<input type="file" name="" id="" value="" />
+	    	</div>
+	    	<div class="winbox-item">
+	    		<span class="sprite-form"></span>
+	    		<img class="win-pic" src="" alt="" />
+	    		<span class="win-pic-info center">图片1</span>
+	    		<input type="file" name="" id="" value="" />
+	    	</div>
+	    	<div class="winbox-item">
+	    		<span class="sprite-form"></span>
+	    		<img class="win-pic" src="" alt="" />
+	    		<span class="win-pic-info center">图片1</span>
+	    		<input type="file" name="" id="" value="" />
+	    	</div>
+	    </div>
+    	<div class="submit center">提交</div>
+    </div>
+</body>
+	<script src="../js/jquery-3.2.1.js"></script>
+	<script>
+		$('.check-one').click(function(){
+			$('.check-one').removeClass('sprite-form');
+			$(this).addClass('sprite-form');
+		})
+	</script>
+</html>

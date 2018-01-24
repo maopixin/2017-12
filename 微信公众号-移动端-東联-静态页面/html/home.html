@@ -52,12 +52,21 @@
 		<!-- 新闻列表 -->
 		<div class="news">
 			<span class="sprite-home">新闻</span>
-			<ul class="news-box ib">
+			<ul class="news-box ib" id="news-box">
 				<li class="news-item">
-					<a href="">我是一条新闻，真的你不要不信，我就是试试我能容纳多少字，呵呵呵呵。</a>
+					<a href="">我是一条新闻，真的你不要不信，1</a>
 				</li>
 				<li class="news-item">
-					<a href="">我是一条新闻，真的你不要不信，我就是试试我能容纳多少字，呵呵呵呵。</a>
+					<a href="">我是一条新闻，真的你不要不信，2</a>
+				</li>
+				<li class="news-item">
+					<a href="">我是一条新闻，真的你不要不信，3</a>
+				</li>
+				<li class="news-item">
+					<a href="">我是一条新闻，真的你不要不信，4</a>
+				</li>
+				<li class="news-item">
+					<a href="">我是一条新闻，真的你不要不信，1</a>
 				</li>
 			</ul>
 		</div>
@@ -508,8 +517,13 @@
 		</ul>
 		<script src="./../js/jquery-3.2.1.js"></script>
 		<script src="./../js/swipeslider.min.js"></script>
+		<script src="./../js/newsgd.js"></script>
+		<script src="./../js/MTween.js"></script>
 		<script>
+			// 轮播图
 			$('#full_feature').swipeslider();
+			// 新闻轮播
+			$('#news-box').newsgd();
 		</script>
 	</body>
 

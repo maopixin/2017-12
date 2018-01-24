@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>团体定制</title>
+    <!-- 一比一像素还原 -->
+    <script src="./../js/dpr.js"></script>
+    <!-- 初始化样式 -->
+    <link rel="stylesheet" href="./../css/reset.css">
+    <!-- 工具类 -->
+    <link rel="stylesheet" href="./../css/tools.css">
+    <!-- 全局样式 -->
+    <link rel="stylesheet" href="./../css/index.css">
+    <!-- 当前页面的css -->
+    <link rel="stylesheet" href="./../css/form.css">
+</head>
+<body class="form">
+	<!--基本信息-->
+    <h2 class="form-title">- 基本信息 -</h2>
+    <div class="form-content input-box">
+    	<div class="input-box">
+    		<label class="label two-label inline-block" for="">姓名</label>
+    		<input class="two two-margin indent" type="text" name="" id="" value="" />
+    		<label class="label two-label inline-block" for="">电话</label>
+    		<input class="two indent" type="tel" name="" id="" value="" />
+    	</div>
+    	<div class="input-box">
+    		<label class="label two-label inline-block" for="">职务</label>
+    		<input class="two indent two-margin" type="text" />
+    		<label class="label two-label inline-block" for="">单位</label>
+    		<input class="two indent" type="text"></input>
+    	</div>
+    </div>
+    <!--定制内容-->
+    <h2 class="form-title">- 定制内容 -</h2>
+    <div class="form-content input-box">
+    	<div class="input-box">
+    		<label for="" class="label one-label inline-block">会议主题</label>
+    		<input class="one indent" type="text" />
+    	</div>
+    	<div class="input-box">
+    		<label class="label two-label inline-block" for="">时间</label>
+    		<input class="two two-margin indent" type="text" />
+    		<label class="label two-label inline-block" for="">地点</label>
+    		<input class="two indent" type="text"></input>
+    	</div>
+    	<div class="input-box">
+    		<label for="" class="label one-label inline-block">规模</label>
+    		<input class="one indent" type="text" />
+    	</div>
+    	<div class="input-box">
+	    	<div class="font">形式（勾选）</div>
+	    	<div class="check-box-check">
+	    		<span class="s">
+	    			<span class="check-one sprite-form inline-block"></span>
+	    			<span>会议</span>
+	    		</span>
+	    		<span class="s">
+	    			<span class="check-one inline-block"></span>
+	    			<span>参观</span>
+	    		</span>
+	    	</div>
+	    </div>
+	    <div class="submit center">提交</div>
+    </div>
+</body>
+	<script src="../js/jquery-3.2.1.js"></script>
+	<script>
+		$('.check-one').click(function(){
+			$('.check-one').removeClass('sprite-form');
+			$(this).addClass('sprite-form');
+		})
+	</script>
+</html>

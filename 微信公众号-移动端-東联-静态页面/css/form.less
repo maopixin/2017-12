@@ -56,6 +56,14 @@
     .width{
         width: 689/@rem;
     }
+    .width3{
+        box-sizing: border-box;
+        width: 680/@rem !important;
+    }
+    .font{
+        font-size: 20/@rem;
+        line-height: 52/@rem;
+    }
     .margin{
         margin-right: 30/@rem;
     }
@@ -63,6 +71,7 @@
         font-size: 20/@rem;
         line-height: 62/@rem;
         color: #858282;
+        margin-left: 18/@rem;
     }
     .label{
         width: 92/@rem;
@@ -204,6 +213,38 @@
             margin-right: 20/@rem;
         }
     }
+    //团体定制页
+    .one-label{
+        width: 110/@rem;
+        text-indent: 0;
+    }
+    .one{
+        width: 570/@rem;
+    }
+    .input-box{
+        padding-top: 30/@rem;
+        padding-bottom: 10/@rem;
+    }
+    .two-label{
+        text-indent: 0;
+        width: 62/@rem;
+    }
+    .two-margin{
+        margin-right: 42/@rem;
+    }
+    .two{
+        width: 256/@rem;
+    }
+    .check-box-check{
+        font-size: 20/@rem;
+        line-height: 51/@rem;
+        text-align: center;
+        .s{
+            display: inline-block;
+            width: 49%;
+        }
+    }
+    //end
     .meet-person{
         font-size: 20/@rem;
         line-height: 40/@rem;
@@ -401,6 +442,44 @@
     }
     .margin-top{
         margin-top: 46/@rem;
+    }
+    //所获荣誉的盒子
+    .winbox{
+        margin-top: 20/@rem;
+        box-sizing: border-box;
+        display: flex;
+        justify-content:space-around;
+        .winbox-item{
+            width: 142/@rem;
+            position: relative;
+            .sprite-form{
+                width: 141/@rem;
+                height: 128/@rem;
+                background-position: 0 -137/@rem;
+            }
+            img{
+               display: none;
+               width: 141/@rem; 
+               height: 128/@rem;
+            }
+            .win-pic-info{
+                display: block;
+                font-size: 20/@rem;
+                line-height: 40/@rem;
+                margin-top: 20/@rem;
+            }
+            input{
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 142/@rem;
+                height: 209/@rem;
+                opacity: 0;
+                z-index: 8;
+            }
+        }
     }
 }
 

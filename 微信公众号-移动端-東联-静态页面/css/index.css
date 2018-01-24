@@ -250,6 +250,12 @@ body {
   color: #fff;
   margin: 0.8rem auto;
 }
+.padding-m {
+  padding: 0.4rem 0 0 0.4rem;
+}
+.all-teacher-box {
+  padding-top: 0.4rem;
+}
 .all-teacher-list {
   padding-top: 0.26666667rem;
 }

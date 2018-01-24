@@ -134,6 +134,7 @@
 .home .news {
   height: 0.73333333rem;
   background-color: #f7f8fa;
+  overflow: hidden;
 }
 .home .news .sprite-home {
   width: 0.41333333rem;
@@ -143,7 +144,6 @@
   margin: 0.16rem 0.21333333rem 0 0.4rem;
 }
 .home .news .news-box {
-  height: 0.73333333rem;
   overflow: hidden;
 }
 .home .news .news-box a {

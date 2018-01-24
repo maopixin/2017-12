@@ -51,6 +51,14 @@
 .form .width {
   width: 9.18666667rem;
 }
+.form .width3 {
+  box-sizing: border-box;
+  width: 9.06666667rem !important;
+}
+.form .font {
+  font-size: 0.26666667rem;
+  line-height: 0.69333333rem;
+}
 .form .margin {
   margin-right: 0.4rem;
 }
@@ -58,6 +66,7 @@
   font-size: 0.26666667rem;
   line-height: 0.82666667rem;
   color: #858282;
+  margin-left: 0.24rem;
 }
 .form .label {
   width: 1.22666667rem;
@@ -194,6 +203,36 @@
   vertical-align: top;
   margin-top: 0.33333333rem;
   margin-right: 0.26666667rem;
+}
+.form .one-label {
+  width: 1.46666667rem;
+  text-indent: 0;
+}
+.form .one {
+  width: 7.6rem;
+}
+.form .input-box {
+  padding-top: 0.4rem;
+  padding-bottom: 0.13333333rem;
+}
+.form .two-label {
+  text-indent: 0;
+  width: 0.82666667rem;
+}
+.form .two-margin {
+  margin-right: 0.56rem;
+}
+.form .two {
+  width: 3.41333333rem;
+}
+.form .check-box-check {
+  font-size: 0.26666667rem;
+  line-height: 0.68rem;
+  text-align: center;
+}
+.form .check-box-check .s {
+  display: inline-block;
+  width: 49%;
 }
 .form .meet-person {
   font-size: 0.26666667rem;
@@ -387,4 +426,41 @@
 }
 .form .margin-top {
   margin-top: 0.61333333rem;
+}
+.form .winbox {
+  margin-top: 0.26666667rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+}
+.form .winbox .winbox-item {
+  width: 1.89333333rem;
+  position: relative;
+}
+.form .winbox .winbox-item .sprite-form {
+  width: 1.88rem;
+  height: 1.70666667rem;
+  background-position: 0 -1.82666667rem;
+}
+.form .winbox .winbox-item img {
+  display: none;
+  width: 1.88rem;
+  height: 1.70666667rem;
+}
+.form .winbox .winbox-item .win-pic-info {
+  display: block;
+  font-size: 0.26666667rem;
+  line-height: 0.53333333rem;
+  margin-top: 0.26666667rem;
+}
+.form .winbox .winbox-item input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 1.89333333rem;
+  height: 2.78666667rem;
+  opacity: 0;
+  z-index: 8;
 }
