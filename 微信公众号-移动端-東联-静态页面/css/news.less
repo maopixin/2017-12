@@ -1,0 +1,75 @@
+@rem:75rem;
+
+//命名空间  body=news
+.news{
+    padding: 64/@rem 27/@rem;
+    background-color: #f5f8fa;
+    .news-box{
+        padding: 0 15/@rem;
+        border: 1px solid #d2d2d2;
+        background-color: #fff;
+        .news-item{
+            border-bottom: 1px solid #eeeeee;
+            a{
+                display: block;
+                padding: 19/@rem 0;
+            }
+            .news-t{
+                margin-bottom: 7/@rem;
+            }
+            .date{
+                width: 47/@rem;
+                height: 47/@rem;
+                padding: 4/@rem;
+                box-sizing: border-box;
+                background-color: #1b9fe2;
+                border-radius: 6/@rem;
+                text-align: center;
+                margin-right: 14/@rem;
+                span{
+                    display: block;
+                    line-height: 20/@rem;
+                    color: #FFFFFF;
+                    font-size: 16/@rem;
+                }
+            }
+            .news-title{
+                em{
+                    font-size: 16/@rem;
+                    line-height: 18/@rem;
+                    color: #7e7e7e;
+                    display: block;
+                }
+                h3{
+                    font-size: 19/@rem;
+                    line-height: 38/@rem;
+                    width: 570/@rem;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+            .news-b{
+                .news-pic{
+                    width: 210/@rem;
+                    height: 127/@rem;
+                    img{
+                        width: 210/@rem;
+                        height: 127/@rem;
+                        display: block;
+                    }
+                }
+                p{
+                    width: 430/@rem;
+                    margin-left: 15/@rem;
+                    font-size: 14/@rem;
+                    line-height: 26/@rem;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 5;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}

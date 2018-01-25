@@ -12,6 +12,7 @@
 	talks.css			交流圈css
 	course.css			精品课程css
 	meeting.css			会议详情css
+	news.css			全部资讯css
 
  -html  页面文件夹
     home.html       	主页
@@ -41,6 +42,7 @@
 	teacher.html		所有名师
 	teacher-f.html		名师名家
 	expert.html			专家库
+	news.html			全部资讯（补）
 
 
  -img   图片文件夹
