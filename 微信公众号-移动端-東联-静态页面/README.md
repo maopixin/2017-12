@@ -14,6 +14,7 @@
 	meeting.css			会议详情css
 	news.css			全部资讯css
 
+ 
  -html  页面文件夹
     home.html       	主页
     my.html         	我的
@@ -35,7 +36,7 @@
 	
 	talks.html 			交流圈
 	course.html 		精品课程
-	meeting-a.html		会议详情页a
+	meeting-a.html		会议详情页a（此页面包含弹出框）
 	meeting-b.html		会议详情页b
 	meeting-c.html		会议详情页c
 	

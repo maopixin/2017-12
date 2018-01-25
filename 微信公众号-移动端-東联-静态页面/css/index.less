@@ -344,3 +344,57 @@ body {
         width: 750/@rem;
     }
 }
+
+
+//抽屉
+
+.drawer{
+    position: fixed;
+    right: -3px;
+    top: 50%;
+    width: 314/@rem;
+    height: 100/@rem;
+    border-radius: 10/@rem;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    .switch{
+        width: 36/@rem;
+        line-height: 100/@rem;
+        font-size: 34/@rem;
+        background-color: #f14d49;
+        border-right: 2px solid #FFFFFF;
+    }
+    .open:after{
+        content: "›";
+        display: inline-block;
+    }
+    .close:after{
+        content: "‹";
+        display: inline-block;
+    }
+    a{
+        width: 136/@rem;
+        border-right: 2px solid #fff;
+        background-color: #f14d49;
+        height: 100/@rem;
+        .sprite-index{
+            margin-top: 11/@rem;
+            width: 48/@rem;
+            height: 0/@rem;
+            overflow: visible;
+            padding-top: 49/@rem;
+            font-size: 20/@rem;
+            text-indent: -1em;
+            white-space: nowrap;
+            line-height: 38/@rem;
+            background-position: -1/@rem -50/@rem ;
+        }
+    }
+    .other-meeting{
+        background-color: #6b7375;
+        .sprite-index{
+            background-position-x: -56/@rem;
+        }
+    }
+}

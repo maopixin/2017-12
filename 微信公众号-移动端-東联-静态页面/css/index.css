@@ -318,3 +318,53 @@ body {
 .AD-2 img {
   width: 10rem;
 }
+.drawer {
+  position: fixed;
+  right: -3px;
+  top: 50%;
+  width: 4.18666667rem;
+  height: 1.33333333rem;
+  border-radius: 0.13333333rem;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+.drawer .switch {
+  width: 0.48rem;
+  line-height: 1.33333333rem;
+  font-size: 0.45333333rem;
+  background-color: #f14d49;
+  border-right: 2px solid #FFFFFF;
+}
+.drawer .open:after {
+  content: "›";
+  display: inline-block;
+}
+.drawer .close:after {
+  content: "‹";
+  display: inline-block;
+}
+.drawer a {
+  width: 1.81333333rem;
+  border-right: 2px solid #fff;
+  background-color: #f14d49;
+  height: 1.33333333rem;
+}
+.drawer a .sprite-index {
+  margin-top: 0.14666667rem;
+  width: 0.64rem;
+  height: 0rem;
+  overflow: visible;
+  padding-top: 0.65333333rem;
+  font-size: 0.26666667rem;
+  text-indent: -1em;
+  white-space: nowrap;
+  line-height: 0.50666667rem;
+  background-position: -0.01333333rem -0.66666667rem;
+}
+.drawer .other-meeting {
+  background-color: #6b7375;
+}
+.drawer .other-meeting .sprite-index {
+  background-position-x: -0.74666667rem;
+}
