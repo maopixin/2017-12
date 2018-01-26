@@ -14,7 +14,8 @@
 		<link rel="stylesheet" href="./../css/index.css">
 		<!-- 当前页面的css -->
 		<link rel="stylesheet" href="./../css/home.css">
-		<link rel="stylesheet" href="./../css/swipeslider.css">
+		<link rel="stylesheet" href="./../css/ydui.css">
+		
 	</head>
 
 	<body class="home">
@@ -30,25 +31,28 @@
 			</div>
 		</header>
 		<!-- 轮播图 -->
-		<div id="full_feature" class="swipslider">
-			<ul class="sw-slides">
-				<li class="sw-slide">
-					<img src="./../img/test/banner.jpg">
-				</li>
-				<li class="sw-slide">
-					<img src="./../img/test/banner.jpg">
-				</li>
-				<li class="sw-slide">
-					<img src="./../img/test/banner.jpg">
-				</li>
-				<li class="sw-slide">
-					<img src="./../img/test/banner.jpg">
-				</li>
-				<li class="sw-slide">
-					<img src="./../img/test/banner.jpg">
-				</li>
-			</ul>
+
+		<div class="m-slider" id="J_Slider">
+			<div class="slider-wrapper">
+				<div class="slider-item">
+					<a href="#">
+						<img src="./../img/test/banner.jpg">
+					</a>
+				</div>
+				<div class="slider-item">
+					<a href="#">
+						<img src="./../img/test/banner.jpg">
+					</a>
+				</div>
+				<div class="slider-item">
+					<a href="#">
+						<img src="./../img/test/banner.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="slider-pagination"></div>
 		</div>
+		
 		<!-- 新闻列表 -->
 		<div class="news">
 			<span class="sprite-home">新闻</span>
@@ -515,15 +519,24 @@
 				</a>
 			</li>
 		</ul>
+		
 		<script src="./../js/jquery-3.2.1.js"></script>
-		<script src="./../js/swipeslider.min.js"></script>
+		<script src="./../js/ydui.js"></script>
 		<script src="./../js/newsgd.js"></script>
 		<script src="./../js/MTween.js"></script>
 		<script>
+			$('#J_Slider').slider({
+				speed: 200,
+				autoplay: 2000,
+				lazyLoad: true
+			});
+		</script>
+		<script>
 			// 轮播图
-			$('#full_feature').swipeslider();
+			// $('#full_feature').swipeslider();
 			// 新闻轮播
 			$('#news-box').newsgd();
+			
 		</script>
 	</body>
 

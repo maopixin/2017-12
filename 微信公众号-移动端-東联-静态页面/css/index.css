@@ -320,7 +320,7 @@ body {
 }
 .drawer {
   position: fixed;
-  right: -3px;
+  right: 0px;
   top: 50%;
   width: 4.18666667rem;
   height: 1.33333333rem;
