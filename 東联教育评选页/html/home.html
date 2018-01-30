@@ -125,30 +125,47 @@
             <div class="flow-title">
                 大赛流程
             </div>
-            <ul class="flow-box clearfix">
-                <li>
-                    <span class="num">1</span>
-                    <span class="info">
-                        <em>参赛报名</em>
-                        <em>大众评选</em>
-                    </span>
-                    <span class="time">2018.1.1——2018.1.30</span>
-                </li>
-                <li>
-                    <span class="num">2</span>
-                    <span class="info">
-                        <em>评委评选</em>
-                    </span>
-                    <span class="time">2018.1.1——2018.1.30</span>
-                </li>
-                <li class="active">
-                    <span class="num">3</span>
-                    <span class="info">
-                        <em>大奖公布</em>
-                    </span>
-                    <span class="time">2018.1.1——2018.1.30</span>
-                </li>
-            </ul>
+            <div class="flow-box-f">
+            	<div class="flow-box-left-btn" id="f-l">
+            		left
+            	</div>
+            	<div id="f-c">
+            		<ul class="flow-box clearfix" id="flow-box">
+		                <li>
+		                    <span class="num">1</span>
+		                    <span class="info">
+		                        <em>参赛报名</em>
+		                        <em>大众评选</em>
+		                    </span>
+		                    <span class="time">2018.1.1——2018.1.30</span>
+		                </li>
+		                <li>
+		                    <span class="num">2</span>
+		                    <span class="info">
+		                        <em>评委评选</em>
+		                    </span>
+		                    <span class="time">2018.1.1——2018.1.30</span>
+		                </li>
+		                <li class="active">
+		                    <span class="num">3</span>
+		                    <span class="info">
+		                        <em>大奖公布</em>
+		                    </span>
+		                    <span class="time">2018.1.1——2018.1.30</span>
+		                </li>
+		                <li class="active">
+		                    <span class="num">3</span>
+		                    <span class="info">
+		                        <em>大奖公布</em>
+		                    </span>
+		                    <span class="time">2018.1.1——2018.1.30</span>
+		                </li>
+		            </ul>
+            	</div>
+	            <div class="flow-box-right-btn" id="f-r">
+	            	right
+	            </div>
+            </div>
         </div>
         <div class="t-a-t fl teams clearfix">
             <div class="flow-title">
@@ -387,9 +404,9 @@
             主题预告
         </div>
         <div class="new-list">
-            <div class="btn fl"></div>
+            <div class="btn fl" id="pre"></div>
             <div class="list-box fl">
-                <ul class="clearfix">
+                <ul id="month-box" class="clearfix">
                     <li class="fl">
                         <!-- 通过span的背景色调节 简化为一张图片 -->
                         <span class="month">
@@ -489,7 +506,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="btn tran fr"></div>
+            <div class="btn tran fr" id="next"></div>
         </div>
     </div>
     <!-- 底部 -->
@@ -534,6 +551,9 @@
             </div>
         </div>
     </footer>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script src="../js/config.js"></script>
+    <script src="../js/home.js"></script>
 </body>
 
 </html>

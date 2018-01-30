@@ -21,7 +21,7 @@
   height: 0px;
   padding-top: 44px;
   overflow: hidden;
-  background: url('../img/call-we.png') no-repeat;
+  background: url('../rating/img/call-we.png') no-repeat;
 }
 .callwe .call-we .mes-box li .txt-num {
   margin-left: 19px;
@@ -48,7 +48,12 @@
   padding: 263px 0 0 43px;
   top: -295px;
   right: -199px;
-  background: url('../img/2d.jpg') no-repeat;
+}
+.callwe .call-we .mes-box .weixin .jump-box img{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
 }
 .callwe .call-we .mes-box .weixin .jump-box span {
   display: block;

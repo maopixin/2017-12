@@ -1,10 +1,5 @@
 /* 初始化样式并定义工具类 */
 
-@import './reset.css';
-@import './tools.css';
-
-/* content */
-
 .wid {
     width: 1280px;
     margin: 0 auto;
@@ -36,6 +31,10 @@ body {
     float: left;
     padding: 0 19px;
     font: 20px/59px '微软雅黑';
+}
+
+.head li a{
+    color: inherit;
 }
 
 .head .get-name {
@@ -121,7 +120,7 @@ body {
     left: 0;
     width: 70px;
     height: 23px;
-    background: url('./../img/tip-bg.png') no-repeat;
+    background: url('./../rating/img/tip-bg.png') no-repeat;
 }
 
 
@@ -189,7 +188,7 @@ body {
 .btns div.show {
     position: relative;
     margin-right: 118px;
-    background-image: url('../img/show.png');
+    background-image: url('../rating/img/show.png');
 }
 
 .btns div.show:hover .top-p {
@@ -205,7 +204,7 @@ body {
     padding-left: 17px;
     height: 36px;
     z-index: 10;
-    background: #404040 url('../img/style.png') no-repeat center center;
+    background: #404040 url('../rating/img/style.png') no-repeat center center;
     border-radius: 6px;
 }
 
@@ -234,7 +233,7 @@ body {
 
 .btns div.phone {
     margin-right: 10px;
-    background-image: url('../img/phone.png');
+    background-image: url('../rating/img/phone.png');
 }
 
 .new {
@@ -247,7 +246,7 @@ body {
     overflow: hidden;
     text-indent: 42px;
     color: red;
-    background: url('../img/new.png') no-repeat 142px 0;
+    background: url('../rating/img/new.png') no-repeat 142px 0;
 }
 
 .new .new-list {
@@ -261,7 +260,7 @@ body {
     width: 31px;
     height: 85px;
     cursor: pointer;
-    background: url('../img/btn.png') no-repeat 0 center;
+    background: url('../rating/img/btn.png') no-repeat 0 center;
 }
 
 .new .new-list .tran {
@@ -302,7 +301,7 @@ body {
     font-size: 12px;
     color: #fff;
     font-weight: 600;
-    background: url('../img/li-bg.png') no-repeat;
+    background: url('../rating/img/li-bg.png') no-repeat;
     background-color: #1296db;
 }
 

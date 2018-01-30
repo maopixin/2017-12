@@ -92,6 +92,8 @@
 .player .plays-list .play-list-box .play-list .play-info img {
   display: block;
   padding-top: 16px;
+  width: 103px;
+  height: 103px;
   margin: 0 auto 12px;
 }
 .player .plays-list .play-list-box .play-list .play-info span {
@@ -142,7 +144,7 @@
   display: inline-block;
   vertical-align: top;
 }
-.player .plays-list .play-list-box .page-list span {
+.player .plays-list .play-list-box .page-list a {
   cursor: pointer;
   display: inline-block;
   vertical-align: top;
@@ -151,8 +153,9 @@
   border-radius: 6px;
   color: #656565;
   border: 1px solid #b3bbc2;
+  margin-right: 12px;
 }
-.player .plays-list .play-list-box .page-list span.active {
+.player .plays-list .play-list-box .page-list a.active {
   background-color: red;
   color: #fff;
 }
