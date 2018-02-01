@@ -61,12 +61,23 @@
 }
 .video .video-box .video .controls .btns .play {
   cursor: pointer;
-  width: 16px;
-  height: 0px;
-  padding-top: 18px;
-  overflow: hidden;
-  background-position: -33px 0;
+  width: 6px;
+  height: 18px;
   margin-right: 40px;
+  border: 5px solid #ff1500;
+  border-top: none;
+  border-bottom: none;
+}
+.video .video-box .video .controls .btns .paused{
+	cursor: pointer;
+  width: 0px;
+  height: 0px;
+  margin-right: 40px;
+  border: 10px solid rgba(0,0,0,0);
+  border-right-width: 1px;
+  border-left-width: 12px;
+  margin-left: 3px;
+  border-left-color: #FF1500;
 }
 .video .video-box .video .controls .btns .time {
   color: #fff;

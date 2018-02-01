@@ -1,0 +1,14 @@
+.about-box {
+  width: 1186px;
+  padding: 0 24px;
+  box-sizing: border-box;
+  margin: 0 auto 82px;
+  font-family: "宋体", "微软雅黑";
+}
+.about-box .position-box {
+  font-size: 18px;
+  line-height: 70px;
+}
+.about-box .position-box a {
+  color: #1b9fe2;
+}

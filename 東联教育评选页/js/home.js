@@ -1,4 +1,14 @@
 // 移动函数
+/*
+ data{
+ 	n:容器内显示的个数
+ 	l:一次移动的距离
+ 	left:左边按钮的id名 不需要#号
+ 	right：右边按钮的id名 不需要#号
+ 	f：要移动元素的id名 也就是ul 不要#号
+ }
+ 
+ */
 function move(data){
 	this.child = $('#'+data.f+' li');
 	this.num = this.child.length-data.n+1;
@@ -38,7 +48,6 @@ move.prototype.init = function(){
 	});
 	this.play();
 	let _this = this;
-	console.log(this.next)
 	this.next_b.click(function(){
 		_this.next();
 		_this.pre_b.css({

@@ -25,8 +25,8 @@
             </span>
         </div>
         <!-- 视频区 -->
-        <div class="video">
-            <video width="1211" height="646" src="./../mp4/show.mp4" loop="loop" autoplay="autoplay">
+        <div class="video" id="video-box">
+            <video id="video" width="1211" height="646" src="./../mp4/show.mp4" loop="loop">
                 <source src="./../mp4/show.mp4" type=”video/mp4” />
                 <source src=”my_video.ogv” type=”video/ogg” />
                 <object width="800" height="374" type="application/x-shockwave-flash" data="fallback.swf">
@@ -35,39 +35,27 @@
                 </object>
             </video>
             <div class="controls">
-                <div class="tools">
+                <div class="tools" id="tools">
                     <!-- 通过设置百分比宽度来模拟进度条 -->
                     <div class="tool" style="width:20%;">人家是进度条</div>
                 </div>
                 <div class="btns clearfix">
-                    <span class="play fl sprite">
-                        播放
-                    </span>
-                    <span class="time fl">
-                        <span>0:09</span>/
-                        <span>3:02</span>
+                    <span class="play fl" id="switch"></span>
+                    <span class="time fl" id="play-time">
+                        <span id="now-time">0:09</span>/
+                        <span id="total-time">3:02</span>
                     </span>
                     <div class="right fr">
                         <span class="voice fl">
-                            <span class="sprite fl">
-                                音量
-                            </span>
-                            <span class="voice-change fl">
+                            <span class="sprite fl">音量</span>
+                            <span class="voice-change fl" id="volume">
                                 <span class="voice-tool"></span>
                             </span>
                         </span>
-                        <span class="play-style fl sprite">
-                            播放中
-                        </span>
-                        <span class="v fl">
-                            1.0×
-                        </span>
-                        <span class="set sprite fl">
-                            设置
-                        </span>
-                        <span class="big sprite fl">
-                            全屏播放
-                        </span>
+                        <span class="play-style fl sprite">播放中</span>
+                        <span class="v fl">1.0×</span>
+                        <span class="set fl sprite">设置</span>
+                        <span class="big sprite fl" id="full">全屏播放</span>
                     </div>
                 </div>
             </div>
@@ -105,6 +93,18 @@
             简介：卡仕达安慧东里哈四大行按属地啊获得行爱的还是得熊傲视的我阿萨回调函数第哈斯的哈斯殴打和夏侯惇
         </p>
     </section>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script src="../js/video.js"></script>
+    <script>
+    	$('#video').video_c({
+    		switch:"switch",
+    		tools:'tools',
+    		time:'play-time',
+    		volume:'volume',
+    		speed:'speed',
+    		full:'full'
+    	});
+    </script>
 </body>
 
 </html>

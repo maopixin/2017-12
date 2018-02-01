@@ -266,7 +266,7 @@
     <script src="../js/home.js"></script>
     <script>
     	
-    	let num = Number(location.hash.slice(1).split("=")[1]) || 1;
+    	var num = Number(location.hash.slice(1).split("=")[1]) || 1;
     	let total = 1;
     	showPage(num);
     	//展示num页
@@ -275,7 +275,7 @@
     		url:config.player,
     		type:'GET',
     		data:{
-    			id:2,
+    			id:3,
     			page:num,
     			pre_page:1
     		},
@@ -287,11 +287,11 @@
     					showPage(total);
     					num = total;
     					window.location.hash = "#page="+total;
-    				}else if(num<=0){
+    				}else if(num<=0 && total>0){
     					showPage(1);
     					num = 1;
     					window.location.hash = "#page=1";
-    				}
+    				};
     				let str = '';
 			        data.data.list.forEach(function(e){
 			        	str += `<li>
@@ -304,33 +304,77 @@
 				                    <div class="tick-nums">
 				                        票数
 				                        <span>${e.ballot}</span>
-				                        <a href="javascript:;">投票</a>
+				                        <a href="javascript:;" data_id="${e.id}">投票</a>
 				                    </div>
 				                </li>`;
 			        });
 			        $('#play-list').html(str);
-			        pageInfo(num,total);
-    			}
+			        //新增a标签点击投票
+			        $('#play-list').find('a').click(function(){
+			        	let id = $(this).attr('data_id');
+			        	let _this = this;
+			        	$.ajax({
+			        		url:config.tickit,
+			        		type:'get',
+			        		data:{
+			        			id:Number(id)
+			        		},
+			        		dataType:'jsonp',
+			        		success(data){
+			        			if(data.status.code===0){
+			        				$(_this).prev().html(data.data.ballot);
+			        			}
+			        		},
+			        		error(){
+			        			alert('投票失败');
+			        		}
+			        	});
+			        });
+			        pageInfo(total);
+    			}else{
+    				alert('网络连接失败');
+    			};
     		},
     		error(){
-    			console.log(false);
+    			alert('网络连接失败');
     		}
-    	})
-    	}
+    	});
+    	};
     	//关于分页
-    	function pageInfo(num,total){
+    	function pageInfo(total){
     		//生成分页
     		let str ='';
-    		for (let i = 0; i < total; i++) {
-    			str += '<a class="'+(i+1==num?'active':'')+'" id="">'+(i+1)+'</a>'
+    		if(total<=10){
+    			for (let i = 0; i < total; i++) {
+    				str += '<a class="'+(i+1==num?'active':'')+'">'+(i+1)+'</a>'
+    			};
+    		}else{
+    			if(num<=4){
+    				for (let i = 0; i < 5; i++) {
+	    				str += '<a class="'+(i+1==num?'active':'')+'">'+(i+1)+'</a>';
+	    			};
+	    			str += "....<a class=''>"+(total-1)+"</a><a class=''>"+total+"</a>";
+    			}else if(num>total-3){
+    				str += "<a class=''>1</a><a class=''>2</a>....";
+    				for (let i = total-4; i < total; i++) {
+	    				str += '<a class="'+(i+1==num?'active':'')+'">'+(i+1)+'</a>';
+	    			};
+    			}else{
+    				str += "<a class=''>1</a><a class=''>2</a>....";
+    				for (let i = num-2; i < num+1; i++) {
+	    				str += '<a class="'+(i+1==num?'active':'')+'">'+(i+1)+'</a>';
+	    			};
+    				str += "....<a class=''>"+(total-1)+"</a><a class=''>"+total+"</a>";
+    			};
     		};
     		//每一页
+    		$('#all-page').html('');
     		$('#all-page').html(str);
     		$('#all-page a').unbind('click').click(function(){
     			num = Number(this.innerHTML);
     			window.location.hash = 'page='+num;
     			showPage(num);
-    		})
+    		});
     		//首页
     		$('#first-page').unbind('click').click(function(){
     			changePage('first');
@@ -358,12 +402,15 @@
     			num>total?num=total:'';
     		}else if(type==='last'){
     			num = total;
-    		}else{
-    			num = 1;
     		};
     		window.location.hash = "#page="+num+"";
     		showPage(num);
     	}
+    	
+    	
+    	
+    	
+    	
     </script>
 </body>
 
