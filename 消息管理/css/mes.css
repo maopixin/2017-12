@@ -1,0 +1,159 @@
+.content {
+  width: 848px !important;
+  box-sizing: border-box;
+  margin-left: 24px;
+  border: solid 1px #e4ecf3;
+  padding: 12px;
+  background: #fff;
+}
+.content .m-box {
+  height: 44px;
+  line-height: 40px;
+  color: #919191;
+  border-bottom: 1px solid #f5f5f5;
+}
+.content .m-box a {
+  color: inherit;
+}
+.content .m-box a.active {
+  color: #1b9fe2;
+}
+.content .mes-title {
+  margin-top: 26px;
+  height: 35px;
+  line-height: 35px;
+}
+.content .mes-title ul {
+  display: flex;
+}
+.content .mes-title ul li {
+  padding: 0 6px;
+  margin: 0 15px;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #333333;
+  cursor: pointer;
+}
+.content .mes-title ul li em {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-color: red;
+  color: #fff;
+  border-radius: 11px;
+  line-height: 22px;
+  text-align: center;
+  font-size: 14px;
+}
+.content .mes-title ul .active {
+  background-color: #1B9FE2;
+  color: #fff;
+}
+.content .mes-title ul .active em {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.content .mes-box {
+  display: none;
+  min-height: 380px;
+  border: 1px solid #d7d8d8;
+  margin: 28px 13px;
+  padding: 9px 54px 29px;
+}
+.content .mes-box li .mes-info {
+  display: flex;
+  font-size: 14px;
+  line-height: 60px;
+  font-weight: 600;
+  color: #525353;
+}
+.content .mes-box li .mes-info h3 {
+  width: 473px;
+  overflow: hidden;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.content .mes-box li .mes-info time {
+  width: 89px;
+}
+.content .mes-box li .mes-info .red {
+  color: #f00849;
+}
+.content .mes-box li .mes-info .blue {
+  color: #1B9FE2;
+}
+.content .mes-box li .mes-info .yellow {
+  color: #ffa800;
+}
+.content .mes-box li .mes-info .green {
+  color: #319d0c;
+}
+.content .mes-box li .mes-info .m-btn {
+  width: 49px;
+  height: 27px;
+  line-height: 27px;
+  cursor: pointer;
+  border: 2px solid #e7e6e6;
+  text-align: center;
+  margin: auto 30px auto 0;
+}
+.content .mes-box li .mes-info .look {
+  text-indent: -9999999999px;
+  position: relative;
+}
+.content .mes-box li .mes-info .look:after {
+  text-indent: 0;
+  content: '查看';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+.content .mes-box li .mes-info .del {
+  margin-right: 0;
+}
+.content .mes-box li .over {
+  box-sizing: border-box;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  font-size: 12px;
+  line-height: 22px;
+  border: 1px solid #d7d8d8;
+  margin-bottom: -1px;
+}
+.content .mes-box li .over div:nth-of-type(2) {
+  text-indent: 2em;
+}
+.content .mes-box .act .look:after {
+  content: '隐藏' !important;
+}
+.content .mes-box .act .over {
+  max-height: 100px;
+  padding: 6px 14px 14px;
+}
+.content .page-list {
+  margin-top: 26px;
+  text-align: center;
+}
+.content .page-list .page {
+  display: inline-block;
+  vertical-align: top;
+}
+.content .page-list a {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 14px;
+  font: 16px/37px '微软雅黑';
+  border-radius: 6px;
+  color: #656565;
+  border: 1px solid #b3bbc2;
+}
+.content .page-list a.active {
+  background-color: red;
+  color: #fff;
+}

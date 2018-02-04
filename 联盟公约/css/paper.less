@@ -1,0 +1,217 @@
+    .paper-box {
+        width: 1186px;
+        padding: 0 24px;
+        box-sizing: border-box;
+        margin: 0 auto 82px;
+        background-color: #f5f8fa;
+        font-family: "宋体", "微软雅黑";
+        .position-box {
+            font-size: 18px;
+            line-height: 70px;
+            a {
+                color: #1b9fe2;
+            }
+        }
+        .paper {
+            display: flex;
+            justify-content: space-between;
+            
+            .menu {
+                position: fixed;
+                top: 70px;
+                left: 382px;
+                width: 219px;
+                border: 2px solid #e4ecf3;
+                box-sizing: border-box;
+                padding: 8px 12px 4px;
+                color: #919191;
+                background-color: #fff;
+                line-height: 40px;
+                text-indent: 66px;
+                li {
+                    height: 40px;
+                    margin: 4px 0 0;
+                    a {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        color: inherit;
+                        &:hover {
+                            background-color: #eff2f2;
+                        }
+                    }
+                }
+                .big {
+                    font-size: 16px;
+                    font-weight: bold;
+                    text-indent: 49px;
+                    position:relative; 
+                    margin-top: 8px;
+                    &:after{
+                        content: '';
+                        width: 191px;
+                        height: 1px;
+                        background-color: #b5b5b5;
+                        position: absolute;
+                        top: -4px;
+                        left: 0;
+                    }
+                    &:nth-of-type(1){
+                         margin: 0;
+                        &:after{
+                            width: 0;
+                            height: 0;
+                        }
+                    }
+                }
+                .active {
+                    color: #1B9FE2;
+                    background-color: #eff2f2;
+                }
+            }
+            .content-box{
+                width: 900px;
+                margin-left: 236px;
+                box-sizing: border-box;
+                border: 2px solid #e4ecf3;
+                background-color: #fff;
+                padding-bottom: 70px;
+                li{
+                    padding: 0 70px 0px;
+                    &:nth-of-type(1){
+                        padding: 0;
+                    }
+                }
+                .title-box{
+                    margin: 0 15px 20px;
+                    border-bottom: 2px solid #f9f9f9;
+                    span{
+                        display: inline-block;
+                        line-height: 65px;
+                        vertical-align: top;
+                        color: #1B9FE2;
+                        margin-top: 12px;
+                        text-indent: 1em;
+                    }
+                }
+                .no-l{
+                    margin-left: 0;
+                }
+                .c-title{
+                    padding: 0 14px;
+                    display: inline-block;
+                    line-height: 70px;
+                    height: 70px;
+                    color: #006DE2;
+                    margin-bottom: -2px;
+                    border-bottom: 2px solid #006de2;
+                }
+                .data-title{
+                    color: #1B9FE2;
+                    font-size: 16px;
+                    line-height: 65px;
+                    margin-bottom: 12px;
+                    margin-top: 12px;
+                    &::before{
+                        content: '· ';
+                        font-weight: 700;
+                    } 
+                    &::after{
+                        content: ' ——';
+                    }
+                }
+                //段落
+                p{
+                    font-size: 14px;
+                    line-height: 28px;
+                    text-indent: 2em;
+                }
+                //无margin
+                .no-m{
+                    .title-box{
+                        margin-bottom: 0;
+                    }
+                    .data-title{
+                        margin-bottom: 0;
+                    }
+                }
+                .small-title{
+                    text-indent: 2em;
+                    line-height: 30px;
+                    color: #1B9FE2;
+                    margin-bottom: 30px;
+                }
+                .s-ul{
+                    padding: 0 2em;
+                    font-size: 14px;
+                    line-height: 28px;
+                    Letter-spacing: 2px;
+                    li{
+                        padding: 0;
+                        text-indent: -1.1em;
+                            margin-left: 1.1em;
+                    }
+                    ul{
+                        padding: 0 2em;
+                    }
+                }
+                .m-t40{
+                    margin-top: 40px;
+                }
+                img{
+                    display: block;
+                    margin: 0 auto;
+                }
+                //条款
+                .list-box{
+                    font-size: 14px;
+                    line-height: 30px;
+                    Letter-spacing: 2px;
+                    li{
+                        padding: 0;
+                        margin-bottom: 30px;
+                    }
+                    dl{
+                        padding: 0 2em;
+                        dt{
+                            font-weight: 700;
+                        }
+                        dd{
+                            text-indent: -1.1em;
+                            margin-left: 1.1em;
+                        }
+                        .t2{
+                            text-indent: -1.8em;
+                            margin-left: 1.8em;
+                        }
+                        .mm{
+                            text-indent: 0;
+                        }
+                    }
+                }
+                .tandp{
+                    li{
+                        margin-top: 30px;
+                        padding: 0;
+                        h5{
+                            text-indent: 2em;
+                            font-size: 14px;
+                            font-weight: 600;
+                        }
+                        
+                    }
+                }
+                .teacher-list{
+                    li{
+                        padding: 0;
+                        .person{
+                            font-size: 14px;
+                            line-height: 28px;
+                            text-indent: 2em;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }

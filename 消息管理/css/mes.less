@@ -1,0 +1,166 @@
+.content {
+    width: 848px !important;
+    box-sizing: border-box;
+    margin-left: 24px;
+    border: solid 1px #e4ecf3;
+    padding: 12px;
+    background: #fff;
+    .m-box {
+        height: 44px;
+        line-height: 40px;
+        color: #919191;
+        border-bottom: 1px solid #f5f5f5;
+        a {
+            color: inherit;
+        }
+        a.active {
+            color: #1b9fe2;
+        }
+    }
+    .mes-title {
+        margin-top: 26px;
+        height: 35px;
+        line-height: 35px;
+        ul {
+            display: flex;
+            li {
+                padding: 0 6px;
+                margin: 0 15px;
+                border-radius: 8px;
+                font-size: 15px;
+                color: #333333;
+                cursor: pointer;
+                em {
+                    position: absolute;
+                    width: 22px;
+                    height: 22px;
+                    background-color: red;
+                    color: #fff;
+                    border-radius: 11px;
+                    line-height: 22px;
+                    text-align: center;
+                    font-size: 14px;
+                }
+            }
+            .active {
+                background-color: #1B9FE2;
+                color: #fff;
+                em {
+                    width: 0;
+                    height: 0;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+    .mes-box {
+        display: none;
+        min-height: 380px;
+        border: 1px solid #d7d8d8;
+        margin: 28px 13px;
+        padding: 9px 54px 29px;
+        li {
+            .mes-info {
+                display: flex;
+                font-size: 14px;
+                line-height: 60px;
+                font-weight: 600;
+                color: #525353;
+                h3 {
+                    width: 473px;
+                    overflow: hidden;
+                    font-weight: 600;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                time {
+                    width: 89px;
+                }
+                .red{
+                    color: #f00849;
+                }
+                .blue{
+                    color: #1B9FE2;
+                }
+                .yellow{
+                    color: #ffa800;
+                }
+                .green{
+                    color: #319d0c;
+                }
+                .m-btn {
+                    width: 49px;
+                    height: 27px;
+                    line-height: 27px;
+                    cursor: pointer;
+                    border: 2px solid #e7e6e6;
+                    text-align: center;
+                    margin: auto 30px auto 0;
+                }
+                .look {
+                    text-indent: -9999999999px;
+                    position: relative;
+                    &:after {
+                        text-indent: 0;
+                        content: '查看';
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        position: absolute;
+                    }
+                }
+                .del {
+                    margin-right: 0;
+                }
+            }
+            .over {
+                box-sizing: border-box;
+                max-height: 0;
+                overflow: hidden;
+                transition: all 0.5s ease;
+                font-size: 12px;
+                line-height: 22px;
+                border: 1px solid #d7d8d8;
+                margin-bottom: -1px;
+                div:nth-of-type(2) {
+                    text-indent: 2em;
+                }
+            }
+        }
+        .act {
+            //这里有bug
+            .look {
+                &:after {
+                    content: '隐藏' !important;
+                }
+            }
+            .over {
+                max-height: 100px;
+                padding: 6px 14px 14px;
+            }
+        }
+    }
+    .page-list {
+        margin-top: 26px;
+        text-align: center;
+        .page {
+            display: inline-block;
+            vertical-align: top;
+        }
+        a {
+            cursor: pointer;
+            display: inline-block;
+            vertical-align: top;
+            padding: 0 14px;
+            font: 16px/37px '微软雅黑';
+            border-radius: 6px;
+            color: #656565;
+            border: 1px solid #b3bbc2;
+        }
+        a.active {
+            background-color: red;
+            color: #fff;
+        }
+    }
+}

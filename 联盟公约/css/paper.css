@@ -1,0 +1,206 @@
+.paper-box {
+  width: 1186px;
+  padding: 0 24px;
+  box-sizing: border-box;
+  margin: 0 auto 82px;
+  background-color: #f5f8fa;
+  font-family: "宋体", "微软雅黑";
+}
+.paper-box .position-box {
+  font-size: 18px;
+  line-height: 70px;
+}
+.paper-box .position-box a {
+  color: #1b9fe2;
+}
+.paper-box .paper {
+  display: flex;
+  justify-content: space-between;
+}
+.paper-box .paper .menu {
+  position: fixed;
+  top: 70px;
+  left: 382px;
+  width: 219px;
+  border: 2px solid #e4ecf3;
+  box-sizing: border-box;
+  padding: 8px 12px 4px;
+  color: #919191;
+  background-color: #fff;
+  line-height: 40px;
+  text-indent: 66px;
+}
+.paper-box .paper .menu li {
+  height: 40px;
+  margin: 4px 0 0;
+}
+.paper-box .paper .menu li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: inherit;
+}
+.paper-box .paper .menu li a:hover {
+  background-color: #eff2f2;
+}
+.paper-box .paper .menu .big {
+  font-size: 16px;
+  font-weight: bold;
+  text-indent: 49px;
+  position: relative;
+  margin-top: 8px;
+}
+.paper-box .paper .menu .big:after {
+  content: '';
+  width: 191px;
+  height: 1px;
+  background-color: #b5b5b5;
+  position: absolute;
+  top: -4px;
+  left: 0;
+}
+.paper-box .paper .menu .big:nth-of-type(1) {
+  margin: 0;
+}
+.paper-box .paper .menu .big:nth-of-type(1):after {
+  width: 0;
+  height: 0;
+}
+.paper-box .paper .menu .active {
+  color: #1B9FE2;
+  background-color: #eff2f2;
+}
+.paper-box .paper .content-box {
+  width: 900px;
+  margin-left: 236px;
+  box-sizing: border-box;
+  border: 2px solid #e4ecf3;
+  background-color: #fff;
+  padding-bottom: 70px;
+}
+.paper-box .paper .content-box li {
+  padding: 0 70px 0px;
+}
+.paper-box .paper .content-box li:nth-of-type(1) {
+  padding: 0;
+}
+.paper-box .paper .content-box .title-box {
+  margin: 0 15px 20px;
+  border-bottom: 2px solid #f9f9f9;
+}
+.paper-box .paper .content-box .title-box span {
+  display: inline-block;
+  line-height: 65px;
+  vertical-align: top;
+  color: #1B9FE2;
+  margin-top: 12px;
+  text-indent: 1em;
+}
+.paper-box .paper .content-box .no-l {
+  margin-left: 0;
+}
+.paper-box .paper .content-box .c-title {
+  padding: 0 14px;
+  display: inline-block;
+  line-height: 70px;
+  height: 70px;
+  color: #006DE2;
+  margin-bottom: -2px;
+  border-bottom: 2px solid #006de2;
+}
+.paper-box .paper .content-box .data-title {
+  color: #1B9FE2;
+  font-size: 16px;
+  line-height: 65px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+.paper-box .paper .content-box .data-title::before {
+  content: '· ';
+  font-weight: 700;
+}
+.paper-box .paper .content-box .data-title::after {
+  content: ' ——';
+}
+.paper-box .paper .content-box p {
+  font-size: 14px;
+  line-height: 28px;
+  text-indent: 2em;
+}
+.paper-box .paper .content-box .no-m .title-box {
+  margin-bottom: 0;
+}
+.paper-box .paper .content-box .no-m .data-title {
+  margin-bottom: 0;
+}
+.paper-box .paper .content-box .small-title {
+  text-indent: 2em;
+  line-height: 30px;
+  color: #1B9FE2;
+  margin-bottom: 30px;
+}
+.paper-box .paper .content-box .s-ul {
+  padding: 0 2em;
+  font-size: 14px;
+  line-height: 28px;
+  Letter-spacing: 2px;
+}
+.paper-box .paper .content-box .s-ul li {
+  padding: 0;
+  text-indent: -1.1em;
+  margin-left: 1.1em;
+}
+.paper-box .paper .content-box .s-ul ul {
+  padding: 0 2em;
+}
+.paper-box .paper .content-box .m-t40 {
+  margin-top: 40px;
+}
+.paper-box .paper .content-box img {
+  display: block;
+  margin: 0 auto;
+}
+.paper-box .paper .content-box .list-box {
+  font-size: 14px;
+  line-height: 30px;
+  Letter-spacing: 2px;
+}
+.paper-box .paper .content-box .list-box li {
+  padding: 0;
+  margin-bottom: 30px;
+}
+.paper-box .paper .content-box .list-box dl {
+  padding: 0 2em;
+}
+.paper-box .paper .content-box .list-box dl dt {
+  font-weight: 700;
+}
+.paper-box .paper .content-box .list-box dl dd {
+  text-indent: -1.1em;
+  margin-left: 1.1em;
+}
+.paper-box .paper .content-box .list-box dl .t2 {
+  text-indent: -1.8em;
+  margin-left: 1.8em;
+}
+.paper-box .paper .content-box .list-box dl .mm {
+  text-indent: 0;
+}
+.paper-box .paper .content-box .tandp li {
+  margin-top: 30px;
+  padding: 0;
+}
+.paper-box .paper .content-box .tandp li h5 {
+  text-indent: 2em;
+  font-size: 14px;
+  font-weight: 600;
+}
+.paper-box .paper .content-box .teacher-list li {
+  padding: 0;
+}
+.paper-box .paper .content-box .teacher-list li .person {
+  font-size: 14px;
+  line-height: 28px;
+  text-indent: 2em;
+  font-weight: 600;
+}

@@ -1,0 +1,21 @@
+body,h1,h3{
+	margin: 0;
+}
+form,input,ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+

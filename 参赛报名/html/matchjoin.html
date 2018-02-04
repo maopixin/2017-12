@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>参赛报名</title>
+		<!--不需要的css-->
+		<link rel="stylesheet" href="../css/index.css" />
+		<link rel="stylesheet" href="http://meet.dljy.com/static/assets/lib/layui/css/layui.css" />
+		<!--只引入这一个css-->
+		<link rel="stylesheet" href="../css/matchjoin.css" />
+	</head>
+
+	<body>
+		<section class="form-box">
+			<!--标题-->
+			<h3 class="form-title">- 基本信息 -</h3>
+			<form class="form-content" id="Form">
+				<!--参赛主题-->
+				<label class="block label-title" for="">
+				参赛主题
+			</label>
+				<div class="layui-unselect layui-form-select">
+					<div class="layui-select-title">
+						<input type="text" placeholder="- 请选择主题 -" / class="layui-input layui-unselect">
+					</div>
+				</div>
+				<!--上传头像-->
+				<div>
+					<label for="" class="label-title">
+					头像上传
+				</label>
+					<span class="form-tips">
+					必填
+				</span>
+				</div>
+				<div class="user-pic-box">
+					<img id="porsen-head-pic-box" src="../img/user-pic.jpg" />
+					<div class="add-pic">
+						+
+						<input type="file" id="porsen-head-pic" accept="image/jpeg" />
+					</div>
+					<span class="form-tips">
+					添加头像
+				</span>
+				</div>
+				<!--报名人信息-->
+				<div class="clearfix apply-info">
+					<div>
+						<div class="label-title fl">
+							报名人
+						</div>
+						<div class="fr">
+							<label for="" class="label-input">学校</label>
+							<input type="text" class="small" id="school" placeholder="必填" />
+							<label for="" class="label-input tel">地区</label>
+							<div class="province layui-unselect layui-form-select">
+								<div class="layui-select-title">
+									<!--新增id-->
+									<input id="sel" type="text" placeholder="请选择" / class="layui-input layui-unselect">
+									<i class="layui-edge"></i>
+								</div>
+								<dl class="layui-anim layui-anim-upbit" id="not-scroll">
+									<dd lay-value="" class="layui-select-tips">请选择</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="fr">
+							<label for="" class="label-input">姓名</label>
+							<input type="text" id="name" class="small" placeholder="必填" />
+							<label for="" class="label-input tel">电话</label>
+							<input type="text" id="tel" class="small" placeholder="必填" />
+						</div>
+					</div>
+					<div>
+						<div class="fr width428">
+							<label for="" class="label-input fl">性别</label>
+							<div class="fl">
+								<span class="check-item active"></span>
+								<span class="sex">男</span>
+								<span class="check-item"></span>
+								<span class="sex">女</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--简介-->
+				<div class="work-info">
+					<div class="label-title block">
+						作品简介
+					</div>
+					<textarea id="work_synopsis" class="text-block" name="" rows="" cols=""></textarea>
+				</div>
+				<!--上传作品-->
+				<div class="work-up">
+					<div class="label-title">
+						上传作品
+					</div>
+					<input type="text" id="work_theme" placeholder="名称一" />
+					<div class="up-box">
+						<input type="file" id="work-upbox" />
+					</div>
+					<span class="form-tips" id="form-tip">
+					上传附件（必填）
+				</span>
+				</div>
+				<!--短信验证码-->
+				<div class="short-mes clearfix">
+					<span class="get-btn fl">
+					获取短信验证码
+				</span>
+					<input type="text" class="fl" />
+					<span class="verify fl">
+					验证
+				</span>
+				</div>
+			</form>
+			<div class="tj-btn">
+				<div class="btn_tj fr">提交</div>
+			</div>
+			
+			<div class="tip-box hidd" id="tip-box">
+				<i class="layui-icon" style="font-size: 30px; color: #1E9FFF;">&#xe60c;</i>
+				<span>请输入姓名</span>
+			</div>
+		</section>
+		<script src="../js/jquery-3.2.1.js"></script>
+		<script src="../js/match.js"></script>
+		<script src="../js/check.js"></script>
+<!--删除了select。js-->
+		<!--配置文件-->
+		<script src="../js/config.js"></script>
+		<script>
+			//渲染
+			$('.layui-input').attr('readonly', 'readonly');
+			$.ajax({
+				type: "get",
+				dataType: 'jsonp',
+				url: Map.province,
+				success(data) {
+					if(data.status.code === 0) {
+						let str = '<dd lay-value="" class="layui-select-tips">请选择</dd>';
+						for(let i in data.data){
+							str += '<dd lay-value="" class="" pr_id="'+i+'">' + data.data[i] + '</dd>';
+						};
+						$('.layui-anim-upbit').html(str);
+						let on = false;
+						$('#sel').click(function() {
+							if(!on) {
+								$('.layui-anim-upbit').css({
+									'display': 'block'
+								});
+								on = !on;
+							} else {
+								$('.layui-anim-upbit').css({
+									'display': 'none'
+								});
+								on = !on;
+							};
+							return false;
+						});
+						$('.layui-anim-upbit').find("dd").click(function() {
+							$('.layui-anim-upbit').find('dd').removeClass('layui-select-tips');
+							$(this).addClass('layui-select-tips');
+							$('#sel').val($(this).html());
+						})
+						document.onclick = function() {
+							$('.layui-anim-upbit').css({
+								'display': 'none'
+							});
+							on = false;
+						};
+					};
+				},
+				error() {
+					console.log(false);
+				}
+			});
+			//阻止鼠标滚轮的默认行为
+			preventScroll('not-scroll');
+			function preventScroll(id){  
+			    var _this = document.getElementById(id);  
+			    if(navigator.userAgent.indexOf("Firefox")>0){  
+			        _this.addEventListener('DOMMouseScroll',function(e){  
+			            _this.scrollTop += e.detail > 0 ? 60 : -60;     
+			            e.preventDefault();  
+			        },false);   
+			    }else{  
+			        _this.onmousewheel = function(e){     
+			            e = e || window.event;     
+			            _this.scrollTop += e.wheelDelta > 0 ? -60 : 60;     
+			            return false;  
+			        };  
+			    };  
+			    return this;  
+			};
+		</script>
+		
+		<!--提交表单js-->
+		<script src="../js/updata.js"></script>
+	</body>
+
+</html>

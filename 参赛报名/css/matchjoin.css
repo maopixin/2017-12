@@ -1,0 +1,249 @@
+.form-box {
+  width: 1280px;
+  margin: 63px auto 0;
+}
+.form-box .form-title {
+  width: 745px;
+  height: 52px;
+  background-color: #f2f0f0;
+  margin: 0 auto 33px;
+  font: 28px/52px "黑体";
+  text-align: center;
+}
+.form-box .form-content {
+  width: 745px;
+  box-sizing: border-box;
+  border: 1px solid #cccecf;
+  margin: 0 auto;
+  padding: 12px 71px 62px 114px;
+}
+.form-box .form-content .block {
+  display: block !important;
+}
+.form-box .form-content .form-tips {
+  display: inline-block;
+  font: 14px "微软雅黑";
+  color: #8e8c8c;
+  vertical-align: middle;
+}
+.form-box .form-content input {
+  height: 42px;
+  box-sizing: border-box;
+  border: 1px solid #e6e6e6;
+  outline: none;
+  background-color: #faf6f6;
+}
+.form-box .form-content .label-title {
+  font: 18px/56px "微软雅黑";
+  display: inline-block;
+}
+.form-box .form-content .label-input {
+  font: 16px/42px "微软雅黑";
+  width: 60px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 7px;
+}
+.form-box .form-content .layui-select-title input {
+  text-align: center;
+  width: 557px;
+}
+.form-box .form-content .user-pic-box {
+  height: 132px;
+}
+.form-box .form-content .user-pic-box img {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 132px;
+  height: 132px;
+  margin-right: 29px;
+}
+.form-box .form-content .user-pic-box .add-pic {
+  width: 34px;
+  height: 34px;
+  display: inline-block;
+  position: relative;
+  vertical-align: bottom;
+  font: 26px/34px "微软雅黑";
+  color: #1b9fe2;
+  text-align: center;
+  margin-right: 18px;
+  background: url(../img/add.jpg) no-repeat;
+}
+.form-box .form-content .user-pic-box .add-pic input {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 9;
+}
+.form-box .form-content .apply-info {
+  margin-top: 50px;
+}
+.form-box .form-content .apply-info div {
+  height: 56px;
+}
+.form-box .form-content .apply-info input {
+  text-indent: 2em;
+}
+.form-box .form-content .apply-info .width428 {
+  width: 428px;
+}
+.form-box .form-content .apply-info .width428 .check-item {
+  width: 19px;
+  height: 19px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #faf6f6;
+  margin-top: 18px;
+  margin-left: 4px;
+}
+.form-box .form-content .apply-info .width428 .active {
+  background: #faf6f6 url(../img/checked.png) no-repeat center center;
+}
+.form-box .form-content .apply-info .width428 .sex {
+  display: inline-block;
+  font: 16px/54px "微软雅黑";
+  margin-right: 18px;
+}
+.form-box .form-content .apply-info .school {
+  width: 363px;
+  margin-top: 7px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.form-box .form-content .apply-info .small {
+  width: 130px;
+}
+.form-box .form-content .apply-info .tel {
+  margin-left: 34px;
+}
+.form-box .form-content .work-info .text-block {
+  display: block;
+  padding: 0;
+  width: 557px;
+  box-sizing: border-box;
+  height: 200px;
+  font: 14px/30px "微软雅黑";
+  outline: none;
+  resize: none;
+  text-indent: 2em;
+  padding: 10px;
+  word-break: break-all;
+  background-color: #faf6f6;
+}
+.form-box .form-content .work-up {
+  margin-top: 40px;
+}
+.form-box .form-content .work-up .label-title {
+  margin-right: 10px;
+}
+.form-box .form-content .work-up input {
+  text-indent: 2em;
+  vertical-align: middle;
+}
+.form-box .form-content .work-up .up-box {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 26px;
+  margin: 0 14px 0 20px;
+  background: url(../img/up.png) no-repeat;
+}
+.form-box .form-content .work-up .up-box input {
+  width: 24px;
+  height: 26px;
+  opacity: 0;
+  cursor: pointer;
+}
+.form-box .form-content .short-mes {
+  margin-top: 50px;
+}
+.form-box .form-content .short-mes .get-btn {
+  width: 165px;
+  height: 49px;
+  box-sizing: border-box;
+  border: 2px solid #e7e6e6;
+  font: 16px/45px "微软雅黑";
+  text-align: center;
+  cursor: pointer;
+}
+.form-box .form-content .short-mes input {
+  width: 127px;
+  text-indent: 2em;
+  margin: 4px 45px 0 14px;
+}
+.form-box .form-content .short-mes .verify {
+  margin-top: 8px;
+  width: 41px;
+  cursor: pointer;
+  height: 0px;
+  padding-top: 33px;
+  overflow: hidden;
+  background: url(../img/true.png) no-repeat;
+}
+.form-box .tj-btn {
+  width: 744px;
+  margin: 72px auto 0;
+  padding-bottom: 70px;
+}
+.form-box .tj-btn .btn_tj {
+  width: 100px;
+  height: 32px;
+  background-color: #1b9fe2;
+  color: #fff;
+  text-align: center;
+  font: 18px/32px "微软雅黑";
+  border-radius: 6px;
+  cursor: pointer;
+}
+/*新增css*/
+#Form .province{
+	width: 130px;
+	display: inline-block;
+}
+#Form .province input{
+	width: 100%;
+	text-align: left;
+	text-indent: 1.2em;
+}
+.layui-form-select .layui-edge{
+	top: 38%;
+}
+#Form  .layui-anim-upbit{
+	width: 100%;
+}
+#Form .layui-select-tips{
+	color: #1B9FE2 !important;
+}
+#tip-box{
+	border: 1px solid #d3d4d3;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+	background-color: #fff;
+	position: fixed;
+	height: 44px;
+	padding: 16px 20px 10px;
+	line-height: 44px;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+	transform: translateY(-50%);
+	opacity: 1;
+	transition: opacity 0.5s ease , transform 0.5s ease;
+}
+#tip-box i{
+	display: inline-block;
+	vertical-align: top;
+}
+#tip-box span{
+	display: inline-block;
+	vertical-align: top;
+	line-height: 42px;
+}
+.hidd{
+	opacity: 0 !important;
+	transform: translateX(0%) !important;
+}
