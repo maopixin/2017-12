@@ -30,10 +30,13 @@
                 font-size: 15px;
                 color: #333333;
                 cursor: pointer;
+                position: relative;
                 em {
                     position: absolute;
                     width: 22px;
                     height: 22px;
+                    top: 0;
+                    right: -16px;
                     background-color: red;
                     color: #fff;
                     border-radius: 11px;
@@ -59,6 +62,16 @@
         border: 1px solid #d7d8d8;
         margin: 28px 13px;
         padding: 9px 54px 29px;
+        &:nth-of-type(4){
+            li{
+                h3{
+                    span{
+                        display: inline-block !important;
+                    }
+                }
+            }
+        }
+        
         li {
             .mes-info {
                 display: flex;
@@ -72,6 +85,9 @@
                     font-weight: 600;
                     text-overflow: ellipsis;
                     white-space: nowrap;
+                    span{
+                        display: none;
+                    }
                 }
                 time {
                     width: 89px;
@@ -128,6 +144,7 @@
                 }
             }
         }
+        
         .act {
             //这里有bug
             .look {

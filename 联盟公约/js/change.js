@@ -20,3 +20,22 @@ function show(){
 		};
 	});
 };
+
+$(document).scroll(function(){
+	if($('.content-box').offset().top - $(document).scrollTop()<=0){
+		$('.menu').css({
+			'position':'fixed',
+			'top':'0'
+		});
+		$('.content-box').css({
+			'margin-left':'238px'
+		});
+	}else{
+		$('.menu').css({
+			'position':'static'
+		});
+		$('.content-box').css({
+			'margin-left':'0'
+		});
+	};
+});

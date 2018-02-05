@@ -18,10 +18,8 @@
   justify-content: space-between;
 }
 .paper-box .paper .menu {
-  position: fixed;
-  top: 70px;
-  left: 382px;
   width: 219px;
+  flex: 1;
   border: 2px solid #e4ecf3;
   box-sizing: border-box;
   padding: 8px 12px 4px;
@@ -72,7 +70,6 @@
 }
 .paper-box .paper .content-box {
   width: 900px;
-  margin-left: 236px;
   box-sizing: border-box;
   border: 2px solid #e4ecf3;
   background-color: #fff;
