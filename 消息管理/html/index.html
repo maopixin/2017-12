@@ -9,6 +9,28 @@
 </head>
 
 <body>
+
+	<!-- 放到头文件中 -->
+	<a class="mes-box-head" id="totalMesNum" href="">消息管理<em>10</em></a>
+	<style>
+		a.mes-box-head{
+			margin-right: 30px;
+			position: relative;
+		}
+		a.mes-box-head em{
+			position: absolute;
+			width: 22px;
+			height: 22px;
+			top: -8px;
+			right: -22px;
+			background-color: red;
+			color: #fff;
+			border-radius: 11px;
+			line-height: 22px;
+			text-align: center;
+			font-size: 14px;
+		}
+	</style>
 	<!---->
 	<div class="content">
 		<!--面包屑-->
@@ -21,16 +43,16 @@
 		<div class="mes-title">
 			<ul>
 				<li data-type="1" class="active check-item">课程动态
-					<em>11</em>
+					<em style="display:none;">0</em>
 				</li>
 				<li data-type="2" class="check-item">专家动态
-					<em>99</em>
+					<em style="display:none;">0</em>
 				</li>
 				<li data-type="3" class="check-item">会议动态
-					<em>11</em>
+					<em style="display:none;">0</em>
 				</li>
 				<li data-type="4" class="check-item">系统通知
-					<em>89</em>
+					<em style="display:none;">0</em>
 				</li>
 			</ul>
 		</div>

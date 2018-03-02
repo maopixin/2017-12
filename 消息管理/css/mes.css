@@ -59,7 +59,7 @@
 }
 .content .mes-box {
   display: none;
-  min-height: 380px;
+  min-height: 400px;
   border: 1px solid #d7d8d8;
   margin: 28px 13px;
   padding: 9px 54px 29px;
@@ -123,6 +123,11 @@
 }
 .content .mes-box li .mes-info .del {
   margin-right: 0;
+}
+.content .mes-box li .mes-info .del:hover {
+  color: #fff;
+  background-color: #f00849;
+  border-color: #f00849;
 }
 .content .mes-box li .over {
   box-sizing: border-box;

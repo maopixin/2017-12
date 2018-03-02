@@ -3,8 +3,65 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>入场函</title>
+	<script src="../js/dpr.js"></script>
+	<link rel="stylesheet" href="../css/index.css" />
 </head>
 <body>
-	
+	<header class="m-gift">
+		<h1>东联教育</h1>
+		<h2>入场函</h2>
+	</header>
+	<section class="gift-box">
+		<div class="name">
+			尊敬的
+			<!--这里是名字-->
+			<em>毛丕新</em>
+			女士/先生
+		</div>
+		<!--会议名称-->
+		<div class="meet-name">
+			第二十三届东联书生学校联盟论坛
+		</div>
+		<p class="meet-info">
+			您将与来自全国各地的上千名校长/老师齐聚一堂，共同聆听著名教育专家讲座，共享教育盛宴。
+		</p>
+		<!--二维码地址在这里-->
+		<img src="../img/2d.jpg" class="pic" />
+		<p class="tick">
+			入场码
+			<!--入场码-->
+			<em>23565</em>
+		</p>
+		<div class="meet-page">
+			<div class="">
+				<!--时间-->
+				<span class="y-t">时间</span>
+				<span class="text">2月18日10：00-15：00</span>
+			</div>
+			<div class="">
+				<!--联系人-->
+				<span class="y-t">联系人</span>
+				<span class="text">11111111111（会议负责人）</span>
+			</div>
+			<div class="">
+				<!--地点-->
+				<span class="y-t">地点</span>
+				<span class="text">北京市海淀区北三环西路甲18号中坤广场九州商务酒店</span>
+			</div>
+		</div>
+	</section>
+	<footer class="foot">
+		请将图片保存至手机，凭此入场函参加会议
+	</footer>
+
+	<script>
+		//背景图定位问题
+		let dW = document.body.offsetWidth;
+		let dH = document.body.offsetHeight;
+		console.log(dH)
+		if(dH/1333>dW/750){
+			document.body.style.backgroundPositionX = ((dH/1333*750)-dW)/-2+'px';
+		}
+	</script>
 </body>
 </html>

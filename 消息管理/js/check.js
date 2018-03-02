@@ -38,8 +38,73 @@ function showNow() {
 	});
 };
 
-//渲染
 
+// 阅读
+$(document).on('click','.mes-box .look',function(){
+	if($(this).data('read')==0){
+		$.ajax({
+			url:map.read,
+			type : "GET",
+			dataType:"jsonp",
+			data : {
+				id:$(this).data('id')
+			},
+			success(data){
+				if(data.status.code==0){
+					let num = Number($($('.mes-title li em')[id-1]).html())-1;
+					if(num<=0 || isNaN(num)){
+						$($('.mes-title li em')[id-1]).hide();
+					}else{
+						$($('.mes-title li em')[id-1]).html(num);
+					};
+					let num2 = Number($('#totalMesNum em').html())-1;
+					if(num2<=0 || isNaN(num2)){
+						$('#totalMesNum em').hide();
+					}else{
+						$('#totalMesNum em').html(num2);
+					};
+				};
+			}
+		});
+	};
+});
+
+// 删除
+$(document).on('click','.mes-box .del',function(){
+	let on = false;
+	if($(this).data('read')==0) on = true;
+	$.ajax({
+		url:map.del,
+		type : "GET",
+		dataType:"jsonp",
+		data : {
+			id:$(this).data('id')
+		},
+		success(data){
+			if(data.status.code==0){
+				// 如果消息未读 ， 那么删除以后  数字需要减一
+				if(on){
+					let num = Number($($('.mes-title li em')[id-1]).html())-1;
+					if(num<=0 || isNaN(num)){
+						$($('.mes-title li em')[id-1]).hide();
+					}else{
+						$($('.mes-title li em')[id-1]).html(num);
+					};
+					let num2 = Number($('#totalMesNum em').html())-1;
+					if(num2<=0 || isNaN(num2)){
+						$('#totalMesNum em').hide();
+					}else{
+						$('#totalMesNum em').html(num2);
+					};
+				}
+				showContent();
+			};
+		}
+	})
+})
+
+
+//渲染
 
 function showContent(){
 	$.ajax({
@@ -58,12 +123,13 @@ function showContent(){
 			data.data.list.forEach(function(e,i){
 				let n = e.info.indexOf('：');
 				let c = color(e.type_name);
+				let time = getLocalTime(e.ctime);
 				str += `<li class="">
 							<div class="mes-info">
 								<h3><span class="${c}">【${e.type_name}】</span>${e.theme}</h3>
-								<time>2018.02.02</time>
-								<span class="m-btn look false" data-id="${e.id}">查看</span>
-								<span class="m-btn del">删除</span>
+								<time>${time}</time>
+								<span class="m-btn look false" data-read="${e.is_read}" data-id="${e.id}">查看</span>
+								<span class="m-btn del" data-read="${e.is_read}" data-id="${e.id}">删除</span>
 							</div>
 							<div class="over">
 								<div>${e.info.slice(0,n+1)}</div>
@@ -161,4 +227,41 @@ function color(str){
 	}else{
 		return "green";
 	};
+};
+
+function getLocalTime(nS) {
+	let t = new Date().getTime();
+	var time=new Date(parseInt(nS)*1000).toLocaleString();
+	return time.match(/^[^\s]*/)[0];
+}
+
+
+// 展示未读数量
+showNum();
+function showNum(){
+	$.ajax({
+		url:map.mesNum,
+		type:'GET',
+		dataType:'jsonp',
+		success(data){
+			if(data.status.code===0){
+				$('.mes-title li').each(function(i,e){
+					if(data.data[$(this).data('type')]){
+						$(this).find('em').html(data.data[$(this).data('type')].num);
+						if($(this).find('em').html()<=0){
+							$(this).find('em').hide();
+						}else{
+							$(this).find('em').show();
+						};
+					}else{
+						$(this).find('em').html('0');
+						$(this).find('em').hide();
+					}
+				});
+			};
+		},
+		error(){
+
+		}
+	});
 };

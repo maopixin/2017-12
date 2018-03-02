@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>专家入驻</title>
+    <!-- 初始化样式 -->
+	<link rel="stylesheet" href="./../css/reset.css">
+	<!-- layuicss -->
+	<link rel="stylesheet" href="http://meet.dljy.com/static/assets/lib/layui/css/layui.css" />
+    <!-- 当前页面的css -->
+    <link rel="stylesheet" href="./../css/form.css">
+</head>
+<body>
+	<div class="f-t-box">
+		<h3 class="f-title">专家入驻</h3>
+	</div>
+	<div class="form clearfix">
+		<!--基本信息-->
+		<h2 class="form-title">- 基本信息 -</h2>
+		<div class="form-content input-box">
+			<div class="input-box">
+				<label class="label two-label inline-block" for="">姓名</label>
+				<input class="two two-margin indent" type="text" id="name"/>
+				<label class="label two-label inline-block" for="">年龄</label>
+				<input class="two indent" type="number" id="age"></input>
+			</div>
+			<div>
+				<label class="input-title inline-block">头像上传</label>
+				<span class="inline-block tip">必填</span>
+			</div>
+			<div class="head-pic" id="head">
+				<img src="" alt="" />
+				<span class="sprite-form pic">头像</span>
+				<span class="sprite-form add">
+					+
+					<input type="file" name="" id="head-pic">
+				</span>
+				<span class="tip">添加头像</span>
+			</div>
+			<div>
+				<label for="" class="input-title block">
+					单位名称
+				</label>
+				<input class="width3 indent" type="text" placeholder="必填" name="" id="company_name" value="" />
+			</div>
+			<div>
+				<label for="" class="input-title block">
+					联系电话
+				</label>
+				<input class="width3 indent" type="text" placeholder="必填" name="" id="contact_number" value="" />
+			</div>
+			<div>
+				<label for="" class="input-title block">
+					讲课主题
+				</label>
+				<input class="width3 indent" type="text" placeholder="必填" name="" id="lecture_topics" value="" />
+			</div>
+			<div>
+				<label for="" class="input-title block">
+					研究领域
+				</label>
+				<input class="width3 indent" type="text" placeholder="必填" name="" id="research_field" value="" />
+			</div>
+			<div>
+				<label class="input-title block">个人简介</label>
+				<textarea class="width3 synopsis block" id="personal_profile" placeholder="必填"></textarea>
+			</div>
+		</div>
+		<h2 class="form-title">- 所获荣誉 -</h2>
+		<div class="form-content input-box">
+			<div>
+				<label class="input-title inline-block">上传图片</label>
+				<span class="inline-block tip">必填</span>
+			</div>
+			<div class="winbox">
+				<div class="winbox-item">
+					<span class="sprite-form"></span>
+					<img class="win-pic" src="" alt="" />
+					<span class="win-pic-info center">图片1</span>
+					<input type="file" name="" id="honor1" value="" data-Type="0"/>
+				</div>
+				<div class="winbox-item">
+					<span class="sprite-form"></span>
+					<img class="win-pic" src="" alt="" />
+					<span class="win-pic-info center">图片2</span>
+					<input type="file" name="" id="honor2" value="" data-type="1" />
+				</div>
+				<div class="winbox-item">
+					<span class="sprite-form"></span>
+					<img class="win-pic" src="" alt="" />
+					<span class="win-pic-info center">图片3</span>
+					<input type="file" name="" id="honor3" value="" data-type="2" />
+				</div>
+			</div>
+		</div>
+		<div class="submit center fr" id="updata-btn">提交</div>
+	</div>
+	<div class="tip-box hidd" id="tip-box">
+		<i class="layui-icon" style="font-size: 30px; color: #1E9FFF;">&#xe60c;</i>
+		<span>请输入姓名</span>
+	</div>
+</body>
+	<script src="./../js/jquery-3.2.1.js"></script>
+	<!-- 需要引入的js -->
+	<script src="./../js/config.js"></script>
+	<script src="./../js/apply-join.js"></script>
+</html>

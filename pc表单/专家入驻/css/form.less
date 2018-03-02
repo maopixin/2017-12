@@ -1,0 +1,546 @@
+
+
+.sprite-form{
+    display: inline-block;
+    height: 0;
+    overflow: hidden;
+    background: url(../img/form-sprite.png) no-repeat;
+    background-size: 333px;
+}
+.f-t-box{
+    height: 65px;
+    background-color: #1b9fe2;
+    .f-title{
+        width: 216px;
+        color: #fff;
+        margin: 0 auto;
+        font-size: 28px;
+        line-height: 65px;
+        text-align: center;
+        font-weight: 500;
+        background-color: #057fbd;
+    }
+}
+.form{
+    //标题
+    font-size: 0;
+    width: 744px;
+    margin: 0 auto;
+    -webkit-text-size-adjust:none;
+    .form-title{
+        font-size: 26px;
+        color: #474545;
+        margin-top: 32px;
+        text-align: center;
+        line-height: 70px;
+        background-color: #f0f3f5;
+    }
+    .form-content{
+        padding:0 30px;
+        border: 1px solid #cccecf;
+        margin: 30px 0;
+    }
+    //input标题
+    .input-title{
+        font-size: 24px;
+        line-height: 62px;
+        margin-top: 15px;
+    }
+    //input 预设
+    input{
+        background-color: #faf6f6;
+        height: 42px;
+        border: 1px solid #a39c9e;
+        border-bottom: none;
+        border-right: none;
+        font-size: 18px;
+        line-height: 42px;
+        box-shadow: 1px 1px 3px rgba(163,156,158,0.8) inset;
+    }
+    .block{
+        display: block;
+    }
+    .inline-block{
+        display: inline-block;
+    }
+    .center{
+        text-indent: 0 !important;
+        text-align: center;
+    }
+    .indent{
+        text-indent: 2em;
+    }
+    .width{
+        width: 689px;
+    }
+    .width3{
+        box-sizing: border-box;
+        width: 680px !important;
+    }
+    .font{
+        font-size: 18px;
+        line-height: 52px;
+    }
+    .margin{
+        margin-right: 30px;
+    }
+    .tip{
+        font-size: 18px;
+        line-height: 62px;
+        color: #858282;
+        margin-left: 18px;
+    }
+    .label{
+        width: 92px;
+        text-indent: 18px;
+        font-size: 18px;
+        line-height: 42px;
+    }
+    .check-one{
+        vertical-align: top;
+        margin-top: 17px;
+        width: 23px;
+        height: 18px;
+        background-position: -140px -49px;
+        border: 1px solid #a39c9e;
+        border-bottom: none;
+        border-right: none;
+        background-color: #faf6f6;
+        margin-right: 10px;
+        box-shadow: 1px 1px 3px rgba(163,156,158,0.8) inset;
+    }
+    .check-info{
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    .get-mes{
+        width: 170px;
+        height: 48px;
+        border: 2px solid #e7e6e6;
+        background-color: #f9f7f7;
+        vertical-align: top;
+        font-size: 18px;
+        line-height: 48px;
+        text-align: center;
+        margin-left: 65px;
+        margin-right: 15px;
+    }
+    .mes{
+        width: 133px;
+        height: 44px;
+        margin-top: 4px;
+    }
+    .enter{
+        width: 43px;
+        padding-top: 36px;
+        background-position: -136px -75px;
+        margin: 8px 30px 0 0;
+    }
+    .synopsis{
+        width: 668px;
+        height: 170px;
+        border: 1px solid #a39c9e;
+        border-bottom: none;
+        border-right: none;
+        background-color: #faf6f6;
+        margin-right: 10px;
+        outline: none;
+        resize: none;
+        box-shadow: 1px 1px 3px rgba(163,156,158,0.8) inset;
+        font-size: 18px;
+        line-height: 40px;
+        text-indent: 2em;
+        &:before{
+            content: '简介：';
+            
+        }
+    }
+    .submit{
+        width: 100px;
+        height: 32px;
+        cursor: pointer;
+        background-color: #1b9fe2;
+        color: #FFFFFF;
+        font-size: 18px;
+        line-height: 32px;
+        margin: 84px auto 0;
+        border-radius: 26px;
+        margin-bottom: 40px;
+    }
+    .cancel{
+        margin: 0 auto 50px;
+    }
+    .add-works{
+        font-size: 18px;
+        margin-top: 46px;
+        line-height: 22px;
+        
+    }
+    .add-works-btn{
+        width: 14px;
+        height: 14px;
+        font-size: 16px;
+        line-height: 14px;
+        text-align: center;
+        margin-top: 47px;
+        margin-left: 10px;
+        border: 2px solid #727171;
+    }
+    .get-me{
+        margin-top: 64px;
+        .get-mes{
+            margin: 0;
+            margin-right: 18px;
+        }
+        .mes{
+            margin-right: 56px;
+        }
+    }
+    .uploading{
+        width: 220px;
+        .sprite-form{
+            vertical-align: middle;
+            width: 30px;
+            padding-top: 31px;
+            background-position: -181px -39px;
+        }
+        .tip{
+            vertical-align: middle;
+            margin-left: 20px;
+        }
+    }
+    .vip-num{
+        font-size: 22px;
+        line-height: 70px;
+        margin-top: 20px;
+    }
+    .sex-num{
+        .label{
+            vertical-align: top;
+            line-height: 62px;
+            margin-top: 15px;
+            margin-right: 40px;
+            width: auto;
+        }
+        input{
+            height: 40px;
+            width: 97px;
+            vertical-align: top;
+            margin-top: 25px;
+            margin-right: 20px;
+        }
+    }
+    //团体定制页
+    .one-label{
+        width: 110px;
+        text-indent: 0;
+    }
+    .one{
+        width: 570px;
+    }
+    .input-box{
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .two-label{
+        text-indent: 0;
+        width: 62px;
+    }
+    .two-margin{
+        margin-right: 42px;
+    }
+    .two{
+        width: 256px;
+    }
+    .check-box-check{
+        font-size: 18px;
+        line-height: 51px;
+        text-align: center;
+        .s{
+            display: inline-block;
+            width: 49%;
+        }
+    }
+    //end
+    .meet-person{
+        font-size: 18px;
+        line-height: 40px;
+        text-align: center;
+        span{
+            float: left;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .name{
+            width: 90px;
+        }
+        .tel{
+            width: 160px;
+        }
+        .email{
+            width: 244px;
+        }
+        .type{
+            width: 82px;
+        }
+        .change{
+            width: 105px;
+            .change-btn{
+                float: none;
+                display: inline-block;
+                width: 60px;
+                height: 32px;
+                line-height: 32px;
+                border: 2px solid #e7e6e6;
+                background: linear-gradient(180deg,#fff,#f9f7f7);
+            }
+        }
+        dt{
+            background-color: #faf6f6;
+        }
+        dl{
+            height: 40px;
+            margin-top: 10px;
+        }
+        .add-person{
+            width: 104px;
+            height: 36px;
+            margin: 20px auto 0;
+            line-height: 40px;
+            border: 2px solid #e7e6e6;
+            background: linear-gradient(180deg,#fff,#f9f7f7);
+        }
+    }
+    .invoice{
+        div{
+            margin-bottom: 48px;
+            font-size: 18px;
+            line-height: 50px;
+            label{
+                float: left;
+            }
+            input{
+                float: left;
+                text-indent: 2em;
+            }
+        }
+        .l-o{
+            width: 130px;
+            text-align: right;
+            margin-right: 34px;
+        }
+        .i-o{
+            width: 520px;
+        }
+        .l-t{
+            width: 80px;
+            text-align: right;
+            margin-right: 34px;
+        }
+        .i-t{
+            width: 160px;
+        }
+        .i-th{
+            width: 246px;
+        }
+    }
+    //选择框
+    .select_box{
+        height: 51px;
+        font-size: 18px;
+        line-height: 51px;
+        border: 1px solid #a39c9e;
+        border-bottom: none;
+        border-right: none;
+        font-size: 18px;
+        line-height: 51px;
+        background-color: #faf6f6;
+        box-shadow: 1px 1px 3px rgba(163,156,158,0.8) inset;
+        position: relative;
+        text-align: center;
+        .option{
+            width: 100%;
+            position: absolute;
+            z-index:99;
+            top: 52px;
+            left: 0;
+            display: none;
+            border: 1px solid #F9F7F7;
+            box-sizing: border-box;
+            box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+            a{
+                width: 100%;
+                display: block;
+                background-color: #FFFFFF;
+                border-bottom: 1px solid #F9F7F7;
+            }
+        }
+    }
+    .l-r{
+        padding-left: 64px;
+        vertical-align:top;
+        margin-top: 20px;
+        div.m-t{
+            margin-bottom: 30px;
+            .select_box{
+                display:inline-block;
+                width:436px;
+                margin-right: 0;
+            }
+        }
+        input{
+            width: 436px;
+            text-indent: 2em;
+        }
+    }
+    .only{
+        width: 96px;
+    }
+    .head-pic{
+        width: auto;
+        display: inline-block;
+        img{
+            display: none;
+            width: 132px;
+            height: 132px;
+            margin-right: 29px;
+            vertical-align: bottom;
+        }
+        .pic{
+            vertical-align: bottom;
+            width: 132px;
+            padding-top: 132px;
+            margin-right: 29px;
+            background-position: -1px -1px;
+        }
+        .pic-v{
+            border: none;
+            box-shadow:none ;
+            vertical-align: bottom;
+            width: 102px;
+            background-color: rgba(0,0,0,0);
+            padding-top: 80px;
+            margin-right: 29px;
+            background-position: -220px -1px;
+            overflow: hidden;
+            height: 0 !important;
+        }
+        .add{
+            position: relative;
+            border: none;
+            box-shadow:none ;
+            vertical-align: bottom;
+            width: 34px;
+            background-color: rgba(0,0,0,0);
+            padding-top: 34px;
+            text-align: center;
+            margin-right: 14px;
+            color: #1b9fe2;
+            font-size: 18px;
+            line-height: 34px;
+            overflow: hidden;
+            height: 0 !important;
+            background-position: -135px -4px;
+            input{
+                width: 34px;
+                height: 34px;
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                opacity: 0;
+            }
+        }
+        .tip{
+            display: inline-block;
+            vertical-align: bottom;
+            line-height: 34px;
+        }
+    }
+    #school{
+        width: 593px;
+    }
+    #name{
+        width: 155px;
+    }
+    #tel{
+        width: 312px;
+    }
+    .margin-top{
+        margin-top: 46px;
+    }
+    //所获荣誉的盒子
+    .winbox{
+        margin-top: 20px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content:space-around;
+        .winbox-item{
+            width: 142px;
+            position: relative;
+            .sprite-form{
+                width: 141px;
+                height: 128px;
+                background-position: 0 -137px;
+            }
+            img{
+               display: none;
+               width: 141px; 
+               height: 128px;
+            }
+            .win-pic-info{
+                display: block;
+                font-size: 18px;
+                line-height: 40px;
+                margin-top: 20px;
+            }
+            input{
+                display: block;
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 142px;
+                height: 209px;
+                opacity: 0;
+                z-index: 8;
+            }
+            input i{
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+#tip-box{
+	border: 1px solid #d3d4d3;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+	background-color: #fff;
+	position: fixed;
+	height: 44px;
+	padding: 16px 20px 10px;
+	line-height: 44px;
+	top: 50%;
+	left: 50%;
+	margin-left: -100px;
+	transform: translateY(-50%);
+	opacity: 1;
+	transition: opacity 0.5s ease , transform 0.5s ease;
+}
+#tip-box i{
+	display: inline-block;
+	vertical-align: top;
+}
+#tip-box span{
+	display: inline-block;
+	vertical-align: top;
+	line-height: 42px;
+}
+.hidd{
+	opacity: 0 !important;
+	transform: translateY(0%) !important;
+	z-index: -999;
+}
