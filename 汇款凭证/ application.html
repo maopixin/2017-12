@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="index.css" />
+		<link rel="stylesheet" href="http://meet.dljy.com/static/assets/lib/layui/css/layui.css" />
+	</head>
+	<body>
+		<section id="box">
+			<!--汇款凭证-->
+			<div class="title">
+				<div class="payment">申请表</div>
+			</div>
+			<!--内容-->
+			<div class="content clearfix">
+				<!--基本信息-->
+				<div class="info">
+					<h3>- 基本信息 -</h3>
+					<ul class="application clearfix">
+						<li class="left_name  fl">
+							<div class="fl">申请人</div>
+							<div class="fl person-box">
+								<input id="name" type="text" placeholder ="必填" class=''/>
+								<ul class="person-list">
+									
+								</ul>
+							</div>
+						</li>
+						<li class="right_name fr">
+							<div class="space fl">职务</div>
+							<input id="duties" type="text" placeholder ="必填" class="fl"/>
+						</li>
+						<li class="left_name fl">
+							<div class="space fl">手机</div>
+							<input id="mobile" type="text" placeholder ="必填" class="fl"/>
+						</li>
+						<li class="right_name fr">
+							<div class="space fl">邮箱</div>
+							<input id="email" type="text" placeholder ="必填" class="fl"/>
+						</li>
+						<li class="left_name list fl">
+							<div class="fl">单位名称</div>
+							<div class="d-name-box fl">
+								<input id="d-name" type="text" placeholder ="必填" class='pane'/>
+								<ul class="d-name-list">
+									
+								</ul>
+							</div>
+						</li>
+						<li class="school  fl">
+							<div class="fl">学校性质</div>
+							<span class="fl choose">(勾选)</span>
+							<span class="check-item fl active" data-type="1"></span>
+							<span class="fl">公办</span>
+							<span class="check-item fl" data-type="2"></span>
+							<span class="fl">民办</span>
+						</li>
+						<li class="left_name list fl">
+							<div class='fl'>学生数量</div>
+							<input id="stud" type="number" placeholder ="必填" class="fl"/>
+						</li>
+						<li class="right_name list fr">
+							<div class='fl'>教师数量</div>
+							<input id="teac" type="number" placeholder ="必填" class="fl"/>
+						</li>
+						<li class="left_name list fl" data-toggle="distpicker">
+							<div class="space fl">地区</div>
+							<span class="location fl">
+								<select id="provinces" class="address"></select>
+								
+							</span>
+							<span class="location fr">
+								<select id="city" class="city"></select>
+								
+							</span>
+							<span class="location fl">
+								<select id="county" class="address county"></select>
+								
+							</span>
+							<span class="location fr">
+								<input id="address" type="text" placeholder ="详细地址" class="pane"/>
+							</span>
+						</li>
+						<li class="left_name list fl">
+							<div class="fl">购卡数量</div>
+							<input id="num" type="number" placeholder ="必填" class='pane fl'/>
+							<span class="code fl">获取短信验证码</span>
+							<input type="text"  class="code_case fl"/>
+							<span class="fl code_pic"></span>
+						</li>
+						
+					</ul>
+				</div>
+				
+				<input type="button" value="提交" class="btns" id="up-btn"/>
+			</div>
+			
+		</section>
+		<div class="tip-box hidd" id="tip-box">
+			<i class="layui-icon" style="font-size: 30px; color: #1E9FFF;">&#xe60c;</i>
+			<span>请输入姓名</span>
+		</div>
+		<script src="./jquery-3.2.1.js"></script>
+		<script src="./config.js"></script>
+		<script src="./application.js"></script>
+	</body>
+</html>

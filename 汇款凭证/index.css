@@ -1,0 +1,376 @@
+/*reset css*/
+body , h3{
+	margin:0px;
+}
+a{
+	text-decoration: none;
+	color: #ffffff;
+}
+img{
+	vertical-align: top;
+	border: none;
+}
+ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+em{
+	font-style: normal;
+}
+input{
+	border:none;
+	padding:0;
+	outline: none;
+	font-size: 18px !important;
+}
+textarea{
+	resize:none;
+	outline:none;
+}
+
+/*tool*/
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix{
+	*zoom: 1;
+}
+.clearfix:after{
+	content:"";
+	display: block;
+	clear: both;
+}
+ .nomargin{
+	margin:0 !important;
+}
+/*main*/
+#box{
+	min-width: 1240px;
+	font-size: 30px;
+	font-family: '黑体';
+}
+#box .title{
+	min-width: 1240px;
+	height:65px;
+	background-color:#1b9fe2;
+}
+.title .payment{
+	margin: 0 auto;
+	width:216px;
+	background-color:#057fbd;
+	color:#fff;
+	line-height:65px;
+	text-align: center;
+}
+#box .content{
+	margin:0 auto;
+	width:745px;
+	border-top:2px border #cccecf;
+	padding-bottom: 50px;
+}
+.content .info h3{
+	margin:55px 0px 49px 0px;
+	height:52px;
+	line-height: 52px;
+	color:#000000;
+	text-align: center;
+	text-shadow:0px 0px 1px #c9c7c7;
+	background-color:#f2f0f0;
+}
+.content .info ul{
+	border:1px solid #cccecf;
+	box-shadow:1px 1px 0px #f0f1f1 inset;
+	padding: 0px 68px 37px 114px;
+	text-shadow: -1px 0px  #dfdfdf;
+}
+.info ul div{
+	margin-top:30px;
+	font:20px/20px '黑体';
+}
+.info ul input,.info ul .text,.info ul .payment_date{
+	width:559px;
+	height:41px;
+	text-indent: 16px;
+	border-top:1px solid #a39c9e;
+	border-left:1px solid #a39c9e;
+	text-shadow: -1px 0px  #d2cfcf;
+	margin:17px 0px 5px 0px;
+	background-color:#faf6f6;
+	box-shadow:1px 1px 0px #ddd8d9 inset;
+}
+.info ul .card , .info ul .payment_date{
+	width:207px;
+}
+.info ul .pay{
+	position: relative;
+}
+.info ul .payment_date{
+	color:#858282;
+	font-size:18px;
+	text-shadow: 0px 0px 1px #e0dddd;
+}
+.info .triangle{
+	background:url(img/triangle.png) no-repeat;
+	width:26px;
+	height:16px;
+	position: absolute;
+	right:19px;
+	bottom:18px;
+}
+.info ul .proof{
+	margin-top:17px;
+}
+.info ul .add{
+	margin:45px 0px 0px 27px;
+}
+.info ul .text{
+	width:510px;
+	height:148px;
+	margin-bottom: 48px;
+	color:#8e8b8b;
+	padding-top:27px;
+	font-size:18px;
+	box-sizing: border-box;
+	text-shadow: 0px 0px 1px #c5c2c2;
+}
+.btns{
+	width:100px;
+	height:32px;
+	color:#fff;
+	cursor: pointer;
+	font:20px/32px '黑体';
+	text-align: center;
+	background-color:#1b9fe2;
+	border-radius: 10px;
+	margin-top:91px;
+	float: right;
+}
+
+
+/*申请表  application.css*/
+
+.content .info .application{
+	padding:0px 70px 86px 70px;
+	font:18px/42px '黑体';
+}
+.info .application li{
+	margin-top:37px;
+}
+.info .application div{
+	width:72px;
+	height:42px;
+	margin-top:0px;
+	font:18px/42px '黑体';
+}
+.application .left_name div{
+	margin-right:15px;
+}
+.info .application input{
+	margin:0px 0px;
+	font:18px/42px '宋体';
+}
+.application .left_name input{
+	width:174px;
+	text-indent:26px;
+}
+.application .right_name div{
+	margin-right:24px;
+	margin-left:28px;
+}
+.application .space{
+	letter-spacing: 8px;
+}
+.application .right_name input{
+	width:214px;
+	text-indent:39px;
+}
+.application .left_name .pane{
+	width:512px;
+	margin-right:2px;
+}
+.info .application .school{
+	margin-top:47px;
+	font:18px/34px '黑体';
+	color:#858282;
+}
+.info .application .school div{
+	line-height:34px;
+	margin-right:13px;
+	color:#000;
+}
+.school .choose{
+	margin-right:62px;
+}
+.info .application .school input{
+	width:17px;
+	height:16px;
+	margin:8px 14px 0px 0px;
+}
+.info .application .school input:nth-of-type(2){
+	margin-left:87px;
+}
+.info .application .list{
+	margin-top:42px;
+}
+.application .left_name .address{
+	width:219px;
+}
+.info .application .location{
+	position: relative;
+}
+.application .triangle{
+	right:11px;
+	bottom:12px;
+}
+.info .application .city{
+	width:214px;
+	text-indent:8px;
+}
+.info .application .county{
+	margin:42px 0px 42px 87px;
+}
+.application .ico{
+	bottom:53px;
+}
+.left_name .code{
+	margin:80px 14px 0px 83px;
+	width:161px;
+	height:45px;
+	background-color:#fdfdfd;
+	border:2px solid #e7e6e6;
+	color:#383737;
+	text-align: center;
+}
+.info .left_name .code_case{
+	margin:84px 45px 0px 0px;
+	width:126px;
+}
+.left_name .code_pic{
+	background:url(img/code.png) no-repeat;
+	width:41px;
+	height:33px;
+	margin-top:88px;
+}
+.person-box{
+	width: 175px;
+	position: relative;
+}
+.person-box ul{
+	position: absolute;
+	top: 42px;
+	left: 0;
+	background-color: #fff;
+	padding: 0 !important;
+	box-sizing: border-box;
+	width: 175px;
+}
+.person-box ul li{
+	text-indent: 26px;
+	margin: 0 !important;
+	cursor: pointer;
+	height: 44px;
+}
+.person-box ul li:hover{
+	background-color: #ccc;
+}
+.d-name-box{
+	width: 500px !important;
+	position: relative;
+}
+.d-name-box ul{
+	padding: 0 !important;
+	position: absolute;
+	top: 42px;
+	left: 0;
+	box-sizing: border-box;
+	width: 513px;
+	background-color: #fff;
+}
+.d-name-box ul li{
+	margin: 0 !important;
+	text-indent: 26px;
+	cursor: pointer;
+}
+.d-name-box ul li:hover{
+	background-color: #ccc;
+}
+.school{
+	width: 600px;
+}
+.school .check-item{
+	width: 19px;
+    height: 19px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #faf6f6;
+    margin: 8px;
+}
+.school .active{
+	background: #faf6f6 url(img/checked.png) no-repeat center center;
+}
+select{
+	height: 42px;
+	outline: none;
+	background-color: #faf6f6;
+	text-indent: 26px;
+}
+#tip-box{
+	border: 1px solid #d3d4d3;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+	background-color: #fff;
+	position: fixed;
+	height: 44px;
+	padding: 16px 20px 10px;
+	line-height: 44px;
+	top: 50%;
+	left: 50%;
+	margin-left: -100px;
+	transform: translateY(-50%);
+	opacity: 1;
+	transition: opacity 0.5s ease , transform 0.5s ease;
+}
+#tip-box i{
+	display: inline-block;
+	vertical-align: top;
+}
+#tip-box span{
+	display: inline-block;
+	vertical-align: top;
+	line-height: 42px;
+}
+.hidd{
+	opacity: 0 !important;
+	transform: translateY(0%) !important;
+	z-index: -999;
+}
+#up-btn{
+	cursor: pointer;
+}
+.add-pic{
+	width: 34px;
+    height: 34px;
+    display: inline-block;
+    position: relative;
+    vertical-align: bottom;
+    font: 26px/34px "微软雅黑";
+    color: #1b9fe2;
+	text-align: center;
+	cursor: pointer;
+    margin-right: 18px;
+    background: url(img/add_ico.png) no-repeat;
+}
+.add-pic input{
+	width: 34px !important;
+	height: 34px !important;
+	margin: 0 !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 9;
+}

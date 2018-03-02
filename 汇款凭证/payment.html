@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="index.css" />
+		<link rel="stylesheet" href="http://meet.dljy.com/static/assets/lib/layui/css/layui.css" />
+	</head>
+	<body>
+		<section id="box">
+			<!--汇款凭证-->
+			<div class="title">
+				<div class="payment">汇款凭证</div>
+			</div>
+			<!--内容-->
+			<div class="content clearfix">
+				<!--基本信息-->
+				<div class="info">
+					<h3>- 基本信息 -</h3>
+					<ul class="clearfix">
+						<li class="fl">
+							<div>汇款单位</div>
+							<input id="i1" type="text" disabled="disabled"/>
+						</li>
+						<li class="fl">
+							<div>购卡数量</div>
+							<input id="i2" type="text" class="card" disabled="disabled"/>
+						</li>
+						<li class="pay fr">
+							<div>汇款日期</div>
+							<input id="txtBeginDate" type="text" value ="" class="payment_date"/>
+							<div class="triangle"></div>
+						</li>
+						<li class="fl">
+							<div>上传凭证</div>
+							<em>
+								<img class="proof" src ='img/proof.png'/>
+								<div class="add-pic">
+									<input type="file" id="porsen-head-pic" accept="image/jpeg" />
+								</div>
+							</em>
+							<div class="text" style="min-height:148px;height:auto;padding-bottom:27px;">
+								<img id="pic-box-m" src="" alt="" style="max-width:400px;">
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="info">
+					<h3>- 发票信息 -</h3>
+					<ul>
+						<li>
+							<div>发票抬头</div>
+							<input id="invoice_company" type="text"/>
+						</li>
+						<li>
+							<div>纳税人识别号或统一社会信用代码</div>
+							<input id="invoice_code" type="text"/>
+						</li>
+					</ul>
+				</div>
+				<input type="button" value="提交" class="btns"/>
+			</div>
+		</section>
+		<div class="tip-box hidd" id="tip-box">
+			<i class="layui-icon" style="font-size: 30px; color: #1E9FFF;">&#xe60c;</i>
+			<span>请输入姓名</span>
+		</div>
+	</body>
+	<script src="./jquery-3.2.1.js"></script>
+	<script src="./config.js"></script>
+	<script src="./laydate/laydate.js"></script>
+	<script src="./payment.js"></script>
+</html>
