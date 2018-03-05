@@ -1,3 +1,13 @@
+h4{
+    margin: 0;
+    padding: 0;
+    padding-left: 24px;
+    line-height: 48px;
+    border-bottom: 1px solid #dcdcdc;
+}
+.fr{
+	float: right;
+}
 .jump-box-bg{
     display: flex;
     position: fixed;
@@ -9,7 +19,29 @@
 }
 .jump-box-bg .jump-content{
     margin:  auto;
-    width: 100px;
-    height: 200px;
+    width: 400px;
     background-color: #fff;
+    border-radius: 6px;
+}
+.tip-mes{
+	padding: 16px 40px;
+	font-size: 14px;
+	line-height: 26px;
+}
+.btn-box{
+	padding: 10px 30px 14px;
+	height: 27px;
+}
+.btn-box span{
+	width: 55px;
+	height: 27px;
+	line-height: 27px;
+	text-align: center;
+	border-radius: 6px;
+	cursor: pointer;
+	margin-left: 10px;
+}
+.btn-box .active{
+	background-color: #3399ff;
+	color: #fff;
 }
