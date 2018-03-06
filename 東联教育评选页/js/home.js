@@ -1,4 +1,4 @@
-// 移动函数
+﻿// 移动函数
 /*
  data{
  	n:容器内显示的个数
@@ -47,7 +47,7 @@ move.prototype.init = function(){
 		'transform':'translate3d(0,0,0)'
 	});
 	this.play();
-	let _this = this;
+	var _this = this;
 	this.next_b.click(function(){
 		_this.next();
 		_this.pre_b.css({
