@@ -17,22 +17,24 @@
         </ul>
         <ul class="form-box">
             <li class="have">
-                <label for="use-name">新登录密码：</label>
+                <label for="password">新登录密码：</label>
                 <div>
-                    <input type="text" id="use-name">
+                    <input type="password" id="password">
                     <em>由字母加数字或符号至少两种以上字符组成的6-20位半角字符，区分大小写</em>
                 </div>
             </li>
             <li>
-                <label for="use-name">确认新密码：</label>
+                <label for="repassword">确认新密码：</label>
                 <div>
-                    <input type="text" id="use-name">
+                    <input type="password" id="repassword">
                 </div>
             </li>
         </ul>
-        <div class="updata">
+        <div class="updata" id="resetpassword">
             提交
         </div>
     </div>
 </body>
+<script src="../../jquery-3.2.1.js"></script>
+<script src="../js/pass.js"></script>
 </html>
