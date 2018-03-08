@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+}
+h3{
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    line-height: 72px;
+    font-size: 18px;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+label{
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    padding-right: 10px;
+    color: #717374;
+}
+input{
+    outline: none;
+    padding: 0;
+    width: 230px;
+    height: 36px;
+    text-indent: 1em;
+    font-size: 16px;
+    border: 2px solid #717374;
+    color: #717374;
+}
+input:focus{
+    border: 2px solid #1b9fe2;
+}
+.pass-content{
+    width: 1110px;
+    padding: 50px 42px 60px;
+    margin: 0 auto;
+}
+.steps{
+    text-align: center;
+    height: 26px;
+    font-size: 12px;
+    border-top: 1px solid rgba(0, 0, 0, 0);
+    margin-bottom: 126px;
+}
+.steps .step{
+    height: 10px;
+    display: inline-block;
+    vertical-align: top;
+    width: 246px;
+    margin: 8px -6px 0;
+    border-radius: 5px;
+    background-color: #ccc;
+    border-top: 1px solid #ccc;
+}
+.steps .step span{
+    display: block;
+    margin: 0 auto; 
+    font-size: 16px;
+    color: #fff;
+    border-radius: 11px;
+    line-height: 22px;
+    width: 22px;
+    height: 22px;
+    margin-top: -6px;
+    background-color: #ccc;
+}
+.steps .active{
+    background-color: #1b9fe2;
+    position: relative;
+    z-index: 9;
+}
+.steps .active span{
+    width: 26px;
+    height: 26px;
+    margin-top: -8px;
+    border-radius: 13px;
+    line-height: 26px;
+    background-color: #1b9fe2;
+}
+.form-box li{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.form-box li label,.form-box li div{
+    display: inline-block;
+    vertical-align: top;
+}
+.form-box li div em{
+    display: block;
+    position: absolute;
+    font-style: normal;
+    text-align: left;
+    font-size: 12px;
+    line-height: 44px;
+    color: #717374;
+}
+.updata{
+    width: 70px;
+    height: 26px;
+    background-color: #1b9fe2;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    line-height: 26px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.have{
+    padding-bottom: 70px !important;
+}
+.jump-url .txt-tips{
+    font-size: 16px;
+    line-height: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    color: #717374;
+}
+.jump-url .out-time{
+    width: 72px;
+    height: 72px;
+    background-color: #1b9fe2;
+    text-align: center;
+    color: #fff;
+    border-radius: 36px;
+    font-size: 30px;
+    line-height: 72px;
+    margin:  0 auto;
+}
