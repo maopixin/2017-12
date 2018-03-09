@@ -21,9 +21,10 @@ $('#updata').click(function(){
             },
             type:"POST",
             success(data){
+
                 if(data.status.code===0){
                     // 提交成功
-                    showTips(3);
+                    showTips(0);
                 }else{
                     showTips(6);
                 }  
@@ -40,6 +41,8 @@ $('#resetpassword').click(function(){
     if(testPassword("password")){
         // 合法
         if($('#password').val()===$('#repassword').val()){
+            var _this = this;
+            $(_this).html("提交中");
             // 审核相同，可以提交
             // 拿到隐藏得邮箱地址
             var email_url = $('#eamil').html();
@@ -53,10 +56,12 @@ $('#resetpassword').click(function(){
                         
                     }else{
                         showTips(6);
+                        $(_this).html("提交");
                     }
                 },
                 error(){
                     showTips(6);
+                    $(_this).html("提交");
                 }
             })
         }else{
@@ -75,7 +80,6 @@ $('#resetpassword').click(function(){
 
 function showTips(num,type){
     type=type?type:0;
-    console.log(type)
 	var div = document.createElement('div');
 	div.id = "jump-box";
 	div.style = "display:flex;position:fixed;z-index:99999;top:0;left:0;right:0;bottom:0;background-color:rgba(0, 0, 0, 0.5)";
@@ -90,7 +94,6 @@ function showTips(num,type){
 			        </div>`;
     document.body.appendChild(div);
     document.body.onclick = function(){
-        console.log(1)
         reMoveMexBox(type);
     };
 };
