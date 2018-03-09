@@ -49,7 +49,7 @@ $('#resetpassword').click(function(){
             $.ajax({
                 url:"",
                 data:{
-
+                    
                 },
                 success(data){
                     if(data.status.code===0){//success  登录 然后跳转 第三步  ， 第三部自动跳转
