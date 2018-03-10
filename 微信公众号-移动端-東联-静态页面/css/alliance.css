@@ -1,0 +1,41 @@
+.alliance {
+  padding-top: 1.04rem;
+}
+.alliance .sprite-alliance {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  background: url(../未标题-1.png) no-repeat;
+  background-size: 5.33333333rem;
+}
+.alliance .alliance-sign-in {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 29px;
+}
+.alliance .alliance-sign-in .alliance-sign-in-item span {
+  display: block;
+  overflow: visible;
+  white-space: nowrap;
+  width: 73px;
+  height: 0px;
+  padding-top: 73px;
+  font-size: 0.29333333rem;
+  line-height: 0.64rem;
+  text-indent: -0.09333333rem;
+}
+.alliance .alliance-sign-in .alliance-sign-in-item .one {
+  background-position: 0px 0px;
+}
+.alliance .alliance-sign-in .alliance-sign-in-item .two {
+  background-position: -1.05333333rem 0;
+}
+.alliance .alliance-sign-in .alliance-sign-in-item .three {
+  background-position: -2.10666667rem 0;
+}
+.alliance .alliance-sign-in .alliance-sign-in-item .four {
+  background-position: -3.16rem 0;
+}
+.alliance .alliance-sign-in .alliance-sign-in-item .five {
+  background-position: -4.21333333rem 0;
+}

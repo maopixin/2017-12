@@ -5,12 +5,75 @@
   background: url('../img/index-sprite.png') no-repeat;
   background-size: 3.2rem;
 }
+.sprite-home {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  background: url('../img/home-sprite.png') no-repeat;
+  background-size: 8.78666667rem;
+}
 body {
   font-size: 0.29333333rem;
   font-family: 'HiraginoSansGB W3', '微软雅黑';
 }
 .banner {
   height: 3.66666667rem;
+}
+.search {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1.02666667rem;
+  background-color: #1b9fe2;
+  border-top: 1px solid #1b9fe2;
+}
+.search .search-box {
+  width: 9.2rem;
+  height: 0.69333333rem;
+  border-radius: 3px;
+  margin: 0.17333333rem auto 0;
+  font-size: 0.26666667rem;
+  color: #9b9b9b;
+  line-height: 0.69333333rem;
+  text-align: center;
+  background-color: #fff;
+}
+.search .search-box span {
+  display: inline-block;
+  vertical-align: top;
+}
+.search .search-box .sprite-home {
+  width: 0.36rem;
+  height: 0;
+  padding-top: 0.36rem;
+  margin: 0.17333333rem 0.34666667rem 0 0;
+}
+.news {
+  height: 0.73333333rem;
+  background-color: #f7f8fa;
+  overflow: hidden;
+}
+.news .sprite-home {
+  width: 0.41333333rem;
+  height: 0;
+  padding-top: 0.41333333rem;
+  background-position: -8.37333333rem 0;
+  margin: 0.16rem 0.21333333rem 0 0.4rem;
+}
+.news .news-box {
+  overflow: hidden;
+}
+.news .news-box a {
+  display: block;
+  width: 8rem;
+  height: 0.73333333rem;
+  line-height: 0.73333333rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #1b9fe2;
 }
 .bottom-btn {
   position: fixed;
