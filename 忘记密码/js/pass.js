@@ -15,18 +15,17 @@ $('#updata').click(function(){
     }else{
         //通过
         $.ajax({
-            url:"http://account.dljy.com/user/login/email_send",
+            url:"http://account.dljy.com/user/login/go_email_send",
             data:{
                 email:$('#use-name').val().trim()
             },
             type:"POST",
-            success(data){
-
+            success(result){
+                var data = JSON.parse(result);
                 if(data.status.code===0){
-                    // 提交成功
                     showTips(0);
                 }else{
-                    showTips(6);
+                    sTips(data.data);
                 }  
             },
             error(){
@@ -43,17 +42,18 @@ $('#resetpassword').click(function(){
         if($('#password').val()===$('#repassword').val()){
             var _this = this;
             $(_this).html("提交中");
-            // 审核相同，可以提交
-            // 拿到隐藏得邮箱地址
-            var email_url = $('#eamil').html();
             $.ajax({
-                url:"",
+                url:"http://account.dljy.com/user/login/go_set_up_password",
+                type: "POST",
                 data:{
-                    
+                    email:$('#email').val().trim(),
+                    password:$('#password').val().trim(),
+                    confirm_password:$('#repassword').val().trim()
                 },
-                success(data){
+                success(result){
+                    var data = JSON.parse(result);
                     if(data.status.code===0){//success  登录 然后跳转 第三步  ， 第三部自动跳转
-                        
+                        location.href="http://account.dljy.com/user/login/complete";
                     }else{
                         showTips(6);
                         $(_this).html("提交");
@@ -63,7 +63,7 @@ $('#resetpassword').click(function(){
                     showTips(6);
                     $(_this).html("提交");
                 }
-            })
+            });
         }else{
             // 审核失败，密码不同
             showTips(4,2);
@@ -107,9 +107,31 @@ function reMoveMexBox(type){
     };
 };
 
+function sTips(str){
+	var div = document.createElement('div');
+	div.id = "jump-box-s";
+	div.style = "display:flex;position:fixed;z-index:99999;top:0;left:0;right:0;bottom:0;background-color:rgba(0, 0, 0, 0.5)";
+	div.innerHTML = `<div class="jump-content" style="margin:auto;width:400px;background-color:#fff;border-radius:6px">
+			            <h4 style="margin:0;padding:0 0 0 24px;line-height:48px;border-bottom:1px solid #dcdcdc">温馨提示</h4>
+			            <div class="tip-mes" style="padding:16px 40px;font-size:14px;line-height:26px;word-break: break-all;">
+			            	${str}
+                        </div>
+                        <div class="btn-box" style="padding:10px 30px 14px;height:27px;font-size: 14px;">
+			                <a id="enter" class="btn active" style="background-color:#3399ff;color:#fff;width:55px;height:27px;line-height:27px;text-align:center;border-radius:6px;cursor:pointer;margin-left:10px;float: right;">确定</a>
+			            </div>
+			        </div>`;
+    document.body.appendChild(div);
+    document.body.onclick = function(){
+        reMoveMexBoxs();
+    };
+};
+function reMoveMexBoxs(){
+    document.getElementById("jump-box-s").remove();
+    document.body.onclick = null;
+};
+
 // 密码是否合法
 function testPassword(id){
     var regex = /(?!^[0-9]+$)(?!^[A-z]+$)(?!^[^A-z0-9]+$)^.{6,16}$/;
     return regex.test($('#'+id).val());
 };
-
