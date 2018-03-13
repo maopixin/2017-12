@@ -11,21 +11,22 @@
 .alliance .alliance-sign-in {
   display: flex;
   justify-content: space-around;
-  padding-top: 29px;
+  padding-top: 0.38666667rem;
+  padding-bottom: 0.93333333rem;
 }
 .alliance .alliance-sign-in .alliance-sign-in-item span {
   display: block;
   overflow: visible;
   white-space: nowrap;
-  width: 73px;
-  height: 0px;
-  padding-top: 73px;
+  width: 0.97333333rem;
+  height: 0;
+  padding-top: 0.97333333rem;
   font-size: 0.29333333rem;
   line-height: 0.64rem;
   text-indent: -0.09333333rem;
 }
 .alliance .alliance-sign-in .alliance-sign-in-item .one {
-  background-position: 0px 0px;
+  background-position: 0 0;
 }
 .alliance .alliance-sign-in .alliance-sign-in-item .two {
   background-position: -1.05333333rem 0;
@@ -38,4 +39,53 @@
 }
 .alliance .alliance-sign-in .alliance-sign-in-item .five {
   background-position: -4.21333333rem 0;
+}
+.alliance .offline-study {
+  padding: 0.42666667rem 0 0 0.45333333rem;
+}
+.alliance .offline-study li {
+  padding-bottom: 0.4rem;
+}
+.alliance .offline-study img {
+  width: 2.88rem;
+  margin-right: 0.49333333rem;
+}
+.alliance .offline-study div.fl {
+  width: 5.73333333rem;
+}
+.alliance .offline-study div.fl time {
+  font-size: 0.30666667rem;
+  line-height: 0.81333333rem;
+  width: 3.2rem;
+}
+.alliance .offline-study div.fl .place-box {
+  font-size: 0.30666667rem;
+  line-height: 0.81333333rem;
+  width: 2.53333333rem;
+  text-align: right;
+}
+.alliance .offline-study div.fl .applyed-num {
+  font-size: 0.37333333rem;
+  line-height: 0.74666667rem;
+  color: #666;
+}
+.alliance .offline-study div.fl .apply-btn {
+  width: 1.65333333rem;
+  height: 0.58666667rem;
+  border: 1px solid #d0d1d2;
+  background-color: red;
+  text-align: center;
+  color: #fff;
+  font-size: 0.29333333rem;
+  line-height: 0.58666667rem;
+  border-radius: 0.08rem;
+  margin-top: 0.05333333rem;
+}
+.alliance .offline-study .offline-title {
+  font-size: 0.32rem;
+  line-height: 0.45333333rem;
+  width: 5.6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

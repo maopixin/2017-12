@@ -9,24 +9,26 @@
         background: url(../未标题-1.png)  no-repeat;
         background-size: 400/@rem;
     }
+    //入口栏
     .alliance-sign-in{
         display: flex;
         justify-content: space-around;
-        padding-top: 29px;
+        padding-top: 29/@rem;
+        padding-bottom: 70/@rem;
         .alliance-sign-in-item{
             span{
                 display: block;
                 overflow: visible;
                 white-space: nowrap;
-                width: 73px;
-                height: 0px;
-                padding-top: 73px;
+                width: 73/@rem;
+                height: 0;
+                padding-top: 73/@rem; 
                 font-size: 22/@rem;
                 line-height: 48/@rem;
                 text-indent: -7/@rem;
             }
             .one{
-                background-position: 0px 0px;
+                background-position: 0 0;
             }
             .two{
                 background-position: -79/@rem 0;
@@ -41,5 +43,56 @@
                 background-position: -316/@rem 0;
             }
         }
+    }
+    //线下培训
+    .offline-study{
+        padding: 32/@rem 0 0 34/@rem;
+        li{
+            padding-bottom: 30/@rem;
+        }
+        img{
+            width: 216/@rem;
+            margin-right: 37/@rem;
+        }
+        div.fl{
+            width: 430/@rem;
+            time{
+                font-size: 23/@rem;
+                line-height: 61/@rem;
+                width: 240/@rem;
+            }
+            .place-box{
+                font-size: 23/@rem;
+                line-height: 61/@rem;
+                width: 190/@rem;
+                text-align: right;
+            }
+            .applyed-num{
+                font-size: 28/@rem;
+                line-height: 56/@rem;
+                color: #666;
+            }
+            .apply-btn{
+                width: 124/@rem;
+                height: 44/@rem;
+                border: 1px solid #d0d1d2;
+                background-color: red;
+                text-align: center;
+                color: #fff;
+                font-size: 22/@rem;
+                line-height: 44/@rem;
+                border-radius: 6/@rem;
+                margin-top: 4/@rem;
+            }
+        }
+        .offline-title{
+            font-size: 24/@rem;
+            line-height: 34/@rem;
+            width: 420/@rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        
     }
 }

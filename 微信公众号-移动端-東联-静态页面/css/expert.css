@@ -1,15 +1,17 @@
-.expert .check-head {
+.check-head {
   padding: 0.4rem 0 0 0.4rem;
 }
-.expert .expert-content {
+.expert-content {
   padding: 0.4rem 0 0 0.4rem;
-  width: 9.2rem;
   margin-top: 0.53333333rem;
 }
-.expert .expert-content .active {
+.expert-content .course-type {
+  width: 9.2rem;
+}
+.expert-content .active {
   background-color: red;
 }
-.expert .expert-content .taf-box {
+.expert-content .taf-box {
   padding: 0 !important;
   margin-top: 0.4rem;
 }

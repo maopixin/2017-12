@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>联盟成员</title>
+		<!-- 一比一像素还原 -->
+		<script src="./../js/dpr.js"></script>
+		<!-- 初始化样式 -->
+		<link rel="stylesheet" href="./../css/reset.css">
+		<!-- 工具类 -->
+		<link rel="stylesheet" href="./../css/tools.css">
+		<!-- 全局样式 -->
+		<link rel="stylesheet" href="./../css/index.css">
+		<!--引入同名样式-->
+		<link rel="stylesheet" href="./../css/expert.css" />
+		
+		<style>
+			.school-box{
+				padding-left: 0 !important;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="check-head">
+			<!--地区-->
+			<dl class="check-box clearfix">
+				<dt class="check-box-title">地区:</dt>
+				<dd class="check-box-item">全部</dd>
+				<dd class="check-box-item active">北京</dd>
+				<dd class="check-box-item">天津</dd>
+				<dd class="check-box-item">上海</dd>
+				<dd class="check-box-item">深圳</dd>
+				<dd class="select_box small-select select">
+					<span class="select_txt">更多∨</span>
+					<div class="option">
+						<a>山西</a>
+						<a>云南</a>
+						<a>贵州</a>
+					</div>
+				</dd>
+			</dl>
+			<!--学段-->
+			<dl class="check-box clearfix">
+				<dt class="check-box-title">学段:</dt>
+				<dd class="check-box-item">全部</dd>
+				<dd class="check-box-item active">幼儿园</dd>
+				<dd class="check-box-item">小学</dd>
+				<dd class="check-box-item">初中</dd>
+				<dd class="check-box-item">高中</dd>
+			</dl>
+			<!--搜索-->
+			<div class="search-small">
+				<input type="text" name="" id="" placeholder="学校名称" />
+				<span class="search-btn">
+					搜索
+				</span>
+			</div>
+		</header>
+		<section class="expert-content">
+			<ul class="course-type clearfix">
+				<li class="check-box-item active fl">综合排序</li>
+				<li class="check-box-item fl">入盟时间</li>
+			</ul>
+			<ul class="school-box clearfix">
+				<li class="school-item fl">
+					<img src="./../img/test/test6.jpg">
+					<span>北京中学</span>
+					<span>
+                    100节微课/40名师
+                </span>
+					<span>北京市</span>
+				</li>
+				<li class="school-item fl">
+					<img src="./../img/test/test6.jpg">
+					<span>北京中学</span>
+					<span>
+                    100节微课/40名师
+                </span>
+					<span>北京市</span>
+				</li>
+			</ul>
+			
+		</section>
+	</body>
+	<script src="../js/jquery-3.2.1.js"></script>
+	<script src="../js/select.js"></script>
+	<script src="../js/check.js"></script>
+</html>

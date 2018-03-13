@@ -431,3 +431,159 @@ body {
 .drawer .other-meeting .sprite-index {
   background-position-x: -0.74666667rem;
 }
+.list {
+  padding: 0.45333333rem 0 0 0.42666667rem;
+}
+.list .list-item {
+  width: 4.36rem;
+  margin-right: 0.42666667rem;
+  margin-bottom: 0.28rem;
+}
+.list .list-item:nth-of-type(2n) {
+  margin-right: 0;
+}
+.list .list-item .pic {
+  position: relative;
+}
+.list .list-item .pic .pic-title {
+  position: absolute;
+  width: 3.68rem;
+  height: 1.12rem;
+  background-color: rgba(8, 71, 116, 0.5);
+  color: #fff;
+  font-size: 0.32rem;
+  line-height: 0.56rem;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-1.84rem) translateY(-0.56rem);
+}
+.list .list-item .pic .num {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 2.04rem;
+  height: 0.52rem;
+  line-height: 0.52rem;
+  text-align: center;
+  font-size: 0.24rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: red;
+}
+.list .list-item img {
+  display: block;
+  width: 4.36rem;
+  margin-bottom: 0.10666667rem;
+}
+.list .list-item .item-txt {
+  background-color: #f0f1f6;
+  position: relative;
+}
+.list .list-item .item-txt .btn {
+  position: absolute;
+  bottom: 0.38666667rem;
+  right: 0.28rem;
+}
+.list .list-item .txt {
+  padding: 0.12rem 0 0.29333333rem 0.2rem;
+}
+.list .list-item .txt span {
+  display: block;
+  font-size: 0.25333333rem;
+  line-height: 0.4rem;
+}
+.list .list-item .txt .txt-title {
+  font-size: 0.33333333rem;
+  font-weight: 600;
+  color: red;
+  line-height: 0.62666667rem;
+}
+.school-box {
+  padding: 0.38666667rem 0 0 0.38666667rem;
+  margin-bottom: 0.4rem;
+}
+.school-box li {
+  width: 4.4rem;
+  margin-right: 0.4rem;
+  background-color: #f8f8f9;
+}
+.school-box li:nth-of-type(2n) {
+  margin: 0;
+}
+.school-box li img {
+  display: block;
+  width: 2.50666667rem;
+  height: 2.50666667rem;
+  margin: 0.42666667rem auto 0;
+}
+.school-box li span {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.school-box li span:nth-of-type(1) {
+  font-size: 0.34666667rem;
+  color: #142434;
+  font-weight: 600;
+  line-height: 0.86666667rem;
+}
+.school-box li span:nth-of-type(2) {
+  font-size: 0.26666667rem;
+  color: #3c3e3f;
+  line-height: 0.45333333rem;
+}
+.school-box li span:nth-of-type(3) {
+  width: 1.6rem;
+  height: 0.52rem;
+  margin-top: 0.30666667rem;
+  margin-bottom: 0.42666667rem;
+  font-size: 0.29333333rem;
+  color: #fff;
+  line-height: 0.52rem;
+  background-color: red;
+  border-radius: 0.13333333rem;
+}
+.title-box {
+  padding: 0 0.4rem;
+  height: 0.92rem;
+  border-bottom: 1px solid #d0d1d2;
+}
+.title-box .title {
+  font-size: 0.4rem;
+  line-height: 0.92rem;
+  color: #142434;
+  position: relative;
+  left: 0.22666667rem;
+}
+.title-box .title::before {
+  content: "";
+  position: absolute;
+  top: 0.29333333rem;
+  left: -0.22666667rem;
+  width: 0.06666667rem;
+  height: 0.30666667rem;
+  background-color: #1b9fe2;
+}
+.title-box .type {
+  margin-left: 0.81333333rem;
+}
+.title-box .type li {
+  float: left;
+  line-height: 0.93333333rem;
+}
+.title-box .type li a {
+  width: 0.90666667rem;
+  margin: 0 0.25333333rem;
+}
+.title-box .type .active {
+  color: #1f9bda;
+}
+.title-box .more {
+  padding-top: 0.09333333rem;
+  line-height: 0.84rem;
+}
+.text-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

@@ -100,23 +100,156 @@
 				</a>
 			</li>
 		</ul>
+		<!-- 联盟成员 -->
+		<div class="school">
+			<div class="title-box clearfix">
+				<h3 class="title fl">联盟成员</h3>
+				<ul class="type fl" id="school_type">
+					<li class="active">
+						<a href="#">学校</a>
+					</li>
+					<li>
+						<a href="#">幼教</a>
+					</li>
+				</ul>
+				<a href="javascript:;" class="more fr">查看更多>></a>
+			</div>
+			<ul class="school-box clearfix">
+				<li class="school-item fl">
+					<img src="./../img/test/test6.jpg">
+					<span>北京中学</span>
+					<span>
+                    100节微课/40名师
+                </span>
+					<span>北京市</span>
+				</li>
+				<li class="school-item fl">
+					<img src="./../img/test/test6.jpg">
+					<span>北京中学</span>
+					<span>
+                    100节微课/40名师
+                </span>
+					<span>北京市</span>
+				</li>
+			</ul>
+		</div>
+		<!-- 一鸣惊人 -->
+		<div class="bird">
+			<div class="title-box clearfix">
+				<h3 class="title fl">一鸣惊人</h3>
+				<a href="javascript:;" class="more fr">查看更多>></a>
+			</div>
+			<ul class="list clearfix">
+				<li class="list-item fl">
+					<div class="pic">
+						<img src="./../img/test/test5.jpg">
+						<span class="pic-title">
+                        東联书生杯
+                    </span>
+						<span class="num">
+                        已报名：200人
+                    </span>
+					</div>
+					<div class="item-txt clearfix">
+						<div class="txt fl">
+							<span class="txt-title">
+                            好习惯·好孩子
+                        </span>
+							<span>
+                            地点：济南
+                        </span>
+							<span>
+                            时间：3月24-25日
+                        </span>
+						</div>
+						<a href="javascript:;" class="btn">
+							点击报名
+						</a>
+					</div>
+				</li>
+				<li class="list-item fl">
+					<div class="pic">
+						<img src="./../img/test/test5.jpg">
+						<span class="pic-title">
+                        智慧短信
+                    </span>
+						<span class="num">
+                        已报名：200人
+                    </span>
+					</div>
+					<div class="item-txt clearfix">
+						<div class="txt fl">
+							<span class="txt-title">
+                            好习惯·好孩子
+                        </span>
+							<span>
+                            地点：济南
+                        </span>
+							<span>
+                            时间：3月24-25日
+                        </span>
+						</div>
+						<a href="javascript:;" class="btn">
+							点击报名
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--线下培训-->
+		<!-- 名师工作室 -->
+		<div class="teacher">
+			<div class="title-box clearfix">
+				<h3 class="title fl">名师工作室</h3>
+				<a href="javascript:;" class="more fr">查看更多>></a>
+			</div>
+			<ul class="offline-study clearfix">
+				<li class="clearfix">
+					<img src="./../img/test/test7.jpg" class="fl" />
+					<div class="fl">
+						<h5 class="offline-title">第十四届sadasd 東联书生学校联盟论坛...</h5>
+						<div class="clearfix">
+							<time class="fl text-ellipsis">时间：2018-01-04</time>
+							<span class="place-box text-ellipsis fr">地点：北京</span>
+						</div>
+						<div class="clearfix">
+							<span class="applyed-num text-ellipsis fl">已报名：300</span>
+							<a href="#" class="apply-btn fr">报名</a>
+						</div>
+					</div>
+				</li>
+				<li class="clearfix">
+					<img src="./../img/test/test7.jpg" class="fl" />
+					<div class="fl">
+						<h5 class="offline-title">第十四届sadasd 東联书生学校联盟论坛...</h5>
+						<div class="clearfix">
+							<time class="fl text-ellipsis">时间：2018-01-04</time>
+							<span class="place-box text-ellipsis fr">地点：北京</span>
+						</div>
+						<div class="clearfix">
+							<span class="applyed-num text-ellipsis fl">已报名：300</span>
+							<a href="#" class="apply-btn fr">报名</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
 	</body>
 	<script src="./../js/jquery-3.2.1.js"></script>
 	<script src="./../js/ydui.js"></script>
 	<script src="./../js/newsgd.js"></script>
 	<script src="./../js/MTween.js"></script>
+	<script src="./../js/check.js"></script>
 	<script>
+		// 轮播图
 		$('#J_Slider').slider({
 			speed: 200,
 			autoplay: 2000,
 			lazyLoad: true
 		});
-	</script>
-	<script>
-		// 轮播图
-		// $('#full_feature').swipeslider();
 		// 新闻轮播
 		$('#news-box').newsgd();
-		
+		//tab 标签
+		changeActiveBtn("#school_type")
 	</script>
 </html>
