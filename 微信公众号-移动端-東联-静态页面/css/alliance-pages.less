@@ -1,0 +1,183 @@
+@rem:75rem;
+//学校类型的选择   
+.school-type-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50/@rem;
+    font-size: 26/@rem;
+    line-height: 85/@rem;
+    background-color: #f3f3f3;
+    li{
+        padding: 0 11/@rem;
+        border-bottom: 2px solid #f3f3f3;
+    }
+    .active{
+        color: #1b9fe2;
+        border-color: #1b9fe2;
+    }
+}
+//公约页面共同的title
+.alliance-title{
+    font-size: 28/@rem;
+    line-height: 71/@rem;
+    padding-left: 32/@rem;
+    border-bottom: 1px solid #d0d1d2;
+    padding-top: 22/@rem;
+    span{
+        display: inline-block;
+        vertical-align: top;
+        width: 6/@rem;
+        height: 23/@rem;
+        background-color: #1B9FE2;
+        margin: 24/@rem 12/@rem 0 0;
+    }
+}
+//公约页面列表
+.alliance-list{
+    padding: 29/@rem 33/@rem 15/@rem 33/@rem;
+    font-size: 20/@rem;
+    line-height: 34/@rem;
+    ul{
+        padding-left: 24/@rem;
+    }
+}
+
+.down-url{
+    padding-left:36/@rem;
+    margin-right: 69/@rem;
+    font-size: 20/@rem;
+    color: #1B9FE2;
+    line-height: 60/@rem;
+    height: 60/@rem;
+    background: url(../img/down-bg.jpg) no-repeat 0 center;
+    background-size: ;
+}
+
+.alliance-page-in{
+    padding-top: 40/@rem;
+    li{
+        background-color: #fbfbfb;
+        font-size: 28/@rem;
+        line-height: 82/@rem;
+        padding-left: 28/@rem;
+        margin-bottom: 4px;
+        color: #666;
+        position: relative;
+        &:after{
+            content: ">";
+            position: absolute;
+            top: 0/@rem;
+            font-size: 32/@rem;
+            line-height: 80/@rem;
+            right: 28/@rem;
+        }
+    }
+}
+.call-we-box{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 180/@rem;
+    .person{
+        font-size: 22/@rem;
+        line-height: 40/@rem;
+        padding-left: 30/@rem;
+        padding-top: 30/@rem;
+        span{
+            display: inline-block;
+            vertical-align: top;
+            width: 274/@rem;
+        }
+    }
+}
+
+.alliance-open-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 88/@rem;
+    background: #f3f3f3 url(../img/dljy-bg.jpg) no-repeat center center;
+    background-size: 143/@rem;
+    .show-list-bth{
+        margin: 23/@rem 0 0 32/@rem;
+        width: 48/@rem;
+        height: 42/@rem;
+        background: url(../img/d-box-bg.jpg) no-repeat 0 0;
+        background-size: 47/@rem;
+        text-indent: -99999px;
+        ul{
+            position: absolute;
+            text-indent: 0;
+            top: 90/@rem;
+            left: 0;
+            width: 450/@rem;
+            transform: translateX(-460/@rem);
+            box-shadow: 0 2px 22px rgba(0,0,0,0.4);
+            background-color: #fff;
+            transition:  0.5s;
+            li{
+                padding-left:58/@rem ;
+                font-size: 24/@rem;
+                line-height: 56/@rem;
+            }
+            .c{
+                font-size: 28/@rem;
+                color: #1B9FE2;
+            }
+        }
+        .show-list{
+            transform: translateX(0/@rem);
+        }
+    }
+}
+
+#alliance-all{
+    padding-top: 88/@rem;
+    h5{
+        padding-top: 88/@rem;
+        margin-top: -88/@rem;
+    }
+    h6{
+        padding-top: 88/@rem;
+        margin-top: -88/@rem;
+    }
+}
+.alliance-child-all{
+    p{
+        padding: 20/@rem 32/@rem;
+        text-indent: 2em;
+        color: #666;
+        font-size: 20/@rem;
+        line-height: 36/@rem;
+        p{
+            padding: 0;
+        }
+    }
+    .person-text p{
+        text-indent: 0;
+    }
+    h6{
+        font-size: 22/@rem;
+        padding-top: 20/@rem;
+        padding-left: 32/@rem;
+        line-height: 64/@rem;
+    }
+    h7{
+        font-size: 22/@rem;
+        padding-left: 80/@rem;
+        line-height: 64/@rem;
+    }
+    .step-img{
+        display: block;
+        width: 100%;
+    }
+    .call-we-box{
+        position: static;
+    }
+    .taf-item{
+        margin-bottom: 20/@rem;
+    }
+}
+
+

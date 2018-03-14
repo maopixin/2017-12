@@ -1,0 +1,79 @@
+.alliance-item-header {
+  display: flex;
+  height: 3.41333333rem;
+}
+.alliance-item-header img {
+  width: 2.56rem;
+  height: 2.56rem;
+  margin: 0.45333333rem 0 0 0.45333333rem;
+}
+.alliance-item-header .school-d {
+  margin: 0.45333333rem 0 0 0.38666667rem;
+  width: 4.08rem;
+}
+.alliance-item-header .school-d .school-name {
+  font-size: 0.34666667rem;
+  line-height: 0.70666667rem;
+  font-weight: 600;
+}
+.alliance-item-header .school-d .school-type {
+  font-size: 0.29333333rem;
+  line-height: 0.4rem;
+}
+.alliance-item-header .school-d .school-nums {
+  margin-top: 0.10666667rem;
+  color: #1b9fe2;
+  font-size: 0.29333333rem;
+  line-height: 0.74666667rem;
+}
+.alliance-item-header .school-d .mes-btn {
+  display: block;
+  width: 2.08rem;
+  height: 0.52rem;
+  background-color: #1B9FE2;
+  line-height: 0.52rem;
+  border-radius: 0.08rem;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.alliance-item-header .btns {
+  display: flex;
+  padding-top: 0.56rem;
+}
+.alliance-item-header .btns span {
+  width: 0.97333333rem;
+  height: 0.97333333rem;
+  border: 1px solid #b7b7b7;
+  box-sizing: border-box;
+  border-radius: 0.48rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  margin-right: 0.16rem;
+  font-size: 0.29333333rem;
+  text-align: center;
+  color: #666666;
+  line-height: 2.8rem;
+}
+.alliance-item-header .btns .share-btn {
+  background: url(../img/share-btn.jpg) no-repeat center center;
+}
+.alliance-item-header .btns .collect-btn {
+  background: url(../img/collect-btn.jpg) no-repeat center center;
+}
+.school-info-btns {
+  display: flex;
+  justify-content: space-around;
+  height: 1.2rem;
+  background-color: #fbfcfc;
+}
+.school-info-btns li {
+  font-size: 0.34666667rem;
+  line-height: 1.2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+}
+.school-info-btns .active {
+  color: #1486c0;
+  border-color: #1486c0;
+}
+.all-teacher-list {
+  padding-left: 0.4rem;
+}

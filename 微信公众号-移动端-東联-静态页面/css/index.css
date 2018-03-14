@@ -587,3 +587,53 @@ body {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+.btn-center {
+  text-align: center;
+  color: #fff;
+}
+.teacher-box {
+  padding: 0.49333333rem 0 0 0.38666667rem;
+}
+.teacher-box li {
+  margin-bottom: 0.45333333rem;
+}
+.teacher-box img {
+  width: 2.88rem;
+  height: 2.02666667rem;
+}
+.teacher-box .l-txt {
+  width: 5.84rem;
+  margin-left: 0.49333333rem;
+}
+.teacher-box .l-txt .naj {
+  margin-bottom: 0.08rem;
+}
+.teacher-box .l-txt .naj span {
+  display: block;
+  font-size: 0.30666667rem;
+  line-height: 0.53333333rem;
+  color: #3c3e3f;
+}
+.teacher-box .l-txt .look-btn {
+  width: 0.88rem;
+  height: 0.88rem;
+  border: 1px solid #d0d1d2;
+  background-color: #ebebeb;
+  border-radius: 0.08rem;
+  color: #666;
+  text-align: center;
+  margin-top: 0.04rem;
+  font-size: 0.24rem;
+  line-height: 0.29333333rem;
+  padding: 0.14666667rem;
+  box-sizing: border-box;
+}
+.teacher-box .l-txt .info {
+  font-size: 0.26666667rem;
+  line-height: 0.46666667rem;
+  color: #666;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
