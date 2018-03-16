@@ -21,5 +21,10 @@ function changeActiveBtn(str,fn){
 	};
 };
 
-
-
+//自动切换学校类型
+function changeActiveBtnAuto (num){
+    $(".school-type-box").children().removeClass("active");
+    $($(".school-type-box").children()[num]).addClass("active");
+    $(".school-type-info").addClass("hidden");
+    $($(".school-type-info")[num]).removeClass("hidden");
+};

@@ -96,13 +96,6 @@
   line-height: 0.64rem;
   text-align: center;
 }
-.cgda .cgda-head .video-box {
-  width: 9.21333333rem;
-  height: 4.49333333rem;
-  margin: 0.42666667rem auto 1.24rem;
-  background: url(../img/test/test10.jpg);
-  background-size: cover;
-}
 .cgda .content .cgda-title {
   width: 9.2rem;
   height: 0.58666667rem;
@@ -695,4 +688,10 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 8;
   overflow: hidden;
+}
+#example_video_1 {
+  width: 9.21333333rem;
+  height: 4.49333333rem;
+  margin: 0.42666667rem auto 1.24rem;
+  background-size: cover;
 }

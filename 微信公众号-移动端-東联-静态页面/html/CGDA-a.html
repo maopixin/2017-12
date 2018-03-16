@@ -1,338 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <!-- 一比一像素还原 -->
-    <script src="./../js/dpr.js"></script>
-    <!-- 初始化样式 -->
-    <link rel="stylesheet" href="./../css/reset.css">
-    <!-- 工具类 -->
-    <link rel="stylesheet" href="./../css/tools.css">
-    <!-- 全局样式 -->
-    <link rel="stylesheet" href="./../css/index.css">
-    <!-- 当前页面的css -->
-    <link rel="stylesheet" href="./../css/cgda.css">
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<!-- 一比一像素还原 -->
+		<script src="./../js/dpr.js"></script>
+		<!-- 初始化样式 -->
+		<link rel="stylesheet" href="./../css/reset.css">
+		<!-- 工具类 -->
+		<link rel="stylesheet" href="./../css/tools.css">
+		<!-- 全局样式 -->
+		<link rel="stylesheet" href="./../css/index.css">
+		<!-- 当前页面的css -->
+		<link rel="stylesheet" href="./../css/cgda.css">
+		
+		
+		
+		<link href="video-js.min.css" rel="stylesheet" type="text/css">
+		<script src="video.min.js"></script>
+		
+	</head>
 
-<body class="cgda">
-    <header class="cgda-head">
-        <!-- 广告 -->
-        <img src="./../img/AD.jpg" class="adr">
-        <!-- 链接选择 -->
-        <ul class="url-check clearfix">
-            <li class="active">
-                <a href="">
-                    首页
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    参赛选手
-                </a>
-            </li>
-            <li>
-                <a href="">评委团队</a>
-            </li>
-            <li>
-                <a href="">联系我们</a>
-            </li>
-            <a class="apply" href="javascript:;">
-                立即报名
-            </a>
-        </ul>
-        <div class="video-box">
-        	
-        </div>
-    </header>
-        <div class="content">
-        	<!--大赛简介-->
-            <div class="cgda-title padd-t clearfix">
-                <span class="bgc-red">
+	<body class="cgda">
+		<header class="cgda-head">
+			<!-- 广告 -->
+			<img src="./../img/AD.jpg" class="adr">
+			<!-- 链接选择 -->
+			<ul class="url-check clearfix">
+				<li class="active">
+					<a href="">
+						首页
+					</a>
+				</li>
+				<li>
+					<a href="">
+						参赛选手
+					</a>
+				</li>
+				<li>
+					<a href="">评委团队</a>
+				</li>
+				<li>
+					<a href="">联系我们</a>
+				</li>
+				<a class="apply" href="javascript:;">
+					立即报名
+				</a>
+			</ul>
+		</header>
+		<div class="content">
+			<!--大赛简介-->
+				<video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" poster="" data-setup="{}">
+					<source src="https://samples.mplayerhq.hu/A-codecs/AAC/aacPlusDecoderCheckPackage_v2.1/bitstreams/File3.mp4" type='video/mp4' />
+					<source src="https://samples.mplayerhq.hu/ffmpeg-bugs/trac/ticket1430/Sam%20and%20Cocoa%20shaky%20original.webm" type='video/webm' />
+					<source src="https://samples.mplayerhq.hu/V-codecs/Theora/theora_testsuite/320x240.ogv" type='video/ogg' />
+					<track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track>
+					<!-- Tracks need an ending tag thanks to IE9 -->
+					<track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+					<!-- Tracks need an ending tag thanks to IE9 -->
+				</video>
+			<div class="cgda-title padd-t clearfix">
+				<span class="bgc-red">
                                                     大赛简介
                 </span>
-                <div class="share-box fr">
-                    <span class="sprite-share share">
+				<div class="share-box fr">
+					<span class="sprite-share share">
                         <span class="jump">
                             <span class="sprite-share">
 
                             </span>
-                        </span>
-                        <span class="un"></span>
+					</span>
+					<span class="un"></span>
 
-                    </span>
-                </div>
-            </div>
-        	<p class="info-txt">
-        		为进一步提升北京民办教育机构教师的教育教学能力，给他们提供一个教学比武、展示自我的平台，并以此展现北京民办教育机构教师风貌，彰显北京民办教育整体实力和水平，北京民办教育协会联合京华时报共同发起2013年“明星教师大赛”活动。 
-        	</p>
-        	<div class="game-time">
-        		<dl class="clearfix">
-        			<dt>大赛日期：</dt>
-        			<dd>
-        				·申报、初评时间：2013年9月1日之前
-        			</dd>
-        		</dl>
-        		<dl class="clearfix">
-        			<dt></dt>
-        			<dd>
-        				·复赛时间：
-        			</dd>
-        		</dl>
-        		<dl class="clearfix">
-        			<dt></dt>
-        			<dd>
-        				·决赛时间：
-        			</dd>
-        		</dl>
-        		<dl class="clearfix" style="margin-top: 0.4rem;">
-        			<dt>报名方式：</dt>
-        			<dd>填写《评选活动报名表》并上传参赛作品，于8月20日前提交
-        			</dd>
-        		</dl>
-        	</div>
-        	<!--大赛流程-->
-        	<div class="cgda-title padd-t clearfix">
-                <span class="bgc-red">
+					</span>
+				</div>
+			</div>
+			<p class="info-txt">
+				为进一步提升北京民办教育机构教师的教育教学能力，给他们提供一个教学比武、展示自我的平台，并以此展现北京民办教育机构教师风貌，彰显北京民办教育整体实力和水平，北京民办教育协会联合京华时报共同发起2013年“明星教师大赛”活动。
+			</p>
+			<div class="game-time">
+				<dl class="clearfix">
+					<dt>大赛日期：</dt>
+					<dd>
+						·申报、初评时间：2013年9月1日之前
+					</dd>
+				</dl>
+				<dl class="clearfix">
+					<dt></dt>
+					<dd>
+						·复赛时间：
+					</dd>
+				</dl>
+				<dl class="clearfix">
+					<dt></dt>
+					<dd>
+						·决赛时间：
+					</dd>
+				</dl>
+				<dl class="clearfix" style="margin-top: 0.4rem;">
+					<dt>报名方式：</dt>
+					<dd>填写《评选活动报名表》并上传参赛作品，于8月20日前提交
+					</dd>
+				</dl>
+			</div>
+			<!--大赛流程-->
+			<div class="cgda-title padd-t clearfix">
+				<span class="bgc-red">
                                                     大赛流程
                 </span>
-            </div>
-            <ul class="flow-path clearfix">
-            	<li class="flow-path-item before fl">
-            		<span class="f-p-num">
+			</div>
+			<ul class="flow-path clearfix">
+				<li class="flow-path-item before fl">
+					<span class="f-p-num">
             			1
             		</span>
-            		<span class="f-p-txt">
+					<span class="f-p-txt">
             			<span>
             				参赛报名 大众投票
             			</span>
-            		</span>
-            		<span class="f-p-date">
+					</span>
+					<span class="f-p-date">
             			2018.1.1——2018.1.30
             		</span>
-            	</li>
-            	<li class="flow-path-item fl">
-            		<span class="f-p-num">
+				</li>
+				<li class="flow-path-item fl">
+					<span class="f-p-num">
             			2
             		</span>
-            		<span class="f-p-txt">
+					<span class="f-p-txt">
             			<span>
             				评委评选
             			</span>
-            		</span>
-            		<span class="f-p-date">
+					</span>
+					<span class="f-p-date">
             			2018.1.1——2018.1.30
             		</span>
-            	</li>
-            	<li class="flow-path-item fl">
-            		<span class="f-p-num">
+				</li>
+				<li class="flow-path-item fl">
+					<span class="f-p-num">
             			3
             		</span>
-            		<span class="f-p-txt">
+					<span class="f-p-txt">
             			<em>
             				大奖公布
             			</em>
             		</span>
-            		<span class="f-p-date">
+					<span class="f-p-date">
             			2018.1.1——2018.1.30
             		</span>
-            	</li>
-            </ul>
-        	<!--评委团队-->
-        	<div class="cgda-title padd-t clearfix">
-                <span class="bgc-red">
+				</li>
+			</ul>
+			<!--评委团队-->
+			<div class="cgda-title padd-t clearfix">
+				<span class="bgc-red">
                                                     评委团队
                 </span>
-                <a href="javascript:;" class="fr more-t">全部>></a>
-            </div>
-        	<ul class="judge-list-t clearfix">
-        		<li class="judge-list-t-item fl">
-        			<a href="">
-        				<img src="../img/test/test11.jpg" alt="" />
-        				<span>某某某</span>
-        				<span>某某学校叫兽</span>
-        			</a>
-        		</li>
-        		<li class="judge-list-t-item fl">
-        			<a href="">
-        				<img src="../img/test/test11.jpg" alt="" />
-        				<span>某某某</span>
-        				<span>某某学校叫兽</span>
-        			</a>
-        		</li>
-        		<li class="judge-list-t-item fl">
-        			<a href="">
-        				<img src="../img/test/test11.jpg" alt="" />
-        				<span>某某某</span>
-        				<span>某某学校叫兽</span>
-        			</a>
-        		</li>
-        	</ul>
-        	<!--奖项设置-->
-        	<div class="em-title">
-        		<h2>
+				<a href="javascript:;" class="fr more-t">全部>></a>
+			</div>
+			<ul class="judge-list-t clearfix">
+				<li class="judge-list-t-item fl">
+					<a href="">
+						<img src="../img/test/test11.jpg" alt="" />
+						<span>某某某</span>
+						<span>某某学校叫兽</span>
+					</a>
+				</li>
+				<li class="judge-list-t-item fl">
+					<a href="">
+						<img src="../img/test/test11.jpg" alt="" />
+						<span>某某某</span>
+						<span>某某学校叫兽</span>
+					</a>
+				</li>
+				<li class="judge-list-t-item fl">
+					<a href="">
+						<img src="../img/test/test11.jpg" alt="" />
+						<span>某某某</span>
+						<span>某某学校叫兽</span>
+					</a>
+				</li>
+			</ul>
+			<!--奖项设置-->
+			<div class="em-title">
+				<h2>
         			奖项设置
         		</h2>
-        	</div>
-        	<ul class="gift-list clearfix">
-        		<li class="gift-list-item fl">
-        			<span class="sprite-share">
+			</div>
+			<ul class="gift-list clearfix">
+				<li class="gift-list-item fl">
+					<span class="sprite-share">
         				小花花
         			</span>
-        			<span class="gift-name">
+					<span class="gift-name">
         				特等奖（1名）
         			</span>
-        			<span class="gift-money">
+					<span class="gift-money">
         				奖金30000元
         			</span>
-        		</li>
-        		<li class="gift-list-item fl">
-        			<span class="sprite-share">
+				</li>
+				<li class="gift-list-item fl">
+					<span class="sprite-share">
         				小花花
         			</span>
-        			<span class="gift-name">
+					<span class="gift-name">
         				一等奖（2名）
         			</span>
-        			<span class="gift-money">
+					<span class="gift-money">
         				奖金10000元
         			</span>
-        		</li>
-        		<li class="gift-list-item fl">
-        			<span class="sprite-share">
+				</li>
+				<li class="gift-list-item fl">
+					<span class="sprite-share">
         				小花花
         			</span>
-        			<span class="gift-name">
+					<span class="gift-name">
         				二等奖（3名）
         			</span>
-        			<span class="gift-money">
+					<span class="gift-money">
         				奖金5000元
         			</span>
-        		</li>
-        		<li class="gift-list-item fl">
-        			<span class="sprite-share">
+				</li>
+				<li class="gift-list-item fl">
+					<span class="sprite-share">
         				小花花
         			</span>
-        			<span class="gift-name">
+					<span class="gift-name">
         				三等奖
         			</span>
-        			<span class="gift-money">
+					<span class="gift-money">
         				奖金2000元
         			</span>
-        		</li>
-        	</ul>
-        	<!--奖项受益-->
-        	<div class="em-title">
-        		<h2>
+				</li>
+			</ul>
+			<!--奖项受益-->
+			<div class="em-title">
+				<h2>
         			奖项受益
         		</h2>
-        	</div>
-        	<ul class="text-list">
-        		<li>1.获相应奖金；</li>
-        		<li>2.多家媒体宣传、专题采访；</li>
-        		<li>3.《德育报》整栏报道；</li>
-        		<li>4.所有参评者均可颁发“東联教育研究院”和“中国教师教育视频网；”证书，并入选专家库成员</li>
-        		<li>5.邀请外出讲学；</li>
-        		<li>6.提供展示平台、宣传教育理念等。</li>
-        	</ul>
-        	<!--参选条件-->
-        	<div class="cgda-title padd-t clearfix">
-                <span class="bgc-red">
+			</div>
+			<ul class="text-list">
+				<li>1.获相应奖金；</li>
+				<li>2.多家媒体宣传、专题采访；</li>
+				<li>3.《德育报》整栏报道；</li>
+				<li>4.所有参评者均可颁发“東联教育研究院”和“中国教师教育视频网；”证书，并入选专家库成员</li>
+				<li>5.邀请外出讲学；</li>
+				<li>6.提供展示平台、宣传教育理念等。</li>
+			</ul>
+			<!--参选条件-->
+			<div class="cgda-title padd-t clearfix">
+				<span class="bgc-red">
                                                     参选条件
                 </span>
-            </div>
-        	<ul class="text-list" style="margin-top: 1em;">
-        		<li>1.热爱教育事业，热爱教学工作，热爱学生；</li>
+			</div>
+			<ul class="text-list" style="margin-top: 1em;">
+				<li>1.热爱教育事业，热爱教学工作，热爱学生；</li>
 				<li>2.具有正确的教育观、质量观、人才观，坚定不移的实施素质教育；</li>
 				<li>3.具有良好的思想道德素质、较强的业务素质和较高的工作水平；</li>
 				<li>4.注重教育科研，个人或所带学生在教学或竞赛中表现突出，且受到过市级以上表彰奖励；</li>
 				<li>5.积极调动校内外各方面的教育力量，关注每个学生健康成长；</li>
 				<li>6.90后优秀教师、80后优秀校长参评者条件可适当放宽；</li>
 				<li>7.参选单位为東联教育、中国教师教育视频网、联盟校、联盟幼儿园。</li>
-        	</ul>
-        	<!--评选原则-->
-        	<div class="cgda-title padd-t clearfix">
-                <span class="bgc-red">
+			</ul>
+			<!--评选原则-->
+			<div class="cgda-title padd-t clearfix">
+				<span class="bgc-red">
                     	评选原则
                 </span>
-            </div>
-            <ul class="text-list" style="margin-top: 1em;">
-        		<li>1.坚持贯彻落实国家教育方针，立德树人，有利于实施素质教育；</li>
-        		<li>2.坚持以质量为核心，突出实践性和创新性；</li>
-        		<li>3.传播正能量，弘扬社会主义核心价值观；</li>
-        		<li>4.坚持公开、公平、公正的专家评审；</li>
-        		<li>5.推荐、评审不得向申请单位和个人收取任何费用。</li>
-        	</ul>
-        	<!--参赛选手-->
-        	<div class="cgda-title padd-t clearfix">
-                <span class="bgc-red">
+			</div>
+			<ul class="text-list" style="margin-top: 1em;">
+				<li>1.坚持贯彻落实国家教育方针，立德树人，有利于实施素质教育；</li>
+				<li>2.坚持以质量为核心，突出实践性和创新性；</li>
+				<li>3.传播正能量，弘扬社会主义核心价值观；</li>
+				<li>4.坚持公开、公平、公正的专家评审；</li>
+				<li>5.推荐、评审不得向申请单位和个人收取任何费用。</li>
+			</ul>
+			<!--参赛选手-->
+			<div class="cgda-title padd-t clearfix">
+				<span class="bgc-red">
                                                     参赛选手
                 </span>
-                <a href="" class="more-t fr">全部>></a>
-            </div>
-            <ul class="player-list clearfix">
-                <li class="player-item fl">
-                    <img src="./../img/test/test8.jpg">
-                    <span>赵老师</span>
-                    <span>主题：放飞梦想</span>
-                    <span>石家庄小学 </span>
-                    <div class="tickit-num clearfix">
-                    	<em>票数 89</em>
-                    	<em class="tickit-btn">投票</em>
-                    </div>
-                </li>
-                <li class="player-item fl">
-                    <img src="./../img/test/test8.jpg">
-                    <span>赵老师</span>
-                    <span>主题：放飞梦想</span>
-                    <span>石家庄小学 </span>
-                    <div class="tickit-num clearfix">
-                    	<em>票数 89</em>
-                    	<em class="tickit-btn">投票</em>
-                    </div>
-                </li>
-            </ul>
-        	<!--主题预告-->
-        	<div class="cgda-title padd-t hei clearfix">
-                <span class="bgc-red">
+				<a href="" class="more-t fr">全部>></a>
+			</div>
+			<ul class="player-list clearfix">
+				<li class="player-item fl">
+					<img src="./../img/test/test8.jpg">
+					<span>赵老师</span>
+					<span>主题：放飞梦想</span>
+					<span>石家庄小学 </span>
+					<div class="tickit-num clearfix">
+						<em>票数 89</em>
+						<em class="tickit-btn">投票</em>
+					</div>
+				</li>
+				<li class="player-item fl">
+					<img src="./../img/test/test8.jpg">
+					<span>赵老师</span>
+					<span>主题：放飞梦想</span>
+					<span>石家庄小学 </span>
+					<div class="tickit-num clearfix">
+						<em>票数 89</em>
+						<em class="tickit-btn">投票</em>
+					</div>
+				</li>
+			</ul>
+			<!--主题预告-->
+			<div class="cgda-title padd-t hei clearfix">
+				<span class="bgc-red">
                                                     主题预告
                 </span>
-                <span class="sprite-share mes">
+				<span class="sprite-share mes">
                 	消息
                 </span>
-                <a href="javascript:;" class="fr more">全部>></a>
-            </div>
-            <ul class="month-list clearfix">
-            	<li class="month-item fl">
-            		<span class="sprite-share">1月</span>
-            		<span>教育故事</span>
-            	</li>
-            	<li class="month-item fl">
-            		<span class="sprite-share">1月</span>
-            		<span>教育故事</span>
-            	</li>
-            	<li class="month-item fl">
-            		<span class="sprite-share">1月</span>
-            		<span>教育故事</span>
-            	</li>
-            	<li class="month-item fl">
-            		<span class="sprite-share">1月</span>
-            		<span>教育故事</span>
-            	</li>
-            </ul>
-        </div>
-    <script>
-        // 切换
-        for (let i = 0; i < document.querySelectorAll('.palce-check li').length; i++) {
-            document.querySelectorAll('.palce-check li')[i].ontouchend = () => {
-                for (let s = 0; s < document.querySelectorAll('.palce-check li').length; s++) {
-                    document.querySelectorAll('.palce-check li')[s].className = "";
-                };
+				<a href="javascript:;" class="fr more">全部>></a>
+			</div>
+			<ul class="month-list clearfix">
+				<li class="month-item fl">
+					<span class="sprite-share">1月</span>
+					<span>教育故事</span>
+				</li>
+				<li class="month-item fl">
+					<span class="sprite-share">1月</span>
+					<span>教育故事</span>
+				</li>
+				<li class="month-item fl">
+					<span class="sprite-share">1月</span>
+					<span>教育故事</span>
+				</li>
+				<li class="month-item fl">
+					<span class="sprite-share">1月</span>
+					<span>教育故事</span>
+				</li>
+			</ul>
+		</div>
+		<script>
+			// 切换
+			for(let i = 0; i < document.querySelectorAll('.palce-check li').length; i++) {
+				document.querySelectorAll('.palce-check li')[i].ontouchend = () => {
+					for(let s = 0; s < document.querySelectorAll('.palce-check li').length; s++) {
+						document.querySelectorAll('.palce-check li')[s].className = "";
+					};
 
-                document.querySelectorAll('.palce-check li')[i].className = "active";
-            }
-        }
-    </script>
-</body>
+					document.querySelectorAll('.palce-check li')[i].className = "active";
+				}
+			}
+		</script>
+		
+		<script type="text/javascript">
+			var myPlayer = videojs('example_video_1');
+			    videojs("example_video_1").ready(function(){
+			        var myPlayer = this;
+			        myPlayer.volume(0);
+			    });
+		</script>
+	</body>
 
 </html>

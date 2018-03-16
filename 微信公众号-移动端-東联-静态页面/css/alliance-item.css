@@ -74,6 +74,19 @@
   color: #1486c0;
   border-color: #1486c0;
 }
+div.show-list {
+  padding: 0 0.42666667rem;
+}
+div.show-list p {
+  padding: 0.42666667rem 0;
+  font-size: 0.24rem;
+  line-height: 0.48rem;
+  text-indent: 2em;
+}
+div.show-list img {
+  display: block;
+  margin: 0 auto;
+}
 .all-teacher-list {
   padding-left: 0.4rem;
 }

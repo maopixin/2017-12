@@ -14,6 +14,9 @@
 		<link rel="stylesheet" href="./../css/ydui.css">
 		<!-- 当前页面的css -->
 		<link rel="stylesheet" href="./../css/alliance-item.css" />
+		
+		<script src="../js/jquery-3.2.1.js"></script>
+		<script src="../js/check.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<!--联盟成员简略信息-->
@@ -43,13 +46,13 @@
 		</section>
 		<!--联盟校选择-->
 		<ul class="school-info-btns" id="school-info-btns">
-			<li class="active">教师团队</li>
-			<li>教学特色</li>
-			<li>简介</li>
-			<li>学校荣誉</li>
+			<li class="active" data-type = "0">教师团队</li>
+			<li data-type = "1">教学特色</li>
+			<li data-type = "2">简介</li>
+			<li data-type = "3">学校荣誉</li>
 		</ul>
 		<!--所有名师-->
-			<ul class="all-teacher-list clearfix">
+			<ul data-type = "0" class="show-list all-teacher-list clearfix">
 				<li class="teacher-list-item fl">
 					<a href="">
 						<div>
@@ -81,5 +84,43 @@
 					</a>
 				</li>
 			</ul>
+			<div data-type = "1" class="show-list hidden">
+				<p>
+					1爱山街道啊就是就氨基酸的考拉就死定了框架啊老实交代克拉苏大立科技啊睡了多久啊圣诞节啦设计的氨基酸的阿三建档立卡就是看了
+				</p>
+				<img src="../img/dljy-bg.jpg" alt="" />
+				<p>
+					爱山街道啊就是就氨基酸的考拉就死定了框架啊老实交代克拉苏大立科技啊睡了多久啊圣诞节啦设计的氨基酸的阿三建档立卡就是看了
+				</p>
+			</div>
+			<div data-type = "2" class="show-list hidden">
+				<p>
+					2爱山街道啊就是就氨基酸的考拉就死定了框架啊老实交代克拉苏大立科技啊睡了多久啊圣诞节啦设计的氨基酸的阿三建档立卡就是看了
+				</p>
+				<img src="../img/dljy-bg.jpg" alt="" />
+				<p>
+					爱山街道啊就是就氨基酸的考拉就死定了框架啊老实交代克拉苏大立科技啊睡了多久啊圣诞节啦设计的氨基酸的阿三建档立卡就是看了
+				</p>
+			</div>
+			<div data-type = "3" class="show-list hidden">
+				<p>
+					3爱山街道啊就是就氨基酸的考拉就死定了框架啊老实交代克拉苏大立科技啊睡了多久啊圣诞节啦设计的氨基酸的阿三建档立卡就是看了
+				</p>
+				<img src="../img/dljy-bg.jpg" alt="" />
+				<p>
+					爱山街道啊就是就氨基酸的考拉就死定了框架啊老实交代克拉苏大立科技啊睡了多久啊圣诞节啦设计的氨基酸的阿三建档立卡就是看了
+				</p>
+			</div>
 	</body>
+	<script>
+		changeActiveBtn("#school-info-btns",function(_this){
+			var type = $(_this).data("type");
+			$('.show-list').each(function(i,e){
+				if($(e).data("type")===type){
+					$('.show-list').addClass("hidden");
+					$(this).removeClass("hidden");
+				};
+			});
+		});
+	</script>
 </html>

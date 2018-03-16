@@ -29,12 +29,14 @@
 	CGDA-c.html  		评选大赛-评委团队
 	CGDA-d.html  		评选大赛-联系我们
 	CGDA-e.html  		评选大赛-参赛作品
-	apply-info.html 		参赛报名-基本信息
-	apply-voucher.html 	参赛报名-汇款凭证
 	
-	apply-works.html 		参赛报名-上传作品
-	apply-meet.html		参赛报名-参会信息
+	
+	
+	apply-info.html 			参赛报名-基本信息
 	apply-ready.html		参赛报名-预报名表单
+	apply-meet.html		参赛报名-参会信息
+	apply-works.html 		参赛报名-上传作品
+	apply-voucher.html 	参赛报名-汇款凭证
 	apply-ttdz.html			团体定制
 	apply-join.html			专家入驻
 	
@@ -49,12 +51,12 @@
 	expert.html			专家库
 	news.html			全部资讯（补）
 	
-	alliance-home.html     			联盟首页
-	alliance-item.html					联盟成员
-	alliance-schools.html			联盟校列表
-	alliance-child-page.html 		幼教联盟
-	alliance-school-page.html	学校联盟
-	alliance-about.html 				关于联盟
+	alliance-home.html     				联盟首页
+	alliance-item.html						联盟成员(学校详情页面)
+	alliance-schools.html				联盟校列表
+	alliance-child-page.html 			幼教联盟
+	alliance-school-page.html		学校联盟
+	alliance-about.html 					关于联盟
 	alliance-child-page-open.html	幼教联盟公约详细页
 	alliance-school-page-open.html	学校联盟公约详细页
 
