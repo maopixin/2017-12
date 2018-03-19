@@ -23,6 +23,7 @@ $('.winbox .winbox-item input').change(function(){
     let _this = this;
     let father = $(this).parent();
     let id = $(this).attr('id');
+    console.log(id)
     upPic(id,function(data){
         if(data.status.code===0){
             father.find('.sprite-form').hide();
@@ -49,7 +50,7 @@ function upPic(id,fn,_this) {
 		url: 'http://meet.jspxedu.uqidi.cn/public/File/upload',
 		type: 'POST',
 		cache: false,
-		upDatas,
+		data,
 		processData: false,
 		contentType: false,
 		dataType: "json",

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>报名申请表</title>
+		<!--线上有-->
+		<link rel="stylesheet" href="../../css_reset/reset.min.css" />
+		<link rel="stylesheet" href="http://meet.dljy.com/static/assets/lib/layui/css/layui.css" />
+		<!--线上没有-->
+		<link rel="stylesheet" href="../css/form.css" />
+	</head>
+
+	<body>
+		<!--继承表单头部-->
+		<!--表单内容-->
+		<div class="f-t-box">
+			<h3 class="f-title">报名申请表</h3>
+		</div>
+		<div class="form clearfix">
+			<h2 class="form-title">- 基本信息 -</h2>
+			<ul class="form-content input-box">
+				<li class="j-center">
+					<label for="school">学校</label>
+					<input type="text" id="school" class="b" placeholder="必填" />
+				</li>
+				<li class="j-center">
+					<label for="">地区</label>
+					<div class="position-content">
+						<div class="province layui-unselect position-b layui-form-select">
+							<div class="layui-select-title">
+								<!--新增id-->
+								<input id="sel1" type="text" placeholder="请选择省份" / class="layui-input layui-unselect">
+								<i class="layui-edge"></i>
+							</div>
+							<dl class="layui-anim layui-anim-upbit" id="not-scroll">
+								<dd lay-value="" class="layui-select-tips">请选择省份</dd>
+							</dl>
+						</div>
+						<div class="province layui-unselect position-b layui-form-select">
+							<div class="layui-select-title">
+								<!--新增id-->
+								<input id="sel2" type="text" placeholder="请选择市" / class="layui-input layui-unselect">
+								<i class="layui-edge"></i>
+							</div>
+							<dl class="layui-anim layui-anim-upbit" id="not-scroll">
+								<dd lay-value="" class="layui-select-tips">请选择请选择市</dd>
+							</dl>
+						</div>
+						<div class="province layui-unselect position-b layui-form-select">
+							<div class="layui-select-title">
+								<!--新增id-->
+								<input id="sel3" type="text" placeholder="请选择县/区" / class="layui-input layui-unselect">
+								<i class="layui-edge"></i>
+							</div>
+							<dl class="layui-anim layui-anim-upbit" id="not-scroll">
+								<dd lay-value="" class="layui-select-tips">请选择县/区</dd>
+							</dl>
+						</div>
+					</div>
+				</li>
+				<li style="justify-content: flex-start;">
+					<label for="" style="margin-left: 53px;">属性</label>
+					<div class="province layui-unselect position-b layui-form-select">
+						<div class="layui-select-title">
+							<!--新增id-->
+							<input id="sel3" type="text" placeholder="请选择属性" / class="layui-input layui-unselect" style="text-indent: 0;text-align: center;">
+							<i class="layui-edge"></i>
+						</div>
+						<dl class="layui-anim layui-anim-upbit" id="not-scroll">
+							<dd lay-value="" class="layui-select-tips">请选择属性</dd>
+						</dl>
+					</div>
+				</li>
+				<li class="j-center">
+					<label for="name">姓名</label>
+					<input type="text" id="name" class="s" placeholder="必填" style="margin-right: 20px;" />
+					<label for="">性别</label>
+					<div class="s">
+						<div class="">
+							<span class="check-item active"></span>
+							<span class="sex">男</span>
+							<span class="check-item"></span>
+							<span class="sex">女</span>
+						</div>
+					</div>
+				</li>
+				<li class="j-center">
+					<label for="job">职称</label>
+					<input type="text" id="job" class="s" placeholder="必填" style="margin-right: 20px;" />
+					<label for="lv">学段</label>
+					<input type="text" id="lv" class="s" placeholder="必填" />
+				</li>
+				<li class="j-center">
+					<label for="job2">职务</label>
+					<input type="text" id="job2" class="s" placeholder="必填" style="margin-right: 20px;" />
+					<label for="job-type">学科</label>
+					<input type="text" id="job-type" class="s" placeholder="必填" />
+				</li>
+				<li class="j-center">
+					<label for="phone">手机</label>
+					<input type="text" id="phone" class="s" placeholder="必填" style="margin-right: 20px;" />
+					<label for="email">邮箱</label>
+					<input type="text" id="email" class="s" placeholder="必填" />
+				</li>
+				
+				<li class="j-left">
+					<label for="c" class="label-title">个人简介</label>
+				</li>
+				<li class="j-left">
+					<textarea name="" id="c" placeholder="选填"></textarea>
+				</li>
+				
+			</ul>
+			<div class="tj-btn">
+				<div class="btn_tj fr">确认信息</div>
+			</div>
+		</div>
+		
+		<!--参赛作品-->
+		<div class="form clearfix">
+			<h2 class="form-title">- 作品信息 -</h2>
+			<ul class="form-content input-box	">
+				<li class="j-center">
+					<label for="school">作品名称</label>
+					<input type="text" id="school" class="b" placeholder="必填" />
+				</li>
+				<li class="j-left">
+					<label for="c" class="label-title">个人简介</label>
+				</li>
+				<li class="j-left">
+					<textarea name="" id="c" placeholder="选填"></textarea>
+				</li>
+				<li class="j-left">
+					<div class="short-mes clearfix">
+					<span class="get-btn fl">获取短信验证码</span>
+					<input type="text" class="fl" />
+					<span class="verify fl">验证</span>
+				</div>
+				</li>
+			</ul>
+			<div class="tj-btn">
+				<div class="btn_tj fr">立即报名</div>
+			</div>
+		</div>
+		<!--继承表单尾部-->
+	</body>
+
+</html>

@@ -1,83 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>报名申请单</title>
-    <!-- 一比一像素还原 -->
-    <script src="./../js/dpr.js"></script>
-    <!-- 初始化样式 -->
-    <link rel="stylesheet" href="./../css/reset.css">
-    <!-- 工具类 -->
-    <link rel="stylesheet" href="./../css/tools.css">
-    <!-- 全局样式 -->
-    <link rel="stylesheet" href="./../css/index.css">
-    <!-- 当前页面的css -->
-    <link rel="stylesheet" href="./../css/form.css">
-</head>
-<body class="form">
-    <h2 class="form-title">- 基本信息 -</h2>
-    <div class="form-content">
-    	<div>
-	    	<label class="input-title block" for="theme">参赛主题</label>
-	    	<input class="width center" type="text" name="theme" id="theme" placeholder="- 请选择主题 -"/>
-	    </div>
-	    <div>
-	    	<label class="input-title block" for="place">参赛地区</label>
-	    	<input class="width center" type="text" name="place" id="place" placeholder="- 请选择地区 -"/>
-	    </div>
-	    <div>
-	    	<label class="input-title inline-block">头像上传</label>
-	    	<span class="inline-block tip">必填</span>
-	    </div>
-	    <div class="head-pic">
-	    	<!--<img src="" alt="" />-->
-	    	<span class="sprite-form pic">头像</span>
-	    	<span class="sprite-form add">+</span>
-	    	<span class="tip">添加头像</span>
-	    </div>
-	    <div>
-	    	<label class="input-title block">报名人</label>
-	    	<label class="label inline-block">学校</label>
-	    	<input class="indent" type="text" name="school" id="school" placeholder="必填"/>
-	    </div>
-	    <div class="margin-top">
-	    	<label class="label inline-block">姓名</label>
-	    	<input class="center margin" type="text" name="name" id="name" placeholder="必填"/>
-	    	<label class="label inline-block">电话</label>
-	    	<input class="indent" type="text" name="tel" id="tel" placeholder="必填"/>
-	    </div>
-	    <div class="margin-top">
-	    	<label class="label inline-block">性别</label>
-	    	<span data-sex="1" class="check-one inline-block sprite-form">
-	    		
-	    	</span>
-	    	<span class="inline-block check-info">
-	    		男
-	    	</span>
-	    	<span data-sex="2" class="check-one inline-block">
-	    		
-	    	</span>
-	    	<span class="inline-block check-info">
-	    		女
-	    	</span>
-	    	<span class="get-mes inline-block">获取短信验证码</span>
-	    	<input type="text" class="inline-block mes center" />
-	    	<span class="sprite-form fr enter">
-	    		
-	    	</span>
-	    </div>
-	    <div>
-	    	<label class="input-title block">个人简介</label>
-	    	<textarea class="synopsis block">简介：</textarea>
-	    </div>
-	    <div class="submit center">提交</div>
-    </div>
-    <script src="../js/jquery-3.2.1.js"></script>
-	<script>
-		$('.check-one').click(function(){
-			$('.check-one').removeClass('sprite-form');
-			$(this).addClass('sprite-form');
-		})
-	</script>
-</body>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>报名申请单</title>
+		<!-- 一比一像素还原 -->
+		<script src="./../js/dpr.js"></script>
+		<!-- 初始化样式 -->
+		<link rel="stylesheet" href="./../css/reset.css">
+		<!-- 工具类 -->
+		<link rel="stylesheet" href="./../css/tools.css">
+		<!-- 全局样式 -->
+		<link rel="stylesheet" href="./../css/index.css">
+		<!-- 当前页面的css -->
+		<link rel="stylesheet" href="./../css/form.css">
+	</head>
+
+	<body class="form">
+		<h2 class="form-title">- 基本信息 -</h2>
+		<div class="form-content">
+			<div>
+				<label class="input-title block" for="theme">参赛主题</label>
+				<input class="width center" type="text" name="theme" id="theme" placeholder="- 请选择主题 -" />
+			</div>
+			<div>
+				<label class="input-title block" for="place">参赛地区</label>
+				<input class="width center" type="text" name="place" id="place" placeholder="- 请选择地区 -" />
+			</div>
+			<div>
+				<label class="input-title inline-block">头像上传</label>
+				<span class="inline-block tip">必填</span>
+			</div>
+			<div class="head-pic">
+				<!--<img src="" alt="" />-->
+				<span class="sprite-form pic">头像</span>
+				<span class="sprite-form add">+</span>
+				<span class="tip">添加头像</span>
+			</div>
+			<div>
+				<label class="input-title block">报名人</label>
+				<label class="label inline-block">学校</label>
+				<input class="indent" type="text" name="school" id="school" placeholder="必填" />
+			</div>
+			<div class="margin-top">
+				<label class="label inline-block">姓名</label>
+				<input class="center margin" type="text" name="name" id="name" placeholder="必填" />
+				<label class="label inline-block">电话</label>
+				<input class="indent" type="text" name="tel" id="tel" placeholder="必填" />
+			</div>
+			<div class="margin-top">
+				<label class="label inline-block">性别</label>
+				<span data-sex="1" class="check-one inline-block sprite-form">
+		    		
+		    	</span>
+				<span class="inline-block check-info">
+		    		男
+		    	</span>
+				<span data-sex="2" class="check-one inline-block">
+		    		
+		    	</span>
+				<span class="inline-block check-info">
+		    		女
+		    	</span>
+				<span class="get-mes inline-block">获取短信验证码</span>
+				<input type="text" class="inline-block mes center" />
+				<span class="sprite-form fr enter">
+		    		
+		    	</span>
+			</div>
+			<div>
+				<label class="input-title block">个人简介</label>
+				<textarea class="synopsis block">简介：</textarea>
+			</div>
+			<div class="submit center">提交</div>
+		</div>
+		<script src="../js/jquery-3.2.1.js"></script>
+		<script>
+			$('.check-one').click(function() {
+				$('.check-one').removeClass('sprite-form');
+				$(this).addClass('sprite-form');
+			})
+		</script>
+	</body>
+
 </html>

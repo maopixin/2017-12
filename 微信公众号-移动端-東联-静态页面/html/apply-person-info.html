@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>基本信息</title>
+		<!-- 一比一像素还原 -->
+		<script src="./../js/dpr.js"></script>
+		<!-- 初始化样式 -->
+		<link rel="stylesheet" href="./../css/reset.css">
+		<!-- 工具类 -->
+		<link rel="stylesheet" href="./../css/tools.css">
+		<!-- 全局样式 -->
+		<link rel="stylesheet" href="./../css/index.css">
+		<!-- 当前页面的css -->
+		<link rel="stylesheet" href="./../css/form.css">
+	</head>
+
+	<body class="form">
+		<h2 class="form-title">- 基本信息 -</h2>
+		<ul class="form-content input-box">
+			<li class="j-center">
+				<label for="school">学校</label>
+				<input type="text" id="school" class="b" placeholder="必填" />
+			</li>
+			<li class="j-center">
+				<label for="">地区</label>
+				<div class="position-content">
+					<div class="province layui-unselect position-b layui-form-select">
+						<div class="layui-select-title">
+							<!--新增id-->
+							<input id="sel1" type="text" placeholder="请选择省份" / class="layui-input layui-unselect">
+							<i class="layui-edge"></i>
+						</div>
+						<dl class="layui-anim layui-anim-upbit" id="not-scroll">
+							<dd lay-value="" class="layui-select-tips">请选择省份</dd>
+						</dl>
+					</div>
+					<div class="province layui-unselect position-b layui-form-select">
+						<div class="layui-select-title">
+							<!--新增id-->
+							<input id="sel2" type="text" placeholder="请选择市" / class="layui-input layui-unselect">
+							<i class="layui-edge"></i>
+						</div>
+						<dl class="layui-anim layui-anim-upbit" id="not-scroll">
+							<dd lay-value="" class="layui-select-tips">请选择请选择市</dd>
+						</dl>
+					</div>
+					<div class="province layui-unselect position-b layui-form-select">
+						<div class="layui-select-title">
+							<!--新增id-->
+							<input id="sel3" type="text" placeholder="请选择县/区" / class="layui-input layui-unselect">
+							<i class="layui-edge"></i>
+						</div>
+						<dl class="layui-anim layui-anim-upbit" id="not-scroll">
+							<dd lay-value="" class="layui-select-tips">请选择县/区</dd>
+						</dl>
+					</div>
+				</div>
+			</li>
+			<li style="justify-content: flex-start;">
+				<label for="">属性</label>
+				<div class="province layui-unselect position-b layui-form-select">
+					<div class="layui-select-title">
+						<!--新增id-->
+						<input id="sel3" type="text" placeholder="请选择属性" / class="layui-input position-b layui-unselect" style="text-indent: 0;text-align: center;">
+						<i class="layui-edge"></i>
+					</div>
+					<dl class="layui-anim layui-anim-upbit" id="not-scroll">
+						<dd lay-value="" class="layui-select-tips">请选择属性</dd>
+					</dl>
+				</div>
+			</li>
+			<li class="j-center">
+				<label for="name">姓名</label>
+				<input type="text" id="name" class="s" placeholder="必填" style="margin-right: 0.74rem;" />
+				<label for="">性别</label>
+				<div class="s">
+					<div class="">
+						<span data-sex="1" class="check-one inline-block sprite-form"></span>
+						<span class="inline-block check-info" style="line-height: 0.69rem;">男	</span>
+						<span data-sex="2" class="check-one inline-block"></span>
+						<span class="inline-block check-info" style="line-height: 0.69rem;">女</span>
+					</div>
+				</div>
+			</li>
+			<li class="j-center">
+				<label for="job">职称</label>
+				<input type="text" id="job" class="s" placeholder="必填" style="margin-right: 0.74rem;" />
+				<label for="lv">学段</label>
+				<input type="text" id="lv" class="s" placeholder="必填" />
+			</li>
+			<li class="j-center">
+				<label for="job2">职务</label>
+				<input type="text" id="job2" class="s" placeholder="必填" style="margin-right: 0.74rem;" />
+				<label for="job-type">学科</label>
+				<input type="text" id="job-type" class="s" placeholder="必填" />
+			</li>
+			<li class="j-center">
+				<label for="phone">手机</label>
+				<input type="text" id="phone" class="s" placeholder="必填" style="margin-right: 0.74rem;" />
+				<label for="email">邮箱</label>
+				<input type="text" id="email" class="s" placeholder="必填" />
+			</li>
+			<li>
+				<label class="input-title inline-block">头像上传</label>
+				<span class="inline-block tip" style="line-height: 0.6666rem;margin-top: 0.2rem;">必填</span>
+			</li>
+			<li style="display: initial;" class="head-pic">
+				<!--<img src="" alt="" />-->
+				<span class="sprite-form pic">头像</span>
+				<span class="sprite-form add">+</span>
+				<span class="tip">添加头像</span>
+			</li>
+			<li class="j-left">
+				<label for="c" class="label-title">个人简介</label>
+			</li>
+			<li class="j-left">
+				<textarea name="" id="c" placeholder="选填"></textarea>
+			</li>
+			<li>
+				<span class="get-mes inline-block" style="margin-left: 0;">获取短信验证码</span>
+				<input type="text" class="inline-block mes center" />
+				<span class="sprite-form fr enter"></span>
+			</li>
+		</ul>
+		<div class="submit center">提交</div>
+	</body>
+
+</html>

@@ -20,6 +20,78 @@
 .form .form-content {
   padding: 0 0.4rem;
 }
+.form .form-content li {
+  display: flex;
+  margin-bottom: 0.61333333rem;
+}
+.form .form-content li .position-content {
+  width: 7.92rem;
+  display: flex;
+  justify-content: space-between;
+}
+.form .form-content li .position-content input {
+  width: 2.4rem;
+  text-indent: 0;
+  text-align: center;
+}
+.form .form-content li textarea {
+  display: block;
+  padding: 0;
+  width: 9.14666667rem;
+  box-sizing: border-box;
+  height: 2.66666667rem;
+  font-size: 0.26666667rem;
+  line-height: 0.4rem;
+  outline: none;
+  resize: none;
+  text-indent: 2em;
+  padding: 0.13333333rem;
+  word-break: break-all;
+  background-color: #faf6f6;
+}
+.form .form-content label {
+  width: 1.17333333rem;
+  height: 0.66666667rem;
+  font-size: 0.26666667rem;
+  line-height: 0.66666667rem;
+}
+.form .form-content input {
+  text-indent: 2em;
+}
+.form .form-content .b {
+  width: 7.92rem !important;
+  box-sizing: border-box;
+}
+.form .form-content .s {
+  width: 3.02666667rem !important;
+}
+.form .form-content .position-b {
+  width: 2.37333333rem;
+}
+.form .form-content *:focus {
+  outline: none;
+}
+.form .form-content span.active {
+  background: #faf6f6 url(../img/checked.png) no-repeat center center;
+}
+.form .form-content .check-item {
+  width: 0.26666667rem;
+  height: 0.26666667rem;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #faf6f6;
+  margin-top: 0.2rem;
+  margin-left: 4px;
+  margin-right: 0.02666667rem;
+  border: 1px solid #a39c9e;
+}
+.form .form-content .sex {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0.26666667rem;
+  line-height: 0.69333333rem;
+  margin-right: 0.26666667rem;
+}
 .form .input-title {
   font-size: 0.32rem;
   line-height: 0.82666667rem;
@@ -112,7 +184,7 @@
   width: 0.57333333rem;
   padding-top: 0.48rem;
   background-position: -1.81333333rem -1rem;
-  margin: 0.10666667rem 0.4rem 0 0;
+  margin: 0.10666667rem 0.4rem 0 0.13333333rem;
 }
 .form .synopsis {
   width: 8.90666667rem;
@@ -140,9 +212,8 @@
   color: #FFFFFF;
   font-size: 0.29333333rem;
   line-height: 0.72rem;
-  margin: 1.12rem auto 0;
+  margin: 0.53333333rem auto 1.12rem;
   border-radius: 0.34666667rem;
-  margin-bottom: 0.53333333rem;
 }
 .form .cancel {
   margin: 0 auto 0.66666667rem;

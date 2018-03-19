@@ -22,6 +22,86 @@
     }
     .form-content{
         padding:0 30/@rem;
+        li{
+            display: flex;
+            margin-bottom: 46/@rem;
+            .position-content{
+                width: 594/@rem;
+                display: flex;
+                justify-content: space-between;
+                input{
+                    width: 180/@rem;
+                    text-indent: 0;
+                    text-align: center;
+                }
+            }
+            textarea{
+                display: block;
+                padding: 0;
+                width: 686/@rem;
+                box-sizing: border-box;
+                height: 200/@rem;
+                font-size: 20/@rem;
+                line-height: 30/@rem;
+                outline: none;
+                resize: none;
+                text-indent: 2em;
+                padding: 10/@rem;
+                word-break: break-all;
+                background-color: #faf6f6;
+            }
+        }
+        .j-center{
+//           justify-content: center;
+        }
+        .j-left{
+//          padding-left: 53px;
+        }
+        label{
+            width: 88/@rem;
+            height: 50/@rem;
+            font-size: 20/@rem;
+            line-height: 50/@rem;
+        }
+        input{
+            text-indent: 2em;
+        }
+        .b{
+            width: 594/@rem !important;
+            box-sizing: border-box;
+        }
+        .s{
+            width: 227/@rem !important;
+        }
+        .position-b{
+            width: 178/@rem;
+        }
+        *:focus {
+            outline: none;
+         } 
+         span.active {
+             background: #faf6f6 url(../img/checked.png) no-repeat center center;
+          }
+          .check-item{
+              width: 20/@rem;
+                height: 20/@rem;
+                display: inline-block;
+                vertical-align: top;
+                background-color: #faf6f6;
+                margin-top: 15/@rem;
+                margin-left: 4px;
+                margin-right: 2/@rem;
+                border: 1px solid #a39c9e;
+          }
+        .sex {
+            display: inline-block;
+            vertical-align: top;
+           font-size: 20/@rem;
+           line-height: 52/@rem;
+            margin-right: 20/@rem;
+            
+        }
+        
     }
     //input标题
     .input-title{
@@ -117,7 +197,8 @@
         width: 43/@rem;
         padding-top: 36/@rem;
         background-position: -136/@rem -75/@rem;
-        margin: 8/@rem 30/@rem 0 0;
+        margin: 8/@rem 30/@rem 0 10/@rem;
+        
     }
     .synopsis{
         width: 668/@rem;
@@ -146,9 +227,8 @@
         color: #FFFFFF;
         font-size: 22/@rem;
         line-height: 54/@rem;
-        margin: 84/@rem auto 0;
+        margin: 40/@rem auto 84/@rem;
         border-radius: 26/@rem;
-        margin-bottom: 40/@rem;
     }
     .cancel{
         margin: 0 auto 50/@rem;
@@ -481,5 +561,6 @@
             }
         }
     }
+    
 }
 
