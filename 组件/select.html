@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="select.css" />
+	</head>
+
+	<body>
+		<div id="select_one">
+			<input type="text" id="open_select" />
+			<dl id="select_box">
+				<dd class="active">no. 1</dd>
+				<dd>no. 1</dd>
+				<dd>no. 1</dd>
+				<dd>no. 1</dd>
+			</dl>
+		</div>
+	</body>
+	<script type="text/javascript" src="../jquery-3.2.1.js">
+		
+	</script>
+	<script>
+		var on = true;
+		$("#select_box").on("click", "dd", function() {
+			$(this).parent().parent().find("#open_select").val($(this).html())
+			$('#select_box').hide();
+				on = !on;
+		})
+		$('#open_select').click(function() {
+			if(on) {
+				$('#select_box').show();
+				on = !on;
+			} else {
+				$('#select_box').hide();
+				on = !on;
+			}
+		})
+	</script>
+
+</html>

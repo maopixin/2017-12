@@ -459,41 +459,51 @@
   margin-top: 20px;
   box-sizing: border-box;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .form .winbox .winbox-item {
-  width: 142px;
   position: relative;
+  padding-top: 40px;
+  width: 180px;
+  border: 1px solid #ccc;
+  position: relative;
+  margin: 0 22px 30px;
 }
-.form .winbox .winbox-item .sprite-form {
-  width: 141px;
-  height: 128px;
-  background-position: 0 -137px;
+.form .winbox .winbox-item .delete_btn{
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 18px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 18px;
+}
+.form .winbox .winbox-item .delete_btn:hover{
+  border-color: #1b9fe2;
+  background-color: #1b9fe2;
+  color: #fff;
 }
 .form .winbox .winbox-item img {
-  display: none;
+  display: block;
+  margin: 0 auto;
   width: 141px;
   height: 128px;
 }
 .form .winbox .winbox-item .win-pic-info {
   display: block;
+  width: 140px;
   font-size: 18px;
   line-height: 40px;
   margin-top: 20px;
+  margin:20px auto 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
 }
-.form .winbox .winbox-item input {
-  display: block;
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 142px;
-  height: 209px;
-  opacity: 0;
-  z-index: 8;
-}
+
 .form .winbox .winbox-item input i {
   cursor: pointer;
 }

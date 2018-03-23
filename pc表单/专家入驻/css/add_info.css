@@ -1,0 +1,21 @@
+.add_pic_btn{
+    position: relative;
+    margin-top: 15px;
+    width: 100px;
+    color: #fff;
+    background-color: #1b9fe2;
+    text-align: center;
+}
+.add_pic_btn span{
+   font-size: 16px;
+   line-height: 62px;
+}
+.add_pic_btn input{
+    position: absolute;
+    cursor: pointer;
+    width: 100px;
+    height: 62px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}

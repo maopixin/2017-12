@@ -1,0 +1,32 @@
+dl,dd{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+#select_one{
+	position: relative;
+}
+#select_box {
+	display: none;
+	width: 100%;
+	max-height: 360px;
+	overflow-y: scroll;
+	border-radius: 2px;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0,0,0,.12);
+}
+#select_box dd{
+	width: 100%;
+	line-height: 36px;
+	text-indent: 8px;
+	font-size: 16px;
+	color: #000000;
+}
+#select_box dd.active{
+	background-color: #1B9FE2;
+	color: #fff;
+}
+#select_box dd:hover{
+	background-color: #C5C2C2;
+	color: #fff;
+}

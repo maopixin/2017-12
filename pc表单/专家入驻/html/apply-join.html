@@ -8,7 +8,8 @@
 	<!-- layuicss -->
 	<link rel="stylesheet" href="http://meet.dljy.com/static/assets/lib/layui/css/layui.css" />
     <!-- 当前页面的css -->
-    <link rel="stylesheet" href="./../css/form.css">
+	<link rel="stylesheet" href="./../css/form.css">
+	<link rel="stylesheet" href="./../css/add_info.css">
 </head>
 <body>
 	<div class="f-t-box">
@@ -71,26 +72,14 @@
 			<div>
 				<label class="input-title inline-block">上传图片</label>
 				<span class="inline-block tip">必填</span>
+				<!-- 新增的元素 -->
+				<div class="fr add_pic_btn">
+					<span>添加图片</span>
+					<input id="upfile" type="file"/>
+				</div>
 			</div>
 			<div class="winbox">
-				<div class="winbox-item">
-					<span class="sprite-form"></span>
-					<img class="win-pic" src="" alt="" />
-					<span class="win-pic-info center">图片1</span>
-					<input type="file" name="" id="honor1" value="" data-Type="0"/>
-				</div>
-				<div class="winbox-item">
-					<span class="sprite-form"></span>
-					<img class="win-pic" src="" alt="" />
-					<span class="win-pic-info center">图片2</span>
-					<input type="file" name="" id="honor2" value="" data-type="1" />
-				</div>
-				<div class="winbox-item">
-					<span class="sprite-form"></span>
-					<img class="win-pic" src="" alt="" />
-					<span class="win-pic-info center">图片3</span>
-					<input type="file" name="" id="honor3" value="" data-type="2" />
-				</div>
+				
 			</div>
 		</div>
 		<div class="submit center fr" id="updata-btn">提交</div>

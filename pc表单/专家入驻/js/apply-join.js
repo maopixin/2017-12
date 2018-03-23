@@ -1,7 +1,8 @@
-let uploading = false;
-let upDatas = {
+var uploading = false;
+var upDatas = {
     honor:[]
 };
+var num = 0; // 新增
 // 头像上传
 $('#head-pic').change(function(){
     let _this = this;
@@ -18,23 +19,26 @@ $('#head-pic').change(function(){
     },this);
 });
 
-// 荣誉上传
-$('.winbox .winbox-item input').change(function(){
+// 荣誉上传 // 新增
+$('#upfile').change(function(){
     let _this = this;
-    let father = $(this).parent();
     let id = $(this).attr('id');
-    console.log(id)
+    if(num>=6){
+        tipBox('最多只能上传6张',0);
+        return false;
+    }
     upPic(id,function(data){
         if(data.status.code===0){
-            father.find('.sprite-form').hide();
-            father.find('img').attr('src',data.data).show();
-            upDatas.honor[$(_this).data('type')] = {
-                name:father.find('.win-pic-info').html(),
-                url:data.data
-            };
+            var str = ` <div class="winbox-item">
+                            <img class="win-pic" src="${data.data}" alt="" />
+                            <input class="win-pic-info center" value="图片${++num}"/>
+                            <div class="delete_btn">x</div>
+                        </div>`
+            $('.winbox').append(str);
         }else{
             tipBox('文件上传失败',0);
         };
+        _this.value = "";
         _this.uploading = false;
     },this);
 });
@@ -115,17 +119,16 @@ $('#updata-btn').click(function(){
     }else{
         upDatas.personal_profile = $('#personal_profile').val().trim();
     };
-    if(upDatas.honor.length<=2){
-        tipBox('请上传三张荣耀图片');
-        return false;
-    }else{
-        upDatas.honor.forEach(function(e){
-            if(!e){
-                tipBox('请上传三张荣耀图片');
-                return false;
-            }
-        });
-    };
+    // 获取荣誉数据
+    // 先清空之前的数据
+    upDatas.honor = [];
+    $('.winbox').find('.winbox-item').each(function(i,e){
+        upDatas.honor.push({
+            name:$(e).find('input').val(),
+            url:$(e).find('img').attr('src')
+        })
+    })
+    
     // 提交
     $.ajax({
         url : map.expert,
@@ -175,3 +178,11 @@ function isPoneAvailable(str) {
       return true;  
   }  ;
 };
+
+
+
+// 新增
+$(".winbox").on('click',".delete_btn",function(){
+    $(this).parent().remove();
+    num--;
+})
