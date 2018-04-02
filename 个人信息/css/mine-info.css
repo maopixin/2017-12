@@ -1,0 +1,83 @@
+.content {
+  width: 848px !important;
+  box-sizing: border-box;
+  margin-left: 24px;
+  border: solid 1px #e4ecf3;
+  padding: 12px;
+  background: #fff;
+}
+.content .m-box {
+  height: 44px;
+  line-height: 40px;
+  color: #919191;
+  border-bottom: 1px solid #f5f5f5;
+}
+.content .m-box a {
+  color: inherit;
+}
+.content .m-box a.active {
+  color: #1b9fe2;
+}
+.content .mine-info {
+  display: flex;
+}
+.content .mine-info img {
+  margin: 47px 36px 0 44px;
+  width: 108px;
+  height: 108px;
+}
+.content .mine-info .name-box {
+  margin-top: 47px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 56px;
+}
+.content .mine-info .name-box span {
+  display: inline-block;
+  vertical-align: top;
+}
+.content .mine-info .name-box .name {
+  margin-right: 20px;
+}
+.content .mine-info .line {
+  border-bottom: 1px solid #b5b5b5;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.content .mine-info .small-font {
+  font-size: 14px;
+  line-height: 28px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.content .mine-info .small-font span:nth-child(2) {
+  width: 120px;
+}
+.content .mine-info .jj-title {
+  line-height: 60px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.content .mine-info .jj-txt {
+  width: 456px;
+  box-sizing: border-box;
+  text-indent: 2em;
+  font-size: 12px;
+  line-height: 30px;
+  padding: 10px 20px;
+  background-color: #f7f6f5;
+}
+.content .mine-info .btn-box {
+  width: 602px;
+  display: flex;
+  justify-content: flex-end;
+}
+.content .mine-info .btn-box span {
+  padding: 0 16px;
+  border: 1px solid #1B9FE2;
+  color: #1B9FE2;
+  margin: 40px 0 10px 20px;
+  cursor: pointer;
+  line-height: 38px;
+}

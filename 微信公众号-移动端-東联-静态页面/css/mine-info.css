@@ -1,0 +1,64 @@
+.mine_info_box {
+  font-size: 0.34666667rem;
+  padding: 0 0.34666667rem;
+}
+.mine_info_box .mine_info_item {
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  line-height: 1.2rem;
+  font-size: 0.34666667rem;
+  color: #282829;
+}
+.mine_info_box .mine_info_item span {
+  display: inline-block;
+  vertical-align: bottom;
+  color: #b9b9b9;
+  margin-right: 0.45333333rem;
+}
+.mine_info_box .mine_info_item img {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 2.21333333rem;
+  height: 2.21333333rem;
+  margin: 0.69333333rem 0 0.58666667rem 4.8rem;
+}
+.sp_item {
+  padding-top: 0.32rem !important;
+  position: relative;
+}
+.sp_item:before {
+  content: '';
+  width: 10rem;
+  height: 0.32rem;
+  background-color: #efefef;
+  position: absolute;
+  top: -0.01333333rem;
+  left: -0.34666667rem;
+}
+.jj_box {
+  padding: 0 0.34666667rem;
+}
+.jj_box .jj-title {
+  font-size: 0.34666667rem;
+  line-height: 1.2rem;
+}
+.jj_box p {
+  padding: 0.13333333rem 0.58666667rem;
+  font-size: 0.26666667rem;
+  line-height: 0.53333333rem;
+  background-color: #f7f6f5;
+  text-indent: 2em;
+}
+.btn_box {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.44rem 0 2.34666667rem 0;
+}
+.btn_box span {
+  border: 1px solid #1B9FE2;
+  padding: 0 0.34666667rem;
+  line-height: 0.88rem;
+  margin: 0 0.61333333rem 0 0;
+  font-size: 0.37333333rem;
+  color: #1B9FE2;
+}

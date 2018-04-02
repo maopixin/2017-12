@@ -1,19 +1,19 @@
 ## 文件结构
  
  -css   样式文件夹
-    index.css       	全局css
-    reset.css       	初始化css
-    tools.css       	工具类css
+    index.css       		全局css
+    reset.css       		初始化css
+    tools.css       		工具类css
     home.css        	主页css
-    my.css          	我的css
-    training.css    	培训计划css
-    cgda.css			评选大赛css
-	form.css        	表单css
-	talks.css			交流圈css
+    my.css          		我的css
+    training.css    		培训计划css
+    cgda.css				评选大赛css
+	form.css        		表单css
+	talks.css				交流圈css
 	course.css			精品课程css
-	meeting.css			会议详情css
-	news.css			全部资讯css
-	alliance.css     联盟首页
+	meeting.css		会议详情css
+	news.css				全部资讯css
+	alliance.css     	联盟首页
 	alliance-item.css	联盟成员
 	alliance-schools.css		联盟校列表
 	alliance-pages.css
@@ -54,6 +54,8 @@
 	alliance-about.html 								关于联盟-
 	alliance-child-page-open.html			幼教联盟公约详细页-
 	alliance-school-page-open.html			学校联盟公约详细页-
+	
+	mine-info.html										个人信息
 
  -img   图片文件夹
     -test   				测试图片（上线后删除）

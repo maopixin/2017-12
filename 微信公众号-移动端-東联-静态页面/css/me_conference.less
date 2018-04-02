@@ -1,0 +1,84 @@
+@rem: 75rem;
+body{
+    background-color: #f3f2f2;
+}
+.my_list {
+    padding-top: 58/@rem;
+    .my_list_item {
+        padding: 0 40/@rem;
+        background-color: #ffffff;
+        border-bottom: 1px solid #c9c9c9;
+        .my_list_item_top {
+            display: flex;
+            justify-content: space-between;
+            .conference_pic {
+                margin: 48/@rem 0 40/@rem;
+                img {
+                    width: 117/@rem;
+                    height: 91/@rem;
+                }
+            }
+            .conference_info{
+                width: 520/@rem;
+                padding-top: 42/@rem;
+                padding-bottom: 25/@rem;
+                .hy-title{
+                    font-size: 25/@rem;
+                    line-height: 37/@rem;
+                    color: #191919;
+                }
+                .hy-time{
+                    font-size: 20/@rem;
+                    line-height: 32/@rem;
+                    color: #8b8a8a;
+                }
+                .hy-info{
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 19/@rem;
+                    line-height: 37/@rem;
+                    .place{
+                        color: #444546;
+                    }
+                    .person_num{
+                        color: #303030;
+                    }
+                }
+            }
+        }
+        .my_list_item_bottom{
+            display: flex;
+            justify-content: space-between;
+            line-height: 40/@rem;
+            padding-bottom: 32/@rem;
+            .cancel{
+                display: inline-block;
+                padding-right: 34/@rem;
+                color: #6f7070;
+                background: url(../img/delete.png) no-repeat 48/@rem center;
+                background-size: 24/@rem;
+            }
+            .fn-btns{
+                a{
+                    display: inline-block;
+                    vertical-align: top;
+                    padding: 0 20/@rem;
+                    margin-left: 30/@rem;
+                }
+                .red{
+                    border: 1px solid red;
+                    color: red;
+                }
+                .blue{
+                    border: 1px solid #1B9FE2;
+                    color: #1B9FE2;
+                }
+                span{
+                    display: inline-block;
+                    vertical-align: top;
+                    color: #1B9FE2;
+                }
+            }
+        }
+    }
+}

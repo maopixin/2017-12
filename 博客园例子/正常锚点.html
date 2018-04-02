@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body,ul{
+				margin: 0;
+				padding: 0;
+			}
+			li{
+				height: 400px;
+				border: 2px solid #000;
+				margin-bottom: 10px;
+				font-size: 60px;
+			}
+			div{
+				position: fixed;
+				top: 200px;
+				left: 300px;
+				display: flex;
+			}
+			div a{
+				padding: 0 20px;
+				border: 1px solid #000000;
+				line-height: 30px;
+			}
+			/*妙招*/
+			li{
+				/*padding-top  绝对定位后的元素距离顶部的距离*/
+				padding-top: 300px;
+				/*对应内边距，消除内边距撑开的距离*/
+				margin-top: -300px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li id="li1">1</li>
+			<li id="li2">2</li>
+			<li id="li3">3</li>
+			<li id="li4">4</li>
+			<li id="li5">5</li>
+			<li id="li6">6</li>
+		</ul>
+		<div>
+			<a href="#li1">1</a>
+			<a href="#li2">2</a>
+			<a href="#li3">3</a>
+			<a href="#li4">4</a>
+			<a href="#li5">5</a>
+			<a href="#li6">6</a>
+		</div>
+	</body>
+</html>

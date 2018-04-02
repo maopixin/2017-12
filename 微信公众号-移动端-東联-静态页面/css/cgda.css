@@ -172,9 +172,9 @@
   margin-top: 0.93333333rem;
 }
 .cgda .content .player-list {
-  padding: 0.68rem 0 0 0.70666667rem;
+  padding: 0.68rem 0.4rem 0 0.4rem;
 }
-.cgda .content .player-list li {
+.cgda .content .player-list .player-item {
   width: 3.88rem;
   background-color: #f5f8fa;
   overflow: hidden;
@@ -184,44 +184,44 @@
   border: 1px solid #d4d5cf;
   border-radius: 0.08rem;
 }
-.cgda .content .player-list li:nth-of-type(2n) {
+.cgda .content .player-list .player-item:nth-of-type(2n) {
   margin-right: 0;
 }
-.cgda .content .player-list li img {
+.cgda .content .player-list .player-item img {
   width: 1.74666667rem;
   height: 1.74666667rem;
   display: block;
   margin: 0 auto 0.05333333rem;
 }
-.cgda .content .player-list li span {
+.cgda .content .player-list .player-item span {
   display: block;
   text-align: center;
   color: #726b6a;
 }
-.cgda .content .player-list li span:nth-of-type(1) {
+.cgda .content .player-list .player-item span:nth-of-type(1) {
   font-size: 0.29333333rem;
   line-height: 0.56rem;
   color: #3f93ef;
 }
-.cgda .content .player-list li span:nth-of-type(2) {
+.cgda .content .player-list .player-item span:nth-of-type(2) {
   font-size: 0.26666667rem;
   line-height: 0.41333333rem;
 }
-.cgda .content .player-list li span:nth-of-type(3) {
+.cgda .content .player-list .player-item span:nth-of-type(3) {
   font-size: 0.24rem;
   line-height: 0.37333333rem;
 }
-.cgda .content .player-list li .tickit-num {
+.cgda .content .player-list .player-item .tickit-num {
   border-top: 1px solid #d4d5cf;
   margin-top: 0.09333333rem;
   background-color: #fff;
   padding-left: 0.89333333rem;
 }
-.cgda .content .player-list li .tickit-num em {
+.cgda .content .player-list .player-item .tickit-num em {
   float: left;
   line-height: 0.81333333rem;
 }
-.cgda .content .player-list li .tickit-num .tickit-btn {
+.cgda .content .player-list .player-item .tickit-num .tickit-btn {
   float: right;
   width: 1.18666667rem;
   height: 0.42666667rem;
@@ -233,6 +233,99 @@
   margin-top: 0.18666667rem;
   border-radius: 0.2rem;
   font-size: 0.24rem;
+}
+.cgda .content .player-list .text_and_info_play_item {
+  border: 1px solid #d4d5cf;
+  border-radius: 0.08rem;
+  color: #5a5858;
+  margin-bottom: 0.4rem;
+}
+.cgda .content .player-list .text_and_info_play_item .text_and_info_play_item_head {
+  font-size: 0.29333333rem;
+  line-height: 0.53333333rem;
+  display: flex;
+}
+.cgda .content .player-list .text_and_info_play_item .text_and_info_play_item_head img {
+  width: 0.82666667rem;
+  height: 0.82666667rem;
+  margin: 0.18666667rem 0.34666667rem 0 0.25333333rem;
+}
+.cgda .content .player-list .text_and_info_play_item .text_and_info_play_item_head .num_name {
+  width: 1.06666667rem;
+  margin-top: 0.21333333rem;
+  line-height: 0.37333333rem;
+}
+.cgda .content .player-list .text_and_info_play_item .text_and_info_play_item_head .num_name .num {
+  color: red;
+}
+.cgda .content .player-list .text_and_info_play_item .text_and_info_play_item_head .school_place {
+  width: 3.73333333rem;
+  margin-top: 0.50666667rem;
+}
+.cgda .content .player-list .text_and_info_play_item .text_and_info_play_item_head .tickit_num {
+  width: 1.73333333rem;
+  line-height: 0.4rem;
+  margin-top: 0.24rem;
+}
+.cgda .content .player-list .text_and_info_play_item .text_and_info_play_item_head .ticket_btn {
+  margin-top: 0.24rem;
+  line-height: 0.4rem;
+  height: 0.4rem;
+  padding: 0 0.12rem;
+  background-color: red;
+  color: #fff;
+  border-radius: 0.08rem;
+}
+.cgda .content .player-list .text_and_info_play_item .works .job_text {
+  padding: 0.13333333rem 0.26666667rem 0 0.26666667rem;
+  line-height: 0.4rem;
+}
+.cgda .content .player-list .text_and_info_play_item .works .open_all_btn {
+  text-align: right;
+  padding: 0 0.26666667rem 0.21333333rem 0;
+}
+.cgda .content .player-list .text_and_info_play_item .works .open_all_btn span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.cgda .content .player-list .text_and_info_play_item .works .open_all_btn .open_text {
+  color: #1B9FE2;
+}
+.cgda .content .player-list .text_and_info_play_item .works .open_all_btn .btn-bg {
+  width: 0.58666667rem;
+  height: 0.26666667rem;
+  background-color: #efeff2;
+  text-align: center;
+  line-height: 0.26666667rem;
+}
+.cgda .content .player-list .text_and_info_play_item .works .open_all_btn .btn-bg span {
+  width: 0.16rem;
+  height: 0.16rem;
+  background: url(../img/btn-bg.png) no-repeat center center;
+  background-size: 0.16rem;
+  transition: 0.5s;
+}
+.cgda .content .player-list .text_and_info_play_item .works p {
+  box-sizing: border-box;
+  max-height: 0;
+  transition: 0.5s;
+  overflow: hidden;
+  line-height: 0.42666667rem;
+  padding: 0rem 0.26666667rem;
+}
+.cgda .content .player-list .opened .open_text {
+  display: none !important;
+}
+.cgda .content .player-list .opened .btn-bg span {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+}
+.cgda .content .player-list .opened p {
+  border-top: 1px solid #d4d5cf;
+  max-height: 4rem !important;
+  padding: 0.18666667rem 0.26666667rem !important;
 }
 .cgda .content .judge-list {
   padding: 0.74666667rem 0 0 0.61333333rem;

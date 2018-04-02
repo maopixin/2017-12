@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#div{
+				max-height: 0;
+				transition: .8s;
+				overflow: hidden;
+				border: 1px solid #000;
+			}
+			#btn{
+				width: 50px;
+				text-align: center;
+				margin: 60px;
+				line-height: 30px;	
+				border: 2px solid #000;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="btn">
+			点击我
+		</div>
+		<div id="div">
+			asd <br/>
+			asd <br/>
+			asd <br/>
+			asd <br/>
+			asd <br/>
+		</div>
+
+		<script>
+			btn.onclick = function(){
+				if(div.on){
+					div.style.maxHeight = '0px';
+					div.on = false;
+				}else{
+					div.style.maxHeight = '300px';
+					div.on = true;
+				}
+			}
+		</script>
+	</body>
+</html>

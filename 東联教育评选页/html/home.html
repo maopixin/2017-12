@@ -260,142 +260,47 @@
             </a>
         </h4>
         <ul class="play-list clearfix">
-            <li>
-                <div class="play-info">
-                    <img src="./../img/play.jpg" alt="">
-                    <span>赵老师</span>
-                    <span>主题：放飞梦想</span>
-                    <span>石家庄小学</span>
-                </div>
-                <div class="tick-nums">
-                    票数
-                    <span>
-                        89
-                    </span>
-                    <a href="javascript:;">
-                        投票
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="play-info">
-                    <img src="./../img/play.jpg" alt="">
-                    <span>赵老师</span>
-                    <span>主题：放飞梦想</span>
-                    <span>石家庄小学</span>
-                </div>
-                <div class="tick-nums">
-                    票数
-                    <span>
-                        89
-                    </span>
-                    <a href="javascript:;">
-                        投票
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="play-info">
-                    <img src="./../img/play.jpg" alt="">
-                    <span>赵老师</span>
-                    <span>主题：放飞梦想</span>
-                    <span>石家庄小学</span>
-                </div>
-                <div class="tick-nums">
-                    票数
-                    <span>
-                        89
-                    </span>
-                    <a href="javascript:;">
-                        投票
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="play-info">
-                    <img src="./../img/play.jpg" alt="">
-                    <span>赵老师</span>
-                    <span>主题：放飞梦想</span>
-                    <span>石家庄小学</span>
-                </div>
-                <div class="tick-nums">
-                    票数
-                    <span>
-                        89
-                    </span>
-                    <a href="javascript:;">
-                        投票
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="play-info">
-                    <img src="./../img/play.jpg" alt="">
-                    <span>赵老师</span>
-                    <span>主题：放飞梦想</span>
-                    <span>石家庄小学</span>
-                </div>
-                <div class="tick-nums">
-                    票数
-                    <span>
-                        89
-                    </span>
-                    <a href="javascript:;">
-                        投票
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="play-info">
-                    <img src="./../img/play.jpg" alt="">
-                    <span>赵老师</span>
-                    <span>主题：放飞梦想</span>
-                    <span>石家庄小学</span>
-                </div>
-                <div class="tick-nums">
-                    票数
-                    <span>
-                        89
-                    </span>
-                    <a href="javascript:;">
-                        投票
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="play-info">
-                    <img src="./../img/play.jpg" alt="">
-                    <span>赵老师</span>
-                    <span>主题：放飞梦想</span>
-                    <span>石家庄小学</span>
-                </div>
-                <div class="tick-nums">
-                    票数
-                    <span>
-                        89
-                    </span>
-                    <a href="javascript:;">
-                        投票
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="play-info">
-                    <img src="./../img/play.jpg" alt="">
-                    <span>赵老师</span>
-                    <span>主题：放飞梦想</span>
-                    <span>石家庄小学</span>
-                </div>
-                <div class="tick-nums">
-                    票数
-                    <span>
-                        89
-                    </span>
-                    <a href="javascript:;">
-                        投票
-                    </a>
-                </div>
-            </li>
+            <li class="text_and_info_play_item opened">
+					<div class="text_and_info_play_item_head">
+						<img src="../img/test/test3.jpg" alt="" />
+						<div class="num_name">
+							<div class="">
+								<!--编号：1-->
+								石家庄小学
+							</div>
+							<div class="person">赵老师</div>
+						</div>
+						<div class="school_place">
+							<!--石家庄小学-->
+						</div>
+						<div class="tickit_num">
+							票数：89
+						</div>
+						<div class="ticket_btn">
+							投票
+						</div>
+					</div>
+					<div class="works">
+						<div class="job_text">
+							作品：等级考试的脚宽初始登记开裆裤活动卡收到就好上课啦等哈等级考试30
+						</div>
+						<div class="open_all_btn">
+							<span class="open_all_btn_box">
+								<span class="open_text" onselectstart="return false">详情</span>
+								<span class="btn-bg">
+									<span></span>
+								</span>
+							</span>
+							<!--隐藏得文字  保留这句话的语境：-->
+						</div>
+						<p>
+							这句话的语境：当时到几点害死了红色的看了会书点开链接圣诞快乐季后赛的了得了大降温了色带架四
+							的介绍我得额度速递欧几里得激烈的健康了单号四大皆空超级快递回家可视电话放声大哭道具好三等奖
+							开会四大皆空发货速度尽快发货三等奖口红分开收到就好
+						</p>
+					</div>
+				</li>
+				
         </ul>
     </div>
     <!-- 主题预告 -->
@@ -554,6 +459,17 @@
     <script src="../js/jquery-3.2.1.js"></script>
     <script src="../js/config.js"></script>
     <script src="../js/home.js"></script>
+    <script type="text/javascript">
+    		//详情打开的交互
+			    $(document).on('click',".open_all_btn_box",function(){
+			    		var father = $(this).parents('.text_and_info_play_item ');
+			    		if(father.hasClass('opened')){
+			    			father.removeClass('opened');
+			    		}else{
+			    			father.addClass('opened');
+			    		};
+			    });
+    </script>
 </body>
 
 </html>

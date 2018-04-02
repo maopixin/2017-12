@@ -535,3 +535,10 @@
   opacity: 0;
   z-index: 8;
 }
+.form ul.play-info {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.26666667rem;
+  line-height: 0.4rem;
+  padding-top: 1.06666667rem;
+}

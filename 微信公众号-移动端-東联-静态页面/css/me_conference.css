@@ -1,0 +1,81 @@
+body {
+  background-color: #f3f2f2;
+}
+.my_list {
+  padding-top: 0.77333333rem;
+}
+.my_list .my_list_item {
+  padding: 0 0.53333333rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #c9c9c9;
+}
+.my_list .my_list_item .my_list_item_top {
+  display: flex;
+  justify-content: space-between;
+}
+.my_list .my_list_item .my_list_item_top .conference_pic {
+  margin: 0.64rem 0 0.53333333rem;
+}
+.my_list .my_list_item .my_list_item_top .conference_pic img {
+  width: 1.56rem;
+  height: 1.21333333rem;
+}
+.my_list .my_list_item .my_list_item_top .conference_info {
+  width: 6.93333333rem;
+  padding-top: 0.56rem;
+  padding-bottom: 0.33333333rem;
+}
+.my_list .my_list_item .my_list_item_top .conference_info .hy-title {
+  font-size: 0.33333333rem;
+  line-height: 0.49333333rem;
+  color: #191919;
+}
+.my_list .my_list_item .my_list_item_top .conference_info .hy-time {
+  font-size: 0.26666667rem;
+  line-height: 0.42666667rem;
+  color: #8b8a8a;
+}
+.my_list .my_list_item .my_list_item_top .conference_info .hy-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.25333333rem;
+  line-height: 0.49333333rem;
+}
+.my_list .my_list_item .my_list_item_top .conference_info .hy-info .place {
+  color: #444546;
+}
+.my_list .my_list_item .my_list_item_top .conference_info .hy-info .person_num {
+  color: #303030;
+}
+.my_list .my_list_item .my_list_item_bottom {
+  display: flex;
+  justify-content: space-between;
+  line-height: 0.53333333rem;
+  padding-bottom: 0.42666667rem;
+}
+.my_list .my_list_item .my_list_item_bottom .cancel {
+  display: inline-block;
+  padding-right: 0.45333333rem;
+  color: #6f7070;
+  background: url(../img/delete.png) no-repeat 0.64rem center;
+  background-size: 0.32rem;
+}
+.my_list .my_list_item .my_list_item_bottom .fn-btns a {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 0.26666667rem;
+  margin-left: 0.4rem;
+}
+.my_list .my_list_item .my_list_item_bottom .fn-btns .red {
+  border: 1px solid red;
+  color: red;
+}
+.my_list .my_list_item .my_list_item_bottom .fn-btns .blue {
+  border: 1px solid #1B9FE2;
+  color: #1B9FE2;
+}
+.my_list .my_list_item .my_list_item_bottom .fn-btns span {
+  display: inline-block;
+  vertical-align: top;
+  color: #1B9FE2;
+}

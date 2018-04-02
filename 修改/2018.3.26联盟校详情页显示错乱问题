@@ -1,0 +1,12 @@
+文件位置     /static/detail/css/unionSchoolList.css
+.school-list .item-list-box {
+	    display: flex;
+   		flex-wrap: wrap;
+}
+
+.school-list .item-list-box .drawer-box .school-desc{
+		height: 94px;
+}
+.school-list .item-list-box .drawer-box .school-desc p{
+	height:60px;
+}
