@@ -1,0 +1,15 @@
+.flex {
+  display: flex;
+  flex-flow: row;
+}
+.flex label {
+  width: 1.17333333rem !important;
+}
+.flex-one input {
+  flex: 1;
+  color: #000000;
+}
+.flex-two input {
+  flex: .5;
+  color: #000000;
+}

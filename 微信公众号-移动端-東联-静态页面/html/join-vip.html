@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!-- 一比一像素还原 -->
+		<script src="./../js/dpr.js"></script>
+		<!-- 初始化样式 -->
+		<link rel="stylesheet" href="./../css/reset.css">
+		<!-- 工具类 -->
+		<link rel="stylesheet" href="./../css/tools.css">
+		<!-- 全局样式 -->
+		<link rel="stylesheet" href="./../css/index.css">
+		<!-- 当前页面的css -->
+		<link rel="stylesheet" href="./../css/form.css">
+		<link rel="stylesheet" href="../css/join-vip.css" />
+	</head>
+	<body class="form">
+		<h2 class="form-title">- 购卡信息 -</h2>
+		<div class="form-content">
+			<div class="input-box flex flex-one">
+				<label class="label inline-block">单位</label>
+				<input class="indent check_vacancy" type="text"  placeholder="必填" />
+			</div>
+			<div class="input-box flex flex-one">
+				<label class="label inline-block">地区</label>
+				<input class="indent check_vacancy" type="text"  placeholder="请选择地区" />
+			</div>
+			<div class="input-box flex flex-one">
+				<label class="label inline-block"></label>
+				<input class="indent check_vacancy" type="text"  placeholder="请输入详细地址" />
+			</div>
+			<div class="input-box flex flex-two">
+				<label class="label">申请人</label>
+				<input class="two two-margin indent check_vacancy" type="text"  id="" placeholder="必填" />
+				<label class="label">职务</label>
+				<input class="two indent check_vacancy" type="text"  id="" placeholder="必填" />
+			</div>
+			<div class="input-box flex flex-two">
+				<label class="label">手机</label>
+				<input class="two two-margin indent check_vacancy" type="text"  id="" placeholder="必填" />
+				<label class="label">邮箱</label>
+				<input class="two indent check_vacancy" type="text"  id="" placeholder="必填" />
+			</div>
+			<div class="input-box flex flex-two">
+				<label class="label">购卡</label>
+				<input class="two two-margin indent check_vacancy" type="text"  id="" placeholder="填写购卡数量" />
+				<label class="label"></label>
+				<input class="two two-margin indent hidden" type="text"  id="" placeholder="填写购卡数量" />
+			</div>
+			<div class="get-me">
+		    		<button class="get-mes inline-block" id="get_mes">获取短信验证码</button>
+			    	<input type="number"  id="code" class="inline-block mes center check_vacancy" />
+			    	<!--<span class="sprite-form enter">-->
+		    	</div>
+		    	<div class="submit center" id="conference_updata">提交</div>
+		</div>
+	</body>
+</html>

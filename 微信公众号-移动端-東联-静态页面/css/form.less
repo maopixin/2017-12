@@ -22,80 +22,6 @@
     }
     .form-content{
         padding:0 30/@rem;
-        li{
-            display: flex;
-            margin-bottom: 46/@rem;
-            .position-content{
-                width: 594/@rem;
-                display: flex;
-                justify-content: space-between;
-                input{
-                    width: 180/@rem;
-                    text-indent: 0;
-                    text-align: center;
-                }
-            }
-            textarea{
-                display: block;
-                padding: 0;
-                width: 686/@rem;
-                box-sizing: border-box;
-                height: 200/@rem;
-                font-size: 20/@rem;
-                line-height: 30/@rem;
-                outline: none;
-                resize: none;
-                text-indent: 2em;
-                padding: 10/@rem;
-                word-break: break-all;
-                background-color: #faf6f6;
-            }
-        }
-        label{
-            width: 88/@rem;
-            height: 50/@rem;
-            font-size: 20/@rem;
-            line-height: 50/@rem;
-        }
-        input{
-            text-indent: 2em;
-        }
-        .b{
-            width: 594/@rem !important;
-            box-sizing: border-box;
-        }
-        .s{
-            width: 227/@rem !important;
-        }
-        .position-b{
-            width: 178/@rem;
-        }
-        *:focus {
-            outline: none;
-         } 
-         span.active {
-             background: #faf6f6 url(../img/checked.png) no-repeat center center;
-          }
-          .check-item{
-              width: 20/@rem;
-                height: 20/@rem;
-                display: inline-block;
-                vertical-align: top;
-                background-color: #faf6f6;
-                margin-top: 15/@rem;
-                margin-left: 4px;
-                margin-right: 2/@rem;
-                border: 1px solid #a39c9e;
-          }
-        .sex {
-            display: inline-block;
-            vertical-align: top;
-           font-size: 20/@rem;
-           line-height: 52/@rem;
-            margin-right: 20/@rem;
-            
-        }
-        
     }
     //input标题
     .input-title{
@@ -174,25 +100,31 @@
         width: 170/@rem;
         height: 48/@rem;
         border: 2px solid #e7e6e6;
-        background-color: #f9f7f7;
+        background-color: #1b9fe2;
+        color: #fff;
+        border-radius: 6px;
         vertical-align: top;
         font-size: 20/@rem;
         line-height: 48/@rem;
         text-align: center;
         margin-left: 65/@rem;
         margin-right: 15/@rem;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .no-get-mes{
+        background-color: #ccc;
     }
     .mes{
         width: 133/@rem;
         height: 44/@rem;
-        margin-top: 4/@rem;
+        margin-top: 2/@rem;
     }
     .enter{
         width: 43/@rem;
         padding-top: 36/@rem;
         background-position: -136/@rem -75/@rem;
-        margin: 8/@rem 30/@rem 0 10/@rem;
-        
+        margin: 8/@rem 30/@rem 0 0;
     }
     .synopsis{
         width: 668/@rem;
@@ -221,8 +153,9 @@
         color: #FFFFFF;
         font-size: 22/@rem;
         line-height: 54/@rem;
-        margin: 40/@rem auto 84/@rem;
+        margin: 84/@rem auto 0;
         border-radius: 26/@rem;
+        margin-bottom: 60/@rem;
     }
     .cancel{
         margin: 0 auto 50/@rem;
@@ -362,7 +295,7 @@
         }
         .add-person{
             width: 104/@rem;
-            height: 36/@rem;
+            height: 40/@rem;
             margin: 20/@rem auto 0;
             line-height: 40/@rem;
             border: 2px solid #e7e6e6;
@@ -464,6 +397,14 @@
             margin-right: 29/@rem;
             vertical-align: bottom;
         }
+        .hidden{
+            display: none;
+        }
+        .pz{
+            width:auto;
+            height:auto;
+            max-width: 400/@rem;
+        }
         .pic{
             vertical-align: bottom;
             width: 132/@rem;
@@ -498,6 +439,7 @@
             overflow: hidden;
             height: 0 !important;
             background-position: -135/@rem -4/@rem;
+            position: relative;
         }
         .tip{
             display: inline-block;
@@ -505,17 +447,9 @@
             line-height: 34/@rem;
         }
     }
-    #school{
-        width: 593/@rem;
-    }
-    #name{
-        width: 155/@rem;
-    }
-    #tel{
-        width: 312/@rem;
-    }
     .margin-top{
         margin-top: 46/@rem;
+        
     }
     //所获荣誉的盒子
     .winbox{
@@ -554,15 +488,6 @@
                 z-index: 8;
             }
         }
-    }
-    
-    //新增
-    ul.play-info{
-        display: flex;
-        justify-content: space-around;
-        font-size: 20/@rem;
-        line-height: 30/@rem;
-        padding-top: 80/@rem;
     }
 }
 
