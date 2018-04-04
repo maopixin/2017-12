@@ -9,9 +9,6 @@
 }
 .news .news-box .news-item {
   border-bottom: 1px solid #eeeeee;
-}
-.news .news-box .news-item a {
-  display: block;
   padding: 0.25333333rem 0;
 }
 .news .news-box .news-item .news-t {

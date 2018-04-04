@@ -788,3 +788,28 @@
   margin: 0.42666667rem auto 1.24rem;
   background-size: cover;
 }
+.out_time {
+  height: 2.05333333rem;
+  background-color: #8C8C8C;
+  display: flex;
+}
+.out_time .ding {
+  height: 1.14666667rem;
+  width: 1.14666667rem;
+  border-radius: 0.57333333rem;
+  background: #efe4c8 url(../img/ding.jpg) no-repeat center center;
+  background-size: 0.49333333rem;
+  margin: auto 0.37333333rem;
+}
+.out_time .times {
+  margin: auto 0;
+  font-size: 0.34666667rem;
+  line-height: 0.64rem;
+  color: #efe4c8;
+}
+.out_time .times em {
+  display: block;
+}
+.play-all-info li {
+  max-height: 1.01333333rem;
+}

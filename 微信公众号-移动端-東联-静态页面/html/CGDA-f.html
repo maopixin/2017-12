@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<!-- 一比一像素还原 -->
+		<script src="./../js/dpr.js"></script>
+		<!-- 初始化样式 -->
+		<link rel="stylesheet" href="./../css/reset.css">
+		<!-- 工具类 -->
+		<link rel="stylesheet" href="./../css/tools.css">
+		<!-- 全局样式 -->
+		<link rel="stylesheet" href="./../css/index.css">
+		<!-- 当前页面的css -->
+		<link rel="stylesheet" href="./../css/cgda.css">
+	</head>
+
+	<body class="cgda">
+		<header class="cgda-head">
+			<!-- 广告 -->
+			<img src="./../img/AD.jpg" class="adr">
+			<!-- 链接选择 -->
+			<ul class="url-check clearfix">
+				<li class="active">
+					<a href="">首页</a>
+				</li>
+				<li>
+					<a href="">参赛选手</a>
+				</li>
+				<li>
+					<a href="">评委团队</a>
+				</li>
+				<li>
+					<a href="">联系我们</a>
+				</li>
+				<a class="apply" href="javascript:;">
+					立即报名
+				</a>
+			</ul>
+		</header>
+		<div class="content">
+			
+			<div class="out_time">
+				<span class="ding"></span>
+				<span class="times">
+					<em>距离活动结束还有：</em>
+					<em>28天2时38分28秒246</em>
+				</span>
+			</div>
+			
+			<ul class="play-all-info">
+				<li>
+					<div class="open_btn clearfix">
+						<span class="fl">大赛简介</span>
+						<span class="fr">></span>
+					</div>
+					<div class="info">
+						
+					</div>
+				</li>
+			</ul>
+			
+			<div class="cgda-title padd-t hei clearfix">
+				<span class="bgc-red">主题预告</span>
+				<span class="sprite-share mes">
+	                	消息
+	                </span>
+				<a href="javascript:;" class="fr more">全部>></a>
+			</div>
+			<ul class="month-list clearfix">
+				<li class="month-item fl">
+					<span class="sprite-share">1月</span>
+					<span>教育故事</span>
+				</li>
+				<li class="month-item fl">
+					<span class="sprite-share">1月</span>
+					<span>教育故事</span>
+				</li>
+				<li class="month-item fl">
+					<span class="sprite-share">1月</span>
+					<span>教育故事</span>
+				</li>
+				<li class="month-item fl">
+					<span class="sprite-share">1月</span>
+					<span>教育故事</span>
+				</li>
+			</ul>
+		</div>
+		<script>
+			// 切换
+			for(let i = 0; i < document.querySelectorAll('.palce-check li').length; i++) {
+				document.querySelectorAll('.palce-check li')[i].ontouchend = () => {
+					for(let s = 0; s < document.querySelectorAll('.palce-check li').length; s++) {
+						document.querySelectorAll('.palce-check li')[s].className = "";
+					};
+
+					document.querySelectorAll('.palce-check li')[i].className = "active";
+				}
+			}
+		</script>
+	</body>
+
+</html>
