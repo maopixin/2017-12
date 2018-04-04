@@ -841,10 +841,27 @@
     }
 }
 .play-all-info{
+    padding-bottom: 50/@rem;
     li{
         max-height: 76/@rem;
+        padding: 0 30/@rem;
+        overflow: hidden;
+        border-bottom: 1px solid #CCCCCC;
+        transition: .5s;
         .open_btn{
-            
+            font-size: 26/@rem;
+            line-height: 76/@rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        .sum_con{
+            padding-bottom: 30/@rem;
+            h5{
+                display: none;
+            }
+            strong{
+                font-size: 24/@rem;
+            }
         }
     }
 }

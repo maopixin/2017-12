@@ -21,6 +21,7 @@ body {
   background: #fff;
 }
 .sum_con {
+  display: none;
   margin: 0 35px;
   padding: 20px 0;
 }
