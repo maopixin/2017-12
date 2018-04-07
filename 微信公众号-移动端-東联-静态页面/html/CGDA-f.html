@@ -40,15 +40,15 @@
 			</ul>
 		</header>
 		<div class="content">
-			
+
 			<div class="out_time">
 				<span class="ding"></span>
 				<span class="times">
 					<em>距离活动结束还有：</em>
-					<em>28天2时38分28秒246</em>
+					<em id="outtime">28天2时38分28秒246</em>
 				</span>
 			</div>
-			
+
 			<ul class="play-all-info">
 				<li>
 					<div class="open_btn">
@@ -109,7 +109,7 @@
 					</div>
 				</li>
 			</ul>
-			
+
 			<div class="cgda-title padd-t hei clearfix">
 				<span class="bgc-red">主题预告</span>
 				<span class="sprite-share mes">
@@ -138,15 +138,52 @@
 		</div>
 		<script src="../js/jquery-3.2.1.js"></script>
 		<script>
-			$('.play-all-info').on('click','.open_btn',function(){
-				if($(this).parents('li').hasClass('active')){
+			$('.play-all-info').on('click', '.open_btn', function() {
+				if($(this).parents('li').hasClass('active')) {
 					$(this).parents('li').removeClass('active');
-					$(this).parents('li').css('max-height',76/75+'rem');
-				}else{
+					$(this).parents('li').css('max-height', 76 / 75 + 'rem');
+				} else {
 					$(this).parents('li').addClass('active');
-					$(this).parents('li').css('max-height',($(this).parents('li').find('.sum_con').height()+106)/75+'rem');
+					$(this).parents('li').css('max-height', ($(this).parents('li').find('.sum_con').height() + 106) / 75 + 'rem');
 				};
 			});
+
+			//倒计时
+			var _ordertimer = null;
+			var data = new Date();
+			function leftTimer(enddate) {
+				var leftTime = (new Date(enddate)) - new Date(); //计算剩余的毫秒数
+				var days = parseInt(leftTime / 1000 / 60 / 60 / 24, 10); //计算剩余的天数
+				var hours = parseInt(leftTime / 1000 / 60 / 60 % 24, 10); //计算剩余的小时
+				var minutes = parseInt(leftTime / 1000 / 60 % 60, 10); //计算剩余的分钟
+				var seconds = parseInt(leftTime / 1000 % 60, 10); //计算剩余的秒数
+				days = checkTime(days);
+				hours = checkTime(hours);
+				minutes = checkTime(minutes);
+				seconds = checkTime(seconds);
+				if(days >= 0 || hours >= 0 || minutes >= 0 || seconds >= 0) document.getElementById("outtime").innerHTML = days + "天" + hours + "小时" + minutes + "分" + seconds + "秒";
+				if(days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0) {
+					window.clearInterval(_ordertimer);
+					_ordertimer = null;
+				}
+			}
+
+			function checkTime(i) { //将0-9的数字前面加上0，例1变为01
+				if(i < 10) {
+					i = "0" + i;
+				}
+				return i;
+			}
+
+			function go(v) {
+				var date1 = new Date(),
+					data2 = new Date(v);
+				if(data2 < date1) return; //设置的时间小于现在时间退出
+				_ordertimer = setInterval(function() {
+					leftTimer(data2)
+				}, 1000);
+			}
+			go('2018-4-20 10:00:00');
 		</script>
 	</body>
 

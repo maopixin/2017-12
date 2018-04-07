@@ -14,26 +14,17 @@
 				<tr>
 					<td width="164" valign="top" class="bge9">
 						<ul class="sum_menu">
-							<li data-id = "1">
-								<a href="javascript:;" class="cur">大赛简介</a>
-							</li>
-							<li data-id = "2">
-								<a href="javascript:;">大赛简介</a>
+							<li>
+								<a href="#dataid=1" data-id = "1">大赛简介</a>
 							</li>
 							<li>
-								<a href="javascript:;">大赛简介</a>
-							</li>
-							<li>
-								<a href="javascript:;">大赛简介</a>
-							</li>
-							<li>
-								<a href="javascript:;">大赛简介</a>
+								<a href="#dataid=2" data-id = "2">大赛简介</a>
 							</li>
 						</ul>
 					</td>
 					<td>
 						<div class="sum_con" data-id="1">
-							<h5>大赛简介<a name="a01"></a></h5>
+							<h5>大赛简介1<a name="a01"></a></h5>
 							<p> <strong>一、奖项设置</strong></p>
 							<p>年度优秀移动开发讲师：10名</p>
 
@@ -56,7 +47,7 @@
 							<p>1.网友投票 30% 2.视频播放量 20% 3.专家评委 50%</p>
 						</div>
 						<div class="sum_con" data-id="2">
-							<h5>大赛简介<a name="a01"></a></h5>
+							<h5>大赛简介2<a name="a01"></a></h5>
 							<p> <strong>一、奖项设置</strong></p>
 							<p>年度优秀移动开发讲师：10名</p>
 
@@ -85,6 +76,29 @@
 	</body>
 	<script src="../../jquery-3.2.1.js"></script>
 	<script>
+		//获取search
+        $.getUrlParam = function (name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.hash.substr(1).match(reg);
+            if (r != null) return unescape(r[2]); return null;
+        }
+		
+		var dataId = $.getUrlParam("dataid") || 1;
+		console.log(dataId)
+		if($('.sum_menu li a')[dataId-1]){
+			$($('.sum_menu li a')[dataId-1]).addClass('cur');
+			$($('.sum_con')[dataId-1]).show();
+		}else{
+			$($('.sum_menu li a')[0]).addClass('cur');
+			$($('.sum_con')[0]).show();
+		};
+		$(document).on('click','.sum_menu li a',function(){
+			var eid = $(this).data('id');
+			$('.cur').removeClass('cur');
+			$(this).addClass('cur');
+			$('.sum_con').hide();
+			$($('.sum_con')[eid-1]).show();
+		});
 		
 	</script>
 </html>

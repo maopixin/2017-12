@@ -1,0 +1,66 @@
+@rem: 75rem;
+.info-bg {
+    background: url(../img/teacher-bg.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    color: #fff;
+    img {
+        width: 60/37.5rem;
+        border-radius: 400px;
+        border: 8px solid #fff;
+    }
+    span.use {
+        font-size: 32/@rem;
+        line-height: 64/@rem;
+    }
+    .use-name {
+        font-size: 28/@rem;
+        line-height: 64/@rem;
+        color: #919191;
+        color: hsla(0, 0%, 100%, .5);
+    }
+    .fans {
+        font-size: 32/@rem;
+        line-height: 60/@rem;
+    }
+}
+
+.info-tab {
+    margin: 20/@rem;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ddd;
+    li {
+        padding: 0 20/@rem;
+        font-size: 28/@rem;
+        line-height: 64/@rem;
+    }
+    .active {
+        color: #1B9FE2;
+    }
+}
+
+.teacher-bottom{
+    padding: 0 20/@rem;
+    .teacher-title {
+        font-size: 28/@rem;
+        line-height: 74/@rem;
+        &:before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 28/@rem;
+            background-color: #10be8b;
+            vertical-align: top;
+            margin-top: 23/@rem;
+            margin-right: 10px;
+        }
+    }
+    p{
+        color: #616161;
+    }
+}

@@ -1,0 +1,63 @@
+.info-bg {
+  background: url(../img/teacher-bg.png) no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  color: #fff;
+}
+.info-bg img {
+  width: 1.6rem;
+  border-radius: 400px;
+  border: 8px solid #fff;
+}
+.info-bg span.use {
+  font-size: 0.42666667rem;
+  line-height: 0.85333333rem;
+}
+.info-bg .use-name {
+  font-size: 0.37333333rem;
+  line-height: 0.85333333rem;
+  color: #919191;
+  color: rgba(255, 255, 255, 0.5);
+}
+.info-bg .fans {
+  font-size: 0.42666667rem;
+  line-height: 0.8rem;
+}
+.info-tab {
+  margin: 0.26666667rem;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ddd;
+}
+.info-tab li {
+  padding: 0 0.26666667rem;
+  font-size: 0.37333333rem;
+  line-height: 0.85333333rem;
+}
+.info-tab .active {
+  color: #1B9FE2;
+}
+.teacher-bottom {
+  padding: 0 0.26666667rem;
+}
+.teacher-bottom .teacher-title {
+  font-size: 0.37333333rem;
+  line-height: 0.98666667rem;
+}
+.teacher-bottom .teacher-title:before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 0.37333333rem;
+  background-color: #10be8b;
+  vertical-align: top;
+  margin-top: 0.30666667rem;
+  margin-right: 10px;
+}
+.teacher-bottom p {
+  color: #616161;
+}
