@@ -44,8 +44,8 @@
 			<div class="out_time">
 				<span class="ding"></span>
 				<span class="times">
-					<em>距离活动结束还有：</em>
-					<em id="outtime">28天2时38分28秒246</em>
+					<em id="end-box">距离活动结束还有：</em>
+					<em id="outtime"></em>
 				</span>
 			</div>
 
@@ -151,6 +151,7 @@
 			//倒计时
 			var _ordertimer = null;
 			var data = new Date();
+
 			function leftTimer(enddate) {
 				var leftTime = (new Date(enddate)) - new Date(); //计算剩余的毫秒数
 				var days = parseInt(leftTime / 1000 / 60 / 60 / 24, 10); //计算剩余的天数
@@ -165,6 +166,10 @@
 				if(days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0) {
 					window.clearInterval(_ordertimer);
 					_ordertimer = null;
+					setTimeout(function(){
+						$('#end-box').html('已结束');
+						$('#outtime').html('');
+					},1000);
 				}
 			}
 
@@ -175,15 +180,19 @@
 				return i;
 			}
 
-			function go(v) {
-				var date1 = new Date(),
-					data2 = new Date(v);
-				if(data2 < date1) return; //设置的时间小于现在时间退出
+			function go(time) {
+				var date1 = new Date(),data2 = new Date(time);
+				if(data2 < date1){
+					$('#end-box').html('已结束');
+					$('#outtime').html('');
+					return false;
+				}; //设置的时间小于现在时间退出
+				leftTimer(data2);
 				_ordertimer = setInterval(function() {
-					leftTimer(data2)
+					leftTimer(data2);
 				}, 1000);
-			}
-			go('2018-4-20 10:00:00');
+			};
+			go('2018-4-9 9:39:00');
 		</script>
 	</body>
 
