@@ -1,0 +1,68 @@
+.block_img {
+  display: block;
+  margin: 0.26666667rem auto;
+  width: 8rem;
+}
+.block_txt {
+  display: block;
+  text-align: center;
+  margin: 0.26666667rem 0;
+}
+.person {
+  text-indent: 2em;
+  font-weight: 600;
+  font-size: 0.31rem;
+}
+.alliance-title {
+  margin-bottom: 0.4rem;
+}
+ul.box {
+  padding: 0.4rem 0;
+}
+ul.list-box {
+  padding: 0.26666667rem 0.42666667rem;
+}
+.list-box li {
+  padding: 0.13333333rem 0;
+  text-indent: 2em;
+  color: #666;
+}
+dl.list-box {
+  padding: 0.26666667rem 0.42666667rem;
+  text-align: center;
+}
+dl dd,
+dl dt {
+  padding: 0.13333333rem 0;
+  color: #666;
+}
+.divide {
+  text-align: center;
+}
+.divide dt {
+  width: 3.66666667rem;
+  height: 0.48rem;
+  border: 0.02666667rem solid #1b9fe2;
+  border-bottom: 0;
+  text-align: center;
+  line-height: 0.72rem;
+  margin: 0.85333333rem auto 0;
+}
+.divide dt span {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: -0.72rem;
+}
+.divide dd {
+  display: inline-block;
+  vertical-align: top;
+  width: 2.72rem;
+  height: 0.58666667rem;
+  color: #fff;
+  line-height: 0.58666667rem;
+  margin: 0 0.4rem;
+  background-color: #1f9bda;
+}
+p.p-title {
+  margin-bottom: -0.5rem;
+}
