@@ -153,16 +153,15 @@
 			var data = new Date();
 
 			function leftTimer(enddate) {
-				var leftTime = (new Date(enddate)) - new Date(); //计算剩余的毫秒数
+				var leftTime =enddate.getTime()- new Date().getTime(); //计算剩余的毫秒数
 				var days = parseInt(leftTime / 1000 / 60 / 60 / 24, 10); //计算剩余的天数
 				var hours = parseInt(leftTime / 1000 / 60 / 60 % 24, 10); //计算剩余的小时
 				var minutes = parseInt(leftTime / 1000 / 60 % 60, 10); //计算剩余的分钟
 				var seconds = parseInt(leftTime / 1000 % 60, 10); //计算剩余的秒数
-				days = checkTime(days);
-				hours = checkTime(hours);
-				minutes = checkTime(minutes);
-				seconds = checkTime(seconds);
-				if(days >= 0 || hours >= 0 || minutes >= 0 || seconds >= 0) document.getElementById("outtime").innerHTML = days + "天" + hours + "小时" + minutes + "分" + seconds + "秒";
+				if(days >= 0 || hours >= 0 || minutes >= 0 || seconds >= 0){
+					var str = days + "天" + hours + "小时" + minutes + "分" + seconds + "秒";
+					$('#outtime').html(str);	
+				};
 				if(days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0) {
 					window.clearInterval(_ordertimer);
 					_ordertimer = null;
@@ -172,16 +171,17 @@
 					},1000);
 				}
 			}
-
+			
 			function checkTime(i) { //将0-9的数字前面加上0，例1变为01
 				if(i < 10) {
 					i = "0" + i;
 				}
-				return i;
+				return Number(i);
 			}
 
 			function go(time) {
-				var date1 = new Date(),data2 = new Date(time);
+				var date1 = new Date(),data2 = new Date(time.replace(/-/g,'/'));
+
 				if(data2 < date1){
 					$('#end-box').html('已结束');
 					$('#outtime').html('');
@@ -192,7 +192,8 @@
 					leftTimer(data2);
 				}, 1000);
 			};
-			go('2018-4-9 9:39:00');
+			go('2018-05-09 09:39:00');
+
 		</script>
 	</body>
 

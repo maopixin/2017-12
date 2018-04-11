@@ -1,0 +1,65 @@
+.box {
+  padding: 0.13333333rem;
+  font-size: 0.34666667rem !important;
+}
+.content {
+  width: 1050px;
+  border: solid 1px #e4ecf3;
+  padding: 12px;
+  background: #fff;
+}
+.video-list-box {
+  width: 100%;
+  border-radius: 0.13333333rem;
+  padding: 30px 0;
+}
+.video-list-box h3.title {
+  line-height: 42px;
+  color: #1B9FE2;
+  text-indent: 0.13333333rem;
+}
+.video-list-box ul.video-list {
+  border-top: 1px solid #ddd;
+}
+.video-list-box ul.video-list li {
+  padding: 0.26666667rem 10px;
+  line-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+.video-list-box ul.video-list li .video-title {
+  width: 70%;
+}
+.video-list-box ul.video-list li .video-date {
+  width: 20%;
+  text-align: center;
+}
+.video-play-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e5e5e5;
+  color: #919191;
+}
+.video-play-box .video-play-box-head {
+  width: 96%;
+  margin: 0 auto;
+  display: flex;
+  font-size: 0.4rem !important;
+  line-height: 1.33333333rem;
+  align-items: center;
+}
+.video-play-box .video-play-box-head .cancel {
+  margin-right: 60px;
+  line-height: 20px;
+}
+.video-play-box .video-play-box-content {
+  height: 88%;
+  width: 96%;
+  margin: 0 auto;
+  background-color: #000;
+}

@@ -14,12 +14,10 @@
 		<link rel="stylesheet" href="./../css/index.css">
 		<!-- 当前页面的css -->
 		<link rel="stylesheet" href="./../css/cgda.css">
-		
-		
-		
+
 		<link href="video-js.min.css" rel="stylesheet" type="text/css">
 		<script src="video.min.js"></script>
-		
+
 	</head>
 
 	<body class="cgda">
@@ -51,15 +49,15 @@
 		</header>
 		<div class="content">
 			<!--大赛简介-->
-				<video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" poster="" data-setup="{}">
-					<source src="https://samples.mplayerhq.hu/A-codecs/AAC/aacPlusDecoderCheckPackage_v2.1/bitstreams/File3.mp4" type='video/mp4' />
-					<source src="https://samples.mplayerhq.hu/ffmpeg-bugs/trac/ticket1430/Sam%20and%20Cocoa%20shaky%20original.webm" type='video/webm' />
-					<source src="https://samples.mplayerhq.hu/V-codecs/Theora/theora_testsuite/320x240.ogv" type='video/ogg' />
-					<track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track>
-					<!-- Tracks need an ending tag thanks to IE9 -->
-					<track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
-					<!-- Tracks need an ending tag thanks to IE9 -->
-				</video>
+			<video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" poster="" data-setup="{}">
+				<source src="https://samples.mplayerhq.hu/A-codecs/AAC/aacPlusDecoderCheckPackage_v2.1/bitstreams/File3.mp4" type='video/mp4' />
+				<source src="https://samples.mplayerhq.hu/ffmpeg-bugs/trac/ticket1430/Sam%20and%20Cocoa%20shaky%20original.webm" type='video/webm' />
+				<source src="https://samples.mplayerhq.hu/V-codecs/Theora/theora_testsuite/320x240.ogv" type='video/ogg' />
+				<track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track>
+				<!-- Tracks need an ending tag thanks to IE9 -->
+				<track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+				<!-- Tracks need an ending tag thanks to IE9 -->
+			</video>
 			<div class="cgda-title padd-t clearfix">
 				<span class="bgc-red">
                                                     大赛简介
@@ -280,7 +278,7 @@
 				<span class="bgc-red">参赛选手</span>
 				<a href="" class="more-t fr">全部>></a>
 			</div>
-			<ul class="player-list clearfix">
+			<ul class="player-list clearfix" id="player-box">
 				<li class="text_and_info_play_item">
 					<div class="text_and_info_play_item_head">
 						<img src="../img/test/test3.jpg" alt="" />
@@ -294,7 +292,7 @@
 						<div class="tickit_num">
 							票数：89
 						</div>
-						<div class="ticket_btn">
+						<div class="ticket_btn" data-id="1">
 							投票
 						</div>
 					</div>
@@ -305,16 +303,14 @@
 						<div class="open_all_btn">
 							<span class="open_all_btn_box">
 								<span class="open_text">详情</span>
-								<span class="btn-bg">
+							<span class="btn-bg">
 									<span></span>
-								</span>
+							</span>
 							</span>
 							<!--隐藏得文字  保留这句话的语境：-->
 						</div>
 						<p>
-							这句话的语境：当时到几点害死了红色的看了会书点开链接圣诞快乐季后赛的了得了大降温了色带架四
-							的介绍我得额度速递欧几里得激烈的健康了单号四大皆空超级快递回家可视电话放声大哭道具好三等奖
-							开会四大皆空发货速度尽快发货三等奖口红分开收到就好
+							这句话的语境：当时到几点害死了红色的看了会书点开链接圣诞快乐季后赛的了得了大降温了色带架四 的介绍我得额度速递欧几里得激烈的健康了单号四大皆空超级快递回家可视电话放声大哭道具好三等奖 开会四大皆空发货速度尽快发货三等奖口红分开收到就好
 						</p>
 					</div>
 				</li>
@@ -342,16 +338,14 @@
 						<div class="open_all_btn">
 							<span class="open_all_btn_box">
 								<span class="open_text">详情</span>
-								<span class="btn-bg">
+							<span class="btn-bg">
 									<span></span>
-								</span>
+							</span>
 							</span>
 							<!--隐藏得文字  保留这句话的语境：-->
 						</div>
 						<p>
-							这句话的语境：当时到几点害死了红色的看了会书点开链接圣诞快乐季后赛的了得了大降温了色带架四
-							的介绍我得额度速递欧几里得激烈的健康了单号四大皆空超级快递回家可视电话放声大哭道具好三等奖
-							开会四大皆空发货速度尽快发货三等奖口红分开收到就好
+							这句话的语境：当时到几点害死了红色的看了会书点开链接圣诞快乐季后赛的了得了大降温了色带架四 的介绍我得额度速递欧几里得激烈的健康了单号四大皆空超级快递回家可视电话放声大哭道具好三等奖 开会四大皆空发货速度尽快发货三等奖口红分开收到就好
 						</p>
 					</div>
 				</li>
@@ -379,16 +373,14 @@
 						<div class="open_all_btn">
 							<span class="open_all_btn_box">
 								<span class="open_text">详情</span>
-								<span class="btn-bg">
+							<span class="btn-bg">
 									<span></span>
-								</span>
+							</span>
 							</span>
 							<!--隐藏得文字  保留这句话的语境：-->
 						</div>
 						<p>
-							这句话的语境：当时到几点害死了红色的看了会书点开链接圣诞快乐季后赛的了得了大降温了色带架四
-							的介绍我得额度速递欧几里得激烈的健康了单号四大皆空超级快递回家可视电话放声大哭道具好三等奖
-							开会四大皆空发货速度尽快发货三等奖口红分开收到就好
+							这句话的语境：当时到几点害死了红色的看了会书点开链接圣诞快乐季后赛的了得了大降温了色带架四 的介绍我得额度速递欧几里得激烈的健康了单号四大皆空超级快递回家可视电话放声大哭道具好三等奖 开会四大皆空发货速度尽快发货三等奖口红分开收到就好
 						</p>
 					</div>
 				</li>
@@ -435,24 +427,75 @@
 				}
 			}
 		</script>
-		
+
 		<script type="text/javascript">
 			var myPlayer = videojs('example_video_1');
-			    videojs("example_video_1").ready(function(){
-			        var myPlayer = this;
-			        myPlayer.volume(0);
-			    });
-			    
-			    
-			    //详情打开的交互
-			    $(document).on('click',".open_all_btn_box",function(){
-			    		var father = $(this).parents('.text_and_info_play_item ');
-			    		if(father.hasClass('opened')){
-			    			father.removeClass('opened');
-			    		}else{
-			    			father.addClass('opened');
-			    		};
-			    });
+			videojs("example_video_1").ready(function() {
+				var myPlayer = this;
+				myPlayer.volume(0);
+			});
+
+			var box = document.getElementById('player-box');
+
+			box.ontouchend = function(event) {
+				var ev = event || window.event;
+				var ele = ev.target;
+				if($(ele).hasClass('open_all_btn_box') || $(ele).parent().hasClass('open_all_btn_box')) {
+					var father = $(ele).parents('.text_and_info_play_item ');
+					if(father.hasClass('opened')) {
+						father.removeClass('opened');
+					} else {
+						father.addClass('opened');
+					};
+				};
+				if($(ele).hasClass('ticket_btn')) {
+					var id = $(ele).data('id');
+					var _this = ele;
+					alert(id);
+					alert(_this);
+					return false;
+					methods.vote({
+						data: {
+							id: id
+						},
+						success: function(data) {
+							if(data.status.code === 0) {
+								dialog.toast('投票成功', 'success', 1000);
+								$(_this).prev().html('票数：' + data.data.ballot);
+							} else {
+								dialog.toast(data.status.msg, 'error', 1000);
+							}
+						},
+						error: function() {
+							dialog.toast('投票失败', 'error', 1000);
+						}
+					});
+				}
+			}
+
+			//			    var box = document.getElementById('player-box');
+			//			    
+			//			    box.ontouchend = function(ev){
+			//			    		var ele = ev.target;
+			//			    		if($(ele).hasClass('open_all_btn_box') || $(ele).parents('.open_all_btn_box')){
+			//			    			var father = $(ele).parents('.text_and_info_play_item ');
+			//				    		if(father.hasClass('opened')){
+			//				    			father.removeClass('opened');
+			//				    		}else{
+			//				    			father.addClass('opened');
+			//				    		};
+			//			    		}
+			//			    }
+
+			//详情打开的交互
+			//			    $(document).on('click',".open_all_btn_box",function(){
+			//			    		var father = $(this).parents('.text_and_info_play_item ');
+			//			    		if(father.hasClass('opened')){
+			//			    			father.removeClass('opened');
+			//			    		}else{
+			//			    			father.addClass('opened');
+			//			    		};
+			//			    });
 		</script>
 	</body>
 
