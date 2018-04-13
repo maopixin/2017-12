@@ -1,30 +1,71 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-}
-p {
-  margin: 0;
-  padding: 0;
-}
-html,
-body,
-form,
-fieldset,
-p,
-div,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  -webkit-text-size-adjust: 100%;
-}
-body {
-  background: url(../img/bg.jpg) no-repeat;
+.style_one {
+  background: url(../img/entry-bg1.jpg) no-repeat;
   background-size: cover;
+}
+.style_one .m-gift h2 {
+  background: url(../img/txt1.png) no-repeat;
+  background-size: 4.62666667rem;
+}
+.style_one .tick {
+  color: #F3B908;
+}
+.style_one .meet-page {
+  padding: 0.68rem 0 0 1.37333333rem;
+  height: 2rem;
+}
+.style_one .meet-page span {
+  display: block;
+}
+.style_one .meet-page div {
+  float: left;
+  min-width: 4rem;
+}
+.style_one .meet-page .y-t {
+  font-size: 0.29333333rem;
+  line-height: 0.48rem;
+  padding-bottom: 0.10666667rem;
+  color: #F3B908;
+}
+.style_one .meet-page .text {
+  font-size: 0.24rem;
+  line-height: 0.41333333rem;
+  color: #fff;
+}
+.style_two {
+  background: url(../img/entry-bg2.jpg) no-repeat;
+  background-size: cover;
+}
+.style_two .m-gift h2 {
+  background: url(../img/txt2.png) no-repeat;
+  background-size: 4.62666667rem;
+}
+.style_two .tick {
+  color: #fff;
+}
+.style_two .meet-page {
+  position: relative;
+}
+.style_two .meet-page span {
+  display: block;
+  text-align: center;
+  padding: 0 0.8rem;
+}
+.style_two .meet-page .y-t {
+  color: #d4ffff;
+  line-height: 0.61333333rem;
+}
+.style_two .meet-page .text {
+  color: #fff;
+}
+.style_two .meet-page:after {
+  content: '';
+  background: url(../img/border2.png) no-repeat;
+  background-size: 8.53333333rem;
+  position: absolute;
+  width: 8.53333333rem;
+  height: 1.68rem;
+  left: 0.73333333rem;
+  bottom: -0.53333333rem;
 }
 .m-gift {
   padding: 1.2rem 0 0 0;
@@ -41,8 +82,6 @@ body {
 }
 .m-gift h2 {
   text-indent: -13333333.32rem;
-  background: url(../img/txt.png) no-repeat;
-  background-size: 4.62666667rem;
   width: 4.62666667rem;
   height: 2.05333333rem;
   margin: 0 auto 0.76rem;
@@ -87,7 +126,6 @@ body {
   font-size: 0.45333333rem;
   line-height: 1.41333333rem;
   text-align: center;
-  color: #F3B908;
 }
 .gift-box .tick em {
   display: inline-block;
@@ -95,28 +133,6 @@ body {
   margin: 0 10px;
   font-size: 0.8rem;
   font-style: normal;
-}
-.gift-box .meet-page {
-  padding: 0.68rem 0 0 1.37333333rem;
-  height: 2rem;
-}
-.gift-box .meet-page span {
-  display: block;
-}
-.gift-box .meet-page div {
-  float: left;
-  min-width: 4rem;
-}
-.gift-box .meet-page .y-t {
-  font-size: 0.29333333rem;
-  line-height: 0.48rem;
-  padding-bottom: 0.10666667rem;
-  color: #F3B908;
-}
-.gift-box .meet-page .text {
-  font-size: 0.24rem;
-  line-height: 0.41333333rem;
-  color: #fff;
 }
 .foot {
   font-size: 0.24rem;
