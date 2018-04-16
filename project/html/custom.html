@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>团体定制</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="x5-cache" content="enable" /> 
+    <link rel="stylesheet" type="text/css" href="../css/custom.css">
+</head>
+<body>
+	<div id="union-box">
+		<div class="union-school">
+			<div class="apply-time">
+				<div class="apply-head">时间：2018-3-6~2018-3-9  </div>
+				<div class="apply-cancel">
+					<span>取消</span>
+					<i></i>
+				</div>
+			</div>
+			<div class="school-position">
+				<div class="position-text">
+					<span>主题：第十届中国教师大会</span>
+					<span>地区：北京</span>
+				</div>
+				<div class="position-text">
+					<span>单位：上海四中</span>
+					<span>人数：20</span>
+				</div>
+				<div class="position-text">
+					<span>专家：孙老师</span>
+					<span>形式：讲座</span>
+				</div>
+			</div>
+			<div class="self-item">
+				<span>报名人：王小军</span>
+				<span>职务：开发</span>
+				<span>手机：11111111111</span>
+			</div>
+			<div class="sure-btn">
+				<span>审核中</span>
+			</div>
+		</div>
+
+		<div class="union-school">
+			<div class="apply-time">
+				<div class="apply-head">时间：2018-3-6~2018-3-9  </div>
+				<div class="apply-cancel">
+					<span>取消</span>
+					<i></i>
+				</div>
+			</div>
+			<div class="school-position">
+				<div class="position-text">
+					<span>主题：第十届中国教师大会</span>
+					<span>地区：北京</span>
+				</div>
+				<div class="position-text">
+					<span>单位：上海四中</span>
+					<span>人数：20</span>
+				</div>
+				<div class="position-text">
+					<span>专家：孙老师</span>
+					<span>形式：讲座</span>
+				</div>
+			</div>
+			<div class="self-item">
+				<span>报名人：王小军</span>
+				<span>职务：开发</span>
+				<span>手机：11111111111</span>
+			</div>
+			<div class="sure-btn">
+				<span>审核通过</span>
+			</div>
+		</div>
+
+		<div class="union-school">
+			<div class="apply-time">
+				<div class="apply-head">时间：2018-3-6~2018-3-9  </div>
+				<div class="apply-cancel">
+					<span>取消</span>
+					<i></i>
+				</div>
+			</div>
+			<div class="school-position">
+				<div class="position-text">
+					<span>主题：第十届中国教师大会</span>
+					<span>地区：北京</span>
+				</div>
+				<div class="position-text">
+					<span>单位：上海四中</span>
+					<span>人数：20</span>
+				</div>
+				<div class="position-text">
+					<span>专家：孙老师</span>
+					<span>形式：讲座</span>
+				</div>
+			</div>
+			<div class="self-item">
+				<span>报名人：王小军</span>
+				<span>职务：开发</span>
+				<span>手机：11111111111</span>
+			</div>
+			<div class="sure-btn">
+				<span>定制成功</span>
+			</div>
+		</div>
+	</div>
+	<!-- 底部导航 start -->
+	<nav class="nav-item">
+		<div class="nav-home">
+			<i class="home-ico"></i>
+			<span>首页</span>
+		</div>
+		<div class="nav-oneDay">
+			<i class="oneDay-ico"></i>
+			<span>24小时课堂</span>
+		</div>
+		<div class="nav-apply">
+			<i class="apply-ico"></i>
+			<span>报名参加</span>
+		</div>
+		<div class="nav-enter">
+			<i class="enter-ico"></i>
+			<span>入驻联盟</span>
+		</div>
+		<div class="nav-personal">
+			<i class="personal-ico"></i>
+			<span>我的</span>
+		</div>
+	</nav>
+		<!-- 底部导航 end -->
+	<script type="text/javascript">
+		(function (win) {
+			var doc = win.document, html = doc.documentElement;
+			var baseWidth = 750;
+			var grids = baseWidth / 100;
+			var clientWidth = html.clientWidth || 320;
+			html.style.fontSize = clientWidth / grids + "px";
+			//var testDom = document.createElement("div");
+			var testDomWidth = 0;
+			var adjustRatio = 0;
+			//setTimeout(calcTestDom, 20);
+			var reCalc = function () {
+			  var newCW = html.clientWidth;
+			  if (newCW === clientWidth) {
+			    return
+			  }
+			  clientWidth = newCW;
+			  html.style.fontSize = newCW * (adjustRatio ? adjustRatio : 1) / grids + "px"
+			};
+			if (!doc.addEventListener) {
+			  return
+			}
+			var resizeEvt = "orientationchange" in win ? "orientationchange" : "resize";
+			win.addEventListener(resizeEvt, reCalc, false);
+			doc.addEventListener("DOMContentLoaded", reCalc, false)
+		})(window);
+    </script>
+    <!-- built files will be auto injected -->
+</body>
+</html>

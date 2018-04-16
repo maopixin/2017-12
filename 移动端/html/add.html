@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/global.css" />
+		<link rel="stylesheet" href="../css/add.css" />
+		<script>
+			var dpr = 1 / window.devicePixelRatio;
+			document.write('<meta name="viewport" content="width=device-width,initial-scale='+ dpr +',minimum-scale='+ dpr +',maximum-scale='+ dpr +',user-scalable=no" />');
+			var w = document.documentElement.clientWidth / 10;
+			var html = document.getElementsByTagName('html')[0];
+			html.style.fontSize = w + 'px';
+   		 </script>
+	</head>
+	<body>
+		<div class="add_wrap">
+			<div class="wrap">
+				<div class="add clearfix">
+					<div class="fl">添加参会人员</div>
+					<div class="clean fr">✘</div>
+				</div>
+				<div class="content">
+					<ul class="mes clearfix">
+						<li class="message fl">
+							<label for="user" class="name">姓名</label>
+							<input type="text" id="user" class="pane job" value="必填"/>
+						</li>
+						<li class="message fr">
+							<label for="job" class="name">职务</label>
+							<input type="text" id="job" class="pane job" value="选填"/>
+						</li>
+					</ul>
+					<ul class="mes clearfix">
+						<li class="message fl">
+							<label for="mail" class="name">邮箱</label>
+							<input type="text" id="mail" class="pane job" value="必填"/>
+						</li>
+						<li class="message fr">
+							<label for="phone" class="name">手机</label>
+							<input type="text" id="phone" class="pane job" value="必填"/>
+						</li>
+					</ul>
+					<div class="message">
+						<label for="code" class="user_code">身份证</label>
+						<input type="text" id="code" class="pane code" value="必填"/>
+					</div>
+					<div class="info clearfix">
+						<div class="fl">
+							<div class="name fl">性别</div>
+							<div class="sex fl">
+								<span class="check"></span>
+								<span class="man">男</span>
+							</div>
+							<div class="sex fl">
+								<span class="no_check"></span>
+								<span class="man">女</span>
+							</div>
+						</div>
+						<div class="fr">
+							<div class="user_code fl">使用会员卡</div>
+							<div class="sex fl">
+								<span class="check"></span>
+								<span class="man">是</span>
+							</div>
+							<div class="sex fl">
+								<span class="no_check check"></span>
+								<span class="man">否</span>
+							</div>
+						</div>
+					</div>
+					<div class="message report">
+						<label for="report" class="name">报到</label>
+						<input type="text" id="report" class="pane code" value="必填"/>
+					</div>
+					<div class="message report">
+						<div class="stay">
+							<label for="stay" class="name">住宿</label>
+							<input type="text" id="stay" class="pane code" value="选填"/>
+							<img src="../img/trash.png"/>
+						</div>
+						<div class="add_info">
+							<input type="button" class="add_btn" value="添加住宿"/>
+						</div>
+					</div>
+					<div class="message report">
+						<div class="stay">
+							<label for="eat" class="name">用餐</label>
+							<input type="text" id="eat" class="pane code" value="选填"/>
+							<img src="../img/trash.png"/>
+						</div>
+						<div class="add_info">
+							<div class="time_box">
+								<div class="morning fl">
+									<span class="check"></span>
+									<span class="time">早</span>
+								</div>
+								<div class="morning fl">
+									<span class="no_check"></span>
+									<span class="time">中</span>
+								</div>
+								<div class="morning fl">
+									<span class="no_check"></span>
+									<span class="time">晚</span>
+								</div>
+							</div>
+							<input type="button" class="add_btn" value="添加用餐"/>
+							
+						</div>
+					</div>
+					<div class="message report">
+						<label for="car" class="name">乘车</label>
+						<input type="text" id="car" class="pane code" value="选填"/>
+					</div>
+					<div class="message report">
+						<label for="back" class="name">返程</label>
+						<input type="text" id="back" class="pane code" value="选填"/>
+					</div>
+					<div class="sure_btn">
+						<input type="button" class="sure" value="确定" />
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

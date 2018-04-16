@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#canvas{
+				display: block;
+				border: 1px solid #000;
+				margin: 100px auto;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="canvas" width="600" height="600"></canvas>
+	</body>
+	
+	<script>
+		const cvs = document.getElementById('canvas');
+		const ct2 = cvs.getContext('2d');
+		ct2.translate(0.5,0.5)
+
+		ct2.moveTo(10,10);
+		ct2.lineTo(10,40);
+		ct2.lineTo(40,40);
+		ct2.lineTo(10,10);
+		ct2.stroke()
+		
+		
+		let gc = ct2.createLinearGradient(100,100,20,20);
+		gc.addColorStop(0,'red');
+		gc.addColorStop(1,'white')
+		
+		
+		ct2.fillStyle = gc;
+		ct2.fillRect(100,100,20,20);
+		
+		ct2.strokeStyle = 'red'
+		ct2.strokeRect(200,200,100,100);
+	</script>
+</html>

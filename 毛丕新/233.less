@@ -1,0 +1,101 @@
+@rem:75rem;
+* {
+        margin: 0;
+        padding: 0;
+        list-style: none
+    }
+   
+.select-date-box{
+    position: fixed;
+    z-index: 999;
+    color: ;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .select-head{
+        height: 104/@rem;
+        line-height: 104/@rem;
+        position: relative;
+        .head-l{
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 26/@rem;
+            width: 120/@rem;
+            text-align: center;
+        }
+        .head-c{
+            text-align: center;
+            font-size: 36/@rem;
+        }
+    }
+    .week-box{
+        height: 52/@rem;
+        line-height: 52/@rem;
+        font-size: 20/@rem;
+        display: flex;
+        justify-content: space-around;
+        .color{
+            color: #1B9FE2;
+        }
+    }
+    .select-date{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 156/@rem;
+        overflow-x: scroll;
+        .date-title{
+            font-size: 30/@rem;
+            line-height: 116/@rem;
+            text-align: center;
+            border: 1px solid #CACACA;
+        }
+        ul{
+            overflow: hidden;
+            li{
+                float: left;
+                width: 14.2857%;
+                height: 126/@rem;
+                box-sizing: border-box;
+                font-size: 28/@rem;
+                line-height: 126/@rem;
+                border-radius: 6/@rem;
+                text-align: center;
+            }
+            .active{
+                background-color: #1B9FE2 !important;
+                color: #fff;
+                position: relative;
+                .day_num{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    line-height: 42/@rem;   
+                 }
+            }
+            .path{
+                background-color: #ddeffb;
+            }
+            .pass{
+                color: #ccc;
+            }
+        }
+    }
+}
+.black_bg{
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+

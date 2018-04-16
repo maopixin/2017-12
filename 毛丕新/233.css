@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.select-date-box {
+  position: fixed;
+  z-index: 999;
+  color: ;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s;
+  background-color: #fff;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.select-date-box .select-head {
+  height: 1.38666667rem;
+  line-height: 1.38666667rem;
+  position: relative;
+}
+.select-date-box .select-head .head-l {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.34666667rem;
+  width: 1.6rem;
+  text-align: center;
+}
+.select-date-box .select-head .head-c {
+  text-align: center;
+  font-size: 0.48rem;
+}
+.select-date-box .week-box {
+  height: 0.69333333rem;
+  line-height: 0.69333333rem;
+  font-size: 0.26666667rem;
+  display: flex;
+  justify-content: space-around;
+}
+.select-date-box .week-box .color {
+  color: #1B9FE2;
+}
+.select-date-box .select-date {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 2.08rem;
+  overflow-x: scroll;
+}
+.select-date-box .select-date .date-title {
+  font-size: 0.4rem;
+  line-height: 1.54666667rem;
+  text-align: center;
+  border: 1px solid #CACACA;
+}
+.select-date-box .select-date ul {
+  overflow: hidden;
+}
+.select-date-box .select-date ul li {
+  float: left;
+  width: 14.2857%;
+  height: 1.68rem;
+  box-sizing: border-box;
+  font-size: 0.37333333rem;
+  line-height: 1.68rem;
+  border-radius: 0.08rem;
+  text-align: center;
+}
+.select-date-box .select-date ul .active {
+  background-color: #1B9FE2 !important;
+  color: #fff;
+  position: relative;
+}
+.select-date-box .select-date ul .active .day_num {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  line-height: 0.56rem;
+}
+.select-date-box .select-date ul .path {
+  background-color: #ddeffb;
+}
+.select-date-box .select-date ul .pass {
+  color: #ccc;
+}
+.black_bg {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}

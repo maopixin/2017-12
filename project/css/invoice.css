@@ -1,0 +1,158 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #fbfbfb;
+}
+li{
+	list-style: none;
+}
+#invoice-box{
+	font-size: .16rem;
+}
+#invoice-box li{
+	margin-top: .2rem;
+	padding-top: 0.2rem;
+	background-color: #fff;
+}
+#invoice-box .invoice-head{
+	height: .43rem;
+	line-height: .43rem;
+	font-size: .18rem;
+}
+.invoice-head .invoice-time{
+	padding-left: .62rem;
+	float: left;
+}
+.invoice-head .invoice-time span{
+	color: #666666;
+}
+.invoice-head .invoice-time span:nth-of-type(2){
+	margin-right: .4rem;
+}
+.invoice-head .delete-btn{
+	overflow: hidden;
+}
+.delete-btn i{
+	float: right;
+	display: inline-block;
+	width: .24rem;
+	height: .26rem;
+	background: url(../image/deleteIco.png) no-repeat center center;
+	background-size: cover;
+	margin-top: .1rem;
+	margin-right: 1.04rem;
+}
+.invoice-content{
+	background-color: #fff;
+	padding-left: .62rem;
+	padding-top: 0.06rem;
+	padding-bottom: .1rem;
+}
+.invoice-content p{
+	color: #6c6c6c;
+	line-height: .32rem;
+}
+#invoice-box .invoice-money{
+	height: .45rem;
+	line-height: .45rem;
+	background-color: #fff;
+	border-top: 1px solid #dcdcdc;
+	border-bottom: 1px solid #dcdcdc;
+}
+.invoice-money .amount{
+	color: #6c6c6c;
+	float: right;
+	margin-right: 1.14rem;
+}
+
+.nav-item{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 1.03rem;
+	border-top: 1px solid #d4d7dd;
+	font-size: .16rem;
+}
+.nav-item .nav-apply{
+	width: 1.66rem;
+	height: 1.66rem;
+	border:1px solid #d4d7dd;
+	border-radius: 50%;
+	text-align: center;
+	position: relative;
+	top: -.24rem;
+	margin:0 auto;
+	background-color: #fff;
+}
+.nav-item .nav-apply i {
+	display: block;
+	width: .65rem;
+	height: .42rem;
+	background: url(../image/apply.png) no-repeat;
+	background-size: cover;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: .4rem;
+}
+.nav-item .nav-apply span,.nav-item .nav-home span,.nav-item .nav-oneDay span{
+	color: #8c8c8c;
+}
+.nav-item .nav-home,.nav-item .nav-oneDay{
+	float: left;
+	margin-top: .16rem;
+}
+.nav-item .nav-home{
+	padding-right: .4rem;
+	padding-left: .4rem;
+}
+.nav-item .nav-home i{
+	display: block;
+	width: .42rem;
+	height: .41rem;
+	background: url(../image/home.png) no-repeat;
+	background-size: cover;
+	margin: 0 auto;
+}
+.nav-item .nav-oneDay i{
+	display: block;
+	width: .4rem;
+	height: .41rem;
+	background: url(../image/oneDay.png) no-repeat ;
+	background-size: cover;
+	margin: 0 auto;
+}
+.nav-item .nav-enter{
+	position: absolute;
+	top: .16rem;
+	right: 1.5rem;
+}
+.nav-item .nav-enter span{
+	color: #8c8c8c;
+}
+.nav-item .nav-enter i {
+	display: block;
+	width: .42rem;
+	height: .42rem;
+	background: url(../image/enter.png) no-repeat center center;
+	background-size: cover;
+	margin: 0 auto;
+}
+.nav-item .nav-personal{
+	position: absolute;
+	top: .16rem;
+	right: .46rem;
+}
+.nav-item .nav-personal span{
+	color: #8c8c8c;
+}
+.nav-item .nav-personal i {
+	display: block;
+	width: .41rem;
+	height: .43rem;
+	background: url(../image/personal.png) no-repeat center center;
+	background-size: cover;
+	margin: 0 auto;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/global.css" />
+		<link rel="stylesheet" href="../css/entry.css" />
+		<script>
+			var dpr = 1 / window.devicePixelRatio;
+			document.write('<meta name="viewport" content="width=device-width,initial-scale='+ dpr +',minimum-scale='+ dpr +',maximum-scale='+ dpr +',user-scalable=no" />');
+			var w = document.documentElement.clientWidth / 10;
+			var html = document.getElementsByTagName('html')[0];
+			html.style.fontSize = w + 'px';
+   		 </script>
+	</head>
+	<body>
+		<div class="register_box">
+			<h1 class="title">注册</h1>
+			<h2 class="tips">
+				<img src="../img/tips.png"/>
+			</h2>
+			<div class="register_page">
+				<ul>
+					<li class="res_list">
+						<label for="mail" class="word">邮箱</label>
+						<input type="text" id="mail" class="mail" placeholder="填写你常用的邮箱作为登录账号">
+					</li>
+					<li class="res_list">
+						<label for="user" class="word user">用户名</label>
+						<input type="text" id="user" class="mail" placeholder="中英文均可，最长18个英文或9个汉字">
+					</li>
+					<li class="res_list">
+						<label for="password" class="word">密码</label>
+						<input type="password" id="password" class="mail" placeholder="6-20位英文、数字、符号至少两两组合、区分大小写">
+					</li>
+					<li class="res_list">
+						<label for="code" class="word user">验证码</label>
+						<input type="text" id="code" class="mail code" placeholder="验证码">
+						<img class="code_pic" src="../img/code.png"  />
+					</li>
+				</ul>
+			</div>
+			<div class="agreement clearfix">
+				<div class="check_box fl">
+					<input type="text" class="un_login" />
+					<img class="check_btn" src="../img/check_ico.png" />
+				</div>
+				<p class="text fl">我已阅读并同意《服务协议》</p>
+				<div class="reg_btn">
+					<input type="submit" class="subm" value="注册"/>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

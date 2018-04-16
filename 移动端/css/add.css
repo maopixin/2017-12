@@ -1,0 +1,145 @@
+.add_wrap {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-x: scroll;
+}
+.add_wrap .wrap {
+  width: 100%;
+}
+.add_wrap .add {
+  height: 0.86666667rem;
+  color: #615f5f;
+  font-size: 0.26666667rem;
+  line-height: 0.86666667rem;
+  box-sizing: border-box;
+  background-color: #f0f3f5;
+  border: 0.04rem solid #e5e5e5;
+  padding: 0rem 0.78666667rem 0rem 0.30666667rem;
+}
+.content {
+  position: relative;
+  padding-top: 0.93333333rem;
+  background-color: #fff;
+  border: 0.02666667rem solid #eeeeee;
+}
+.content .mes {
+  margin: 0rem 0.56rem 0.58666667rem 0rem;
+}
+.content .message {
+  font-size: 0.26666667rem;
+  line-height: 0.64rem;
+}
+.content .message .job {
+  width: 2.64rem;
+}
+.content .name {
+  margin: 0rem 0.33333333rem;
+  letter-spacing: 0.14666667rem;
+}
+.content .pane {
+  width: 2.88rem;
+  height: 0.62666667rem;
+  color: #858282;
+  font-size: 0.26666667rem;
+  line-height: 0.62666667rem;
+  text-indent: 0.22666667rem;
+  background-color: #faf6f6;
+  border-top: 1px solid #a39c9e;
+  border-left: 1px solid #a39c9e;
+  box-shadow: 1px 1px 0px #ddd8d9 inset;
+}
+.content .user_code {
+  margin: 0rem 0.33333333rem;
+}
+.content .code {
+  width: 6.93333333rem;
+}
+.content .check {
+  width: 0.33333333rem;
+  height: 0.32rem;
+  background: url(../img/check.jpg) no-repeat;
+  background-size: 0.33333333rem;
+  display: inline-block;
+  vertical-align: top;
+}
+.content .no_check {
+  width: 0.33333333rem;
+  height: 0.32rem;
+  background: url(../img/no-check.jpg) no-repeat;
+  background-size: 0.33333333rem;
+  display: inline-block;
+  vertical-align: top;
+}
+.content .info {
+  margin: 0.53333333rem 2.21333333rem 0.46666667rem 0rem;
+  line-height: 0.32rem;
+  font-size: 0.26666667rem;
+}
+.content .info .sex .man {
+  margin: 0rem 0.09333333rem 0rem 0.08rem;
+  display: inline-block;
+}
+.content .report {
+  margin-bottom: 0.65333333rem;
+}
+.content .time_box {
+  margin-top: 0.26666667rem;
+}
+.content .time_box .morning {
+  margin-right: 0.73333333rem;
+  line-height: 0.37333333rem;
+}
+.content .stay img {
+  width: 0.42666667rem;
+  margin: 0.08rem 0rem 0rem 0.26666667rem;
+}
+.content .add_info {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1.6rem;
+}
+.content .add_btn {
+  margin-top: 0.26666667rem;
+  width: 1.10666667rem;
+  height: 0.37333333rem;
+  font-size: 0.21333333rem;
+  line-height: 0.37333333rem;
+  color: #000000;
+  text-align: center;
+  border-radius: 0.04rem;
+  border: 3px solid #e7e6e6;
+  background-color: #f8f6f6;
+}
+.content .scroll {
+  width: 0.09333333rem;
+  height: 100%;
+  border: 0.02666667rem solid #dcdcdc;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.content .scroll .scroll_btn {
+  background-color: #d2d2d2;
+  height: 4.25333333rem;
+  margin-top: 0.44rem;
+}
+.sure_btn {
+  display: flex;
+  justify-content: center;
+  padding: 0.18666667rem 0rem 1.8rem 0rem;
+}
+.sure_btn .sure {
+  width: 4.58666667rem;
+  height: 0.68rem;
+  color: #fff;
+  background-color: #1b9fe2;
+  letter-spacing: 0.26666667rem;
+  font-size: 0.29333333rem;
+  line-height: 0.68rem;
+  border-radius: 0.4rem;
+}

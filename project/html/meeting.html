@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的会议</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="x5-cache" content="enable" /> 
+    <link rel="stylesheet" type="text/css" href="../css/meeting.css">
+</head>
+<body>	
+	<div id="meeting-box">
+		<div class="meeting-audit">
+			<div class="meeting-time">
+				<div class="time-title">会议时间：2018-3-6~2018-3-9</div>
+				<div class="cancel-item">
+					<i class="delete-ico"></i>
+					<span>取消</span>
+				</div>
+			</div>
+			<div class="audit-content">
+				<div class="content-left">
+					<span>会议名称：第十届中国教师大会</span>
+					<span>参会单位：上海四中</span>
+				</div>
+				<div class="content-right">
+					<span>地区：北京</span>
+					<span>人数：20</span>
+				</div>
+			</div>
+			<div class="audit-btn">
+				<span>审核中</span>
+			</div>
+		</div>
+
+		<div class="meeting-audit pdt54">
+			<div class="meeting-time">
+				<div class="time-title">会议时间：2018-3-6~2018-3-9</div>
+				<div class="cancel-item">
+					<span>取消</span>
+					<i class="delete-ico"></i>
+				</div>
+			</div>
+			<div class="audit-content">
+				<div class="content-left">
+					<span>会议名称：第十届中国教师大会</span>
+					<span>参会单位：上海四中</span>
+				</div>
+				<div class="content-right">
+					<span>地区：北京</span>
+					<span>人数：20</span>
+				</div>
+			</div>
+			<div class="audit-btn">
+				<span>确认信息</span>
+			</div>
+		</div>
+
+		<div class="meeting-audit pdt57">
+			<div class="meeting-time">
+				<div class="time-title">会议时间：2018-3-6~2018-3-9</div>
+				<div class="cancel-item">
+					<span>取消</span>
+					<i class="delete-ico"></i>
+				</div>
+			</div>
+			<div class="audit-content">
+				<div class="content-left">
+					<span>会议名称：第十届中国教师大会</span>
+					<span>参会单位：上海四中</span>
+				</div>
+				<div class="content-right">
+					<span>地区：北京</span>
+					<span>人数：20</span>
+				</div>
+			</div>
+			<div class="audit-btn">
+				<span>上传凭证</span>
+			</div>
+		</div>
+
+		<div class="meeting-audit pdt54">
+			<div class="meeting-time">
+				<div class="time-title">会议时间：2018-3-6~2018-3-9</div>
+				<div class="cancel-item">
+					<span>取消</span>
+					<i class="delete-ico"></i>
+				</div>
+			</div>
+			<div class="audit-content">
+				<div class="content-left">
+					<span>会议名称：第十届中国教师大会</span>
+					<span>参会单位：上海四中</span>
+				</div>
+				<div class="content-right">
+					<span>地区：北京</span>
+					<span>人数：20</span>
+				</div>
+			</div>
+			<div class="audit-btn">
+				<span>报名成功</span>
+			</div>
+		</div>
+	</div>
+	<!-- 底部导航 start -->
+	<nav class="nav-item">
+		<div class="nav-home">
+			<i class="home-ico"></i>
+			<span>首页</span>
+		</div>
+		<div class="nav-oneDay">
+			<i class="oneDay-ico"></i>
+			<span>24小时课堂</span>
+		</div>
+		<div class="nav-apply">
+			<i class="apply-ico"></i>
+			<span>报名参加</span>
+		</div>
+		<div class="nav-enter">
+			<i class="enter-ico"></i>
+			<span>入驻联盟</span>
+		</div>
+		<div class="nav-personal">
+			<i class="personal-ico"></i>
+			<span>我的</span>
+		</div>
+	</nav>
+		<!-- 底部导航 end -->
+	<script type="text/javascript">
+		(function (win) {
+			var doc = win.document, html = doc.documentElement;
+			var baseWidth = 750;
+			var grids = baseWidth / 100;
+			var clientWidth = html.clientWidth || 320;
+			html.style.fontSize = clientWidth / grids + "px";
+			//var testDom = document.createElement("div");
+			var testDomWidth = 0;
+			var adjustRatio = 0;
+			//setTimeout(calcTestDom, 20);
+			var reCalc = function () {
+			  var newCW = html.clientWidth;
+			  if (newCW === clientWidth) {
+			    return
+			  }
+			  clientWidth = newCW;
+			  html.style.fontSize = newCW * (adjustRatio ? adjustRatio : 1) / grids + "px"
+			};
+			if (!doc.addEventListener) {
+			  return
+			}
+			var resizeEvt = "orientationchange" in win ? "orientationchange" : "resize";
+			win.addEventListener(resizeEvt, reCalc, false);
+			doc.addEventListener("DOMContentLoaded", reCalc, false)
+		})(window);
+    </script>
+    <!-- built files will be auto injected -->
+</body>
+</html>

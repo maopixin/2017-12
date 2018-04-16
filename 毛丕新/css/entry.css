@@ -1,0 +1,300 @@
+.login_page {
+  width: 100%;
+  margin-top: 2.21333333rem;
+}
+.login_page .logo img {
+  display: block;
+  margin: 0 auto;
+  width: 4.02666667rem;
+}
+.login_page .tips {
+  margin: 0.42666667rem 0rem 0.56rem 0rem;
+}
+.login_page .tips img {
+  width: 4.61333333rem;
+  display: block;
+  margin: 0 auto;
+}
+.login {
+  margin-right: 0.58666667rem;
+}
+.login .input_box {
+  margin: 0.21333333rem 0rem 0rem 0.54666667rem;
+}
+.login .input_box .acc_num,
+.login .input_box .pwd {
+  width: 8.82666667rem;
+  height: 1.12rem;
+  border-radius: 0.10666667rem;
+  border: 0.01333333rem solid #d2d2d2;
+  font-size: 0.37333333rem;
+  line-height: 1.12rem;
+  text-indent: 1.10666667rem;
+  color: #9e9c9c;
+}
+.login .acc_num {
+  background: url(../img/account_ico.png) 0.17333333rem 0.32rem no-repeat;
+  background-size: 0.52rem;
+}
+.login .pwd {
+  background: url(../img/password_ico.png) 0.17333333rem 0.28rem no-repeat;
+  background-size: 0.50666667rem;
+}
+.login .register {
+  font-size: 0.4rem;
+  line-height: 0.42666667rem;
+  margin: 0.49333333rem 0rem;
+  display: flex;
+  justify-content: flex-end;
+  color: #229cf9;
+}
+.login .sign_box {
+  margin-left: 0.49333333rem;
+}
+.login .sign_box .sign {
+  width: 8.92rem;
+  height: 1.4rem;
+  background-color: #229cf9;
+  color: #fff;
+  text-align: center;
+  font-size: 0.34666667rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.56rem;
+}
+.login .s_login {
+  position: relative;
+}
+.login .m_login {
+  font-size: 0.4rem;
+  line-height: 0.57333333rem;
+  color: #229cf9;
+  margin: 0.25333333rem 0.25333333rem 0rem 0.6rem;
+}
+.login .m_login .check_btn {
+  display: block;
+  width: 0.44rem;
+  position: absolute;
+  top: 0.13333333rem;
+  left: 0.06666667rem;
+}
+.login .m_login .forget {
+  color: #229cf9;
+}
+.login .un_login {
+  margin-top: 0.12rem;
+  width: 0.4rem;
+  height: 0.34666667rem;
+  border-top: 1px solid #a39c9e;
+  border-left: 1px solid #a39c9e;
+  box-shadow: 1px 1px 0px #ddd8d9 inset;
+  background-color: #faf6f6;
+}
+.login .remember {
+  display: inline-block;
+  margin-left: 0.2rem;
+}
+.ports {
+  margin-top: 2.76rem;
+}
+.ports .other {
+  margin-left: 0.4rem;
+}
+.ports .line {
+  margin-top: 0.61333333rem;
+  width: 3.16rem;
+  border: 0.01333333rem solid #b0b0b0;
+}
+.ports .text {
+  font-size: 0.34666667rem;
+  line-height: 1.28rem;
+  color: #a3a1a1;
+  margin: 0rem 0.04rem 0rem 0.25333333rem;
+}
+.ports .pic img {
+  width: 1.18666667rem;
+}
+.ports .pic .weix,
+.ports .pic .qq,
+.ports .pic .phone {
+  margin-right: 1.62666667rem;
+}
+.ports .pic .phone {
+  margin-left: 1.41333333rem;
+}
+.forgetpwd {
+  width: 100%;
+}
+.forgetpwd .mailbox {
+  margin-top: 5.42666667rem;
+}
+.forgetpwd .mailbox .word {
+  font-size: 0.37333333rem;
+  line-height: 1.14666667rem;
+  color: #676767;
+  letter-spacing: 0.2rem;
+  padding-left: 0.4rem;
+}
+.forgetpwd .mailbox .mail {
+  width: 7.4rem;
+  height: 1.12rem;
+  font-size: 0.29333333rem;
+  line-height: 1.12rem;
+  border-radius: 0.10666667rem;
+  border: 0.01333333rem solid #d2d2d2;
+  text-indent: 0.42666667rem;
+  margin-bottom: 1.05333333rem;
+}
+.submitbox {
+  display: flex;
+  justify-content: center;
+}
+.submitbox .submit {
+  background-color: #1b9fe2;
+  color: #fff;
+  border-radius: 0.4rem;
+  width: 4.58666667rem;
+  height: 0.66666667rem;
+  font-size: 0.29333333rem;
+  line-height: 0.66666667rem;
+  text-align: center;
+  letter-spacing: 0.26666667rem;
+}
+.pwd_box {
+  margin: 5.42666667rem 0rem 0rem 0.54666667rem;
+}
+.pwd_box .new {
+  width: 8.85333333rem;
+  height: 1.12rem;
+  color: #585858;
+  border-radius: 0.10666667rem;
+  border: 0.01333333rem solid #d2d2d2;
+  font-size: 0.37333333rem;
+  line-height: 1.12rem;
+  text-indent: 0.26666667rem;
+}
+.pwd_box .new .change {
+  font-size: 0.29333333rem;
+  color: #9e9c9c;
+  width: 5.33333333rem;
+  margin-left: 0.66666667rem;
+}
+.pwd_box .ms {
+  margin: 0.44rem 0rem 1.17333333rem 0rem;
+}
+.jump_page {
+  margin-top: 5.42666667rem;
+  font-size: 0.29333333rem;
+}
+.jump_page .jump_text {
+  display: flex;
+  justify-content: center;
+  line-height: 0.37333333rem;
+  color: #9e9c9c;
+  margin-bottom: 0.65333333rem;
+}
+.jump_page .time_box {
+  display: flex;
+  justify-content: center;
+}
+.jump_page .time {
+  width: 1.04rem;
+  height: 1.04rem;
+  background-color: #229cf9;
+  line-height: 1.04rem;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+}
+.register_box {
+  width: 100%;
+  margin-top: 2.74666667rem;
+}
+.register_box .title {
+  display: flex;
+  justify-content: center;
+  font-size: 0.69333333rem;
+  color: #229cf9;
+  font-weight: 400;
+  letter-spacing: 0.69333333rem;
+}
+.register_box .tips {
+  margin: 0.42666667rem 0rem 0.56rem 0rem;
+}
+.register_box .tips img {
+  display: block;
+  margin: 0 auto ;
+  width: 4.61333333rem;
+}
+.register_page .res_list {
+  margin-top: 0.18666667rem;
+}
+.register_page .res_list .word {
+  font-size: 0.37333333rem;
+  line-height: 1.14666667rem;
+  color: #676767;
+  letter-spacing: 0.2rem;
+  padding-left: 0.4rem;
+}
+.register_page .res_list .mail {
+  width: 7.4rem;
+  height: 1.12rem;
+  color: #9e9c9c;
+  font-size: 0.29333333rem;
+  line-height: 1.12rem;
+  border-radius: 0.10666667rem;
+  border: 0.01333333rem solid #d2d2d2;
+  text-indent: 0.42666667rem;
+}
+.register_page .res_list .user {
+  letter-spacing: 0rem;
+}
+.register_page .res_list .code {
+  width: 3.52rem;
+  margin-right: 1.06666667rem;
+}
+.register_page .res_list .code_pic {
+  padding-top: 0.21333333rem;
+  width: 2.94666667rem;
+}
+.agreement {
+  margin-top: 1.46666667rem;
+}
+.agreement .check_box {
+  padding-left: 0.6rem;
+  margin-top: -0.13333333rem;
+  position: relative;
+}
+.agreement .check_box .un_login {
+  width: 0.4rem;
+  height: 0.34666667rem;
+  border-top: 1px solid #a39c9e;
+  border-left: 1px solid #a39c9e;
+  box-shadow: 1px 1px 0px #ddd8d9 inset;
+  background-color: #faf6f6;
+}
+.agreement .check_box .check_btn {
+  position: absolute;
+  top: 0.70666667rem;
+  left: 0.66666667rem;
+  width: 0.44rem;
+}
+.agreement .text {
+  color: #229cf9;
+  line-height: 1.44rem;
+  font-size: 0.4rem;
+  margin-left: 0.37333333rem;
+}
+.agreement .reg_btn {
+  margin-left: 0.49333333rem;
+}
+.agreement .reg_btn .subm {
+  width: 8.92rem;
+  height: 1.4rem;
+  letter-spacing: 0.53333333rem;
+  font-size: 0.53333333rem;
+  line-height: 1.4rem;
+  color: #fff;
+  background-color: #229CF9;
+  display: flex;
+  justify-content: center;
+}

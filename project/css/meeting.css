@@ -1,0 +1,177 @@
+#meeting-box{
+	font-size: .16rem;
+}
+#meeting-box .meeting-audit{
+	margin-top: .2rem;
+	padding-top: 0.2rem;
+	background-color: #fff;
+}
+.meeting-audit .meeting-time{
+	font-size: .18rem;
+	height: .43rem;
+	line-height: .43rem;
+	padding:0 .6rem;
+	overflow: hidden;
+}
+.meeting-time .time-title{
+	color: #666;
+	float: left;
+}
+.meeting-time .cancel-item{
+	float: right;
+	padding-right: .44rem;
+}
+.meeting-time .cancel-item span{
+	float: right;
+	color: #666;
+}
+.meeting-time .cancel-item .delete-ico{
+	float: right;
+	width:.24rem;
+	height: .26rem;
+	background:url(../image/deleteIco.png) no-repeat;
+	background-size: cover;
+	margin-top:0.085rem;
+	margin-left: .19rem;
+}
+.meeting-audit .audit-content{
+	overflow: hidden;
+	padding-left: .6rem;
+	line-height: .32rem;
+	padding-top:.2rem;
+	padding-bottom: .24rem;
+	background-color: #fff;
+}
+.audit-content .content-left{
+	float: left;
+	width:4.2rem;
+	margin-left: 2px;
+}
+.audit-content .content-left span{
+	display: block;
+	color: #6c6c6c;
+}
+.audit-content .content-right{
+	float: left;
+}
+.audit-content .content-right span{
+	display: block;
+	color: #6c6c6c;
+}
+.audit-btn{
+	height: .54rem;
+	border-top:1px solid #dcdcdc;
+	border-bottom:1px solid #dcdcdc;
+	background-color: #fff;
+}
+#meeting-box .audit-btn span{
+	width: 1.2rem;
+	height: .36rem;
+	line-height: .36rem;
+	border:1px solid #e7e6e6;
+	border-radius: 2px;
+	text-align: center;
+	color: #6c6c6c;
+	margin-top: 0.09rem;
+	float: right;
+	margin-right: .74rem;
+	font-size: .12rem;
+	background-image: linear-gradient(180deg,#fff,#ccc);
+}
+
+#meeting-box .pdt54{
+	padding-top: .54rem;
+}
+#meeting-box .pdt57{
+	padding-top: .57rem;
+}
+
+.nav-item{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 1.03rem;
+	border-top: 1px solid #d4d7dd;
+	font-size: .16rem;
+}
+.nav-item .nav-apply{
+	width: 1.66rem;
+	height: 1.66rem;
+	border:1px solid #d4d7dd;
+	border-radius: 50%;
+	text-align: center;
+	position: relative;
+	top: -.24rem;
+	margin:0 auto;
+	background-color: #fff;
+}
+.nav-item .nav-apply i {
+	display: block;
+	width: .65rem;
+	height: .42rem;
+	background: url(../image/apply.png) no-repeat;
+	background-size: cover;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: .4rem;
+}
+.nav-item .nav-apply span,.nav-item .nav-home span,.nav-item .nav-oneDay span{
+	color: #8c8c8c;
+}
+.nav-item .nav-home,.nav-item .nav-oneDay{
+	float: left;
+	margin-top: .16rem;
+}
+.nav-item .nav-home{
+	padding-right: .4rem;
+	padding-left: .4rem;
+}
+.nav-item .nav-home i{
+	display: block;
+	width: .42rem;
+	height: .41rem;
+	background: url(../image/home.png) no-repeat;
+	background-size: cover;
+	margin: 0 auto;
+}
+.nav-item .nav-oneDay i{
+	display: block;
+	width: .4rem;
+	height: .41rem;
+	background: url(../image/oneDay.png) no-repeat ;
+	background-size: cover;
+	margin: 0 auto;
+}
+.nav-item .nav-enter{
+	position: absolute;
+	top: .16rem;
+	right: 1.5rem;
+}
+.nav-item .nav-enter span{
+	color: #8c8c8c;
+}
+.nav-item .nav-enter i {
+	display: block;
+	width: .42rem;
+	height: .42rem;
+	background: url(../image/enter.png) no-repeat center center;
+	background-size: cover;
+	margin: 0 auto;
+}
+.nav-item .nav-personal{
+	position: absolute;
+	top: .16rem;
+	right: .46rem;
+}
+.nav-item .nav-personal span{
+	color: #8c8c8c;
+}
+.nav-item .nav-personal i {
+	display: block;
+	width: .41rem;
+	height: .43rem;
+	background: url(../image/personal.png) no-repeat center center;
+	background-size: cover;
+	margin: 0 auto;
+}

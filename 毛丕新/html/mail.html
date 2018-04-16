@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/global.css" />
+		<link rel="stylesheet" href="../css/entry.css" />
+		<script>
+			var dpr = 1 / window.devicePixelRatio;
+			document.write('<meta name="viewport" content="width=device-width,initial-scale='+ dpr +',minimum-scale='+ dpr +',maximum-scale='+ dpr +',user-scalable=no" />');
+			var w = document.documentElement.clientWidth / 10;
+			var html = document.getElementsByTagName('html')[0];
+			html.style.fontSize = w + 'px';
+   		 </script>
+	
+	</head>
+	<body>
+		<div class="forgetpwd">
+			<div class='mailbox'>
+				<label for="mail" class="word">邮箱</label>
+				<input type="text" id="mail" class="mail" placeholder="请输入您注册账号时使用的邮箱">
+			</div>
+			<div class="submitbox">
+				<input type="submit" class="submit" value="提交" />
+			</div>
+		</div>
+	</body>
+</html>

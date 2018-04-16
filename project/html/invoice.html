@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的发票</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="x5-cache" content="enable" /> 
+    <link rel="stylesheet" type="text/css" href="../css/invoice.css">
+</head>
+<body>
+	<ul id="invoice-box">
+		<li>
+			<div class="invoice-head">
+				<div class="invoice-time">
+					<span>2018-3-6</span>
+					<span>15:34 </span>
+					<span>发票状态：未开票</span>
+				</div>
+				<div class="delete-btn">
+					<i></i>
+				</div>
+			</div>
+			<div class="invoice-content">
+				<p>发票类型：纸质发票</p>
+				<p>发票抬头：北京东联在线文化传媒有限责任公司</p>
+				<p>发票内容：会议费</p>
+				<p>纳税人识别号：99999999999999L</p>
+			</div>
+			<div class="invoice-money">
+				<div class="amount">开票金额：￥300元</div>
+			</div>
+		</li>
+
+		<li>
+			<div class="invoice-head">
+				<div class="invoice-time">
+					<span>2018-3-6</span>
+					<span>15:34 </span>
+					<span>发票状态：未开票</span>
+				</div>
+				<div class="delete-btn">
+					<i></i>
+				</div>
+			</div>
+			<div class="invoice-content">
+				<p>发票类型：纸质发票</p>
+				<p>发票抬头：北京东联在线文化传媒有限责任公司</p>
+				<p>发票内容：会议费</p>
+				<p>纳税人识别号：99999999999999L</p>
+			</div>
+			<div class="invoice-money">
+				<div class="amount">开票金额：￥500元</div>
+			</div>
+		</li>
+
+		<li>
+			<div class="invoice-head">
+				<div class="invoice-time">
+					<span>2018-3-6</span>
+					<span>15:34 </span>
+					<span>发票状态：未开票</span>
+				</div>
+				<div class="delete-btn">
+					<i></i>
+				</div>
+			</div>
+			<div class="invoice-content">
+				<p>发票类型：纸质发票</p>
+				<p>发票抬头：北京东联在线文化传媒有限责任公司</p>
+				<p>发票内容：会议费</p>
+				<p>纳税人识别号：99999999999999L</p>
+			</div>
+			<div class="invoice-money">
+				<div class="amount">开票金额：￥500元</div>
+			</div>
+		</li>
+	</ul>
+	
+	<!-- 底部导航 start -->
+	<nav class="nav-item">
+		<div class="nav-home">
+			<i class="home-ico"></i>
+			<span>首页</span>
+		</div>
+		<div class="nav-oneDay">
+			<i class="oneDay-ico"></i>
+			<span>24小时课堂</span>
+		</div>
+		<div class="nav-apply">
+			<i class="apply-ico"></i>
+			<span>报名参加</span>
+		</div>
+		<div class="nav-enter">
+			<i class="enter-ico"></i>
+			<span>入驻联盟</span>
+		</div>
+		<div class="nav-personal">
+			<i class="personal-ico"></i>
+			<span>我的</span>
+		</div>
+	</nav>
+	<!-- 底部导航 end -->
+	<script type="text/javascript">
+		(function (win) {
+			var doc = win.document, html = doc.documentElement;
+			var baseWidth = 750;
+			var grids = baseWidth / 100;
+			var clientWidth = html.clientWidth || 320;
+			html.style.fontSize = clientWidth / grids + "px";
+			//var testDom = document.createElement("div");
+			var testDomWidth = 0;
+			var adjustRatio = 0;
+			//setTimeout(calcTestDom, 20);
+			var reCalc = function () {
+			  var newCW = html.clientWidth;
+			  if (newCW === clientWidth) {
+			    return
+			  }
+			  clientWidth = newCW;
+			  html.style.fontSize = newCW * (adjustRatio ? adjustRatio : 1) / grids + "px"
+			};
+			if (!doc.addEventListener) {
+			  return
+			}
+			var resizeEvt = "orientationchange" in win ? "orientationchange" : "resize";
+			win.addEventListener(resizeEvt, reCalc, false);
+			doc.addEventListener("DOMContentLoaded", reCalc, false)
+		})(window);
+    </script>
+    <!-- built files will be auto injected -->
+</body>
+</html>
