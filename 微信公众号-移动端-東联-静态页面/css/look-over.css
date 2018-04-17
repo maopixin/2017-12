@@ -1,0 +1,52 @@
+.look-over-box {
+  font-size: 0.29333333rem;
+  line-height: 0.58666667rem;
+  padding: 0.73333333rem 0.4rem 1.33333333rem;
+  background-color: #fff;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.flex {
+  display: flex;
+}
+.ti2 {
+  text-indent: 2em;
+}
+.title-margin {
+  margin-top: 0.26666667rem;
+}
+.person-list {
+  line-height: 0.74666667rem;
+  text-align: center;
+}
+.person-list div {
+  white-space: nowrap;
+  overflow: hidden;
+}
+.person-list .l-t {
+  line-height: 0.50666667rem;
+  background-color: #faf6f6;
+}
+.person-list .l1 {
+  width: 1.6rem;
+}
+.person-list .l2 {
+  width: 2.45333333rem;
+}
+.person-list .l3 {
+  width: 3.70666667rem;
+}
+.person-list .l4 {
+  flex: 1;
+}
+.img-list-block img {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.53333333rem;
+}
