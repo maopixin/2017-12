@@ -33,7 +33,40 @@
 				<a href="http://account.dljy.com/user/login/logout">退出登录</a>
 			</div>
 		</div>
-		
+		<span class="d">77</span>
+		<span class="d">77</span>
+		<span class="d">77</span>
+		<span class="d">77</span>
+		<span class="d">77</span>
+		<span class="d">77</span>
+		<style>
+			.d{
+				display: inline-block;
+				border: 1px solid #000;
+				margin: 100px 200px;
+			}
+		</style>
 	</body>
+	<script src="../jquery-3.2.1.js"></script>
+	<script>
+		
+		mineBoxInit('.d');
+		
+		
+		function mineBoxInit(ele){
+			$(ele).mouseover(function(){
+				console.log($(this).offset())
+				$('.user-jump-box').css({
+					top:$(this).offset().top+30,
+					left:$(this).offset().left-139
+				})
+				$('.user-jump-box').show();
+			});
+			$(ele).mouseout(function(){
+				$('.user-jump-box').hide();
+			});
+		};
+		
+	</script>
 </html>
 
