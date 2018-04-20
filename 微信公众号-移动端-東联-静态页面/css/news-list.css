@@ -1,0 +1,82 @@
+.news-alliance .news-alliance-list-box {
+  background-color: #f5f8fa;
+  padding: 1.06666667rem 0.4rem;
+}
+.news-alliance .news-alliance-list-box .news-alliance-list {
+  border: 2px solid #e4ecf3;
+  background: #fff;
+  padding: 0.42666667rem;
+  margin-bottom: 20px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 0.10666667rem;
+  overflow: hidden;
+}
+.news-alliance .news-alliance-list-box .news-alliance-list li {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f5f5f5;
+}
+.news-alliance .news-alliance-list-box .news-alliance-list li .article-metas {
+  overflow: hidden;
+}
+.news-alliance .news-alliance-list-box .news-alliance-list li .article-metas .date {
+  height: 1.25333333rem;
+  width: 1.25333333rem;
+  text-align: center;
+  color: #919191;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+}
+.news-alliance .news-alliance-list-box .news-alliance-list li .article-metas .date .day {
+  padding-top: 0.13333333rem;
+  font-size: 0.45333333rem;
+  line-height: 0.53333333rem;
+}
+.news-alliance .news-alliance-list-box .news-alliance-list li .article-metas .date .month {
+  font-size: 0.34666667rem;
+}
+.news-alliance .news-alliance-list-box .news-alliance-list li .article-metas .metas-body {
+  padding-left: 1.68rem;
+}
+.news-alliance .news-alliance-list-box .news-alliance-list li .article-metas .metas-body p {
+  margin-bottom: 0;
+  font-size: 0.32rem;
+}
+.news-alliance .news-alliance-list-box .news-alliance-list li .article-metas .metas-body .title {
+  font-size: 0.45333333rem;
+  line-height: 0.53333333rem;
+}
+.news-alliance .news-alliance-list-box .news-alliance-list li .img-box {
+  margin-top: 0.53333333rem;
+}
+.news-alliance .news-alliance-list-box .news-alliance-list li .img-box img {
+  display: block;
+  width: 100%;
+}
+.news-alliance .news-alliance-list-box .news-alliance-list li .content {
+  font-size: 0.34666667rem;
+  margin-top: 0.53333333rem;
+  color: #919191;
+}
+.news-alliance .news-alliance-list-box .breadcrumb {
+  background-color: #f5f5f5;
+  padding: 18px 32px;
+  margin-bottom: 44px;
+  list-style: none;
+  border-radius: 4px;
+}
+.news-alliance .news-alliance-list-box .breadcrumb span {
+  display: inline-block;
+  font-size: 0.37333333rem;
+  color: #919191;
+}
+.news-alliance .news-alliance-list-box .article-text img {
+  margin: 0.26666667rem auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
