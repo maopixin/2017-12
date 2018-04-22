@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!-- 一比一像素还原 -->
+		<script src="./../js/dpr.js"></script>
+		<!-- 初始化样式 -->
+		<link rel="stylesheet" href="./../css/reset.css">
+		<!-- 工具类 -->
+		<link rel="stylesheet" href="./../css/tools.css">
+		<!-- 全局样式 -->
+		<link rel="stylesheet" href="./../css/index.css">
+		<!-- 当前页面的css -->
+		<link rel="stylesheet" href="../css/serve.css" />
+	</head>
+
+	<body>
+		<ul class="question-list">
+			<li>
+				<a href="">東联教育研究院常见问题？</a>
+			</li>
+		</ul>
+		<ul class="answer-list">
+			<li>
+				<h3 class="q">
+					<span class="q_name">1.常见问题</span>
+					<span class="mark"></span>
+				</h3>
+				<div class="a">德行教育  精心筛选珍贵国学经典，如汉字宫、弟子规等，在孩子天性最好时刻种上礼德智慧之种，从小培养孩子优秀美德，养成良好的生活习惯，提升孩子阅读、礼仪、涵养，明智立志。</div>
+			</li>
+			<li>
+				<h3 class="q">
+					<span class="q_name">1.常见问题</span>
+					<span class="mark"></span>
+				</h3>
+				<div class="a">德行教育  精心筛选珍贵国学经典，如汉字宫、弟子规等，在孩子天性最好时刻种上礼德智慧之种，从小培养孩子优秀美德，养成良好的生活习惯，提升孩子阅读、礼仪、涵养，明智立志。</div>
+			</li>
+		</ul>
+	</body>
+	<script src="../js/jquery-3.2.1.js"></script>
+	<script>
+		$('.answer-list li').click(function(event){
+			var ev = event || window.event;
+			if($(this).hasClass('open') &&$(ev.target).hasClass('q')){
+				$(this).removeClass('open');
+				console.log($(this).find('.a').height())
+				$(this).css({
+					maxHeight:'1.38666667rem'
+				})
+			}else{
+				$(this).addClass('open');
+				$(this).css({
+					maxHeight:$(this).find('.a').height()/75+140/75+'rem'
+				})
+			}
+		})
+	</script>
+</html>

@@ -1,0 +1,84 @@
+@rem:75rem;
+
+.search-box-serve{
+    background: url(../img/search-box.jpg) no-repeat;
+    background-size: cover;
+    height: 88/@rem;
+    display: flex;
+    display: -webkit-flex;
+    input{
+        margin:auto 84/@rem;
+        width: 620/@rem;
+        height: 50/@rem;
+        line-height: 50/@rem;
+        font-size: 34/@rem;
+    }
+}
+.content{
+    padding: 30/@rem;
+    .p{
+        padding: 40/@rem 0;
+        span{
+            display: block;
+            font-size: 30/@rem;
+            line-height: 50/@rem;
+        }
+    }
+}
+.question-list{
+    padding: 30/@rem 0;
+    li{
+        height: 80/@rem;
+        line-height: 80/@rem;
+        margin-bottom: 5/@rem;
+        text-indent: 88/@rem;
+        font-size: 34/@rem;
+        background:#f0f1f6 url(../img/question.jpg) no-repeat 44/@rem center;
+        background-size: 25/@rem;
+        a{
+            display: block;
+            
+        }
+    }
+}
+.answer-list{
+    padding: 30/@rem;
+    li{
+        box-sizing: border-box;
+        padding: 30/@rem 0;
+        border-bottom: 1px solid #ccc;
+        max-height: 104/@rem;
+        overflow: hidden;
+        transition: .5s;
+    }
+    .q{
+        display: flex;
+        display: -webkit-flex;
+        font-size: 34/@rem;
+        line-height: 50/@rem;
+        color: #1B9FE2;
+    }
+    .a{
+        font-size: 26/@rem;
+        line-height: 40/@rem;
+        color: #666;
+        margin-top: 20/@rem;
+    }
+    .mark{
+        width: 20/@rem;
+        height: 23/@rem;
+        margin: auto 10/@rem;
+        background: url(../img/mark.jpg) no-repeat;
+        background-size: cover;
+        transition: .5s;
+    }
+    .open{
+        .mark{
+            transform:rotate(180deg);
+            -ms-transform:rotate(180deg);     /* IE 9 */
+            -moz-transform:rotate(180deg);    /* Firefox */
+            -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+            -o-transform:rotate(180deg);
+        }
+    }
+}

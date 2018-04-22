@@ -55,6 +55,10 @@
 	alliance-child-page-open.html			幼教联盟公约详细页-
 	alliance-school-page-open.html			学校联盟公约详细页-
 	
+	cloud.html   			云国学机
+	serve.html              客服中心
+	serve-open.html    客服中心详情页（有js）
+	
 	mine-info.html										个人信息
 
  -img   图片文件夹
