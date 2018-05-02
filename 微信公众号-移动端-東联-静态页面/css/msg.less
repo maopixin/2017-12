@@ -1,0 +1,54 @@
+@rem:75rem;
+
+.msg-title{
+    display: flex;
+    justify-content: space-around;
+    height: 88/@rem;
+    background-color: #f3f3f3;
+    font-size: 30/@rem;
+    line-height: 86/@rem;
+    li{
+        color: #666666;
+        padding: 0 6/@rem;
+        border-bottom: 2/@rem solid #f3f3f3;
+    }
+    .active{
+        border-bottom: 2/@rem solid #1b9fe2;
+        color: #1b9fe2;
+    }
+}
+.msg-list{
+    padding: 40/@rem 30/@rem;
+    li{
+        max-height: 80/@rem;
+        border-bottom: 1px solid #b5b5b5;
+        overflow: hidden;
+        transition: max-height 0.2s;
+    }
+    .over{
+        padding: 30/@rem;
+        border: 1px solid #666;
+        background-color: #f5f8fa;
+        font-size: 26/@rem;
+        .text{
+            text-indent: 2em;
+        }
+    }
+    .msg-info{
+        display: flex;
+        justify-content: space-between;
+        font-size: 24/@rem;
+        line-height: 80/@rem;
+        h3{
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+        }
+        .blue{
+            color: #1b9fe2;
+        }
+        time{
+            font-size: 26/@rem;
+        }
+    }
+}

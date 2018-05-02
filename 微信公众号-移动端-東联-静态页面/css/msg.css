@@ -1,0 +1,52 @@
+.msg-title {
+  display: flex;
+  justify-content: space-around;
+  height: 1.17333333rem;
+  background-color: #f3f3f3;
+  font-size: 0.4rem;
+  line-height: 1.14666667rem;
+}
+.msg-title li {
+  color: #666666;
+  padding: 0 0.08rem;
+  border-bottom: 0.02666667rem solid #f3f3f3;
+}
+.msg-title .active {
+  border-bottom: 0.02666667rem solid #1b9fe2;
+  color: #1b9fe2;
+}
+.msg-list {
+  padding: 0.53333333rem 0.4rem;
+}
+.msg-list li {
+  max-height: 1.06666667rem;
+  border-bottom: 1px solid #b5b5b5;
+  overflow: hidden;
+  transition: max-height 0.2s;
+}
+.msg-list .over {
+  padding: 0.4rem;
+  border: 1px solid #666;
+  background-color: #f5f8fa;
+  font-size: 0.34666667rem;
+}
+.msg-list .over .text {
+  text-indent: 2em;
+}
+.msg-list .msg-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.32rem;
+  line-height: 1.06666667rem;
+}
+.msg-list .msg-info h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.msg-list .msg-info .blue {
+  color: #1b9fe2;
+}
+.msg-list .msg-info time {
+  font-size: 0.34666667rem;
+}
