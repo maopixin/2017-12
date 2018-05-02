@@ -1,0 +1,65 @@
+section {
+  padding: 0.4rem;
+  font-size: 0.37333333rem;
+  line-height: 1.16rem;
+}
+input {
+  font-size: 0.37333333rem;
+  line-height: 1.16rem;
+}
+.input_box {
+  border-bottom: 1px solid #d8d8d8;
+  display: flex;
+}
+.input_box label {
+  width: 2rem;
+  text-align: justify;
+  height: 1.16rem;
+  overflow: hidden;
+}
+.input_box label:after {
+  content: ".";
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  height: 0;
+}
+.input_box input {
+  width: auto !important;
+  margin-left: 0.53333333rem;
+  flex: 1;
+}
+.input_box #getMes {
+  padding: 0 0.34666667rem;
+  border: 1px solid #1b9fe2;
+  margin: auto 0;
+  line-height: 0.8rem;
+  height: 0.8rem;
+  color: #1b9fe2;
+  border-radius: 0.8rem;
+  font-size: 0.32rem;
+  text-align: center;
+  width: 2rem;
+}
+a.input_box {
+  border-bottom: none;
+}
+a.input_box img {
+  width: 0.44rem;
+  height: 0.38666667rem;
+  margin: auto 0;
+  margin-right: 0.26666667rem;
+}
+a.input_box span {
+  color: #1b9fe2;
+}
+#btn {
+  width: 9.2rem;
+  height: 1.17333333rem;
+  line-height: 1.17333333rem;
+  text-align: center;
+  background-color: #1b9fe2;
+  color: #fff;
+  border-radius: 0.58666667rem;
+  margin-top: 0.8rem;
+}

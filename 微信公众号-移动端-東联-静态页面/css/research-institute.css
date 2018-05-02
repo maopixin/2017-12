@@ -1,0 +1,204 @@
+.ad {
+  display: block;
+}
+.ad img {
+  width: 10rem;
+}
+.yjy-title {
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+  font-size: 0.37333333rem;
+  text-indent: 1.01333333rem;
+  background-color: #f5f5f5;
+  background-repeat: no-repeat;
+  background-position: 0.42666667rem center;
+}
+.t1 {
+  background-image: url('../img/yjy2.jpg');
+  background-size: 0.4rem;
+}
+.t2 {
+  background-image: url('../img/yjy3.jpg');
+  background-size: 0.4rem;
+}
+.t3 {
+  background-image: url('../img/yjy5.jpg');
+  background-size: 0.4rem;
+}
+.yjy-list {
+  display: flex;
+  padding-top: 0.85333333rem;
+  justify-content: space-around;
+}
+.yjy-list li {
+  width: 2.66666667rem;
+  height: 1.24rem;
+  line-height: 1.16rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.32rem;
+  margin-bottom: 0.98666667rem;
+}
+.yjy-list li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.yjy-list .l1 {
+  background-image: url('../img/yjy6.jpg');
+  background-size: cover;
+}
+.yjy-list .l2 {
+  background-image: url('../img/yjy7.jpg');
+  background-size: cover;
+}
+.yjy-list .l3 {
+  background-image: url('../img/yjy8.jpg');
+  background-size: cover;
+}
+.yjy-list2 {
+  display: flex;
+  padding-top: 0.85333333rem;
+  justify-content: space-around;
+}
+.yjy-list2 li {
+  width: 2.66666667rem;
+  height: 1.24rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.32rem;
+  margin-bottom: 0.98666667rem;
+}
+.yjy-list2 li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-top: 0.24rem;
+}
+.yjy-list2 li a span {
+  display: block;
+  font-size: 0.29333333rem;
+  line-height: 0.4rem;
+}
+.yjy-list2 .l1 {
+  background-image: url('../img/yjy9.jpg');
+  background-size: cover;
+}
+.yjy-list2 .l2 {
+  background-image: url('../img/yjy10.jpg');
+  background-size: cover;
+}
+.yjy-list2 .l3 {
+  background-image: url('../img/yjy11.jpg');
+  background-size: cover;
+}
+.title-list {
+  display: flex;
+  height: 1.18666667rem;
+  line-height: 1.18666667rem;
+  font-size: 0.32rem;
+  color: #000;
+  text-align: center;
+  border-bottom: 1px solid #1b9fe2;
+}
+.title-list li {
+  width: 2.96rem;
+  height: 1.18666667rem;
+}
+.title-list .t-1 {
+  color: #fff;
+  background-color: #1b9fe2;
+}
+.artical {
+  padding: 0.53333333rem 0.4rem;
+}
+.artical .center-title {
+  line-height: 1.06666667rem;
+  font-size: 0.4rem;
+  text-align: center;
+}
+.artical p {
+  font-size: 0.34666667rem;
+  line-height: 0.53333333rem;
+  padding: 0.26666667rem 0;
+}
+.artical p span {
+  color: #000;
+  font-weight: 700;
+}
+.artical .a-title {
+  color: #1b9fe2;
+  font-size: 0.34666667rem;
+  line-height: 0.42666667rem;
+  padding: 0.26666667rem 0;
+}
+.artical .blue {
+  color: #1b9fe2;
+}
+.artical img {
+  display: block;
+  width: 9.2rem;
+  margin: 0.26666667rem 0;
+}
+.news-alliance-list-box {
+  background-color: #f5f8fa;
+  padding: 1.06666667rem 0.4rem;
+}
+.news-alliance-list-box .news-alliance-list {
+  border: 2px solid #e4ecf3;
+  background: #fff;
+  padding: 0.42666667rem;
+  margin-bottom: 20px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 0.10666667rem;
+  overflow: hidden;
+}
+.news-alliance-list-box .news-alliance-list li {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f5f5f5;
+}
+.news-alliance-list-box .news-alliance-list li .article-metas {
+  overflow: hidden;
+}
+.news-alliance-list-box .news-alliance-list li .article-metas .date {
+  height: 1.25333333rem;
+  width: 1.25333333rem;
+  text-align: center;
+  color: #919191;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+}
+.news-alliance-list-box .news-alliance-list li .article-metas .date .day {
+  padding-top: 0.13333333rem;
+  font-size: 0.45333333rem;
+  line-height: 0.53333333rem;
+}
+.news-alliance-list-box .news-alliance-list li .article-metas .date .month {
+  font-size: 0.34666667rem;
+}
+.news-alliance-list-box .news-alliance-list li .article-metas .metas-body {
+  padding-left: 1.68rem;
+}
+.news-alliance-list-box .news-alliance-list li .article-metas .metas-body p {
+  margin-bottom: 0;
+  font-size: 0.32rem;
+}
+.news-alliance-list-box .news-alliance-list li .article-metas .metas-body .title {
+  font-size: 0.45333333rem;
+  line-height: 0.53333333rem;
+}
+.news-alliance-list-box .news-alliance-list li .img-box {
+  margin-top: 0.53333333rem;
+}
+.news-alliance-list-box .news-alliance-list li .img-box img {
+  display: block;
+  width: 100%;
+}
+.news-alliance-list-box .news-alliance-list li .content {
+  font-size: 0.34666667rem;
+  margin-top: 0.53333333rem;
+  color: #919191;
+}
