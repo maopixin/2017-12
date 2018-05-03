@@ -8,9 +8,23 @@
     font-size: 30/@rem;
     line-height: 86/@rem;
     li{
+        position: relative;
         color: #666666;
         padding: 0 6/@rem;
         border-bottom: 2/@rem solid #f3f3f3;
+        span{
+            position: absolute;
+            top: 12/@rem;
+            right: -24/@rem;
+            width: 32/@rem;
+            height: 32/@rem;
+            line-height: 32/@rem;
+            font-size: 26/@rem;
+            text-align: center;
+            border-radius: 16/@rem;
+            background-color: red;
+            color: #fff;
+        }
     }
     .active{
         border-bottom: 2/@rem solid #1b9fe2;
@@ -20,18 +34,33 @@
 .msg-list{
     padding: 40/@rem 30/@rem;
     li{
-        max-height: 80/@rem;
         border-bottom: 1px solid #b5b5b5;
-        overflow: hidden;
-        transition: max-height 0.2s;
     }
     .over{
-        padding: 30/@rem;
-        border: 1px solid #666;
+        box-sizing: border-box;
+        max-height: 0;
+        padding:0 30/@rem;
+        border: none;
         background-color: #f5f8fa;
         font-size: 26/@rem;
+        position: relative;
+        overflow: hidden;
+        transition: max-height 0.2s;
+        .t{
+            padding-top: 30/@rem;
+        }
         .text{
             text-indent: 2em;
+            padding-bottom: 30/@rem;
+        }
+        .del{
+            position: absolute;
+            right: 20/@rem;
+            top: 20/@rem;
+            width: 36/@rem;
+            height: 26/24*36/@rem;
+            background: url('../img/delete.png') center center no-repeat;
+            background-size: 36/@rem;
         }
     }
     .msg-info{
@@ -50,5 +79,9 @@
         time{
             font-size: 26/@rem;
         }
+    }
+    .open{
+        border: 1px solid #666;
+        max-height: 210/@rem;
     }
 }

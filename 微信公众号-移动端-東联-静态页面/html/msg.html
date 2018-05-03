@@ -19,29 +19,26 @@
 <body>
     <div id="msg_box">
         <ul class="msg-title">
-            <li 
-                v-for="item,index in showTitle"
-                @click="changeActiveElement(index)"
-                :class="{ active : showNum == index }"
-            >{{item}}</li>
+            <li v-for="item,index in showTitle" @click="changeActiveElement(index)" :class="{ active : showNum == index }">
+                {{item.title}}
+                <span></span>
+            </li>
         </ul>
         <ul class="msg-list">
-            <li 
-                v-for="item,index in msgList" 
-                :class="{ open : item.show }"
-                @click="changeOpenState(item.id)"
-            >
-                <div class="msg-info">
+            <li v-for="item,index in msgList" :key="item.id">
+                <div class="msg-info" @click="changeOpenState(item.id)">
                     <h3>
                         <span class="blue">【优惠券】</span>您填写的会议预报名已通过
                     </h3>
                     <time>2018.02.02</time>
                 </div>
-                <div class="over">
-                    <div>亲爱的xxx：</div>
+                <div :class="{ open : item.show , over : true }">
+                    <div class="t">亲爱的xxx：</div>
                     <div class="text">
-                          通过，请尽快填写确认信息表确认您的信息
+                        通过，请尽快填写确认信息表确认您的信息
+                        通过，请尽快填写确认信息表确认您的信息
                     </div>
+                    <div class="del" @click="delMsgItem(item.id)"></div>
                 </div>
             </li>
         </ul>
@@ -52,20 +49,37 @@
         var app = new Vue({
             el: '#msg_box',
             data: {
-                showTitle:['课程动态','专家动态','会议动态','系统通知'],
+                showTitle: [
+                    {
+                        title: '课程动态',
+                        type:null,
+                    },
+                    {
+                        title: '专家动态',
+                        type:null,
+                    },
+                    {
+                        title: '会议动态',
+                        type:3,
+                    },
+                    {
+                        title: '系统通知',
+                        type:null,
+                    }
+                ],
                 showNum: 0,
-                msgList:[
+                msgList: [
                     {
-                        id:1,
-                        show:false
+                        id: 1,
+                        show: false
                     },
                     {
-                        id:3,
-                        show:true
+                        id: 3,
+                        show: true
                     },
                     {
-                        id:5,
-                        show:false
+                        id: 5,
+                        show: false
                     }
                 ]
             },
@@ -74,14 +88,28 @@
                 changeActiveElement: function (num) {
                     this.showNum = num;
                 },
-                changeOpenState:function(id){
-                    console.log()
-                    this.msgList.forEach(function (e) { 
-                        if(e.id == id){
+                // 改变开关状态
+                changeOpenState: function (id) {
+                    this.msgList.forEach(function (e) {
+                        if (e.id == id) {
                             e.show = !e.show
                         };
                     });
                 },
+                // 删除消息
+                delMsgItem:function(id){
+                    var _this = this;
+                    this.msgList.forEach(function (e,i) {
+                        if (e.id == id) {
+                            console.log(i)
+                            _this.msgList.splice(i,1);
+                            console.log(_this.msgList)
+                        };
+                    });
+                },
+            },
+            mounted () {
+              console.log(2)  
             },
             computed: {
 

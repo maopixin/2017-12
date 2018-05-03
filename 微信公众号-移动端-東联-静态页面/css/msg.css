@@ -7,9 +7,23 @@
   line-height: 1.14666667rem;
 }
 .msg-title li {
+  position: relative;
   color: #666666;
   padding: 0 0.08rem;
   border-bottom: 0.02666667rem solid #f3f3f3;
+}
+.msg-title li span {
+  position: absolute;
+  top: 0.16rem;
+  right: -0.32rem;
+  width: 0.42666667rem;
+  height: 0.42666667rem;
+  line-height: 0.42666667rem;
+  font-size: 0.34666667rem;
+  text-align: center;
+  border-radius: 0.21333333rem;
+  background-color: red;
+  color: #fff;
 }
 .msg-title .active {
   border-bottom: 0.02666667rem solid #1b9fe2;
@@ -19,19 +33,34 @@
   padding: 0.53333333rem 0.4rem;
 }
 .msg-list li {
-  max-height: 1.06666667rem;
   border-bottom: 1px solid #b5b5b5;
+}
+.msg-list .over {
+  box-sizing: border-box;
+  max-height: 0;
+  padding: 0 0.4rem;
+  border: none;
+  background-color: #f5f8fa;
+  font-size: 0.34666667rem;
+  position: relative;
   overflow: hidden;
   transition: max-height 0.2s;
 }
-.msg-list .over {
-  padding: 0.4rem;
-  border: 1px solid #666;
-  background-color: #f5f8fa;
-  font-size: 0.34666667rem;
+.msg-list .over .t {
+  padding-top: 0.4rem;
 }
 .msg-list .over .text {
   text-indent: 2em;
+  padding-bottom: 0.4rem;
+}
+.msg-list .over .del {
+  position: absolute;
+  right: 0.26666667rem;
+  top: 0.26666667rem;
+  width: 0.48rem;
+  height: 0.52rem;
+  background: url('../img/delete.png') center center no-repeat;
+  background-size: 0.48rem;
 }
 .msg-list .msg-info {
   display: flex;
@@ -49,4 +78,8 @@
 }
 .msg-list .msg-info time {
   font-size: 0.34666667rem;
+}
+.msg-list .open {
+  border: 1px solid #666;
+  max-height: 2.8rem;
 }
