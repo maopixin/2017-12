@@ -1,0 +1,115 @@
+@rem:75rem;
+body{
+    background-color: #f5f5f5;
+}
+.indent-list{
+    padding: 36/@rem 30/@rem;
+    .indent-item{
+        margin-bottom: 36/@rem;
+        border-radius: 20/@rem 20/@rem 20/@rem 20/@rem;
+        box-shadow:rgba(0, 0, 0, 0.3) 0px 0px 10px ;
+        background-color: #fff;
+        .indent-head{
+            padding: 0 42/@rem;
+            font-size: 34/@rem;
+            line-height: 112/@rem;
+            border-bottom: 1px solid #f1f1f1;
+            position: relative;
+            background-color: #f9f9f9;
+            border-radius: 20/@rem 20/@rem 0/@rem 0/@rem;
+            h4{
+                font-weight: normal;
+                position: relative;
+                &:after{
+                    content: '';
+                    position: absolute;
+                    width: 2/@rem;
+                    height: 32/@rem;
+                    background-color: #1b9fe2;
+                    left: -15/@rem;
+                    top: 40/@rem;
+                }
+            }
+            &:before{
+                content: '';
+                position: absolute;
+                width: 28/@rem;
+                height: 28/@rem;
+                border: 1/@rem solid rgba(0, 0, 0, 0.2);
+                border-left: none;
+                border-bottom: none;
+                border-right: none;
+                transform: rotate(90deg);
+                background-color: #f5f5f5;
+                border-radius: 15/@rem;
+                z-index: 99;
+                left: -15/@rem;
+                bottom: -15/@rem;
+            }
+            &:after{
+                content: '';
+                position: absolute;
+                width: 28/@rem;
+                height: 28/@rem;
+                border: 1/@rem solid rgba(0, 0, 0, 0.2);
+                border-left: none;
+                border-bottom: none;
+                border-right: none;
+                transform: rotate(-90deg);
+                background-color: #f5f5f5;
+                border-radius: 15/@rem;
+                z-index: 99;
+                right: -15/@rem;
+                bottom: -15/@rem;
+            }
+        }
+        .indent-body{
+            border-radius: 0/@rem 0/@rem 20/@rem 20/@rem;
+            .indent-body-item{
+                display: flex;
+                height: 99/@rem;
+                margin: 0 26/@rem;
+                overflow: hidden;
+                line-height: 99/@rem;
+                border-bottom: 1px solid #f1f1f1;
+                font-size: 26/@rem;
+                div{
+                    display: flex;
+                    flex: 1;
+                    .indent-body-title{
+                        width: 85/@rem;
+                        text-align: justify;
+                        overflow: hidden;
+                        &:after{
+                            content: '';
+                            display:inline-block;
+                            width:100%;
+                            height:0;
+                            overflow:hidden;
+                        }
+                    }
+                    .indent-body-info{
+                        text-indent: 1em;
+                        color: #a7a7a7;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+                }
+            }
+            .one{
+                div{
+                    .indent-body-info{
+                        width: 540/@rem;
+                    }
+                }
+            }
+            .two{
+                div{
+                    .indent-body-info{
+                        width: 210/@rem;
+                    }
+                }
+            }
+        }
+    }
+}

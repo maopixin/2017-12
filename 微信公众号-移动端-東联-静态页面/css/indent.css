@@ -1,0 +1,106 @@
+body {
+  background-color: #f5f5f5;
+}
+.indent-list {
+  padding: 0.48rem 0.4rem;
+}
+.indent-list .indent-item {
+  margin-bottom: 0.48rem;
+  border-radius: 0.26666667rem 0.26666667rem 0.26666667rem 0.26666667rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px;
+  background-color: #fff;
+}
+.indent-list .indent-item .indent-head {
+  padding: 0 0.56rem;
+  font-size: 0.45333333rem;
+  line-height: 1.49333333rem;
+  border-bottom: 1px solid #f1f1f1;
+  position: relative;
+  background-color: #f9f9f9;
+  border-radius: 0.26666667rem 0.26666667rem 0rem 0rem;
+}
+.indent-list .indent-item .indent-head h4 {
+  font-weight: normal;
+  position: relative;
+}
+.indent-list .indent-item .indent-head h4:after {
+  content: '';
+  position: absolute;
+  width: 0.02666667rem;
+  height: 0.42666667rem;
+  background-color: #1b9fe2;
+  left: -0.2rem;
+  top: 0.53333333rem;
+}
+.indent-list .indent-item .indent-head:before {
+  content: '';
+  position: absolute;
+  width: 0.37333333rem;
+  height: 0.37333333rem;
+  border: 0.01333333rem solid rgba(0, 0, 0, 0.2);
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
+  transform: rotate(90deg);
+  background-color: #f5f5f5;
+  border-radius: 0.2rem;
+  z-index: 99;
+  left: -0.2rem;
+  bottom: -0.2rem;
+}
+.indent-list .indent-item .indent-head:after {
+  content: '';
+  position: absolute;
+  width: 0.37333333rem;
+  height: 0.37333333rem;
+  border: 0.01333333rem solid rgba(0, 0, 0, 0.2);
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
+  transform: rotate(-90deg);
+  background-color: #f5f5f5;
+  border-radius: 0.2rem;
+  z-index: 99;
+  right: -0.2rem;
+  bottom: -0.2rem;
+}
+.indent-list .indent-item .indent-body {
+  border-radius: 0rem 0rem 0.26666667rem 0.26666667rem;
+}
+.indent-list .indent-item .indent-body .indent-body-item {
+  display: flex;
+  height: 1.32rem;
+  margin: 0 0.34666667rem;
+  overflow: hidden;
+  line-height: 1.32rem;
+  border-bottom: 1px solid #f1f1f1;
+  font-size: 0.34666667rem;
+}
+.indent-list .indent-item .indent-body .indent-body-item div {
+  display: flex;
+  flex: 1;
+}
+.indent-list .indent-item .indent-body .indent-body-item div .indent-body-title {
+  width: 1.13333333rem;
+  text-align: justify;
+  overflow: hidden;
+}
+.indent-list .indent-item .indent-body .indent-body-item div .indent-body-title:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+}
+.indent-list .indent-item .indent-body .indent-body-item div .indent-body-info {
+  text-indent: 1em;
+  color: #a7a7a7;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.indent-list .indent-item .indent-body .one div .indent-body-info {
+  width: 7.2rem;
+}
+.indent-list .indent-item .indent-body .two div .indent-body-info {
+  width: 2.8rem;
+}
