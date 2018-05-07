@@ -1,0 +1,81 @@
+.content {
+  width: 932px;
+  border: solid 1px #e4ecf3;
+  margin-right: 106px;
+  padding: 12px;
+  background: #fff;
+}
+.m-box {
+  height: 44px;
+  line-height: 40px;
+  color: #919191;
+  border-bottom: 1px solid #f5f5f5;
+}
+.m-box a {
+  color: inherit;
+}
+.m-box a.active {
+  color: #1b9fe2;
+}
+.indent-list {
+  margin-top: 20px;
+}
+.indent-list .indent-item {
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  margin-bottom: 22px;
+}
+.indent-list .indent-item .indent-title-list {
+  border-radius: 6px 6px 0 0;
+  height: 60px;
+  background-color: #f3f3f3;
+  line-height: 60px;
+  display: flex;
+  text-align: center;
+}
+.indent-list .indent-item .indent-info-list {
+  border-radius: 0 0 6px 6px;
+  height: 60px;
+  background-color: #fff;
+  line-height: 60px;
+  display: flex;
+  text-align: center;
+  color: #a8a8a8;
+}
+.indent-list .indent-item .company {
+  width: 300px;
+}
+.indent-list .indent-item .card_num {
+  width: 140px;
+}
+.indent-list .indent-item .total_money {
+  width: 180px;
+}
+.indent-list .indent-item .time {
+  width: 140px;
+}
+.indent-list .indent-item .proposer {
+  width: 140px;
+}
+.page-list {
+  margin-top: 26px;
+  text-align: center;
+}
+.page-list .page {
+  display: inline-block;
+  vertical-align: top;
+}
+.page-list a {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 14px;
+  font: 16px/37px '微软雅黑';
+  border-radius: 6px;
+  color: #656565;
+  border: 1px solid #b3bbc2;
+}
+.page-list a.active {
+  background-color: red;
+  color: #fff;
+}
