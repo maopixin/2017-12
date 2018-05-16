@@ -4,9 +4,24 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<style>
-			
+			.div{
+				width: 30px;
+				height: 60px;
+				background-color: red;
+			}
 		</style>
 	</head>
 	<body>
+		<div class="div"></div>
 	</body>
+	<script src="../jquery-3.2.1.js"></script>
+	<script>
+		document.ontouchend = function(ev){
+			var ev = ev || event;
+			
+			if($(ev.target).hasClass('div')){
+				alert(1)
+			}
+		}
+	</script>
 </html>

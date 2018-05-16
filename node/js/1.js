@@ -1,0 +1,14 @@
+$.ajax({
+    url:'http://localhost:3000/users/register',
+    data:{
+        username:'525',
+        password:'123456',
+        repassword:"123456"
+    },
+    success:function(data){
+        console.log(data);
+    },
+    error:function(){
+        console.log('error')
+    }
+})

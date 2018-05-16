@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #btn {
+            width: 200px;
+            height: 40px;
+            background-color: #1b9fe2;
+            margin: 300px auto;
+            text-align: center;
+            color: #fff;
+            line-height: 40px;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .text{
+            position: relative;
+        }
+        #btn::before {
+            --size: 0;
+            content: '';
+            position: absolute;
+            left: var(--left);
+            top: var(--top);
+            width: var(--size);
+            height: var(--size);
+            background: radial-gradient(circle closest-side, #86C166, transparent);
+            transform: translate(-50%, -50%);
+            transition: width .2s ease, height .2s ease;
+        }
+        #btn:hover::before {
+            --size: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="btn">
+        <span class="text">hover me</span>
+    </div>
+    <script>
+        document.getElementById('btn').onmousemove = function (ev) {
+            var ev = event || window.event;
+            var x = ev.pageX - ev.target.offsetLeft;
+            var y = ev.pageY - ev.target.offsetTop;
+            ev.target.style.setProperty('--left', x + 'px');
+            ev.target.style.setProperty('--top', y + 'px');
+        }
+    </script>
+</body>
+
+</html>
