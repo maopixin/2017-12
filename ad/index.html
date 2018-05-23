@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .roll-text{
+            width: 720px;
+            margin-left: 120px;
+            height: 50px;
+            line-height: 50px;
+            overflow: hidden;
+        }
+        .roll-box{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .roll-box li{
+            float: left;
+        }
+        body,#app{
+  margin: 0;
+  padding: 0;
+  font-family:Helvetica;
+  background: #f0efef !important;
+  width: 100%;
+  overflow-x: hidden;
+}
+a{
+ text-decoration: none;
+}
+.pro_quota_tip{
+  background: #fff;
+  font-size: 14px;
+  overflow: hidden;
+  width: 200px;
+  height: 49px;
+  margin:0 auto;
+  margin-top:10%
+}
+.pro_quota_tip .tip_box{
+  position: relative;
+}
+.pro_quota_tip .tip_box a{
+  color: red;
+  display: block;
+  width: 100%;
+  padding:15px 5px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+    </style>
+</head>
+<body>
+    <div class="roll-text">
+        <ul class="roll-box">
+            <li>1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+            <li>2xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+            <li>3xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+            <li>4xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+            <li>5xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+        </ul>
+    </div>
+    <!-- <section class="pro_quota_tip"> 
+    <div class="tip_box"> 
+        <a href="javascript:;" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" >aaaaaaaaa</a> 
+        <a href="javascript:;" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" >bbbbbbbbbbbbbb</a> 
+        <a href="javascript:;" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" >ccccccccccc</a> 
+        <a href="javascript:;" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" >ddddddddddddddd</a> 
+        <a href="javascript:;" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" >aaaaaaaaaaaaaa</a> 
+    </div> 
+    </section> -->
+<script src="../jquery-3.2.1.js"></script>
+<script>
+
+
+
+// var tip_box_a_h = document.querySelectorAll('.tip_box a')[0].offsetHeight;
+// var i=0;
+// setInterval(()=>{
+//  let startScroll = setInterval(()=>{
+//   i++;
+//   document.querySelector('.tip_box').style.bottom = (tip_box_a_h/10)*i+'px';
+//   if(i%10==0)clearInterval(startScroll);
+//  },50)
+//  if(i>(10*(document.querySelectorAll('.tip_box a').length-2)))i = 0;
+// },2500)
+</script>
+
+</body>
+</html>

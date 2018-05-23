@@ -8,7 +8,7 @@
         #btn {
             width: 200px;
             height: 40px;
-            background-color: #1b9fe2;
+            background-color: red;
             margin: 300px auto;
             text-align: center;
             color: #fff;
@@ -29,7 +29,7 @@
             top: var(--top);
             width: var(--size);
             height: var(--size);
-            background: radial-gradient(circle closest-side, #86C166, transparent);
+            background: radial-gradient(circle closest-side, #4405f7, transparent);
             transform: translate(-50%, -50%);
             transition: width .2s ease, height .2s ease;
         }
@@ -45,7 +45,7 @@
     </div>
     <script>
         document.getElementById('btn').onmousemove = function (ev) {
-            var ev = event || window.event;
+            var ev = ev || event || window.event;
             var x = ev.pageX - ev.target.offsetLeft;
             var y = ev.pageY - ev.target.offsetTop;
             ev.target.style.setProperty('--left', x + 'px');

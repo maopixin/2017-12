@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        // 命名捕获（正则）
+        // 语法(?<name>)
+        let reg = /(?<year>\d{4})-(?<month>\d{2})-(?<day>\d{2})/;
+        let str = '2018-05-20';
+
+        let {year, month ,day} = str.match(reg).groups;
+        console.log(year,month,day);
+    </script>
+</body>
+</html>

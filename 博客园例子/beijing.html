@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #canvas {
+            display: block;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script>
+        window.requestAnimationFrame =(function(){//解决定时器卡问题，使用帧动画
+            return window.requestAnimationFrame ||
+                    window.webkitRequestAnimationFrame ||
+                    window.mozRequestAnimationFrame ||
+                    function(callback){
+                        window.setInterval (callback,1000/60);
+                    };
+        })();
+        //初始化变量
+        var canv=document.getElementsByName("canvas");
+        var cxt=canvas.getContext("2d");
+        var w,h;
+        var num=200;
+        var data=[];
+        var move={};
+        window.onresize=init;//在浏览器窗口变化时重置
+        init();
+        //获取浏览器宽高并使粒子随机分布
+        function init(){
+            canvas.width = window.innerWidth ;
+            canvas.height = window.innerHeight ;
+            w = canvas.width;
+            h = canvas.height;
+            for(var i=0;i<num;i++){
+                data[i]={x:Math.random()*w,y:Math.random()*h,cX:Math.random()*0.6-0.3,cY:Math.random()*0.6-0.3};
+                Cricle(data[i].x,data[i].y);
+            }
+        }
+        //绘制粒子
+        function Cricle(x,y){
+            cxt.save();
+            cxt.fillStyle ="pink";
+            cxt.beginPath ();
+            cxt.arc (x,y,0.5,Math.PI*2,false);
+            cxt.closePath ();
+            cxt.fill ();
+            cxt.restore ();
+        }
+        //自执行使粒子运动
+        !function draw(){
+            cxt.clearRect(0,0,w,h);//清除，防止粒子运动成线
+            for(var i=0;i<num;i++){
+                data[i].x+=data[i].cX;//粒子运动
+                data[i].y+=data[i].cY;
+                if(data[i].x>w||data[i].x<0) data[i].cX=-data[i].cX;//设置边界值判断防止粒子跑出边界
+                if(data[i].y>h||data[i].y<0) data[i].cY=-data[i].cY;
+                Cricle(data[i].x,data[i].y);
+                for(var j=i+1;j<num;j++){
+                    //使粒子连线
+                    if((data[i].x-data[j].x)*(data[i].x-data[j].x)+(data[i].y-data[j].y)*(data[i].y-data[j].y)<=50*50){
+                        line(data[i].x,data[i].y,data[j].x,data[j].y,false);
+                    }
+                    //使粒子与鼠标连线
+                    if(move.x){
+                        if((data[i].x-move.x)*(data[i].x-move.x)+(data[i].y-move.y)*(data[i].y-move.y)<=100*100){
+                            line(data[i].x,data[i].y,move.x,move.y,true);
+                        }
+                    }
+                }
+            }
+            window.requestAnimationFrame(draw);//定时器
+//            setInterval(function(){
+//                draw();
+//            },130);
+        }();
+        //使粒子的连线颜色渐变
+        function line(x1,y1,x2,y2,isMove){
+            var color=cxt.createLinearGradient(x1,y1,x2,y2);
+            if(!isMove){
+                color.addColorStop(0,"yellow");
+                color.addColorStop(1,"pink");
+            }else{
+                color.addColorStop(0,"#fff");
+                color.addColorStop(1,"#0bd2dd");
+            }
+            cxt.save();
+            cxt.strokeStyle=color;
+            cxt.beginPath();
+            cxt.moveTo(x1,y1);
+            cxt.lineTo(x2,y2);
+            cxt.stroke();
+            cxt.restore();
+        }
+        //鼠标移入与粒子连线
+        document.onmousemove=function(e){
+            move.x= e.clientX;
+            move.y= e.clientY;
+        }
+    </script>
+</body>
+</html>
