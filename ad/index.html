@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
         .roll-text{
             width: 720px;
             margin-left: 120px;
             height: 50px;
             line-height: 50px;
             overflow: hidden;
+            position: relative;
         }
         .roll-box{
             position: absolute;
-            top: 0;
-            left: 0;
+            white-space:nowrap;
+            left: 720px;
+            /* transition: left 10s; */
+            transform: translate3d(0px,0px,0px);
         }
         .roll-box li{
-            float: left;
+            display: inline-block;
+            margin: 0 40px;
         }
         body,#app{
   margin: 0;
@@ -54,15 +63,7 @@ a{
     </style>
 </head>
 <body>
-    <div class="roll-text">
-        <ul class="roll-box">
-            <li>1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
-            <li>2xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
-            <li>3xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
-            <li>4xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
-            <li>5xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
-        </ul>
-    </div>
+    
     <!-- <section class="pro_quota_tip"> 
     <div class="tip_box"> 
         <a href="javascript:;" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" rel="external nofollow" >aaaaaaaaa</a> 
@@ -75,7 +76,17 @@ a{
 <script src="../jquery-3.2.1.js"></script>
 <script>
 
+var w = $('.roll-box').width();
 
+function move(){
+    $('.roll-box').css('left','720px');
+    $('.roll-box').animate({
+        left: (-w)+'px'
+    },(720+w)*16,'linear',function(){
+        move()
+    })
+}
+move()
 
 // var tip_box_a_h = document.querySelectorAll('.tip_box a')[0].offsetHeight;
 // var i=0;

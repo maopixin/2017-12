@@ -1,0 +1,143 @@
+.content {
+  width: 1140px;
+  margin: 0 auto;
+}
+.foreshow {
+  display: flex;
+  padding: 61px 33px 52px 33px;
+  justify-content: space-between;
+  background-color: #f5f8fa;
+}
+.foreshow .foreshow-video-box {
+  width: 548px;
+  margin-top: 6px;
+}
+.foreshow .foreshow-video-box .foreshow-video {
+  width: 100%;
+  height: 364px;
+  background-color: #000;
+}
+.foreshow .foreshow-video-box .foreshow-url {
+  display: block;
+  height: 80px;
+  background-color: #e1e1e1;
+  text-align: center;
+  color: #1b9fe2;
+  line-height: 80px;
+}
+.foreshow .foreshow-video-box .foreshow-url a {
+  color: #1b9fe2;
+  display: inline-block;
+  line-height: 80px;
+}
+.foreshow .foreshow-video-box .foreshow-url span {
+  color: red;
+  font-size: 30px;
+  line-height: 80px;
+  font-weight: 600;
+  display: inline-block;
+  margin-right: 10px;
+}
+.foreshow .foreshow-text-box {
+  width: 494px;
+}
+.foreshow .foreshow-text-box .foreshow-title {
+  box-sizing: border-box;
+  height: 97px;
+  background: url('../img/foreshow-bg.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 50px 0 0 131px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fff;
+}
+.foreshow .foreshow-text-box .p-box {
+  height: 258px;
+  font-size: 13px;
+  line-height: 23px;
+}
+.foreshow .foreshow-text-box .p-box p {
+  text-indent: 2em;
+  margin: 13px 0;
+}
+.foreshow .foreshow-text-box .foreshow-url a {
+  width: 196px;
+  height: 79px;
+  background: url('../img/apply-btn.jpg') no-repeat;
+  background-size: cover;
+  font-size: 22px;
+  color: #fff;
+  line-height: 79px;
+  text-align: center;
+  word-spacing: 4px;
+  letter-spacing: 4px;
+}
+.gift-list dt {
+  box-sizing: border-box;
+  height: 192px;
+  background: url('../img/gift-list.jpg') no-repeat center 48px;
+  text-align: center;
+  padding-top: 88px;
+  line-height: 38px;
+  color: #666;
+}
+.gift-list dd {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 33px;
+  background-color: #f7fcff;
+  border-top: 1px solid #e6e7e8;
+}
+.gift-list dd .flower-box {
+  width: 52px;
+  padding-top: 80px;
+  font-size: 16px;
+  line-height: 26px;
+  background-repeat: no-repeat;
+  background-position: center 9px;
+  position: relative;
+  text-align: center;
+}
+.gift-list dd .flower-box .position-num {
+  position: absolute;
+  width: 52px;
+  top: 22px;
+  left: 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 26px;
+}
+.gift-list dd .first {
+  background-image: url('../img/no1.jpg');
+}
+.gift-list dd .second {
+  background-image: url('../img/no2.jpg');
+}
+.gift-list dd .third {
+  background-image: url('../img/no3.jpg');
+}
+.gift-list dd .user-head {
+  width: 92px;
+  height: 92px;
+  border-radius: 46px;
+  overflow: hidden;
+}
+.gift-list dd .user-head img {
+  width: 100%;
+  height: 100%;
+}
+.gift-list dd .user-info {
+  width: 872px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727373;
+}
+.gift-list dd .user-info .num-box {
+  color: #1b9fe2;
+  font-size: 22px;
+  line-height: 46px;
+}
+.gift-list dd .user-tickit-num {
+  width: 80px;
+  background: url();
+}
