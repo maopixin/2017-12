@@ -1,0 +1,198 @@
+// tab个性化定制
+.child-li-p0{
+    border-bottom: none;
+    li{
+        padding: 0 !important;
+        margin: 0 14px;
+    }
+    li:last-child{
+        margin: 0;
+    }
+    .layui-this:after{
+        height:52px !important;
+    }
+}
+.tab-content{
+    padding: 20px;
+    background-color: #fff;
+    .job-type-list{
+        width: 398px;
+        li{
+            line-height: 48px;
+            font-size: 14px;
+            margin-bottom: 1px;
+            overflow: hidden;
+            background-color: #efefef;
+            span{
+                float: left;
+                text-align: center;
+                color: #666666;
+            }
+            .ranking{
+                width: 78px;
+            }
+            .name{
+                width: 200px;
+                a{
+                    color: inherit;
+                    &:hover{
+                        color: #1b9fe2;
+                    }
+                }
+            }
+            .hot{
+                width: 120px;
+            }
+            &:nth-child(1){
+                background-color: #9d9d9d;
+                span{
+                    color: #fff;
+                }
+            }
+        }
+        &:nth-child(1){
+            li{
+                &:nth-child(2){
+                    background-color: #f4d0d3;
+                    .ranking{
+                        background: url('../img/flower-red.png') no-repeat center 10px;
+                        font-size: 12px;
+                        color: #f41e4a;
+                    }
+                } 
+                &:nth-child(3){
+                    background-color: #d2e8f3;
+                    .ranking{
+                        background: url('../img/flower_blue.png') no-repeat center 10px;
+                        font-size: 12px;
+                        color: #1b9fe2;
+                    }
+                } 
+                &:nth-child(4){
+                    background-color: #f3e7d9;
+                    .ranking{
+                        background: url('../img/flower_yellow.png') no-repeat center 10px;
+                        font-size: 12px;
+                        color: #975a12;
+                    } 
+                } 
+            }
+        }
+    }
+}
+
+.new_list{
+    padding: 17px 20px;
+    background-color: #fff;
+    li{
+        overflow: hidden;
+        margin-bottom: 12px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        span{
+            float: left;
+        }
+        .data{
+            width: 76px;
+            height: 66px;
+            background: url('../img/data_block.png') no-repeat;
+            em{
+                display: block;
+                font-style: normal;
+                &:nth-child(1){
+                    text-indent: 5px;
+                    font-size: 22px;
+                    color: #5b5a5b;
+                    line-height: 38px;
+                }
+                &:nth-child(2){
+                    font-size: 18px;
+                    color: #c0c1c0;
+                    text-indent: 20px;
+                    line-height: 28px;
+                }
+            }
+        }
+        .new_title{
+            width: 118px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            a{
+                display: block;
+                font-size: 20px;
+                line-height: 33px;
+                color: #5b5a5b;
+                &:hover{
+                    color: #1b9fe2;
+                }
+            }
+        }
+    }
+}
+.big_new_list{
+    width: 422px;
+    padding: 0;
+    li{
+        margin-bottom: 15px;
+        .data{
+            width: 53px;
+            height: 46px;
+            background-size: 53px;
+            em{
+                &:nth-child(1){
+                    text-indent: 5px;
+                    font-size: 14px;
+                    color: #5b5a5b;
+                    line-height: 28px;
+                }
+                &:nth-child(2){
+                    font-size: 12px;
+                    color: #c0c1c0;
+                    text-indent: 14px;
+                    line-height: 18px;
+                }
+            }
+        }
+        .new_title{
+            width: 368px;
+            padding: 0 0 0 16px;
+            box-sizing: border-box;
+            a{
+                font-size: 16px;
+                line-height: 23px;
+            }
+        }
+    }
+}
+.information_box{
+    padding: 22px 20px;
+    background-color: #fff;
+}
+.pic_text{
+    a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        span{
+            position: absolute;
+            width: 380px;
+            left: 0;
+            bottom: 0;
+            height: 70px;
+            padding: 8px 25px;
+            box-sizing: border-box;
+            line-height: 30px;
+            background-color: rgba(0, 0, 0, 0.2);
+            font-size: 16px;
+            color: #fff;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+body {
+  background-color: #f3f5f7;
+}
+.golden_cut {
+  overflow: hidden;
+  margin-top: 24px;
+}
+.golden_cut .golden_left {
+  float: left;
+  width: 856px;
+}
+.golden_cut .golden_right {
+  float: right;
+  width: 243px;
+}
+.title_box {
+  background-color: #fff;
+  padding: 0 20px;
+  border-bottom: 1px solid #dedede;
+  overflow: hidden;
+}
+.title_box .column_title {
+  float: left;
+  height: 62px;
+  line-height: 62px;
+  font-size: 0px;
+}
+.title_box .column_title div {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+}
+.title_box .column_title .t_e {
+  margin-right: 20px;
+}
+.title_box .column_title .t_l {
+  width: 6px;
+  height: 20px;
+  background-color: #1b9fe2;
+  overflow: hidden;
+}
+.title_box .column_title .t_c {
+  margin-left: 20px;
+}
+.title_box .title_more {
+  float: right;
+  font-size: 16px;
+  color: #1b9fe2;
+  line-height: 62px;
+}
