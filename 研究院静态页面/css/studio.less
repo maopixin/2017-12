@@ -1,0 +1,181 @@
+.studio_nav{
+    height: 70px;
+    background-color: #3daae2;
+    .nav_list{
+        width: 1140px;
+        margin: 0 auto;
+        overflow: visible;
+        .nav_item{
+            width: 114px;
+            text-align: center;
+            font-size: 16px;
+            line-height: 70px;
+            color: #fff;
+            float: left;
+            position: relative;
+            &:hover{
+                background-color: #2a9cd7;
+                .nav_item_list{
+                    display: block;
+                }
+            }
+            a{
+                display: block;
+                color: inherit;
+            }
+            .nav_item_list{
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 114px;
+                background-color: #2a9cd7;
+                .nav_item_item{
+                    line-height: 50px;
+                    &:hover{
+                        background-color: #3daae2;
+                    }
+                }
+            }
+        }
+    }
+}
+.studio_box{
+    margin-top: 23px;
+    .studio_left{
+        width: 276px;
+    }
+    .studio_right{
+        width: 846px;
+    }
+}
+.echart_main{
+    width: 276px;
+    height: 128px;
+    background-color: #fff;
+    position: relative;
+    .tip{
+        position: absolute;
+        z-index: 999999;
+        width: 42px;
+        height: 20px;
+        font-size: 14px;
+        line-height: 20px;
+        top: 54px;
+        left: 117px;
+    }
+}
+
+.number_list{
+    padding: 20px;
+    background-color: #fff;
+    li{
+        float: left;
+        width: 66px;
+        margin-right: 19px;
+        &:last-child{
+            margin-right: 0;
+        }
+        span{
+            font-size: 16px;
+            display: block;
+            text-align: center;
+            line-height: 44px;
+        }
+    }
+}
+
+.info_box{
+    padding: 39px 20px 54px;
+    background-color: #fff;
+    .info{
+        img{
+            float: left;
+            width: 90px;
+            height: 90px;
+            border-radius: 45px;
+        }
+        .text{
+            float: left;
+            padding-left: 14px;
+            span{
+                display: block;
+            }
+            .name{
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 36px;
+                padding-top: 8px;
+                color: #222;
+            }
+            .type{
+                font-size: 14px;
+                line-height: 30px;
+                color: #666;
+            }
+        }
+    }
+    .num{
+        margin-top: 26px;
+        div{
+            float: left;
+            width: 78px;
+            text-align: center;
+            span{
+                display: block;
+                &:nth-child(1){
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 33px;
+                    color: #4b4b4b;
+                }
+                &:nth-child(2){
+                    font-size: 15px;
+                    line-height: 29px;
+                    color: #9b9b9b;
+                }
+            }
+        }
+        em{
+            float: left;
+            width: 1px;
+            height: 40px;
+            background-color: #ebebeb;
+            margin-top: 13px;
+        }
+    }
+    .join{
+        display: block;
+        width: 224px;
+        height: 40px;
+        background-color: #1b9fe2;
+        margin: 26px auto 0;
+        text-align: center;
+        color: #fff;
+        font-size: 18px;
+        line-height: 40px;
+        font-weight: 600;
+        border-radius: 6px;
+        box-shadow: 0 5px 0px 0px #1689c3;
+        position: relative;
+        overflow: hidden;
+        .text{
+            position: relative;
+        }
+        &:before {
+            --size: 0;
+            content: '';
+            position: absolute;
+            left: var(--left);
+            top: var(--top);
+            width: var(--size);
+            height: var(--size);
+            background: radial-gradient(circle closest-side, #1ecec8, transparent);
+            transform: translate(-50%, -50%);
+            transition: width .2s ease, height .2s ease;
+        }
+        &:hover::before {
+            --size: 400px;
+        }
+    }
+}

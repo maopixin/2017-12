@@ -1,6 +1,9 @@
 body {
   background-color: #f3f5f7;
 }
+.margin_t {
+  margin-top: 24px;
+}
 .golden_cut {
   overflow: hidden;
   margin-top: 24px;
@@ -12,6 +15,32 @@ body {
 .golden_cut .golden_right {
   float: right;
   width: 243px;
+}
+.list_cut {
+  margin-top: 24px;
+}
+.three_cut {
+  margin-top: 24px;
+  margin-right: -25px;
+}
+.three_cut .t_item {
+  width: 364px;
+  margin-right: 24px;
+  background-color: #fff;
+}
+.s_golden_cut {
+  margin-top: 24px;
+}
+.s_golden_cut .first {
+  width: 754px;
+  float: left;
+}
+.s_golden_cut .second {
+  width: 364px;
+  float: right;
+}
+.five_cut {
+  margin-top: 24px;
 }
 .title_box {
   background-color: #fff;

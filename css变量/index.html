@@ -37,19 +37,23 @@
             --size: 400px;
         }
     </style>
+    <script src="../jquery-3.2.1.js"></script>
 </head>
 
 <body>
-    <div id="btn">
-        <span class="text">hover me</span>
+    <div class="box">
+            <div id="btn">
+                    <span class="text">hover me</span>
+                </div>
     </div>
     <script>
         document.getElementById('btn').onmousemove = function (ev) {
+            var e = $('#btn')[0];
             var ev = ev || event || window.event;
-            var x = ev.pageX - ev.target.offsetLeft;
-            var y = ev.pageY - ev.target.offsetTop;
-            ev.target.style.setProperty('--left', x + 'px');
-            ev.target.style.setProperty('--top', y + 'px');
+            var x = ev.pageX - e.offsetLeft;
+            var y = ev.pageY - e.offsetTop;
+            e.style.setProperty('--left', x + 'px');
+            e.style.setProperty('--top', y + 'px');
         }
     </script>
 </body>

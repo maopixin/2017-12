@@ -3,7 +3,7 @@
     border-bottom: none;
     li{
         padding: 0 !important;
-        margin: 0 14px;
+        margin: 0 10px;
     }
     li:last-child{
         margin: 0;
@@ -193,6 +193,250 @@
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 2;
             overflow: hidden;
+        }
+    }
+}
+
+.list_box{
+    margin-right: -9px;
+    li{
+        width: 268px;
+        border-radius: 4px;
+        overflow: hidden;
+        float: left;
+        margin-right: 9px;
+    }
+    a,img,span{
+        display: block;
+        background-color: #f3f5f7;
+    }
+    img{
+        width: 268px;
+        height: 190px;
+    }
+    .type{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 34px;
+        padding: 10px 0 0 20px;
+        color: #000;
+    }
+    .name{
+        font-size: 16px;
+        line-height: 34px;
+        padding: 0 0 10px 20px;
+        color: #666666;
+    }
+}
+
+.teacher_info{
+    width: 317px;
+    margin: 26px auto 32px;
+    a,img,span{
+        display: block;
+    }
+    img{
+        width: 100%;
+        height: 227px;
+        margin: 0 auto;
+    }
+    span{
+        font-size: 22px;
+        line-height: 74px;
+        text-indent: 20px;
+        background-color: #f3f5f7;
+        color: #333;
+    }
+}
+
+.s_new_list{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 22px 32px;
+    li{
+        margin-bottom: 13px;
+        .data{
+            width: 76px;
+            height: 66px;
+            background-size: cover;
+            em{
+                &:nth-child(1){
+                    text-indent: 5px;
+                    font-size: 22px;
+                    color: #5b5a5b;
+                    line-height: 38px;
+                }
+                &:nth-child(2){
+                    font-size: 20px;
+                    color: #c0c1c0;
+                    text-indent: 14px;
+                    line-height: 22px;
+                }
+            }
+        }
+        .new_title{
+            width: 220px;
+            padding: 0 0 0 16px;
+            box-sizing: border-box;
+            a{
+                font-size: 16px;
+                line-height: 23px;
+            }
+        }
+    }
+}
+
+.example_list{
+    padding: 20px 20px 19px;
+    li{
+        font-size: 16px;
+        line-height: 40px;
+        overflow: hidden;
+        .fl{
+            color: #5b5a5b;
+        }
+        .fr{
+            color: #1b9fe2;
+        }
+    }
+}
+
+.video{
+    background-color: #fff;
+    padding: 30px 52px 42px 21px;
+    .video_box{
+        width: 344px;
+        height: 282px;
+    }
+    .video_info{
+        width: 311px;
+        font-size: 16px;
+        h3{
+            line-height: 48px;
+            height: 96px;
+            color: #5b5a5b;
+            font-weight: 600;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+        }
+        div{
+            span{
+                display: inline-block;
+                width: 48px;
+                text-align: justify;
+                text-align-last: justify;
+            }
+        }
+        .person{
+            margin-top: 105px;
+            line-height: 48px;
+            height: 48px;
+            overflow: hidden;
+        }
+        .evaluate{
+            line-height: 34px;
+            height: 34px;
+            overflow: hidden;
+        }
+    }
+}
+
+.teacher_list{
+    background-color: #fff;
+    padding: 51px 25px;
+    .layui-carousel{
+        
+    }
+    img{
+        float: left;
+        width: 103px;
+        height: 82px;
+        margin: 0 4px 4px 0;
+        &:nth-child(3n){
+            margin-right: 0;
+        }
+    }
+}
+.teacher_list_list{
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    margin-right: -26px;
+    padding: 20px;
+    box-sizing: border-box;
+    li{
+        float: left;
+        width: 199px;
+        height: 152px;
+        overflow: hidden;
+        margin: 0 26px 26px 0;
+        position: relative;
+        &:nth-child(5n){
+            margin-right: 0;
+        }
+        img{
+            width: 199px;
+            height: 152px;
+        }
+        h5{
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 30px;
+            background-color: rgba(27, 159, 226, 0.7);
+            color: #fff;
+            line-height: 30px;
+            text-align: center;
+            overflow: hidden;
+        }
+        .jump{
+            position: absolute;
+            top: 152px;
+            left: 0;
+            right: 0;
+            height: 152px;
+            background-color: #1b9fe2;
+            color: #fff;
+            transition: top .3s;
+            div{
+                text-align: center;
+            }
+            .type{
+                font-size: 18px;
+                margin-top: 10%;
+            }
+            .ty{
+                font-size: 14px;
+                margin-top: 2%;
+            }
+            .num{
+                font-size: 14px;
+                margin-top: 2%;
+                height: 24px;
+                line-height: 24px;
+                overflow: hidden;
+            }
+            .btn{
+                border: 1px solid #fff;
+                display: block;
+                padding: 2% 0;
+                border-radius: 5px;
+                color: #fff;
+                width: 40%;
+                margin: 4px auto;
+                a{
+                    display: block;
+                    color: #fff;
+                }
+            }
+        }
+        &:hover{
+            .jump{
+                top: 0;
+            }
         }
     }
 }
