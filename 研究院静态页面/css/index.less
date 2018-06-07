@@ -45,7 +45,7 @@ body{
     
 }
 // 标题
-.title_box{
+.title_box{ 
     background-color: #fff;
     padding: 0 20px;
     border-bottom: 1px solid #dedede;
@@ -78,5 +78,112 @@ body{
         font-size: 16px;
         color: #1b9fe2;
         line-height: 62px;
+    }
+}
+
+
+.new_list{
+    padding: 17px 20px;
+    background-color: #fff;
+    li{
+        overflow: hidden;
+        margin-bottom: 12px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        span{
+            float: left;
+        }
+        .data{
+            width: 76px;
+            height: 66px;
+            background: url('../img/data_block.png') no-repeat;
+            em{
+                display: block;
+                font-style: normal;
+                &:nth-child(1){
+                    text-indent: 5px;
+                    font-size: 22px;
+                    color: #5b5a5b;
+                    line-height: 38px;
+                }
+                &:nth-child(2){
+                    font-size: 18px;
+                    color: #c0c1c0;
+                    text-indent: 20px;
+                    line-height: 28px;
+                }
+            }
+        }
+        .new_title{
+            width: 120px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            a{
+                display: block;
+                font-size: 20px;
+                line-height: 33px;
+                color: #5b5a5b;
+                &:hover{
+                    color: #1b9fe2;
+                }
+            }
+        }
+    }
+}
+.list_box{
+    margin-right: -9px;
+    li{
+        width: 268px;
+        border-radius: 4px;
+        overflow: hidden;
+        float: left;
+        margin-right: 9px;
+    }
+    a,img,span{
+        display: block;
+        background-color: #f3f5f7;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+    img{
+        width: 268px;
+        height: 190px;
+    }
+    .type{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 34px;
+        padding: 10px 0 0 20px;
+        color: #000;
+    }
+    .title{
+        font-size: 18px;
+        line-height: 34px;
+        padding: 10px 20px 0 20px;
+        color: #333;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .list_info{
+        font-size: 16px;
+        line-height: 32px;
+        padding: 10px 20px 0 20px;
+        background-color: #f3f5f7;
+        padding-bottom: 12px;
+        em{
+            font-style: normal;
+            color: #666666;
+        }
+    }
+    .name{
+        font-size: 16px;
+        line-height: 34px;
+        padding: 0 0 10px 20px;
+        color: #666666;
     }
 }

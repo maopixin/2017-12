@@ -75,57 +75,6 @@
   font-size: 12px;
   color: #975a12;
 }
-.new_list {
-  padding: 17px 20px;
-  background-color: #fff;
-}
-.new_list li {
-  overflow: hidden;
-  margin-bottom: 12px;
-}
-.new_list li:last-child {
-  margin-bottom: 0;
-}
-.new_list li span {
-  float: left;
-}
-.new_list li .data {
-  width: 76px;
-  height: 66px;
-  background: url('../img/data_block.png') no-repeat;
-}
-.new_list li .data em {
-  display: block;
-  font-style: normal;
-}
-.new_list li .data em:nth-child(1) {
-  text-indent: 5px;
-  font-size: 22px;
-  color: #5b5a5b;
-  line-height: 38px;
-}
-.new_list li .data em:nth-child(2) {
-  font-size: 18px;
-  color: #c0c1c0;
-  text-indent: 20px;
-  line-height: 28px;
-}
-.new_list li .new_title {
-  width: 118px;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
-}
-.new_list li .new_title a {
-  display: block;
-  font-size: 20px;
-  line-height: 33px;
-  color: #5b5a5b;
-}
-.new_list li .new_title a:hover {
-  color: #1b9fe2;
-}
 .big_new_list {
   width: 422px;
   padding: 0;
@@ -185,39 +134,6 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
-}
-.list_box {
-  margin-right: -9px;
-}
-.list_box li {
-  width: 268px;
-  border-radius: 4px;
-  overflow: hidden;
-  float: left;
-  margin-right: 9px;
-}
-.list_box a,
-.list_box img,
-.list_box span {
-  display: block;
-  background-color: #f3f5f7;
-}
-.list_box img {
-  width: 268px;
-  height: 190px;
-}
-.list_box .type {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 34px;
-  padding: 10px 0 0 20px;
-  color: #000;
-}
-.list_box .name {
-  font-size: 16px;
-  line-height: 34px;
-  padding: 0 0 10px 20px;
-  color: #666666;
 }
 .teacher_info {
   width: 317px;
