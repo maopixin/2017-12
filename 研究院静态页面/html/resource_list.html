@@ -8,13 +8,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../layui/css/layui.css">
-    <link rel="stylesheet" href="../css/information_list.css">
+    <link rel="stylesheet" href="../css/resource_list.css">
     <script src="../js/jquery.js"></script>
     <script src="../layui/layui.js"></script>
 </head>
 
 <body>
-    <nav class="nav">
+    <!-- <nav class="nav">
         <ul class="layui-nav nav_list layui-main">
             <li class="layui-nav-item layui-this">
                 <a href="">首页</a>
@@ -83,7 +83,7 @@
                 </dl>
             </li>
         </ul>
-    </nav>
+    </nav> -->
     <div class="layui-main">
         <div class="breadcrumb">
             <span class="layui-breadcrumb">
@@ -93,19 +93,24 @@
                 </a>
             </span>
         </div>
-        <div class="content">
-            <ul class="layui-nav layui-nav-tree" lay-filter="test">
-                <li class="layui-nav-item layui-this">
-                    <a href="javascript:;">工作室公告</a>
-                </li>
-                <li class="layui-nav-item">
-                    <a href="javascript:;">工作室资讯</a>
-                </li>
-                <li class="layui-nav-item">
-                    <a href="javascript:;">成果展示</a>
-                </li>
-            </ul>
-            <div class="information_list">
+        <div class="content clearfix">
+            <div class="fl">
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item layui-this">
+                        <a href="javascript:;">默认展开</a>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;">解决方案</a>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;">产品</a>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;">大数据</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="around_right">
                 <div class="title_box">
                     <h3 class="column_title">
                         <div class="t_l">LINE</div>
@@ -113,101 +118,75 @@
                     </h3>
                 </div>
                 <div>
-                    <ul class="information_list_box">
-                        <!-- *10 -->
-                        <li class="clearfix">
-                            <span class="title">
-                                <a href="">标题</a>
-                            </span>
+                    <ul class="resource_list">
+                        <li>
+                            <!-- word ppt pdf -->
+                            <span class="icon word"></span>
                             <span class="name">
+                                <a href="">资源名称</a>
+                            </span>
+                            <span class="type">PDF</span>
+                            <span class="person">
                                 <a href="">name</a>
                             </span>
-                            <span class="time">time</span>
-                        </li>
-                        <li class="clearfix">
-                            <span class="title">
-                                <a href="">标题</a>
+                            <span class="time">2018-06-60</span>
+                            <span class="down_num">
+                                <a href="">
+                                    <em></em>下载10次
+                                </a>
                             </span>
+                        </li>
+                        <li>
+                            <!-- word ppt pdf -->
+                            <span class="icon word"></span>
                             <span class="name">
+                                <a href="">资源名称</a>
+                            </span>
+                            <span class="type">PDF</span>
+                            <span class="person">
                                 <a href="">name</a>
                             </span>
-                            <span class="time">time</span>
-                        </li>
-
-                        <li class="clearfix">
-                            <span class="title">
-                                <a href="">标题</a>
+                            <span class="time">2018-06-60</span>
+                            <span class="down_num">
+                                <a href="">
+                                    <em></em>下载10次
+                                </a>
                             </span>
+                        </li>
+                        <li>
+                            <!-- word ppt pdf -->
+                            <span class="icon word"></span>
                             <span class="name">
+                                <a href="">资源名称</a>
+                            </span>
+                            <span class="type">PDF</span>
+                            <span class="person">
                                 <a href="">name</a>
                             </span>
-                            <span class="time">time</span>
+                            <span class="time">2018-06-60</span>
+                            <span class="down_num">
+                                <a href="">
+                                    <em></em>下载10次
+                                </a>
+                            </span>
                         </li>
-                        <li class="clearfix">
-                            <span class="title">
-                                <a href="">标题</a>
-                            </span>
-                            <span class="name">
-                                <a href="">name</a>
-                            </span>
-                            <span class="time">time</span>
-                        </li>
-                        <li class="clearfix">
-                            <span class="title">
-                                <a href="">标题</a>
-                            </span>
-                            <span class="name">
-                                <a href="">name</a>
-                            </span>
-                            <span class="time">time</span>
-                        </li>
-                        <li class="clearfix">
-                            <span class="title">
-                                <a href="">标题</a>
-                            </span>
-                            <span class="name">
-                                <a href="">name</a>
-                            </span>
-                            <span class="time">time</span>
-                        </li>
-                        <li class="clearfix">
-                            <span class="title">
-                                <a href="">标题</a>
-                            </span>
-                            <span class="name">
-                                <a href="">name</a>
-                            </span>
-                            <span class="time">time</span>
-                        </li>
-
-                        <li class="clearfix">
-                            <span class="title">
-                                <a href="">标题</a>
-                            </span>
-                            <span class="name">
-                                <a href="">name</a>
-                            </span>
-                            <span class="time">time</span>
-                        </li>
-                        <li class="clearfix">
-                            <span class="title">
-                                <a href="">标题</a>
-                            </span>
-                            <span class="name">
-                                <a href="">name</a>
-                            </span>
-                            <span class="time">time</span>
-                        </li>
-                        <li class="clearfix">
-                            <span class="title">
-                                <a href="">标题</a>
-                            </span>
-                            <span class="name">
-                                <a href="">name</a>
-                            </span>
-                            <span class="time">time</span>
-                        </li>
-
+                        <li>
+                                <!-- word ppt pdf -->
+                                <span class="icon word"></span>
+                                <span class="name">
+                                    <a href="">资源名称</a>
+                                </span>
+                                <span class="type">PDF</span>
+                                <span class="person">
+                                    <a href="">name</a>
+                                </span>
+                                <span class="time">2018-06-60</span>
+                                <span class="down_num">
+                                    <a href="">
+                                        <em></em>下载10次
+                                    </a>
+                                </span>
+                            </li>
                     </ul>
                     <div id="page_box" class="clearfix"></div>
                 </div>

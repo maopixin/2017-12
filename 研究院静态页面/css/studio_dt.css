@@ -1,0 +1,106 @@
+.dynamic_condition_list li {
+  font-size: 0;
+}
+.dynamic_condition_list .dynamic_condition_person_info {
+  height: 115px;
+  padding: 0 20px;
+  border-bottom: 1px solid #ebebeb;
+}
+.dynamic_condition_list .dynamic_condition_person_info div {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 115px;
+}
+.dynamic_condition_list .dynamic_condition_person_info .head_pic_box {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  overflow: hidden;
+  margin-right: 30px;
+}
+.dynamic_condition_list .dynamic_condition_person_info .head_pic_box img {
+  width: 70px;
+  height: 70px;
+  vertical-align: top;
+}
+.dynamic_condition_list .dynamic_condition_person_info .name {
+  width: 100px;
+  color: #666;
+}
+.dynamic_condition_list .dynamic_condition_person_info .name a {
+  color: inherit;
+}
+.dynamic_condition_list .dynamic_condition_person_info .resource_name {
+  width: 586px;
+}
+.dynamic_condition_list .dynamic_condition_person_info .resource_name a {
+  color: #1b9fe2;
+}
+.dynamic_condition_list .dynamic_condition_person_info .time {
+  color: #666666;
+}
+.dynamic_condition_list .dynamic_condition_resource {
+  padding: 20px;
+}
+.dynamic_condition_list .dynamic_condition_resource p {
+  font-size: 14px;
+  line-height: 26px;
+  text-indent: 2em;
+}
+.dynamic_condition_list .btn_box {
+  text-align: right;
+  border-bottom: 1px solid #e3e3e3;
+}
+.dynamic_condition_list .btn_box div {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  line-height: 60px;
+  width: 155px;
+  text-align: left;
+}
+.dynamic_condition_list .btn_box div em {
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -2px;
+}
+.dynamic_condition_list .btn_box div .eye {
+  background-image: url('../icon/eye.png');
+}
+.dynamic_condition_list .btn_box div .up {
+  background-image: url('../icon/up.png');
+}
+.dynamic_condition_list .btn_box div .msg {
+  background-image: url('../icon/msg.png');
+}
+.dynamic_condition_list .btn_box div .star {
+  background-image: url('../icon/star.png');
+}
+.dynamic_condition_list .topic {
+  width: 100%;
+}
+.dynamic_condition_list .topic_box,
+.dynamic_condition_list .resource_box,
+.dynamic_condition_list .article_box {
+  display: none !important;
+}
+.dynamic_condition_list .topic .topic_box {
+  width: 100%;
+  text-align: right;
+  display: inline-block !important;
+}
+.dynamic_condition_list .resource .resource_box {
+  width: 100%;
+  text-align: right;
+  display: inline-block !important;
+}
+.dynamic_condition_list .article .article_box {
+  width: 100%;
+  text-align: right;
+  display: inline-block !important;
+}

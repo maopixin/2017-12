@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <link rel="stylesheet" href="../css/studio_dt.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../layui/layui.js"></script>
+</head>
+
+<body>
+    <!-- <nav class="nav">
+        <ul class="layui-nav nav_list layui-main">
+            <li class="layui-nav-item layui-this">
+                <a href="">首页</a>
+            </li>
+            <li class="layui-nav-item">
+                <a href="">首页首页</a>
+
+            </li>
+            <li class="layui-nav-item">
+                <a href="">首页</a>
+
+            </li>
+
+            <li class="layui-nav-item">
+                <a href="">首页</a>
+
+            </li>
+            <li class="layui-nav-item">
+                <a href="">首页</a>
+
+            </li>
+            <li class="layui-nav-item">
+                <a href="">首页</a>
+
+            </li>
+            <li class="layui-nav-item">
+                <a href="">首页</a>
+
+            </li>
+            <li class="layui-nav-item">
+                <a href="">首页</a>
+
+            </li>
+            <li class="layui-nav-item">
+                <a href="">首页</a>
+                <dl class="layui-nav-child">
+                    <dd class="nav_item_item">
+                        <a href="">资源</a>
+                    </dd>
+                    <dd class="nav_item_item">
+                        <a href="">资源</a>
+                    </dd>
+                    <dd class="nav_item_item">
+                        <a href="">资源</a>
+                    </dd>
+                    <dd class="nav_item_item">
+                        <a href="">资源</a>
+                    </dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a href="">首页</a>
+                <dl class="layui-nav-child">
+                    <dd class="nav_item_item">
+                        <a href="">资源</a>
+                    </dd>
+                    <dd class="nav_item_item">
+                        <a href="">资源</a>
+                    </dd>
+                    <dd class="nav_item_item">
+                        <a href="">资源</a>
+                    </dd>
+                    <dd class="nav_item_item">
+                        <a href="">资源</a>
+                    </dd>
+                </dl>
+            </li>
+        </ul>
+    </nav> -->
+    <div class="layui-main">
+        <div class="breadcrumb">
+            <span class="layui-breadcrumb">
+                <a href="">工作室首页</a>
+                <a class="no_line">
+                    <cite>工作室资讯列表</cite>
+                </a>
+            </span>
+        </div>
+        <div class="content clearfix">
+            <div class="fl">
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item layui-this">
+                        <a href="javascript:;">默认展开</a>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;">解决方案</a>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;">产品</a>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;">大数据</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="around_right">
+                <div class="title_box">
+                    <h3 class="column_title">
+                        <div class="t_l">LINE</div>
+                        <div class="t_c">基本任务建设进度</div>
+                    </h3>
+                </div>
+                <div>
+                    <ul class="dynamic_condition_list">
+                        <li>
+                            <div class="dynamic_condition_person_info">
+                                <div class="head_pic_box">
+                                    <a href="">
+                                        <img src="http://mmbiz.qpic.cn/mmbiz_jpg/lDBMe6ULicpWqRCozFU6wbHADGonuJqTcNEKt27jgnMl45PQzRT18Bywxp5mMLbAvR7M1Dgfhv1RMWCcQ5NmKibA/640?wx_fmt=jpeg&tp=webp&wxfrom=5"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="name">
+                                    <a href="">
+                                        name
+                                    </a>
+                                </div>
+                                <div class="resource_name">
+                                    <a href="">
+                                        发表了文章《爱上大厦的》
+                                    </a>
+                                </div>
+                                <div class="time">06-09 15:31</div>
+                            </div>
+                            <div class="dynamic_condition_resource">
+                                <div class="video">
+
+                                </div>
+                            </div>
+                            <div class="btn_box topic">
+                                <div class="topic_box">
+                                    <div>
+                                        <em class="eye"></em>
+                                        浏览 110
+                                    </div>
+                                    <div>
+                                        <em class="msg"></em>
+                                        回复 110
+                                    </div>
+                                </div>
+                                <div class="resource_box">
+                                    <div>
+                                        <em class="star"></em>
+                                        评分 110
+                                    </div>
+                                    <div>
+                                        <em class="up"></em>
+                                        下载 110
+                                    </div>
+                                    <div>
+                                        <em class="msg"></em>
+                                        评论 1010
+                                    </div>
+                                </div>
+                                <div class="article_box">
+                                    <div>
+                                        <em class="eye"></em>
+                                        浏览 110
+                                    </div>
+                                    <div>
+                                        <em class="up"></em>
+                                        点赞 110
+                                    </div>
+                                    <div>
+                                        <em class="msg"></em>
+                                        评论 1010
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dynamic_condition_person_info">
+                                <div class="head_pic_box">
+                                    <a href="">
+                                        <img src="http://mmbiz.qpic.cn/mmbiz_jpg/lDBMe6ULicpWqRCozFU6wbHADGonuJqTcNEKt27jgnMl45PQzRT18Bywxp5mMLbAvR7M1Dgfhv1RMWCcQ5NmKibA/640?wx_fmt=jpeg&tp=webp&wxfrom=5" alt=""/ >
+                                    </a>
+                                </div>
+                                <div class="name">
+                                    <a href="">
+                                        name
+                                    </a>
+                                </div>
+                                <div class="resource_name">
+                                    <a href="">
+                                        发表了文章《爱上大厦的》
+                                    </a>
+                                </div>
+                                <div class="time">06-09 15:31</div>
+                            </div>
+                            <div class="dynamic_condition_resource">
+                                <div class="video">
+
+                                </div>
+                            </div>
+                            <div class="btn_box resource">
+                                <div class="topic_box">
+                                    <div>
+                                        <em class="eye"></em>
+                                        浏览 110
+                                    </div>
+                                    <div>
+                                        <em class="up"></em>
+                                        回复 110
+                                    </div>
+                                </div>
+                                <div class="resource_box">
+                                    <div>
+                                        <em class="star"></em>
+                                        评分 110
+                                    </div>
+                                    <div>
+                                        <em class="up"></em>
+                                        下载 110
+                                    </div>
+                                    <div>
+                                        <em class="msg"></em>
+                                        评论 1010
+                                    </div>
+                                </div>
+                                <div class="article_box">
+                                    <div>
+                                        <em class="eye"></em>
+                                        浏览 110
+                                    </div>
+                                    <div>
+                                        <em class="up"></em>
+                                        点赞 110
+                                    </div>
+                                    <div>
+                                        <em class="msg"></em>
+                                        评论 1010
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dynamic_condition_person_info">
+                                <div class="head_pic_box">
+                                    <a href="">
+                                        <img src="http://mmbiz.qpic.cn/mmbiz_jpg/lDBMe6ULicpWqRCozFU6wbHADGonuJqTcNEKt27jgnMl45PQzRT18Bywxp5mMLbAvR7M1Dgfhv1RMWCcQ5NmKibA/640?wx_fmt=jpeg&tp=webp&wxfrom=5" alt="">
+                                    </a>
+                                </div>
+                                <div class="name">
+                                    <a href="">
+                                        name
+                                    </a>
+                                </div>
+                                <div class="resource_name">
+                                    <a href="">
+                                        发表了文章《爱上大厦的》
+                                    </a>
+                                </div>
+                                <div class="time">06-09 15:31</div>
+                            </div>
+                            <div class="dynamic_condition_resource">
+                                <div class="video">
+
+                                </div>
+                            </div>
+                            <div class="btn_box article">
+                                <div class="topic_box">
+                                    <div>
+                                        <em class="eye"></em>
+                                        浏览 110
+                                    </div>
+                                    <div>
+                                        <em class="up"></em>
+                                        回复 110
+                                    </div>
+                                </div>
+                                <div class="resource_box">
+                                    <div>
+                                        <em class="star"></em>
+                                        评分 110
+                                    </div>
+                                    <div>
+                                        <em class="up"></em>
+                                        下载 110
+                                    </div>
+                                    <div>
+                                        <em class="msg"></em>
+                                        评论 1010
+                                    </div>
+                                </div>
+                                <div class="article_box">
+                                    <div>
+                                        <em class="eye"></em>
+                                        浏览 110
+                                    </div>
+                                    <div>
+                                        <em class="up"></em>
+                                        点赞 110
+                                    </div>
+                                    <div>
+                                        <em class="msg"></em>
+                                        评论 1010
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                    <div id="page_box" class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    layui.use('element', function () {
+        var element = layui.element;
+
+        //…
+    });
+    layui.use('laypage', function () {
+        var laypage = layui.laypage;
+
+        //执行一个laypage实例
+        laypage.render({
+            elem: 'page_box',
+            count: 500 //数据总数，从服务端得到
+        });
+    });
+</script>
+
+</html>

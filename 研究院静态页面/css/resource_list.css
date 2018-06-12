@@ -1,0 +1,66 @@
+.resource_list {
+  font-size: 0;
+}
+.resource_list li {
+  padding: 0 20px;
+  color: #666666;
+}
+.resource_list li:nth-child(2n) {
+  background-color: #eff3f5;
+}
+.resource_list li span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 80px;
+}
+.resource_list li .icon {
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 50px;
+}
+.resource_list li .word {
+  background-image: url('../icon/word.png');
+}
+.resource_list li .pdf {
+  background-image: url('../icon/pdf.png');
+}
+.resource_list li .ppt {
+  background-image: url('../icon/ppt.png');
+}
+.resource_list li .name {
+  width: 370px;
+  color: #1b9fe2;
+}
+.resource_list li .name a {
+  color: inherit;
+}
+.resource_list li .type {
+  width: 90px;
+}
+.resource_list li .person {
+  width: 100px;
+  color: #1b9fe2;
+}
+.resource_list li .person a {
+  color: inherit;
+}
+.resource_list li .time {
+  width: 140px;
+}
+.resource_list li .down_num {
+  width: 100px;
+  font-size: 14px;
+}
+.resource_list li .down_num em {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  background: url('../icon/down.png') no-repeat;
+  background-size: cover;
+  margin-right: 10px;
+  margin-top: -2px;
+}
