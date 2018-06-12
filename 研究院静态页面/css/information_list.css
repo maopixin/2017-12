@@ -1,0 +1,41 @@
+.nav {
+  height: 60px;
+  background-color: #393D49;
+}
+.content {
+  position: relative;
+}
+.information_list {
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 230px;
+  font-size: 14px;
+  color: #555555;
+}
+.information_list a {
+  color: inherit;
+}
+.information_list .information_list_box {
+  line-height: 62px;
+}
+.information_list .information_list_box li {
+  height: 62px;
+  border-bottom: 1px solid #dfdfdf;
+  padding: 0 42px;
+}
+.information_list .information_list_box span {
+  float: left;
+}
+.information_list .information_list_box .title {
+  width: 540px;
+}
+.information_list .information_list_box .name {
+  width: 88px;
+  text-align: center;
+}
+.information_list .information_list_box .time {
+  width: 136px;
+  text-align: right;
+}

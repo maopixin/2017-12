@@ -184,3 +184,78 @@ body {
   padding: 0 0 10px 20px;
   color: #666666;
 }
+.head_pic_border {
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+.head_pic_border:hover {
+  border-color: #1b9fe2;
+}
+.nav {
+  height: 70px;
+  background-color: #3daae2;
+}
+.nav .nav_list {
+  width: 1140px;
+  margin: 0 auto;
+  overflow: visible;
+}
+.nav .nav_list .nav_item {
+  width: 114px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 70px;
+  color: #fff;
+  float: left;
+  position: relative;
+}
+.nav .nav_list .nav_item a {
+  display: block;
+  color: inherit;
+}
+.nav .nav_list .nav_item .nav_item_list {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 114px;
+  z-index: 9;
+  background-color: #2a9cd7;
+}
+.nav .nav_list .nav_item .nav_item_list .nav_item_item {
+  line-height: 50px;
+}
+.nav .nav_list .nav_item .nav_item_list .nav_item_item:hover {
+  background-color: #3daae2;
+}
+.nav .nav_list .nav_item:hover {
+  background-color: #2a9cd7;
+}
+.nav .nav_list .nav_item:hover .nav_item_list {
+  display: block !important;
+}
+.nav_list {
+  padding: 0 !important;
+}
+.nav_list .layui-nav-item {
+  width: 114px !important;
+  text-align: center;
+}
+.nav_list .layui-nav-item a {
+  padding: 0 !important;
+}
+.no_line:hover {
+  text-decoration: none;
+}
+.breadcrumb {
+  padding: 30px 0;
+}
+.breadcrumb a {
+  font-size: 22px;
+}
+#page_box {
+  margin: 20px auto;
+  text-align: center;
+}
+#page_box .layui-box {
+  display: inline-block;
+}
