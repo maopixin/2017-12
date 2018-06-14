@@ -2,7 +2,7 @@ body {
   background-color: #f3f5f7;
 }
 .margin_t {
-  margin-top: 24px;
+  margin-top: 12px;
 }
 .golden_cut {
   overflow: hidden;
@@ -159,8 +159,8 @@ body {
   color: #000;
 }
 .list_box .title {
-  font-size: 18px;
-  line-height: 34px;
+  font-size: 14px;
+  line-height: 28px;
   padding: 10px 20px 0 20px;
   color: #333;
   white-space: nowrap;
@@ -168,15 +168,28 @@ body {
   text-overflow: ellipsis;
 }
 .list_box .list_info {
-  font-size: 16px;
-  line-height: 32px;
-  padding: 10px 20px 0 20px;
+  font-size: 14px;
+  line-height: 26px;
+  padding: 0 20px 0 20px;
   background-color: #f3f5f7;
-  padding-bottom: 12px;
+  position: relative;
 }
 .list_box .list_info em {
   font-style: normal;
   color: #666666;
+  display: block;
+}
+.list_box .list_info a {
+  position: absolute;
+  width: 72px;
+  height: 24px;
+  border-radius: 6px;
+  background-color: red;
+  text-align: center;
+  line-height: 24px;
+  color: #fff;
+  right: 20px;
+  bottom: 10px;
 }
 .list_box .name {
   font-size: 16px;
